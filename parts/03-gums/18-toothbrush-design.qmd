@@ -1,7 +1,3 @@
----
-title: "Bristles, heads, and the two-minute rule"
----
-
 # Bristles, heads, and the two-minute rule {#sec-brush-design}
 
 ::: {.callout-warning title="Draft"}

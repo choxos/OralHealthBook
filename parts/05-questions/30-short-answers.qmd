@@ -1,7 +1,3 @@
----
-title: "Short answers"
----
-
 # Short answers {#sec-short-answers}
 
 ::: {.callout-warning title="Draft"}

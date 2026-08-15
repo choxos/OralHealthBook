@@ -1,7 +1,3 @@
----
-title: "Preface"
----
-
 # Preface {.unnumbered}
 
 In October 2023 I wrote a short blog post listing five things you can do to keep
@@ -23,10 +19,14 @@ credit.
 So I took one of the Strong recommendations, "brush last thing at night and on
 one other occasion," and I followed the citation to see the trial that proved it.
 
-There is no trial. There is a conference abstract from 1993, describing a
-cross-over study in twelve people, which measured how much fluoride was left in
-their saliva overnight. It did not compare brushing at bedtime against brushing
-earlier. Everyone in it brushed at bedtime. What it compared was two toothpastes.
+There is no trial. There is a one-page conference abstract from 2001, presented
+at an ORCA congress by two researchers at Unilever Dental Research, which
+measured how much fluoride was left in people's saliva overnight
+[@duckworth2001]. It did not compare brushing at bedtime against brushing
+earlier. Everyone in it brushed at bedtime. What it compared was two
+toothpastes. The Scottish guideline that first cited it describes it, correctly,
+as an observational study, and attaches no evidence grade to the recommendation
+it supports [@sign138].
 
 I checked another one. Then another.
 

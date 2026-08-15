@@ -193,20 +193,11 @@ This chapter is not written yet.
 
 def build(sid: str, title: str, kind: str) -> str:
     body = AUDIT_BODY if kind == "audit" else ESSAY_BODY
-    return (
-        "---\n"
-        f'title: "{title}"\n'
-        "---\n\n"
-        f"# {title} {{#{sid}}}\n"
-        + body
-    )
+    return f"# {title} {{#{sid}}}\n" + body
 
 
 def build_appendix(sid: str, title: str) -> str:
     return (
-        "---\n"
-        f'title: "{title}"\n'
-        "---\n\n"
         f"# {title} {{#{sid}}}\n\n"
         '::: {.callout-warning title="Draft"}\n'
         "This appendix is generated from `appraisals/` at build time.\n"

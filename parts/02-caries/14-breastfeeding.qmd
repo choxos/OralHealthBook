@@ -1,7 +1,3 @@
----
-title: "Breastfeeding and decay"
----
-
 # Breastfeeding and decay {#sec-breastfeeding}
 
 ::: {.callout-warning title="Draft"}

@@ -1,9 +1,209 @@
----
-title: "How I did this"
----
-
 # How I did this {#sec-method}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet.
-:::
+This chapter is the protocol. It exists so that you can tell the difference
+between a finding and an opinion, and so that someone who disagrees with me has
+something concrete to attack.
+
+I am aware of the irony of a book that complains about untraceable evidence
+having an untraceable method, so I have tried to write this the way I would
+write the methods section of a paper I expected a reviewer to be unkind about.
+
+## What kind of study this is
+
+The design has a name, even if it is not a common one:
+**evidence-to-recommendation traceability**. You take a set of published
+recommendations, follow each to the evidence its own authors say it rests on,
+and assess whether that evidence answers the question the recommendation asks.
+
+Two things it is not.
+
+It is **not a systematic review**. I am not pooling studies to estimate an
+effect. Where a good systematic review of the question exists, I use it, and my
+job is to check whether the guideline used it correctly.
+
+It is **not an appraisal of the guideline development process**. I was not in
+the room. I cannot know what a panel discussed and decided not to write down.
+Everything here is based on the published document, which is also all any reader
+has.
+
+## The unit of analysis
+
+The unit is the **component**, not the recommendation.
+
+[Chapter -@sec-bundling] explains why: a recommendation that bundles six
+instructions under one strength label cannot be assessed as a single object,
+because its label refers to only one of the six. So each recommendation is first
+split into its separable instructions, following the guideline's own bullets
+where it has them and its own sentence structure where it does not, and each
+component is then carried through the steps below on its own.
+
+## The seven steps
+
+Every audit chapter does these, in this order, under these headings.
+
+**1. The advice.** Quoted verbatim from chapter 2 of *Delivering Better Oral
+Health* [@dboh2025], with its strength label and the table it appears in. Not
+paraphrased. If a recommendation sounds worse when quoted exactly than when
+summarised, that is information, and paraphrasing would destroy it.
+
+**2. What the guideline says its evidence is.** Quoted verbatim from chapter 13,
+with its certainty rating and its cited references. Again not paraphrased.
+
+**3. Following the citation.** I obtain and read the cited source, and compare it
+to the advice on four axes:
+
+- *Population*: are these the people the advice is for?
+- *Intervention*: is this the thing the advice tells you to do?
+- *Comparator*: is this the alternative the advice implies?
+- *Outcome*: is this something a patient would notice or care about?
+
+A mismatch on any axis is **indirectness** in GRADE's vocabulary. It is the
+single most common problem I found, and it is invisible unless you go and look,
+because a citation looks the same whether or not it is on-topic.
+
+**4. Appraising it.** With the appropriate tool, and with the judgments shown
+rather than summarised:
+
+| What I am appraising | Tool |
+|---|---|
+| An individual randomised trial | RoB 2 |
+| An individual non-randomised study of an intervention | ROBINS-I |
+| Whether a systematic review was well conducted | AMSTAR 2 |
+| Whether a systematic review is at risk of bias | ROBIS |
+| A body of evidence for one outcome | GRADE |
+
+These do different jobs and it is worth saying so, because in the original blog
+series I ran GRADE, AMSTAR 2 and ROBIS over the same review and reported three
+separate damning verdicts, which reads as piling on. AMSTAR 2 and ROBIS overlap
+heavily; both are about the review. GRADE is about the evidence, and would apply
+even if the review were flawless. I now use one review-level tool per review, say
+which and why, and reserve GRADE for the body of evidence.
+
+Where a tool has critical domains, as AMSTAR 2 does, I name which specific
+domains failed rather than reporting a count. "Flaws in five domains" is not a
+finding; AMSTAR 2's overall rating depends on which of its seven critical domains
+were among them.
+
+**5. Is there better evidence?** A search, recorded so it can be repeated:
+database, full strategy, date run, number of hits, and what was screened in.
+"I searched PubMed" is not a method. The strategies are in
+[Appendix -@sec-app-searches] in the print edition and in
+`appraisals/searches/` in the repository.
+
+Searches were run to a stated cut-off date, given per chapter. Anything
+published after that date is not in this book, and the honest thing is to say so
+rather than to imply currency the book does not have.
+
+**6. The verdict.** A fixed box with four fields, the same four every time:
+
+- *Certainty of the evidence*, for this component, on my reading, with reasons.
+- *Directness to the advice as worded*, from step 3.
+- *Is the strength label defensible?*, answered using the four categories from
+  [Chapter -@sec-certainty-strength]: higher certainty than stated, a legitimate
+  discordant recommendation, a good practice statement in disguise, or one that
+  should have been Conditional.
+- *What would change my mind.* Discussed below.
+
+**7. What this means for you.** One paragraph, plain language, no hedging beyond
+what is honest.
+
+## Effect sizes
+
+Every effect I report gets a point estimate, a confidence interval, and the
+outcome it is measured on. Not one of these three is optional, and in the
+original blog series all three were sometimes missing. "14% fewer" and "0.41
+fewer surfaces" and "0.28 standardised mean difference" all appeared without
+intervals, which invites the reader to treat a noisy estimate as a fact.
+
+Standardised mean differences are converted back to natural units wherever the
+review reports enough to do it, because "0.28 of a standard deviation" is not a
+quantity anyone has intuitions about, and judging it with adjectives is worse
+than not judging it at all.
+
+Where an outcome is common, as dental caries is, an odds ratio is not a risk
+ratio and I say so. An odds ratio of 1.5 for an outcome affecting a third of
+children does not mean a 50% higher risk.
+
+## What would change my mind
+
+Every verdict box ends with this field, and it is not decoration.
+
+A criticism that no evidence could answer is not a criticism, it is a posture.
+If I say the evidence for brushing at bedtime is indirect, I should be able to
+state what direct evidence would look like: a trial randomising people to brush
+last thing at night versus two hours earlier, everything else held constant,
+with caries or pain measured at three years. If such a trial exists and I missed
+it, that field tells you exactly what to send me.
+
+It is also a discipline against a specific failure mode. It is easy, once you
+have found three weak citations, to start reading every new citation as weak.
+Writing down in advance what would satisfy me is the only guard I have against
+that.
+
+## What I got wrong before
+
+This book began as four blog posts, and I have corrected several things in
+moving them here. They are listed rather than quietly fixed, because a book about
+other people's citation practice should show its own errata:
+
+- I described the strength of a recommendation as "very low," which confuses
+  strength with certainty. [Chapter -@sec-certainty-strength].
+- I rated a body of observational evidence as low certainty without considering
+  GRADE's three criteria for rating observational evidence **up**, one of which
+  (dose-response) the review in question actually reports.
+  [Chapter -@sec-twice-daily].
+- I gave the Swedish rinsing trial as having 131 participants in one post and
+  369 in another. Both numbers appear in the literature because they refer to
+  different things: 369 were randomised and 281 completed, of whom 131 were in
+  the test groups [@sjogren1995]. There is also a doctoral thesis reporting the
+  same trial alongside other sub-studies [@sjogren1995thesis], and the two are
+  routinely conflated. [Chapter -@sec-spit].
+- I said there was "no evidence" for the two-minute brushing rule. There is no
+  evidence on **caries**. There is evidence on plaque removal. Stating absence
+  of evidence loosely is the error I accuse the guideline of.
+  [Chapter -@sec-brush-design].
+- I attacked a twelve-person cross-over study for being underpowered. For a
+  salivary pharmacokinetic cross-over, twelve may be perfectly adequate; the
+  fatal problem is indirectness, not power. Leading with the weaker argument
+  made the stronger one look like piling on. [Chapter -@sec-last-thing].
+- I called a post-hoc regrouping of four categories into two "p-hacking." It is
+  selective analysis, or analysis decided after seeing the data. P-hacking means
+  something more specific. [Chapter -@sec-spit].
+- I attributed *Delivering Better Oral Health* to Public Health England, which
+  has not owned it since 2021.
+
+## What I cannot do
+
+Some limits worth stating plainly.
+
+I am one person. A proper systematic review of guideline recommendations would
+have two independent assessors and a documented disagreement procedure. I have
+neither. Every judgment in this book is one person's, and the appraisal data is
+published partly so that a second assessor can disagree with me in public.
+
+I could not obtain every source. The ORCA abstract behind the bedtime-brushing
+recommendation is a single page in a conference supplement; there is no full
+report to read, and that is itself part of the finding.
+
+I read English. Where a guideline cites work in another language I have relied on
+the English abstract, and I flag it where it happens.
+
+And I am not neutral. I think oral health guidance should say what it knows and
+what it does not, and I started this project already annoyed about a particular
+recommendation. Declaring that is better than pretending otherwise. The defence
+against it is not my good intentions, it is the fact that every judgment I made
+is published in a file you can open.
+
+## Reproducing this
+
+```bash
+git clone https://github.com/choxos/OralHealthBook
+cd OralHealthBook
+make extract   # rebuild appraisals/ from the archived guideline
+make check     # verify every citation resolves and no verdict is blank
+make web       # build the book
+```
+
+The archived copies of *Delivering Better Oral Health* and SIGN 138 used
+throughout are in `sources/`, so the extraction can be re-run against exactly
+the text I read, even after the guideline is next updated.

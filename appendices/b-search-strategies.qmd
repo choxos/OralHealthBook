@@ -1,7 +1,3 @@
----
-title: "Search strategies"
----
-
 # Search strategies {#sec-app-searches}
 
 ::: {.callout-warning title="Draft"}

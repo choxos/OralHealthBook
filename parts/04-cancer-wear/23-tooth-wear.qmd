@@ -1,7 +1,3 @@
----
-title: "Erosion, wear, and the acid myth"
----
-
 # Erosion, wear, and the acid myth {#sec-wear}
 
 ::: {.callout-warning title="Draft"}

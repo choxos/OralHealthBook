@@ -1,7 +1,3 @@
----
-title: "The appraisal tools, and why each one"
----
-
 # The appraisal tools, and why each one {#sec-app-tools}
 
 ::: {.callout-warning title="Draft"}

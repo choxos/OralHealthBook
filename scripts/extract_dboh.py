@@ -285,6 +285,9 @@ def parse_ch13(main: Tag) -> tuple[list[dict], dict[str, dict]]:
                 continue
             rec = cell_text(cells[1])
             ev_cell = cells[2]
+            # Read the footnote markers BEFORE cell_text(), which strips
+            # the <sup> elements they live in.
+            fns = footnote_ids(ev_cell)
             strength13, evidence = split_strength(cell_text(ev_cell))
             if not rec.strip():
                 continue
@@ -295,7 +298,7 @@ def parse_ch13(main: Tag) -> tuple[list[dict], dict[str, dict]]:
                 "strength_ch13": strength13,
                 "evidence_base": evidence,
                 "certainty_terms": certainty_terms(evidence),
-                "footnotes": footnote_ids(ev_cell),
+                "footnotes": fns,
             })
 
     refs: dict[str, dict] = {}

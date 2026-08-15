@@ -1,7 +1,3 @@
----
-title: "Is water fluoridation harmful?"
----
-
 # Is water fluoridation harmful? {#sec-fluoridation-harm}
 
 ::: {.callout-warning title="Draft"}

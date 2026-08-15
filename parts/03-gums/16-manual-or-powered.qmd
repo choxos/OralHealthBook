@@ -1,7 +1,3 @@
----
-title: "Manual or powered?"
----
-
 # Manual or powered? {#sec-powered}
 
 ::: {.callout-warning title="Draft"}

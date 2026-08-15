@@ -1,7 +1,3 @@
----
-title: "Tobacco: what a strong recommendation looks like"
----
-
 # Tobacco: what a strong recommendation looks like {#sec-tobacco}
 
 ::: {.callout-warning title="Draft"}

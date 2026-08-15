@@ -1,7 +1,3 @@
----
-title: "How much toothpaste, and does fluorosis matter?"
----
-
 # How much toothpaste, and does fluorosis matter? {#sec-amount}
 
 ::: {.callout-warning title="Draft"}

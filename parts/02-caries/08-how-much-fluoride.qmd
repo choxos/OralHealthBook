@@ -1,7 +1,3 @@
----
-title: "How much fluoride should be in your toothpaste?"
----
-
 # How much fluoride should be in your toothpaste? {#sec-ppm}
 
 ::: {.callout-warning title="Draft"}

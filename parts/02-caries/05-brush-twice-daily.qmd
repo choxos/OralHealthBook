@@ -1,7 +1,3 @@
----
-title: "Brush twice daily"
----
-
 # Brush twice daily {#sec-twice-daily}
 
 ::: {.callout-warning title="Draft"}

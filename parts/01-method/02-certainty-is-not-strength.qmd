@@ -1,9 +1,175 @@
----
-title: "Certainty is not strength"
----
-
 # Certainty is not strength {#sec-certainty-strength}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet.
-:::
+When I wrote the original version of this material as a blog post, I ended it
+with a sentence I now think is the most instructive mistake in the whole series.
+Having gone through the evidence for "spit, don't rinse," I concluded:
+
+> Therefore, the strength of the recommendation is more likely to be "very low"
+> and not "strong."
+
+That sentence contains a category error, and if you can see what it is, you can
+skip the rest of this chapter.
+
+*Very low* is not a strength. It is a **certainty**. Strength comes in exactly
+two flavours in the GRADE system, Strong and Conditional, and it describes a
+recommendation. Certainty comes in four, high through very low, and it describes
+a body of evidence about an outcome. I had mashed the two scales together, which
+is precisely the confusion this book exists to point out in other people. It
+seemed worth opening with.
+
+The two ideas are worth keeping apart because the whole argument of this book
+depends on the distinction, and because the sloppy version of the argument, the
+one that says *low certainty means it cannot be Strong*, is wrong.
+
+## What certainty means
+
+Certainty is how much we should trust an estimate of an effect.
+
+It starts from study design. A body of randomised trials starts at high, because
+randomisation is the one thing that reliably makes the two groups comparable in
+respects nobody thought to measure. A body of observational studies starts at
+low, because it does not.
+
+From there it moves. GRADE has five reasons to rate certainty **down**: risk of
+bias in the studies, inconsistency between them, indirectness (the studies do not
+quite match the question), imprecision (the confidence interval is wide enough to
+include importantly different conclusions), and publication bias. It also has
+three reasons to rate observational evidence **up**: a large effect, a
+dose-response gradient, and the situation where all the plausible confounding
+would push the result the *other* way, so the effect survives despite the biases
+rather than because of them.
+
+Those three upgrade criteria are easy to forget. I forgot them. In my post on
+brushing twice daily I noted that the relevant review pools observational
+studies, therefore started at low certainty, therefore ended at low certainty,
+and I never asked whether anything in the data justified moving it back up. That
+was a genuine misapplication, not a stylistic quibble, and
+[Chapter -@sec-twice-daily] redoes the assessment properly, including the
+dose-response gradient that the review itself reports.
+
+## What strength means
+
+Strength is a different animal. It is the answer to a different question: **not**
+*how sure are we about the size of the effect*, but *how sure are we that doing
+this is, on balance, better than not doing it, for nearly everybody this advice
+is aimed at.*
+
+GRADE's own account of it makes the difference explicit. The direction and
+strength of a recommendation depend on four things [@andrews2013]:
+
+1. the estimated size of the desirable effects, and of the undesirable ones;
+2. **confidence in those estimates**, which is certainty, one input of four;
+3. patients' values and preferences;
+4. resource use.
+
+Certainty is in that list. It is not the list.
+
+This is not a loophole. It follows from what a Strong recommendation is *for*.
+Labelling something Strong means: most well-informed people would choose this,
+so a clinician can simply advise it, and a health system can build policy on it.
+Labelling something Conditional means: reasonable well-informed people would
+differ, so the clinician's job is to help this particular person decide.
+
+You can be confident about that balance while being unsure about the numbers.
+If an intervention costs nothing, has no plausible harm, and the evidence points
+weakly towards benefit, then even a low-certainty estimate leaves the balance
+lopsided. Nobody is harmed by the low certainty, because the downside of acting
+on a wrong estimate is approximately zero.
+
+Toothbrushing is exactly that shape. This is the strongest argument against the
+crude version of my own thesis, and any critic reading this book will reach for
+it, so I want to hand it over rather than have it thrown.
+
+## GRADE says this is allowed, and rare
+
+GRADE recognises this. Its guidance names five specific situations in which a
+Strong recommendation can be justified despite low or very low certainty
+[@andrews2013]. It also says such recommendations should be uncommon, and it
+calls them *discordant*: the strength and the certainty point different ways, and
+the panel owes the reader an explanation.
+
+So the honest question is never "is the certainty low?" It is: **is this one of
+the situations where discordance is justified, and did anyone say so?**
+
+That question turns out to have been asked before, at scale, by the people who
+built GRADE.
+
+## What happened when someone actually checked
+
+In 2014, Alexander and colleagues, with Gordon Guyatt among them, went through
+every WHO guideline from 2007 to 2012 that had used GRADE and graded both
+strength and certainty. They found 456 recommendations, of which 289 were
+Strong. Of those 289, **95 rested on low-certainty evidence and 65 on very
+low-certainty evidence**: 55.5% of all the Strong recommendations
+[@alexander2014].
+
+Then, in a second paper, they did the thing this book does. They took the 160
+discordant recommendations and asked, one at a time, whether each fitted one of
+GRADE's five legitimate paradigms. The result [@alexander2015]:
+
+| Judgment on the 160 discordant recommendations | n | % |
+|---|---:|---:|
+| Fitted one of the five legitimate paradigms | 25 | 15.6 |
+| Evidence actually warranted moderate or high certainty (misclassified) | 33 | 21 |
+| Were good practice statements, which GRADE says should not be graded at all | 29 | 18 |
+| **Should have been Conditional, not Strong** | **73** | **46** |
+
+: How often a Strong recommendation on weak evidence was justified, in WHO
+guidelines assessed by GRADE's own authors {#tbl-alexander}
+
+Fewer than one in six survived. Nearly half should simply have been Conditional.
+The authors' own conclusion is that this pattern is "possibly threatening the
+integrity of the process."
+
+I quote this at length for two reasons. First, it settles the question of
+whether the exercise in this book is fair game: it is the exercise GRADE's
+authors performed on the world's largest health agency, and published. Second,
+it sets the standard I have to meet. It is not enough for me to find that a
+recommendation is Strong on low certainty. That finding is common, and sometimes
+fine. I have to say which of the four rows above I think it belongs in, and why.
+
+## The third category
+
+There is a category above that neither Strong nor Conditional covers, and
+*Delivering Better Oral Health* uses it heavily: **Good practice**. Its own
+definition is candid:
+
+> Clinical opinion suggests this advice is well established or supported. No
+> robust underpinning research evidence exists. Good practice points are
+> primarily based on extrapolation from research on related topics and/or
+> clinical consensus, expert opinion and precedent, and not on research
+> appropriate for rating the certainty or quality of the evidence.
+>
+> --- *Delivering Better Oral Health*, chapter 2 [@dboh2025]
+
+That is an honest label, and I have no quarrel with it. GRADE's position is that
+panels should not attach certainty grades to such statements at all
+[@guyatt2015goodpractice], and DBOH mostly complies.
+
+Mostly. Of the {{< var dboh.goodpractice >}} Good practice points in the 2025
+edition, {{< var dboh.goodpractice_with_evidence >}} carry an evidence statement
+anyway. When a category defined by "no robust underpinning research evidence
+exists" comes with citations, a reader can be forgiven for not knowing what they
+are looking at.
+
+## What I will and will not conclude
+
+For the rest of this book, when I find a Strong recommendation resting on weak
+evidence, I will not say the recommendation is wrong. I will ask the four
+questions Alexander's team asked:
+
+- Is the certainty actually higher than stated, and the guideline is being
+  modest?
+- Is this a legitimate discordant recommendation, where the balance of effects
+  is clear even though the estimate is not?
+- Is this really a good practice statement wearing a Strong badge?
+- Or should it simply have been Conditional?
+
+That is the honest version of the argument. The dishonest version, the one that
+counts low-certainty citations and declares the guideline discredited, is easier
+to write and easier to dismiss, and it would deserve dismissing.
+
+But there is a fifth possibility that Alexander's categories do not cover,
+because WHO's recommendations are mostly single interventions and DBOH's often
+are not. It is the one this book is actually about, and it is the subject of the
+next chapter.

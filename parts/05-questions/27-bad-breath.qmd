@@ -1,7 +1,3 @@
----
-title: "Bad breath"
----
-
 # Bad breath {#sec-halitosis}
 
 ::: {.callout-warning title="Draft"}

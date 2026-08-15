@@ -1,7 +1,3 @@
----
-title: "Do you need a check-up every six months?"
----
-
 # Do you need a check-up every six months? {#sec-recall}
 
 ::: {.callout-warning title="Draft"}

@@ -1,7 +1,3 @@
----
-title: "Fluoride varnish twice a year"
----
-
 # Fluoride varnish twice a year {#sec-varnish}
 
 ::: {.callout-warning title="Draft"}

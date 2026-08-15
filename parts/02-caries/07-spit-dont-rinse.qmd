@@ -1,7 +1,3 @@
----
-title: "Spit, don't rinse"
----
-
 # Spit, don't rinse {#sec-spit}
 
 ::: {.callout-warning title="Draft"}

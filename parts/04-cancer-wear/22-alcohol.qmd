@@ -1,7 +1,3 @@
----
-title: "Alcohol, AUDIT-C, and the fourteen-unit line"
----
-
 # Alcohol, AUDIT-C, and the fourteen-unit line {#sec-alcohol}
 
 ::: {.callout-warning title="Draft"}

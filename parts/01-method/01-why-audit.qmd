@@ -1,9 +1,127 @@
----
-title: "Why I audit dental advice"
----
-
 # Why I audit dental advice {#sec-why-audit}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet.
-:::
+I studied dentistry. Then I studied research methods, which is a fast way to
+lose your innocence about the first subject.
+
+Dentistry is not unusual in this. Most of clinical medicine runs on advice that
+sounds far more settled than it is, and the reason is not that anybody is lying.
+It is that advice has to be given today, to a person sitting in a chair, and the
+trial that would settle the question has not been done, will not be funded, and
+in some cases could not ethically be run at all. So a committee meets, weighs
+what exists, and writes a sentence. The sentence goes into a guideline. The
+guideline goes into a leaflet. The leaflet goes onto a wall, and by the time it
+reaches the wall it has lost every trace of how sure anyone actually was.
+
+That last step is what this book is about.
+
+## Where this started
+
+In October 2023 I wrote a blog post listing five practices that keep teeth
+healthy, with a note on the evidence behind each. I chose them from *Delivering
+Better Oral Health*, the UK's national prevention toolkit, because it is the
+best-organised document of its kind I know: it does not just tell you what to
+do, it tells you how confident it is that you should do it.
+
+I expected to spend an afternoon on it. Instead I spent three weeks, because
+one of the five would not check out.
+
+The recommendation was "brush last thing at night and on one other occasion."
+It is labelled **Strong**. I wanted to link to the trial. There is no trial.
+The chain, followed link by link, runs: *Delivering Better Oral Health* cites
+the Scottish guideline SIGN 138 [@sign138]; SIGN 138 §5.7.2 cites a single
+source, its reference 101; reference 101 is a one-page abstract from the 48th
+ORCA congress, by two researchers at Unilever Dental Research
+[@duckworth2001]. Its subject is how much fluoride sits in your saliva twelve
+hours after brushing. Everyone in it brushed at bedtime. Nobody was asked to
+brush at any other time, so no comparison of timings was possible, and none was
+made.
+
+I want to be precise about who did what here, because it matters. SIGN 138 did
+not overclaim. It describes that source as "an observational study," which is
+generous but not wrong, and it attaches **no evidence grade at all** to the
+timing recommendation, while the recommendation immediately above it about
+rinsing gets a grade A. SIGN was being careful. Somewhere between that careful
+ungraded sentence and the word **Strong** on a summary table, the care was lost.
+
+That is not a scandal. Nobody falsified anything. But if you are a parent
+standing over a four-year-old at half past seven in the evening, and you have
+been told that a national health authority is highly confident about this, you
+have been told something that is not quite true, and you had no way to find out.
+
+## What kind of question this is
+
+There is a research design for what I am doing, even if it rarely gets called
+one. You take a set of recommendations, follow each to the evidence its authors
+say it rests on, and check whether that evidence answers the question the
+recommendation asks. Call it evidence-to-recommendation traceability. It is a
+citation analysis with a clinical question attached.
+
+The failures it finds are almost never fraud. They are mismatches, and they come
+in a small number of recognisable shapes:
+
+**The wrong population.** The advice is for adults; the evidence is in children.
+The advice is for everyone; the trial was in a high-risk group where any
+preventive measure looks good.
+
+**The wrong comparison.** The advice says do A rather than B. The study compared
+A with C, or compared two versions of A, or had no comparison group at all.
+
+**The wrong outcome.** The advice is about avoiding toothache and keeping your
+teeth. The study measured parts per million of fluoride in saliva, or plaque
+scores at four days, or a number on an index that nobody has ever felt.
+
+**The wrong design for the claim.** The claim is causal. The data are
+observational, and the people who chose to do the thing differ from the people
+who did not in every way that also affects the outcome.
+
+**The bundle.** The advice contains four instructions. The evidence covers one
+of them. This one is the subject of [Chapter -@sec-bundling], and it turns out
+to be the most common failure of all.
+
+## What I am not doing
+
+I am not running a campaign against fluoride, against dentists, or against
+public health guidance. I want to say this early and I will say it again,
+because a book that reports weak evidence gets quoted by people who wanted a
+different conclusion than the one I actually reach.
+
+Here is the conclusion I actually reach. Most of the advice in *Delivering
+Better Oral Health* is sensible, and almost all of it is harmless and cheap. The
+problem is not usually the advice. The problem is the confidence label attached
+to it, and the fact that a reader cannot see which part of a recommendation the
+label was earned by. Fixing that is a matter of drafting, not of policy.
+
+I also follow most of this advice myself. I brush twice a day, I brush last
+thing at night, I spit and do not rinse. I have done all three since 2017. I
+will explain in [Chapter -@sec-what-i-do] why doing something the evidence has
+not established is not hypocrisy, and what the honest basis for it is.
+
+## What you can check
+
+Everything. That is the point.
+
+For each recommendation, the guideline's wording, its strength label, its
+evidence statement and its citations are extracted into a machine-readable file
+in the repository. My own judgments sit in the same file, in their own columns,
+so you can see where the guideline ends and I begin. Every search I ran is
+recorded with its strategy and its date. Every figure is redrawn from the numbers
+in the source, with the drawing code published, so you can check the picture
+against the table.
+
+I am asking you not to take a guideline's word for what its evidence says. It
+would be a poor joke to then ask you to take mine.
+
+## How the rest of this works
+
+[Chapter -@sec-certainty-strength] separates two ideas that are constantly
+confused: how sure we are about an effect, and how firmly you are being told to
+do something. They are different, they can legitimately come apart, and my own
+earlier writing got this wrong.
+
+[Chapter -@sec-bundling] sets out the specific problem this book found, in the
+guideline's own words.
+
+[Chapter -@sec-method] is the method: what I did to each recommendation, in what
+order, and what would make me change my mind.
+
+Then the audits begin.

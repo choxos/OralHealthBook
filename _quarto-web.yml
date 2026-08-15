@@ -26,7 +26,8 @@ format:
     toc: true
     toc-depth: 3
     toc-title: "On this page"
-    number-sections: false
+    number-sections: true
+    number-depth: 1
     code-copy: false
     anchor-sections: true
     fig-responsive: true

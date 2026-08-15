@@ -82,7 +82,8 @@ format:
     urlcolor: black
     toc: true
     toc-depth: 1
-    number-sections: false
+    number-sections: true
+    number-depth: 1
     lof: false
     lot: false
     top-level-division: chapter
@@ -97,7 +98,8 @@ format:
   epub:
     toc: true
     toc-depth: 2
-    number-sections: false
+    number-sections: true
+    number-depth: 1
     epub-cover-image: figures/cover-ebook.png
     fig-format: png
     css: _assets/epub.css

@@ -1,7 +1,3 @@
----
-title: "The toothpaste aisle"
----
-
 # The toothpaste aisle {#sec-aisle}
 
 ::: {.callout-warning title="Draft"}

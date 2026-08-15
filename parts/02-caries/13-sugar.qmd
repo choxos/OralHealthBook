@@ -1,7 +1,3 @@
----
-title: "Sugar: how much is too much?"
----
-
 # Sugar: how much is too much? {#sec-sugar}
 
 ::: {.callout-warning title="Draft"}

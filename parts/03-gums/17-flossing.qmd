@@ -1,7 +1,3 @@
----
-title: "Flossing, and what replaced it"
----
-
 # Flossing, and what replaced it {#sec-flossing}
 
 ::: {.callout-warning title="Draft"}

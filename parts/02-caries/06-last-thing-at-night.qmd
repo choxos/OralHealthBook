@@ -1,7 +1,3 @@
----
-title: "Brush last thing at night"
----
-
 # Brush last thing at night {#sec-last-thing}
 
 ::: {.callout-warning title="Draft"}

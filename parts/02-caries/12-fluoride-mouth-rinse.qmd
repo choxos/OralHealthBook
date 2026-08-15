@@ -1,7 +1,3 @@
----
-title: "Fluoride mouth rinse"
----
-
 # Fluoride mouth rinse {#sec-rinse}
 
 ::: {.callout-warning title="Draft"}

@@ -1,9 +1,192 @@
----
-title: "The bundling problem"
----
-
 # The bundling problem {#sec-bundling}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet.
+Here is the sentence this book is about. It is in chapter 13 of *Delivering
+Better Oral Health*, in the introduction, and it is not hidden:
+
+> When a recommendation covers multiple components, each GDG considered the
+> underlying evidence for each component and based the strength of
+> recommendation on the main component.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+
+Read it twice. It says that when one recommendation contains several separate
+instructions, the panel looked at the evidence for each, and then gave the whole
+recommendation the strength earned by **one** of them.
+
+Everything else in this book follows from that sentence.
+
+## What it looks like in practice
+
+The clearest example is the brushing advice for children aged three to six. In
+the summary table a parent would actually read, it appears once, with one label:
+
+> **Teeth should be brushed by a parent or carer. As the child gets older, a
+> parent or carer should assist them to brush their own teeth:**
+>
+> - on all tooth surfaces
+> - at least twice a day
+> - last thing at night (or before bedtime) and on at least one other occasion
+> - with toothpaste containing at least 1,000ppm fluoride
+> - using a pea-sized amount of the toothpaste
+> - spitting out after brushing rather than rinsing, to avoid diluting the
+>   fluoride concentration
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 1b [@dboh2025]
+
+Six instructions. One word.
+
+Now here is what chapter 13 says about the same recommendation. I have added the
+emphasis; everything else is verbatim.
+
+> Recommendation based on **moderate certainty** for toothbrushing with fluoride
+> toothpaste, for fluoride concentration for permanent teeth (evidence around
+> primary teeth less clear) and spitting versus rinsing. Evidence for frequency
+> or timing is **low certainty**. Advice to use pea-sized amount based on
+> possible fluorosis risk.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 2 [@dboh2025]
+
+So, unbundled:
+
+| Instruction | Certainty, in the guideline's own words |
+|---|---|
+| Brush with fluoride toothpaste | [moderate]{.certainty .moderate} |
+| Toothpaste of at least 1,000ppm | [moderate]{.certainty .moderate} for permanent teeth, "less clear" for primary teeth, which are the teeth a three-year-old has |
+| Spit rather than rinse | [moderate]{.certainty .moderate} |
+| At least twice a day | [low]{.certainty .low} |
+| Last thing at night and once more | [low]{.certainty .low} |
+| A pea-sized amount | not a caries judgment at all: based on possible fluorosis risk |
+
+: The six components of one Strong recommendation {#tbl-bundle}
+
+The three sources cited for the whole thing are the Cochrane review of fluoride
+toothpaste concentrations [@walsh2019], SIGN 138 [@sign138], and the Cochrane
+review of topical fluoride as a cause of fluorosis [@wong2010]. Not one of them
+studied what time of day to brush. The timing bullet's evidence, traced through
+SIGN 138, is the ORCA abstract from [Chapter -@sec-why-audit].
+
+The Strong label is honest about the main component. It is the fluoride
+toothpaste, and moderate certainty from a large Cochrane review is a perfectly
+good basis for telling parents to use it. But the label sits at the end of all
+six bullets, and the reader has no way to know that two of them are low
+certainty and one is not about tooth decay at all.
+
+## This is not one bad row
+
+Of the {{< var dboh.total >}} recommendations in the 2025 edition,
+{{< var dboh.bundled >}} bundle two or more separable instructions, and
+{{< var dboh.bundled_strong >}} of those carry a **Strong** label. The largest
+bundle under a single Strong label has {{< var dboh.largest_strong_bundle >}}
+components.
+
+::: {.callout-note title="How these numbers were produced" collapse="true"}
+Every recommendation in chapter 2 was extracted with its strength label, joined
+to its chapter 13 evidence statement, and the components counted from the
+guideline's own bullets. The code is `scripts/extract_dboh.py` and the output is
+`appraisals/dboh-2025.csv`. None of the counts in this book are typed by hand;
+they are read from that file at build time.
+
+The count is a floor, not a ceiling. A recommendation written as flowing prose
+can bundle just as much and will count as one. "Minimise the amount and
+frequency of consumption of sugar-containing food and drinks" is two
+instructions, amount and frequency, in a single line with no bullets.
 :::
+
+The same six-bullet structure, with the same mixed certainties underneath,
+recurs for children under three, for children aged 7 to 18, and for adults.
+
+The adult version is worth its own look. Its evidence statement reads:
+
+> Recommendation based on moderate certainty evidence for value of toothbrushing
+> with fluoride toothpaste. Moderate certainty **from studies with children and
+> adolescents** for spitting versus rinsing. Low-certainty evidence **from
+> children and adolescents** for frequency and timing. Evidence for the
+> concentration is based on studies on **immature permanent dentition in
+> children and adolescents**.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 6 [@dboh2025]
+
+Every component of the advice given to adults rests on evidence from children.
+The guideline says so plainly, three times, in one paragraph. That is
+indirectness, GRADE's own term for evidence that does not quite match the
+question, and it is exactly the sort of thing that ought to move a certainty
+rating down. Instead it is disclosed in a chapter most readers will never open,
+under a table that says **Strong**.
+
+## Why this is different from the usual complaint
+
+[Chapter -@sec-certainty-strength] granted that a Strong recommendation on
+low-certainty evidence can be perfectly legitimate. Toothbrushing is the
+textbook case: it is cheap, it is safe, people are willing to do it, and the
+downside of being wrong about the exact effect size is close to nothing. If DBOH
+had written "we are confident you should brush your child's teeth, and we are
+not certain about the details," nobody could object, least of all me.
+
+Bundling is a different failure, and it survives that defence.
+
+The problem is not that the panel was too confident. It is that the label
+**cannot be interpreted**. A Strong label on a single recommendation carries
+information: it tells you the panel thinks nearly everyone should do this thing.
+A Strong label on a bundle of six tells you the panel thinks that about **at
+least one** of them, and does not tell you which. The reader cannot recover the
+message, because the message has been averaged away.
+
+That has practical consequences, and they are not symmetric:
+
+**For the person following the advice.** If you have limited attention, and
+almost everyone does, you would like to know which instruction matters most.
+The answer is available: use fluoride toothpaste. But it has been hidden inside
+five other bullets of equal apparent authority. A parent who buys 1,000ppm
+toothpaste and cannot reliably get their toddler to brush at bedtime has done
+the thing that matters, and has been given no way to know it.
+
+**For the clinician.** A Strong recommendation is what you cite when a patient
+pushes back. If a patient asks "does the timing really matter?", the honest
+answer is "probably, but the evidence for that specific part is low certainty."
+The table does not let you give that answer without going to chapter 13.
+
+**For anyone who later doubts one component.** This is the serious one. If a
+reader discovers on their own that the bedtime-brushing bullet rests on a
+conference abstract, they do not conclude "that bullet was weak." They conclude
+that the Strong label was oversold, and they discount the whole
+recommendation, including the fluoride toothpaste that actually earned it. A
+bundle transmits doubt as efficiently as it transmits authority. That is how
+good advice gets destroyed by its own packaging, and it is the main reason I
+think this is worth fixing.
+
+## What would fix it
+
+Not much, which is the frustrating part.
+
+A recommendation with six components could carry six labels, or one label plus a
+line saying which component it rests on. The information already exists. Chapter
+13 has it. The panel did the work, wrote it down, and published it. All that is
+missing is carrying it forward into the table people actually read.
+
+The 2025 edition is already a long way towards this. Publishing chapter 13 at
+all, with per-component certainty ratings in plain language, is more than most
+guidelines do, and it is the reason this book can be written at all. My argument
+is not that DBOH is careless. It is that DBOH did the hard part and then stopped
+one step short.
+
+## Where this leaves the audits
+
+For each recommendation from here on, I unbundle first, and then ask of each
+component separately:
+
+1. What exactly is this instruction?
+2. What evidence does the guideline cite for **this** component?
+3. Does that evidence answer **this** question?
+4. What certainty does it warrant, on my own reading?
+5. Given all of that, is a Strong label defensible for this component?
+
+Sometimes the answer to (5) is yes. Fluoride toothpaste is a strong
+recommendation by any reasonable standard, and I will say so at length in
+[Chapter -@sec-ppm]. Sometimes it is no. The point of doing it component by
+component is that both answers become sayable, which under the current format
+they are not.
+
+The next chapter sets out the rest of the method, and what would make me change
+my mind about any of this.

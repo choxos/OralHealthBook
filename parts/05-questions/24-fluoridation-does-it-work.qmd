@@ -1,7 +1,3 @@
----
-title: "Does water fluoridation work?"
----
-
 # Does water fluoridation work? {#sec-fluoridation-works}
 
 ::: {.callout-warning title="Draft"}

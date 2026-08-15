@@ -1,7 +1,3 @@
----
-title: "The quieter tier: supervised brushing, sugar-free medicines, bedtime sugar"
----
-
 # The quieter tier: supervised brushing, sugar-free medicines, bedtime sugar {#sec-quieter-tier}
 
 ::: {.callout-warning title="Draft"}

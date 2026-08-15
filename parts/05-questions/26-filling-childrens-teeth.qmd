@@ -1,7 +1,3 @@
----
-title: "Should children's baby teeth be filled?"
----
-
 # Should children's baby teeth be filled? {#sec-fiction}
 
 ::: {.callout-warning title="Draft"}

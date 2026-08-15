@@ -1,7 +1,3 @@
----
-title: "Scale, polish, and being told what to do"
----
-
 # Scale, polish, and being told what to do {#sec-scale-polish}
 
 ::: {.callout-warning title="Draft"}
