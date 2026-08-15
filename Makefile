@@ -4,7 +4,7 @@ SHELL := /bin/bash
 PDF  := dist/The-Evidence-Behind.pdf
 EPUB := dist/The-Evidence-Behind.epub
 
-.PHONY: help web print pdf epub covers check preview clean deep-clean kdp all
+.PHONY: help web print pdf epub covers check preview clean deep-clean kdp all extract
 
 help:  ## Show this help
 	@grep -hE '^[a-z-]+:.*?##' $(MAKEFILE_LIST) \
@@ -55,3 +55,6 @@ clean:  ## Remove build output, keep the freeze cache
 
 deep-clean: clean  ## Also drop the Quarto freeze cache
 	rm -rf .quarto _freeze
+
+extract:  ## Re-extract DBOH 2025 into appraisals/ and _variables.yml
+	python3 scripts/extract_dboh.py
