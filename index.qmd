@@ -1,0 +1,126 @@
+---
+title: "Preface"
+---
+
+# Preface {.unnumbered}
+
+In October 2023 I wrote a short blog post listing five things you can do to keep
+your teeth healthy, along with the evidence behind each one. I expected it to be
+a dull piece of public service writing. Instead, while I was tracking down the
+studies, I found something that bothered me enough to keep going for four more
+posts, and eventually for this book.
+
+Here is what bothered me.
+
+Britain's national oral health guidance is a document called *Delivering Better
+Oral Health*, and it is a good document. It is careful, it is written by serious
+people, and unlike most dental advice you encounter it tells you how confident it
+is in each thing it says. Some advice is labelled **Strong**. Some is
+**Conditional**. Some is **Good practice**, which is the honest admission that
+there is no research behind it at all. That transparency is rare and it deserves
+credit.
+
+So I took one of the Strong recommendations, "brush last thing at night and on
+one other occasion," and I followed the citation to see the trial that proved it.
+
+There is no trial. There is a conference abstract from 1993, describing a
+cross-over study in twelve people, which measured how much fluoride was left in
+their saliva overnight. It did not compare brushing at bedtime against brushing
+earlier. Everyone in it brushed at bedtime. What it compared was two toothpastes.
+
+I checked another one. Then another.
+
+## What this book is
+
+This book takes the recommendations in *Delivering Better Oral Health*, one at a
+time, and asks a single question of each: **does the evidence the guideline cites
+answer the question the advice asks?**
+
+That sounds like a small question. It turns out to be the one that matters,
+because a recommendation and its evidence can fail to line up in ways that are
+invisible unless you go and look. The study can be in children when the advice is
+for adults. It can measure fluoride in saliva when the advice is about tooth
+decay. It can be observational when the advice is causal. It can compare A with B
+when the advice is about C. In every one of those cases the guideline can honestly
+say it is "based on evidence," and in every one of those cases you would be wrong
+to read that as "this was tested."
+
+For each recommendation I do the same six things. I quote the advice exactly as
+the guideline words it. I quote what the guideline says its evidence is. I go and
+read that evidence. I appraise it with the standard tools, and I show you my
+working rather than asking you to trust me. I search for anything better that has
+been published since. And then I give a verdict in a fixed format, which includes
+a line I think every critic owes their reader: *what would change my mind*.
+
+## What this book is not
+
+It is not an argument that you should stop brushing your teeth.
+
+I want to be blunt about this, because a book with this argument in it will be
+quoted by people who want to use it for something else. Weak evidence for a
+practice that is cheap, pleasant, and almost impossible to be harmed by is not a
+reason to abandon that practice. It is a reason to be honest about the label on
+the tin. Those are different claims and I will keep them separate throughout.
+
+I brush twice a day. I brush last thing at night. I spit and I do not rinse. I
+have done all three since 2017. [Chapter -@sec-what-i-do] explains why I do
+things the evidence has not established, which is not a contradiction so much as
+the ordinary condition of being a person who has to decide what to do this
+evening.
+
+It is also not an attack on the people who wrote the guideline. Chapter 13 of the
+2025 edition publishes the certainty rating behind every recommendation, and by
+doing so it hands critics like me the rope. Very few guidelines anywhere are that
+open. My argument, developed in [Chapter -@sec-bundling], is not that the authors
+were careless. It is that a specific and defensible drafting convention, stated
+plainly in the guideline's own methods, has a consequence I do not think anyone
+intended.
+
+## How to read this
+
+The main text is written to be read straight through by anyone, with or without a
+dental or research background. Where I need to show statistical working, it goes
+into a marked box you can skip without losing the thread. If you are a dentist, a
+dental student, or a methodologist, the boxes are the part you want; if you are a
+person who would just like to know whether to buy the expensive toothpaste, they
+are not.
+
+Two conventions run throughout. **Strength** (Strong, Conditional, Good practice)
+is a property of a *recommendation*: it is how firmly you are being told to do
+something. **Certainty** (high, moderate, low, very low) is a property of the
+*evidence*: it is how sure we are about the effect. These two are constantly
+confused, including by me in the original blog posts, and
+[Chapter -@sec-certainty-strength] is entirely about keeping them apart.
+
+## A note on my own position
+
+I trained as a dentist and I work as a health research methodologist. I have
+received no funding for this book from any toothpaste manufacturer, professional
+body, or public health agency, and I have no financial interest in anything
+discussed in it. Every appraisal I made, including the ones where I later decided
+I had been wrong, is published in machine-readable form at
+[github.com/choxos/OralHealthBook](https://github.com/choxos/OralHealthBook), so
+you can check my work rather than take it on trust. That is, after all, the entire
+point.
+
+::: {.callout-important title="This is not medical advice"}
+This book examines research evidence. It is not medical or dental advice, it is
+not a substitute for examination by a qualified clinician, and nothing in it
+should be used to diagnose or treat a condition. Where I conclude that the
+evidence for a piece of advice is weaker than its official label suggests, that is
+a statement about the research, not an instruction to stop following the advice.
+:::
+
+::: {.callout-note title="Crown copyright" collapse="true"}
+This book quotes and analyses *Delivering Better Oral Health: an evidence-based
+toolkit for prevention* (Department of Health and Social Care, Welsh Government,
+Department of Health Northern Ireland and NHS England), as updated on 10 September
+2025. That material is Crown copyright and is reproduced under the
+[Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+Neither the Crown nor any of the issuing bodies endorses this book or its
+conclusions. Passages from SIGN 138 and other guidelines are quoted for the
+purposes of criticism and review. Every figure has been redrawn by me from the
+numbers reported in the cited source; the drawing code is in the repository.
+:::
+
+*Ahmad Sofi-Mahmudi*

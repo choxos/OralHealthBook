@@ -1,0 +1,9 @@
+---
+title: "Certainty is not strength"
+---
+
+# Certainty is not strength {#sec-certainty-strength}
+
+::: {.callout-warning title="Draft"}
+This chapter is not written yet.
+:::

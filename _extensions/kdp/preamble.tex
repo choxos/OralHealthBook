@@ -1,0 +1,114 @@
+% ---------------------------------------------------------------
+% KDP 6x9in paperback preamble
+% ---------------------------------------------------------------
+
+% --- Running heads -------------------------------------------------
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\automark[section]{chapter}
+\ihead{}
+\ohead{}
+\chead[]{}
+\lehead{\small\textsc{\leftmark}}
+\rohead{\small\textsc{\rightmark}}
+\lefoot[\small\thepage]{\small\thepage}
+\rofoot[\small\thepage]{\small\thepage}
+\renewcommand*{\chapterpagestyle}{plain}
+
+% --- Chapter openers ----------------------------------------------
+\usepackage{graphicx}
+\setkomafont{chapter}{\normalfont\Huge\bfseries}
+\setkomafont{section}{\normalfont\Large\bfseries}
+\setkomafont{subsection}{\normalfont\large\bfseries}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{2\baselineskip}}
+\renewcommand*{\chapterheadendvskip}{\vspace*{1.5\baselineskip}}
+
+% --- Typographic quality for a narrow measure ----------------------
+\usepackage{microtype}
+\usepackage{ragged2e}
+\clubpenalty=10000       % no orphans
+\widowpenalty=10000      % no widows
+\displaywidowpenalty=10000
+\raggedbottom            % KDP tolerates uneven page bottoms better
+                         % than it tolerates loose interword spacing
+\emergencystretch=2em    % 6in measure needs the slack
+\hyphenpenalty=50
+\tolerance=1500
+
+% --- Verdict boxes -------------------------------------------------
+% The fixed callout that closes every audit chapter. Rendered here as
+% a keep-together framed box; on the web the same content becomes a
+% Quarto callout.
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable,skins}
+
+\newtcolorbox{verdictbox}[1][]{
+  breakable,
+  enhanced,
+  colback=black!3,
+  colframe=black!55,
+  boxrule=0.5pt,
+  left=8pt, right=8pt, top=8pt, bottom=8pt,
+  fonttitle=\bfseries\small,
+  title={Verdict},
+  #1
+}
+
+\newtcolorbox{appraisalbox}[1][]{
+  breakable,
+  enhanced,
+  colback=white,
+  colframe=black!35,
+  boxrule=0.4pt,
+  sharp corners,
+  borderline west={2pt}{0pt}{black!35},
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+% Map Quarto's callout divs onto the boxes above.
+\usepackage{etoolbox}
+
+% --- Tables --------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.15}
+% Evidence tables run wide; let them set smaller than body text.
+\AtBeginEnvironment{longtable}{\small}
+\AtBeginEnvironment{tabular}{\small}
+
+% --- Figures -------------------------------------------------------
+% KDP paperback interiors are printed greyscale unless you pay for
+% colour, so every figure must survive desaturation. Scripts in
+% figures/src/ enforce that; this just keeps them inside the measure.
+\usepackage{float}
+\setkeys{Gin}{width=\linewidth,keepaspectratio}
+
+% --- Block quotes from the guideline -------------------------------
+% The book quotes DBOH constantly, so these need to read as "here is the
+% official text" rather than as the author's voice. Set smaller, indented,
+% and ruled on the left. Defined by hand rather than via the `quoting`
+% package so the book builds on a bare TinyTeX.
+\renewenvironment{quote}
+  {\begin{list}{}{%
+     \setlength{\leftmargin}{1.4em}%
+     \setlength{\rightmargin}{0.4em}%
+     \setlength{\listparindent}{0pt}%
+     \setlength{\itemindent}{0pt}%
+     \setlength{\parsep}{0.4\baselineskip}%
+     \setlength{\topsep}{0.6\baselineskip}}%
+   \item\relax\small
+   \makebox[0pt][r]{\rule[-0.2\baselineskip]{0.8pt}{1.1\baselineskip}\hspace{0.7em}}%
+  }
+  {\end{list}}
+
+% --- Index ---------------------------------------------------------
+\usepackage{makeidx}
+\makeindex
+
+% --- No colour links in print --------------------------------------
+% This file is injected ahead of hyperref, so options are passed to the
+% package rather than set with \hypersetup, which is not yet defined.
+\PassOptionsToPackage{hidelinks,bookmarksnumbered=false,pdfdisplaydoctitle=true}{hyperref}

@@ -1,0 +1,107 @@
+# Profile: print
+#
+# The paid edition. Same body text as the web, plus the apparatus:
+# full evidence tables, search strategies, appraisal tool detail,
+# glossary and index.
+#
+# PDF geometry targets Amazon KDP 6x9in paperback with a mirrored
+# gutter. EPUB targets Kindle via KDP's own converter.
+
+project:
+  # Kept out of _book/ so a print build never clobbers the site that
+  # gets published to gh-pages. dist/ is gitignored.
+  output-dir: dist
+
+book:
+  appendices:
+    - appendices/a-evidence-tables.qmd
+    - appendices/b-search-strategies.qmd
+    - appendices/c-appraisal-tools.qmd
+    - appendices/d-glossary.qmd
+
+format:
+  pdf:
+    documentclass: scrbook
+    # Geometry, not KOMA's DIV calculation, owns the page. Mixing the
+    # two silently loses whichever it feels like.
+    classoption:
+      - twoside
+      - open=right
+      - numbers=noenddot
+    geometry:
+      - paperwidth=6in
+      - paperheight=9in
+      - top=0.75in
+      - bottom=0.6in
+      - inner=0.875in   # KDP requires >= 0.375in gutter at this page count
+      - outer=0.5in     # KDP requires >= 0.25in outside margin
+      - twoside
+      - includehead
+      - includefoot
+      - headsep=14pt
+      - footskip=24pt
+    fontsize: 10.5pt
+    linestretch: 1.12
+
+    # Fonts are addressed by FILE NAME, not by system font name.
+    # Every one of these ships inside the tex-gyre and lm-math packages,
+    # so the book builds on a bare TinyTeX with no font installation and
+    # no fontconfig lookup. Naming them "TeX Gyre Pagella" instead sends
+    # fontspec hunting through the OS font book, which fails on CI.
+    mainfont: "texgyrepagella"
+    mainfontoptions:
+      - Extension=.otf
+      - UprightFont=*-regular
+      - ItalicFont=*-italic
+      - BoldFont=*-bold
+      - BoldItalicFont=*-bolditalic
+    sansfont: "texgyreheros"
+    sansfontoptions:
+      - Extension=.otf
+      - UprightFont=*-regular
+      - ItalicFont=*-italic
+      - BoldFont=*-bold
+      - BoldItalicFont=*-bolditalic
+      - Scale=0.92
+    monofont: "texgyrecursor"
+    monofontoptions:
+      - Extension=.otf
+      - UprightFont=*-regular
+      - ItalicFont=*-italic
+      - BoldFont=*-bold
+      - BoldItalicFont=*-bolditalic
+      - Scale=0.88
+    mathfont: "latinmodern-math"
+    mathfontoptions:
+      - Extension=.otf
+
+    pdf-engine: lualatex
+    colorlinks: false
+    linkcolor: black
+    citecolor: black
+    urlcolor: black
+    toc: true
+    toc-depth: 1
+    number-sections: false
+    lof: false
+    lot: false
+    top-level-division: chapter
+    fig-pos: "htbp"
+    fig-format: png
+    keep-tex: false
+    include-in-header:
+      - _extensions/kdp/preamble.tex
+    include-before-body:
+      - _extensions/kdp/frontmatter.tex
+
+  epub:
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    epub-cover-image: figures/cover-ebook.png
+    fig-format: png
+    css: _assets/epub.css
+
+# Appraisal blocks are typeset as full boxed sections in print,
+# and cross-referenced to the evidence tables in Appendix A.
+appraisal-style: boxed

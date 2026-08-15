@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+._*
+
+# Quarto
+/.quarto/
+/_book/
+/_site/
+*.rmarkdown
+
+# LaTeX intermediates
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Print artifacts are built locally, not versioned
+/dist/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Renviron
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Saved-page scaffolding from the archived guideline and blog HTML.
+# The .html files and the figure images inside *_files/ are kept;
+# the bundled scripts and stylesheets are not.
+sources/**/*.js
+sources/**/*.css
+sources/**/*.woff
+sources/**/*.woff2
+
+**/*.quarto_ipynb

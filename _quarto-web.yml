@@ -1,0 +1,43 @@
+# Profile: web
+#
+# The free edition at https://choxos.github.io/OralHealthBook
+# Full body text. Appraisal detail collapses into callouts rather than
+# occupying the page. Appendices are print-only.
+
+project:
+  render:
+    - "*.qmd"
+    - "parts/**/*.qmd"
+    - "!appendices/"
+
+book:
+  site-url: https://choxos.github.io/OralHealthBook
+  cover-image: figures/cover-web.png
+  favicon: figures/favicon.png
+  sidebar:
+    style: docked
+    collapse-level: 1
+
+format:
+  html:
+    theme:
+      light: [cosmo, _assets/theme-light.scss]
+      dark: [darkly, _assets/theme-dark.scss]
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    code-copy: false
+    anchor-sections: true
+    fig-responsive: true
+    tbl-cap-location: bottom
+    citations-hover: true
+    footnotes-hover: true
+    link-external-newwindow: true
+    link-external-icon: false
+    google-scholar: true
+    lightbox: true
+
+# Appraisal blocks render as collapsed callouts on the web so the
+# narrative reads clean, and open for anyone who wants the workings.
+appraisal-style: callout

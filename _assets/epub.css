@@ -1,0 +1,86 @@
+/* EPUB styling for Kindle.
+   Deliberately conservative: KDP re-renders EPUB into KFX and drops
+   most of what it does not recognise. Everything here degrades to
+   plain text safely. */
+
+body {
+  font-family: serif;
+  line-height: 1.5;
+  margin: 0 5%;
+  text-align: left;
+}
+
+h1, h2, h3, h4 {
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  page-break-after: avoid;
+}
+
+h1 { font-size: 1.6em; margin-top: 1.4em; }
+h2 { font-size: 1.25em; margin-top: 1.6em; }
+h3 { font-size: 1.05em; margin-top: 1.4em; }
+
+p { margin: 0 0 0.85em 0; }
+
+blockquote {
+  margin: 1.2em 1.2em;
+  padding-left: 0.8em;
+  border-left: 3px solid #888;
+  font-size: 0.95em;
+}
+
+/* --- Verdict box ------------------------------------------------- */
+/* Kindle strips most box styling, so the box is carried by a rule
+   above and below plus a bold label, which survives everywhere. */
+.verdict {
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 0.6em 0;
+  margin: 1.6em 0;
+  font-size: 0.95em;
+  page-break-inside: avoid;
+}
+
+.verdict .verdict-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 0.85em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.verdict dt { font-weight: bold; margin-top: 0.4em; }
+.verdict dd { margin: 0 0 0 1em; }
+
+/* --- Certainty and strength labels ------------------------------- */
+/* No colour: Kindle e-ink is greyscale. Weight and brackets carry it. */
+.certainty, .strength {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* --- Tables ------------------------------------------------------ */
+/* Wide evidence tables are the single worst thing on a 6in e-reader.
+   Appendix A tables are set narrow at source; this is the safety net. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82em;
+  margin: 1.2em 0;
+}
+
+th, td {
+  border-bottom: 1px solid #ccc;
+  padding: 0.3em 0.4em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { font-family: sans-serif; font-weight: bold; }
+
+figure { margin: 1.4em 0; text-align: center; }
+figcaption { font-size: 0.85em; font-style: italic; margin-top: 0.4em; }
+img { max-width: 100%; height: auto; }

@@ -1,0 +1,9 @@
+---
+title: "Search strategies"
+---
+
+# Search strategies {#sec-app-searches}
+
+::: {.callout-warning title="Draft"}
+This appendix is generated from `appraisals/` at build time.
+:::

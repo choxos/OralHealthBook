@@ -1,0 +1,79 @@
+---
+title: "Does water fluoridation work?"
+---
+
+# Does water fluoridation work? {#sec-fluoridation-works}
+
+::: {.callout-warning title="Draft"}
+This chapter is not written yet. The skeleton below is the fixed
+seven-step structure every audit chapter follows.
+:::
+
+## The advice
+
+> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
+> strength label and the table it appears in.*
+
+## What the guideline says its evidence is
+
+> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
+> rating and cited reference.*
+
+## Following the citation
+
+*Read the cited source. Does it answer the question the advice asks?
+Population, intervention, comparator, outcome, one at a time.*
+
+## Appraising it
+
+::: {.callout-note title="How I judged this" collapse="true"}
+*Risk of bias, review quality, GRADE domains. Show the judgments, not
+just the conclusion.*
+
+::: {.content-visible when-profile="print"}
+*The full domain-by-domain judgments are in @sec-app-evidence.*
+:::
+
+::: {.content-visible when-profile="web"}
+*The full domain-by-domain judgments are in
+[`appraisals/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals).*
+:::
+:::
+
+## Is there better evidence?
+
+::: {.callout-note title="What I searched, and when" collapse="true"}
+*Database, date, hits, what was screened in.*
+
+::: {.content-visible when-profile="print"}
+*The full search strategy is in @sec-app-searches.*
+:::
+
+::: {.content-visible when-profile="web"}
+*The full search strategy is in
+[`appraisals/searches/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals/searches).*
+:::
+:::
+
+## Verdict
+
+::: {.verdict}
+[Verdict]{.verdict-title}
+
+Certainty of evidence
+:   *TBD*
+
+Directness to the advice as worded
+:   *TBD*
+
+Is the strength label defensible?
+:   *TBD*
+
+What would change my mind
+:   *TBD*
+:::
+
+## What this means for you
+
+*One paragraph. Plain language. No jargon, no hedging beyond what is
+honest.*

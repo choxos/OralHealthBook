@@ -1,0 +1,9 @@
+---
+title: "How I did this"
+---
+
+# How I did this {#sec-method}
+
+::: {.callout-warning title="Draft"}
+This chapter is not written yet.
+:::
