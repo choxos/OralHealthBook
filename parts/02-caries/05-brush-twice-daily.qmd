@@ -1,75 +1,256 @@
 # Brush twice daily {#sec-twice-daily}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Everyone knows this one. It is on the tube of toothpaste, it is in the waiting
+room, and it is the first thing anybody says about looking after teeth. It is
+also, according to the systematic review that looked hardest at it, a "social
+norm" whose "evidence base for this frequency is weak" [@kumar2016].
+
+Those are the review authors' words, not mine.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+Brushing frequency appears inside almost every caries recommendation in
+*Delivering Better Oral Health*, always bundled with other instructions. The
+adult version is the shortest:
+
+> **Brush teeth at least twice daily:**
+>
+> - last thing at night (or before bedtime) and on at least one other occasion
+> - with toothpaste containing 1,350 to 1,500ppm fluoride
+> - spitting out after brushing rather than rinsing with water, to avoid
+>   diluting the fluoride concentration
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 1f [@dboh2025]
+
+The component under examination here is the first three words: **at least twice
+daily**. The other bullets get [Chapter -@sec-last-thing],
+[Chapter -@sec-ppm] and [Chapter -@sec-spit].
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on moderate certainty evidence for value of toothbrushing
+> with fluoride toothpaste. Moderate certainty from studies with children and
+> adolescents for spitting versus rinsing. **Low-certainty evidence from
+> children and adolescents for frequency and timing.** Evidence for the
+> concentration is based on studies on immature permanent dentition in children
+> and adolescents.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 6 [@dboh2025]
+
+So DBOH already says the frequency evidence is low certainty, and already says
+it comes from children when the advice is for adults. There is no dispute to
+have about that. The question is what the low-certainty evidence actually is,
+and whether "at least twice daily" should be inheriting a Strong label from the
+fluoride toothpaste sitting next to it.
+
+The citation is SIGN 138 [@sign138].
 
 ## Following the citation
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+SIGN 138 covers brushing frequency in §5.5.1. It cites two things.
 
-## Appraising it
+**First, a Cochrane review** of fluoride toothpaste [@marinho2003]:
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+> A Cochrane review found the effect of fluoride toothpaste increases with higher
+> frequency of use. There were statistically significant associations between
+> estimates of DMFS prevented fractions and frequency of use, with a 14% increase
+> in PF (95% CI 6% to 22%) with twice daily brushing as opposed to once daily.
+>
+> --- SIGN 138, §5.5.1 [@sign138]
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
+**Second, ten cross-sectional studies**, which SIGN describes in its own words as
+"a small number of cross-sectional studies of variable quality."
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-[`appraisals/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals).*
-:::
-:::
+On the strength of those two things, SIGN grades the recommendation **A**, its
+highest, and the margin of that page carries the evidence level **1++**: "high
+quality meta-analyses, systematic reviews of RCTs, or RCTs with a very low risk
+of bias."
+
+Here is the problem, and it is not a small one.
+
+That 14% figure does not come from a meta-analysis of brushing frequency. It
+comes from a **meta-regression** inside a review whose randomised question was
+something else entirely. Marinho and colleagues pooled trials comparing fluoride
+toothpaste against non-fluoride toothpaste or none. That comparison was
+randomised, and the answer, a 24% prevented fraction, is trustworthy. Then, as a
+secondary analysis, they asked whether the *size* of that fluoride effect varied
+across trials according to trial-level characteristics, one of which was how
+often participants were asked to brush.
+
+Three things follow, and none of them is a technicality.
+
+**Nobody was randomised to a brushing frequency.** Trials were randomised to
+toothpaste. Frequency is a characteristic of the trial, so comparing high- and
+low-frequency trials is an observational comparison of studies, not an
+experiment. Trials that instructed twice-daily brushing may differ from trials
+that instructed once-daily brushing in country, decade, supervision, baseline
+caries, and follow-up.
+
+**The comparison is at the wrong level.** This is an association between an
+aggregate feature of a trial and that trial's average result. Inferring from it
+what happens when an *individual* brushes more often is the ecological fallacy.
+It may well be true. This design cannot show it.
+
+**It answers a different question.** The finding is that fluoride toothpaste
+works better when used more often. That is a claim about fluoride delivery. The
+recommendation is a claim about what a person should do. They are close enough
+to be confused and far enough apart to matter.
+
+The second strand of evidence, the ten cross-sectional studies, has the problem
+cross-sectional studies always have: people who brush twice a day differ from
+people who do not, in income, education, diet, dental attendance and much else,
+all of which independently affect tooth decay. SIGN reports that these studies
+were of variable quality, and the margin of that same page carries the evidence
+level **3**, the lowest analytic tier. A recommendation graded **A** rests, in
+part, on level 3 evidence.
 
 ## Is there better evidence?
 
+Yes, and it is not cited.
+
+In 2016 Kumar, Tadakamadla and Johnson published a systematic review and
+meta-analysis whose stated aim is precisely the question at issue: "to assess the
+effect of toothbrushing frequency on the incidence and increment of carious
+lesions" [@kumar2016]. They screened 4,305 records and included 33 studies.
+
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, searched 15 August 2026, for systematic reviews of toothbrushing
+frequency and dental caries. Kumar 2016 remains the only systematic review whose
+primary question is the effect of brushing frequency on caries. Nothing more
+recent was found.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
+I also checked whether *Delivering Better Oral Health* cites it. It does not.
+Searching the full text of all thirteen chapters and the appendix, Kumar 2016
+appears nowhere. The only brushing-frequency systematic review DBOH cites is
+Zimmermann and colleagues, and that one is about **periodontitis**, not caries,
+and appears in the periodontal chapter. Chapter 8, on oral hygiene, asserts
+"Frequency of brushing is important. Brushing should occur twice daily as a
+minimum" without citing anything for the caries claim at all.
+
+Full strategy in `appraisals/searches/`.
 :::
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-[`appraisals/searches/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals/searches).*
-:::
+The results:
+
+| Comparison | Effect | 95% CI |
+|---|---|---|
+| Infrequent vs frequent brushers, caries **incidence** | OR 1.50 | 1.34 to 1.69 |
+| Infrequent vs frequent brushers, caries **increment** | SMD 0.28 | 0.13 to 0.44 |
+| Fewer than 2/day vs 2 or more per day | OR 1.45 | 1.21 to 1.74 |
+| Fewer than 1/day vs 1 or more per day | OR 1.56 | 1.37 to 1.78 |
+| Deciduous dentition | OR 1.75 | 1.49 to 2.06 |
+| Permanent dentition | OR 1.39 | 1.29 to 1.49 |
+
+: Kumar and colleagues, 2016: brushing less often and dental caries. Odds ratios
+above 1 mean more caries in the infrequent brushers {#tbl-kumar}
+
+So brushing less often is associated with more decay, consistently, in 33
+studies. That is a real finding and it points the right way.
+
+Now look at the two middle rows, which is where this gets interesting.
+
+Going from **under once a day to at least once** is associated with an odds
+ratio of 1.56. Going from **under twice a day to at least twice** is associated
+with 1.45. The step that the recommendation is actually about, the second brush
+of the day, is the *smaller* of the two. The confidence intervals overlap almost
+completely, so the honest reading is that these two estimates are not
+distinguishable from each other. But there is certainly no sign that the second
+daily brushing does more than the first.
+
+That matters for a specific technical reason.
+
+::: {.callout-note title="How I judged this: the GRADE assessment" collapse="true"}
+Kumar 2016 pools observational studies, so under GRADE the body of evidence
+**starts at low certainty**.
+
+In my original blog post I stopped there, noted no serious additional problems,
+and concluded low. That was a misapplication, because GRADE also permits rating
+observational evidence **up**, for three reasons, and I never asked whether any
+applied. Doing it properly:
+
+*Large magnitude of effect.* An odds ratio of 1.5 is not large by GRADE's
+convention, which looks for something in the region of 2 before upgrading. And
+because caries is a common outcome, the odds ratio materially overstates the risk
+ratio: in a population where a third of children develop new lesions, an odds
+ratio of 1.50 corresponds to a risk ratio nearer 1.3. **No upgrade.**
+
+*Dose-response gradient.* This is the one that could have applied, and the reason
+I flagged my earlier assessment as wrong. The review reports two frequency
+thresholds, which is the closest thing to a gradient available. As shown above,
+the effect does not increase as the threshold rises. It is flat, or if anything
+slightly smaller at the twice-daily threshold. **No upgrade**, and the reason for
+not upgrading is itself informative about the recommendation.
+
+*Plausible confounding would reduce the observed effect.* The opposite is true
+here. People who brush twice daily are, on average, wealthier, better educated,
+more likely to attend a dentist and more likely to eat less sugar. Every one of
+those independently reduces caries. Residual confounding would **inflate** the
+apparent benefit of brushing frequency, not suppress it. **No upgrade.**
+
+Rating down was also considered. Exposure is self-reported in every included
+study, and self-reported brushing is systematically over-reported. Risk of bias
+across the included studies is substantial, and the review's meta-regression
+found that methodological quality did not explain the effect estimate, which is
+reassuring about consistency but says nothing about a bias shared by all the
+studies. I did not rate down further, because low is already low.
+
+**Certainty: low.** Same answer as before, arrived at properly this time.
 :::
 
-## Verdict
+## The verdict
+
+The direction of this evidence is not in doubt. People who brush their teeth
+more often have less tooth decay, in 33 studies across many countries and age
+groups. I would be astonished if brushing twice a day were not better than
+brushing once.
+
+But that is a statement about my expectations, not about the evidence, and the
+two things this chapter set out to check both come up short. The evidence the
+guideline cites does not answer the question the advice asks: it is a
+trial-level meta-regression about fluoride delivery plus ten cross-sectional
+studies. And the evidence that *does* answer the question is not cited at all,
+even though it is a decade old, is in the *Journal of Dental Research*, and says
+in its own abstract that the evidence base for twice-daily brushing is weak.
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Low]{.certainty .low}, for the frequency component specifically. Pooled
+    observational data, no grounds to upgrade on magnitude, dose-response or
+    confounding direction. This agrees with DBOH's own rating.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Poor for the cited evidence, good for the uncited evidence.** SIGN 138's
+    meta-regression is indirect on population, comparison and level of
+    inference. Kumar 2016 is direct, and is not cited by DBOH.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Not for this component.** Using the categories from
+    [Chapter -@sec-certainty-strength], this is one that "should have been
+    Conditional." It is not a legitimate discordant recommendation, because
+    nothing about the balance of effects is more certain than the estimate: the
+    review's own subgroups give no reason to believe the second daily brushing
+    adds much over the first. The Strong label is earned by the fluoride
+    toothpaste in the same bullet list, and the frequency is riding on it.
 
 What would change my mind
-:   *TBD*
+:   A trial randomising participants to brush once versus twice daily, holding
+    toothpaste, technique and supervision constant, with caries increment or
+    tooth pain at two years or more. Failing that, a cohort study with
+    objectively measured brushing frequency rather than self-report, adjusted for
+    socioeconomic position and dental attendance, showing a monotone gradient
+    across three or more frequency categories. If either exists and I have
+    missed it, I will correct this chapter.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Brush twice a day. I do, and nothing in this chapter is a reason to stop: the
+evidence points the right way, the practice costs nothing, and there is no
+plausible way it hurts you. What the evidence will not support is the idea that
+the second brushing is the important part. If you are ever in a position to do
+only one thing, the fluoride toothpaste is the thing that has been tested. The
+frequency is what we have always assumed.

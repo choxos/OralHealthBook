@@ -1,75 +1,297 @@
 # Spit, don't rinse {#sec-spit}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Of the three brushing recommendations I audited as blog posts, this is the one
+where the guideline comes off best and where I come off worst. DBOH rates the
+evidence for it **moderate**, which is higher than for frequency or timing, and
+when I went back to the primary trial to check that rating, I found it was not
+the trial I had described.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> - spitting out after brushing rather than rinsing with water, to avoid diluting
+>   the fluoride concentration
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1b, 1d and 1f
+> [@dboh2025]
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+For children aged 3 to 6:
 
-## Following the citation
+> Recommendation based on moderate certainty for toothbrushing with fluoride
+> toothpaste, for fluoride concentration for permanent teeth (evidence around
+> primary teeth less clear) and **spitting versus rinsing**.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 2 [@dboh2025]
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+For adults:
 
-## Appraising it
+> **Moderate certainty from studies with children and adolescents** for spitting
+> versus rinsing.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 6 [@dboh2025]
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+Moderate is a serious rating. In GRADE it means we are reasonably confident the
+true effect is close to the estimate, and that further research is more likely to
+refine it than reverse it. It is the same rating DBOH gives fluoride toothpaste
+itself.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+The citation is SIGN 138, whose §5.7.1 grades this **A** and rests on two
+studies: a Swedish randomised trial [@sjogren1995] and a Scottish analysis
+[@chestnutt1998].
+
+## The Swedish trial, read properly
+
+Here is what I wrote about it in 2023:
+
+> In the Swedish one, 131 4-year-old children were instructed to rinse the
+> remaining toothpaste in their mouth with a sip of water for a minute. Compared
+> to no instruction, on average, 0.41 less decayed or filled tooth surface was
+> seen after 3 years.
+
+And elsewhere in the same series I gave the number as 369. Both numbers are in
+the literature, and I had not worked out why. The answer matters, so here it is.
+
+There are two Sjögren publications from 1995. One is a doctoral thesis published
+as a supplement to the *Swedish Dental Journal*, which reports several
+sub-studies together [@sjogren1995thesis]. The other is the peer-reviewed report
+of the trial itself, in *Caries Research* [@sjogren1995], and it is the one SIGN
+cites. In that trial:
+
+- **369** four-year-olds were randomised, to **four** groups;
+- **281 (76%)** completed at age seven;
+- of the completers, **131** were in the two test groups and **150** in the two
+  control groups.
+
+So 369 is the randomised total and 131 is the number of *completers* in the test
+arms. Neither figure is wrong; I had used each without the other.
+
+The 24% attrition is worth pausing on. Reporting group sizes as the number who
+finished, rather than the number randomised, means the published analysis is not
+by intention to treat, and 88 children left the study without our knowing which
+way they went.
+
+But the far more important thing is what the intervention actually was.
+
+::: {.callout-important title="What the test group was told to do"}
+Verbatim from the trial report [@sjogren1995], the test groups were instructed:
+
+1. to spread the paste evenly on the teeth prior to brushing;
+2. **not to expectorate more than necessary during brushing**;
+3. **to filter the remaining dentifrice foam in the dentition, together with a
+   sip of water, by active cheek movements for 1 minute before expectorating**;
+4. **not to carry out any further water rinsings afterwards, and not to eat or
+   drink for 2 hours after brushing.**
 :::
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-[`appraisals/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals).*
-:::
+Read item 3 again. The children in the test group were told to take a sip of
+water and swill the toothpaste foam around their mouth for a full minute.
+
+They were told to **rinse**. With toothpaste slurry, deliberately, as a
+mouthwash.
+
+So the trial DBOH cites as moderate-certainty evidence for "spit, don't rinse"
+is a trial of a four-part technique in which one part is a form of rinsing, one
+part is not eating or drinking for two hours afterwards, and one part is how you
+apply the paste in the first place. Only item 4's second clause corresponds to
+what a modern reader understands by "don't rinse."
+
+This is [Chapter -@sec-bundling]'s problem again, one level further down. The
+guideline bundles six instructions and lets the best-evidenced one carry the
+label. The trial underneath bundles four behaviours and reports one result. You
+cannot get from that result to any single component.
+
+And the "no eating or drinking for two hours" instruction is not incidental. If
+that alone drove the effect, the correct advice would be different from the
+advice being given, and nobody could tell from this trial.
+
+The result itself is real: the test groups developed a mean of 1.14 new
+approximal decayed and filled surfaces over three years against 1.55 in the
+controls, p<0.05, a relative reduction of about 26%. The 0.41 in my blog post is
+the difference between those two numbers. The trial report gives no confidence
+interval for it, which is of its time and is why I cannot give one here either.
+
+::: {.callout-note title="How I judged this: risk of bias" collapse="true"}
+Assessed with RoB 2, for the effect of assignment to the intervention.
+
+*Randomisation process.* The report states children were randomly assigned to
+four groups but gives no detail of sequence generation or allocation concealment.
+Baseline balance is reported. **Some concerns**, not high: the absence of
+reported detail in a 1995 paper is weaker evidence of a problem than it would be
+today.
+
+*Deviations from intended interventions.* The trial is described as double-blind,
+which refers to the two toothpastes. It cannot be blind for the technique
+instruction, since the instruction is the intervention. Adherence to a four-part
+daily behaviour over three years in four-year-olds is unlikely to have been
+complete and is not reported. **High.**
+
+*Missing outcome data.* 24% did not complete, results are reported on completers,
+and there is no analysis of whether attrition differed by group. **High.**
+
+*Measurement of the outcome.* Approximal lesions scored on bitewing radiographs,
+restricted to the distal surface of the first and mesial surface of the second
+primary molars. Radiographic scoring is reasonably objective, but examiner
+blinding to group is not reported. **Some concerns.**
+
+*Selection of the reported result.* No protocol available. **Some concerns.**
+
+**Overall: high risk of bias.** This agrees with the conclusion I reached in
+2023, though for partly different reasons, and it sits awkwardly with DBOH's
+rating of moderate certainty. Full domain judgments in the appraisal data.
 :::
 
-## Is there better evidence?
+## The Scottish study
+
+SIGN's second source is Chestnutt and colleagues, 1998 [@chestnutt1998]. As I
+noted in the blog post, and as its own title says, this is an analysis of "the
+influence of toothbrushing frequency and post-brushing rinsing on caries
+experience **in a caries clinical trial**."
+
+The trial it sits inside was designed to compare toothpastes with and without
+zinc citrate. Rinsing behaviour was not randomised. It was self-reported at
+interview, with participants shown a board of sketches and asked which of four
+methods they used: transferring water with the toothbrush, putting the mouth
+under the tap, using cupped hands, or using a beaker.
+
+The reported result is that adolescents who said they used a beaker had a caries
+increment of 6.84 against 5.84 in those who did not, p<0.05: one more decayed,
+missing or filled surface.
+
+Three problems, in increasing order of seriousness.
+
+**It is observational.** Whatever the trial's randomisation achieved, it did not
+achieve balance on rinsing habit. Comparing beaker users with non-users is
+comparing groups that chose their own exposure, in a population where oral
+hygiene habits track socioeconomic position closely.
+
+**The four categories became two.** The authors collapsed the four rinsing
+methods into beaker versus everything else, on the stated grounds that three of
+them gave similar results. Deciding on a grouping after seeing the results is
+selective analysis, or analysis specified after the fact.
+
+In the blog post I called this "p-hacking." I have changed that. P-hacking
+usually means trying analyses until one crosses a significance threshold, and I
+have no evidence that is what happened here. Collapsing categories because they
+look alike is a defensible exploratory move; the failure is presenting the result
+as if it had been planned, and citing it as though it were a trial result.
+
+**Confounding.** The four groups differ at baseline in caries experience and in
+sex distribution. If you were designing this analysis today you would specify a
+causal model and adjust for the common causes of both rinsing habit and caries.
+
+::: {.callout-note title="What you would need to adjust for" collapse="true"}
+Drawing the directed acyclic graph for "does using a beaker cause caries" gives a
+minimal adjustment set of socioeconomic position, age, sex and parental
+education: each plausibly influences both the choice of rinsing method and the
+caries outcome, and none lies on the causal path between them.
+
+Two cautions I did not give in the blog version. Adjusting for a variable that
+sits *between* rinsing and caries, such as fluoride concentration retained in the
+mouth, would block the very effect we want to estimate. And adjusting for a
+variable caused by both, such as overall oral hygiene score, could open a path
+rather than close one. "Control for everything you measured" is not a method.
+
+None of this is available without the individual data, so this remains a
+statement about what the study cannot tell us rather than a re-analysis.
+:::
+
+## Where does "moderate" come from?
+
+This is the honest difficulty of the chapter.
+
+I can see how one gets to low certainty: one randomised trial at high risk of
+bias, testing a bundle, plus one observational analysis with post-hoc grouping.
+I cannot reconstruct a route to **moderate** from these two studies, and DBOH
+does not show its working beyond the one-line statement.
+
+There are two possibilities and I cannot distinguish between them from the
+published document. Either the panel considered evidence not listed in chapter
+13's reference for this row, or moderate is the rating for the bundle as a whole,
+carried by fluoride toothpaste, and the phrase "and spitting versus rinsing"
+extends it further than the underlying evidence reaches.
+
+I lean towards the second, because the same sentence rates three different things
+at once. But I want to be clear that this is an inference about a document, not a
+finding about the evidence, and I would withdraw it if the panel published its
+reasoning.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 15 August 2026, for randomised trials of post-brushing water rinsing.
+Four records, all screened in full. Full strategy and screening decisions in
+`appraisals/searches/ch07-post-brushing-rinsing.md`.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+**No randomised trial isolating post-brushing rinsing with a caries outcome was
+found.** Everything published since 2000 measures salivary fluoride retention,
+which is the same surrogate problem as [Chapter -@sec-last-thing]:
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-[`appraisals/searches/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals/searches).*
-:::
-:::
+- A crossover in 10 adults found higher salivary fluoride for up to 30 minutes
+  without rinsing, and no significant difference in systemic absorption, which is
+  reassuring on safety [@parakaw2024].
+- A randomised trial in 120 adults across 12 arms found rinsing significantly
+  affected salivary fluoride retention to 90 minutes [@albahrani2022].
+- A crossover in 32 children found the same [@nazzal2016].
 
-## Verdict
+These agree with each other and point the right way. They also illustrate the
+step this book keeps finding. Nazzal and colleagues conclude that their results
+"support the current recommendation" of spitting without rinsing. Their results
+are about fluoride in saliva; the recommendation is about tooth decay. That
+sentence is where a surrogate quietly becomes a clinical claim.
+
+The nearest thing to a caries outcome is an in-situ study using orthodontic
+bands and quantitative light-induced fluorescence [@almulla2010]. Its test
+regimen was 5,000ppm fluoride **and** no rinsing, against a control of 1,450ppm
+**with** three rinses. Two things were changed at once, so the result cannot be
+attributed to the rinsing. It is the confounded-comparison problem of the
+Swedish trial, repeated fifteen years later.
+:::
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Low]{.certainty .low}. One randomised trial at high risk of bias which
+    tested a four-part bundle rather than rinsing alone, plus one non-randomised
+    within-trial analysis with post-hoc regrouping. This is one rating below
+    DBOH's stated moderate, and I cannot reconstruct how moderate was reached.
+
+    In the blog version I said "very low." I have moved up, not down: there is a
+    randomised trial here with a caries outcome pointing in the right direction,
+    which is more than either of the two preceding chapters can say.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Moderate.** The Swedish trial has the right population, a
+    patient-relevant outcome and a three-year follow-up. Its intervention is a
+    bundle of which not rinsing is one part, so the effect cannot be attributed
+    to the advice as worded. The Scottish analysis is indirect on design.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Arguably yes, unlike the previous two chapters.** This is the best
+    candidate in the brushing bundle for a legitimate discordant recommendation:
+    the intervention is free, has no plausible harm, the mechanism is clear, and
+    the one randomised trial points the right way. A Strong recommendation on
+    low-certainty evidence is defensible here. What is not defensible is stating
+    the certainty as moderate without showing how.
 
 What would change my mind
-:   *TBD*
+:   A trial randomising people to rinse or not rinse after brushing, with
+    everything else identical, and caries measured at two years or more. That is
+    a cheap, ethical, entirely feasible trial that nobody has run in thirty
+    years. Alternatively, publication of the reasoning behind DBOH's moderate
+    rating would settle whether I have simply missed something the panel saw.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Spit, don't rinse. Of the three pieces of brushing advice in this part of the
+book, this is the one I would defend most readily: it is the only one with a
+randomised trial behind it, that trial found less decay, and there is no
+conceivable downside to not reaching for a glass of water.
+
+Two honest caveats. The trial that supports it also told children not to eat or
+drink for two hours afterwards, and nobody knows how much of the benefit came
+from that instead. And the children in that trial did swill toothpaste foam
+around their mouths for a minute, so if you want to follow what was actually
+tested, "spit, don't rinse" is not quite it.

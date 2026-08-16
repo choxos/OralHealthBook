@@ -33,15 +33,15 @@ CROSSREF_PREFIXES = (
     "sec-", "fig-", "tbl-", "eq-", "lst-", "thm-", "exm-", "exr-", "def-",
 )
 
-REQUIRED_SECTIONS = [
-    "## The advice",
-    "## What the guideline says its evidence is",
-    "## Following the citation",
-    "## Appraising it",
-    "## Is there better evidence?",
-    "## Verdict",
-    "## What this means for you",
-]
+# Two things every audit chapter must carry, whatever its headings are
+# called. Enforcing the literal heading text instead just made the prose
+# read like a form, so the check is on the invariants, not the wording.
+#
+#   1. A verdict box with all four fields answered.
+#   2. A disclosed, dated search, so the "is there better evidence?" step
+#      can be repeated by someone else.
+SEARCH_DISCLOSURE = "What I searched, and when"
+VERDICT_BLOCK = "{.verdict}"
 
 VERDICT_FIELDS = [
     "Certainty of evidence",
@@ -159,17 +159,20 @@ def main() -> int:
         if not rel.startswith("parts/"):
             continue
         text = f.read_text(encoding="utf-8")
-        is_audit = "## The advice" in text
         if "This chapter is not written yet" in text:
             warnings.append(f"{rel} is still a stub")
             continue
-        if not is_audit:
+
+        # An audit chapter is one that reaches a verdict. Essay chapters
+        # (Part I, the myths chapters) legitimately do not.
+        if VERDICT_BLOCK not in text:
             continue
-        for sec in REQUIRED_SECTIONS:
-            if sec not in text:
-                (errors if args.strict else warnings).append(
-                    f"{rel} is missing the required section '{sec}'"
-                )
+
+        if SEARCH_DISCLOSURE not in text:
+            (errors if args.strict else warnings).append(
+                f"{rel} reaches a verdict but discloses no dated search"
+            )
+
         for field in VERDICT_FIELDS:
             m = re.search(
                 re.escape(field) + r"\s*\n:\s*(.+)", text

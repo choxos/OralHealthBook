@@ -1,75 +1,248 @@
 # Brush last thing at night {#sec-last-thing}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+This is the recommendation that started the whole project, so it gets the
+fullest treatment. It is also the one where I got the argument wrong the first
+time, in an instructive way: I led with the weakest objection and buried the
+fatal one.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> - last thing at night (or before bedtime) and on at least one other occasion
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1a, 1b, 1d and 1f
+> [@dboh2025]
+
+The instruction appears in this form for every age group, from babies to adults,
+always as a bullet inside a larger brushing recommendation.
+
+Note what it actually asks. It is not "brush twice a day," which is
+[Chapter -@sec-twice-daily]. It is a claim about **when**: that one of your two
+brushings should be the last thing you do before sleeping, rather than, say, at
+nine in the evening, or after dinner.
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Low to very low certainty evidence around initiation stage, frequency and
+> timing.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 1 [@dboh2025]
+
+and, for adults:
+
+> Low-certainty evidence from children and adolescents for frequency and timing.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 6 [@dboh2025]
+
+The citation, again, is SIGN 138 [@sign138].
 
 ## Following the citation
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+SIGN 138 §5.7.2 is short enough to quote entirely:
 
-## Appraising it
+> Brushing last thing at night before bedtime allows fluoride concentration
+> levels to remain high during the night as salivary flow rates are lower during
+> sleep. An observational study found that fluoride concentrations in saliva 12
+> hours after brushing last thing at night were comparable with those found one
+> to four hours after brushing during the day.
+>
+> Children's teeth should be brushed last thing at night before bedtime and on at
+> least one other occasion.
+>
+> --- SIGN 138, §5.7.2 [@sign138]
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+Two sentences, then the recommendation. Two references: one for the physiological
+rationale [@davies2003], one for the observational study.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+That observational study is reference 101, and it is:
+
+> Duckworth RM, Moore MS. Salivary fluoride concentrations after overnight use of
+> toothpastes. *Caries Res* 2001;35(4):285.
+
+One page. Volume 35, issue 4, page 285, single page, which is the abstracts
+supplement of the 48th congress of the European Organisation for Caries Research
+[@duckworth2001]. There is no full paper. Both authors were at Unilever Dental
+Research in Bebington.
+
+That is the entire evidential basis for telling every person in the United
+Kingdom to brush their teeth immediately before bed.
+
+Two things in SIGN's favour before I go further. It describes the source
+accurately as "an observational study," and it attaches **no evidence grade to
+this recommendation at all**, in contrast to the recommendation directly above
+it about rinsing, which is graded A. SIGN did not claim more than it had. The
+Strong label appears later, downstream, when this becomes a bullet in a DBOH
+table.
+
+## Does it answer the question?
+
+No, and the reason is not that the study is small or old or industry-funded. The
+reason is that it is about something else.
+
+**Population.** Twelve adults, in a cross-over. The recommendation covers
+everyone from erupting first teeth onwards.
+
+**Intervention and comparator.** This is the fatal one. To find out whether
+brushing last thing at night beats brushing earlier, you need one group brushing
+last thing at night and another brushing earlier. In this study **everyone
+brushed at bedtime**. There was no early-brushing group. What was compared was
+two toothpaste formulations, a chalk-based and a silica-based paste with the
+same 1,500ppm sodium monofluorophosphate content. The study cannot compare
+timings because it did not vary timing.
+
+**Outcome.** Fluoride concentration in saliva. Not tooth decay, not pain, not
+tooth loss.
+
+::: {.callout-note title="Why the outcome matters, and where I overstated it before" collapse="true"}
+A surrogate outcome is one that stands in for the thing you actually care about.
+Salivary fluoride is several steps removed from a patient-important outcome: more
+fluoride in saliva is thought to mean more fluoride available at the enamel
+surface, which is thought to mean more remineralisation, which is thought to mean
+fewer lesions, which is thought to mean less pain and fewer extractions.
+
+Each arrow in that chain is plausible. None was measured here.
+
+In the original blog post I called this outcome "too abstract to form the basis
+for such a crucial recommendation." I would put it more precisely now: the
+outcome is entirely reasonable for the study Duckworth and Moore were doing,
+which was a pharmacokinetic comparison of two toothpaste bases. It is the *use*
+of that study, as evidence for a behavioural recommendation about timing, that
+is indirect. Blaming the study for not answering a question it never asked is
+unfair to the authors. The mismatch was introduced by whoever cited it.
 :::
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-[`appraisals/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals).*
-:::
-:::
+## The argument I got wrong
+
+In the blog version I devoted a long section to the sample size, arguing that
+twelve participants is too few to conclude anything, with a digression on
+statistical power and research waste.
+
+That argument is weak and I have dropped it.
+
+Twelve participants may be entirely adequate for a cross-over study of salivary
+fluoride kinetics. Each person acts as their own control, the within-person
+correlation is high, and the measurement is a chemical assay rather than a
+subjective rating. Pharmacokinetic studies with a dozen people are routine and
+often perfectly well powered. If I had gone after a badly powered trial of a drug
+on a dozen people, that would be a criticism; here it is not.
+
+The reason this matters is more than pedantry. Leading with the weak objection
+invites the reply "twelve is fine for a cross-over," which is correct, and which
+then makes the real objection look like more of the same. The real objection is
+that **the study did not compare brushing times.** No sample size fixes that. A
+version of this study with twelve thousand participants would be exactly as
+irrelevant.
+
+## The industry question
+
+Both authors worked for Unilever, which sells toothpaste. This is worth noting
+and worth not overplaying.
+
+The empirical basis for caring is a Cochrane methodology review, which finds that
+industry-sponsored studies more often report results favourable to the sponsor
+than independently funded studies do, and that this is not explained by
+differences in risk of bias [@lundh2017]. That is a reason for extra care with
+the *body* of literature, not a reason to dismiss a particular paper.
+
+Here it barely signifies. The study is not being used to promote a product; it is
+being used, by third parties, to support a behavioural recommendation the authors
+did not make. The problem with this citation is not who paid for it.
+
+The problem is that it is a conference abstract. There is no methods section to
+appraise, no full results to check for selective reporting, and no way to know
+what else was measured. When the entire evidence base for a Strong recommendation
+is one page, "we cannot tell" is the appraisal.
 
 ## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, searched 15 August 2026, for trials comparing toothbrushing at different
+times of day with a caries or patient-important outcome. Nothing directly
+relevant was found. Full strategy in `appraisals/searches/`.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
+The nearest thing remains the "Brush Day & Night" cluster-randomised programme
+evaluations, discussed below. Note that these are also Unilever-sponsored, and
+that the programme's name contains the recommendation being tested, which is not
+the same as testing it.
 :::
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-[`appraisals/searches/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals/searches).*
-:::
-:::
+The nearest relevant work is a cluster-randomised evaluation of an oral health
+education programme, in which over four thousand children in Indonesia and
+Nigeria received either a 21-day "Brush Day & Night" programme or toothbrushes
+and toothpaste alone. Both groups reported less mouth pain at six months, with
+small differences between them.
 
-## Verdict
+I used this in the blog post to argue that the programme did not work. On
+re-reading, I do not think I can. The comparison I drew was from one figure, on
+one outcome, in one country, and it was not the trial's primary outcome. Cluster
+trials need analyses that account for clustering, and eyeballing a bar chart is
+exactly the reading-off-a-figure move I criticise elsewhere in this book. I have
+removed the claim.
+
+What remains true, and is enough, is that the trial does not address the
+question. Everyone in both arms was encouraged to brush at night. There is no
+comparison of timings, because once again nobody built one.
+
+## The rationale, taken seriously
+
+There is a mechanistic argument here and it deserves better than dismissal.
+
+Salivary flow falls substantially during sleep. Saliva clears fluoride from the
+mouth, and it also buffers acid and supplies calcium and phosphate for
+remineralisation. So the hours of sleep are both the period when the mouth is
+least protected and the period when anything left on the teeth persists longest.
+Putting fluoride there immediately beforehand, and not eating afterwards, is a
+coherent piece of reasoning, and the Duckworth abstract is consistent with it:
+fluoride does hang around overnight.
+
+I think this rationale is probably right. I follow it myself.
+
+But "probably right and untested" is a different thing from "Strong," and the
+distinction is the whole subject of this book. In GRADE's vocabulary this is
+indirect evidence supporting a mechanism, which is exactly the sort of thing that
+justifies a **Conditional** recommendation and a note that the reasoning is
+biological rather than experimental.
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Very low]{.certainty .very-low}. A single conference abstract reporting a
+    surrogate outcome, with no full report available to appraise, supporting a
+    mechanism rather than the recommendation. DBOH's own rating for this
+    component is low to very low, and I agree with the lower end.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Very poor.** The cited study did not vary the timing of brushing, which is
+    the only thing the advice is about. It compared two toothpaste bases, in
+    twelve adults, measuring salivary fluoride.
 
 Is the strength label defensible?
-:   *TBD*
+:   **No.** This is not a legitimate discordant recommendation. It is a good
+    practice statement in disguise: clinical reasoning from plausible physiology,
+    with no research appropriate for rating certainty. DBOH has a category for
+    exactly that, and uses it {{< var dboh.goodpractice >}} times elsewhere.
+    This belongs in it. SIGN 138 effectively said as much by attaching no grade.
 
 What would change my mind
-:   *TBD*
+:   A randomised trial allocating people to brush last thing at night versus
+    ninety minutes to two hours earlier, everything else held constant, with
+    caries increment or self-reported tooth pain at two years or more. A
+    cross-over with an intermediate outcome would not do it; the point of this
+    chapter is that intermediate outcomes have already been measured and cannot
+    settle it. Even a well-conducted prospective cohort with objectively recorded
+    brushing times would move me from very low to low.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Brush before bed. It is free, it takes no extra effort given that you were going
+to brush anyway, and the reasoning behind it is sound even though it has never
+been tested.
+
+What you should not believe is that anyone has demonstrated it. If you brush at
+nine and go to bed at eleven, nobody can tell you what that costs you, because
+nobody has measured it. If a dentist tells you that brushing at bedtime is
+strongly evidence-based, they have been misled by a table, and it is not their
+fault.
