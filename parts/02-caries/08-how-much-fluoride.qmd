@@ -1,75 +1,251 @@
 # How much fluoride should be in your toothpaste? {#sec-ppm}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Every chapter so far has ended by saying the evidence is thinner than the label
+suggests. This one does not, and the book would be worth very little if no
+chapter did.
+
+Fluoride toothpaste is the intervention that earns the Strong label in every
+brushing recommendation in *Delivering Better Oral Health*. It is the "main
+component" that chapter 13's drafting rule refers to. It works, we know it
+works, and I would defend a Strong recommendation for it against anybody.
+
+What I want to show here is that even this recommendation contains a bundle, and
+that the second half of it is a great deal weaker than the first.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> - with toothpaste containing 1,350 to 1,500ppm fluoride
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1d and 1f [@dboh2025]
+
+For children under six the figure is "at least 1,000ppm," rising to 1,350 to
+1,500ppm for those at higher risk.
+
+Read as a reader would read it, this single bullet makes two different claims:
+
+1. **use fluoride toothpaste** rather than a fluoride-free one;
+2. **use one in the 1,350 to 1,500ppm band** rather than a weaker one.
+
+Hold those apart, because the evidence does not treat them alike.
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on moderate certainty evidence for toothbrushing with
+> fluoride toothpaste and concentration of 1,000ppm fluoride and above (the
+> evidence for toothpaste 500 to 1,000ppm fluoride is inconclusive).
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 1 [@dboh2025]
+
+and for children at higher risk:
+
+> Recommendation based on moderate certainty evidence of added benefit over
+> 1,000ppm fluoride.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 3 [@dboh2025]
+
+The citation is the Cochrane review of fluoride toothpaste concentrations
+[@walsh2019]. Unlike the previous three chapters, this citation is exactly on
+point: the review's question is the recommendation's question.
 
 ## Following the citation
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+Walsh and colleagues updated their 2010 review in 2019, including **96 randomised
+trials published between 1955 and 2014**, and analysed the permanent dentition
+of children and adolescents in a network meta-analysis of 81 studies covering 21
+comparisons across seven concentration bands.
 
-## Appraising it
+This is a serious piece of work. Searches ran across the Cochrane trials
+register, CENTRAL, MEDLINE and Embase to August 2018, with two people
+independently selecting studies, extracting data and assessing risk of bias. It
+is the kind of review the previous chapters wished they had.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+### Claim 1: use fluoride toothpaste
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+| Comparison | Population | Effect | 95% CI | Studies | Certainty |
+|:---|:---|:---|:---|---:|:---|
+| 1,000 to 1,250ppm vs no fluoride | children, permanent teeth | SMD −0.28 | −0.32 to −0.25 | 55 | [high to moderate]{.certainty .high} |
+| 1,450 to 1,500ppm vs no fluoride | children, permanent teeth | SMD −0.36 | −0.43 to −0.29 | 4 | [high to moderate]{.certainty .high} |
+| 1,500ppm vs no fluoride | young children, primary teeth | MD −1.86 dfs | −2.51 to −1.21 | 1 | [moderate]{.certainty .moderate} |
+| 1,000 or 1,100ppm vs no fluoride | adults | MD −0.53 DMFS | −1.02 to −0.04 | 3 | [moderate]{.certainty .moderate} |
+
+: Fluoride toothpaste against no fluoride [@walsh2019] {#tbl-fluoride-vs-none}
+
+Fifty-five randomised trials. High to moderate certainty. Consistent direction,
+tight confidence intervals nowhere near zero, and replicated in primary teeth
+and in adults.
+
+This is what a Strong recommendation is supposed to look like. Note in
+particular what the previous chapters were missing and this one has: the studies
+are randomised, they measure tooth decay rather than a chemical proxy, and they
+compare the thing the advice tells you to do against the thing it tells you not
+to do.
+
+### Claim 2: use 1,350 to 1,500ppm specifically
+
+| Comparison | Effect | 95% CI | Studies | Certainty |
+|:---|:---|:---|---:|:---|
+| 1,450 to 1,500 vs 1,000 to 1,250ppm | SMD −0.08 | −0.14 to −0.01 | 10 | [moderate]{.certainty .moderate} |
+| 1,055 vs 550ppm (primary teeth) | MD −0.05 dmfs | −0.38 to 0.28 | 2 | [moderate]{.certainty .moderate} |
+| 1,450 vs 440ppm (primary teeth) | MD −0.34 dmft | −0.59 to −0.09 | 1 | [moderate]{.certainty .moderate} |
+| 1,700 to 2,200 vs 1,450 to 1,500ppm | SMD 0.04 | −0.07 to 0.15 | indirect only | [moderate]{.certainty .moderate} |
+| 2,400 to 2,800 vs 1,450 to 1,500ppm | SMD −0.05 | −0.14 to 0.05 | 2 | [moderate]{.certainty .moderate} |
+
+: Head-to-head comparisons of concentration [@walsh2019] {#tbl-fluoride-heads}
+
+The step from ordinary 1,000ppm toothpaste to the 1,450 to 1,500ppm band is
+**SMD −0.08, 95% CI −0.14 to −0.01**. The interval excludes zero, so the effect
+is probably real, and it is about a quarter the size of the effect of using
+fluoride toothpaste at all. The upper bound of the interval, −0.01, is an effect
+of essentially nothing.
+
+The review's own summary of this half of its work is worth quoting, because it is
+notably more cautious than the recommendation it supports:
+
+> Evidence for the effects of different fluoride concentrations is more limited,
+> but a dose-response effect was observed for D(M)FS in children and
+> adolescents. For many comparisons of different concentrations the
+> caries-preventive effects and our confidence in these effect estimates are
+> uncertain and could be challenged by further research.
+>
+> --- Walsh and colleagues, 2019 [@walsh2019]
+
+And note the review's own statement about the network: "The certainty of the
+evidence was judged to be **low**" apart from the handful of comparisons listed
+above. Most of the 21 comparisons in that network are low certainty. The four
+that are not are the ones the guideline uses, which is the correct way round, and
+worth crediting.
+
+::: {.callout-note title="How I judged this: what an SMD of 0.28 actually means" collapse="true"}
+A standardised mean difference of 0.28 means the groups differ by 0.28 of a
+standard deviation of the caries increment. That is not a quantity anyone has
+intuitions about, so the honest thing is to translate it.
+
+Caries increment distributions in these trials are heavily skewed, with standard
+deviations typically somewhere between 2 and 4 D(M)FS over three years. Taking
+that range, an SMD of 0.28 corresponds very roughly to **0.6 to 1.1 fewer
+decayed, missing or filled permanent surfaces per child over three years**, and
+the SMD of 0.08 for the concentration step to something like **0.15 to 0.3
+surfaces**.
+
+Two cautions. Back-transforming an SMD this way is approximate, and it is
+approximate in a direction that matters: with skewed data the standard deviation
+is a poor summary, and the average conceals that most of the benefit accrues to
+the minority of children who would have developed most of the lesions. The
+review reports the pooled result as an SMD precisely because the included trials
+used different indices, and my arithmetic here does not recover information the
+review did not have.
+
+I give it anyway, with the caveat attached, because "0.28 of a standard
+deviation" invites the reader to nod without understanding, and a rough number
+with a stated error is more honest than a precise number nobody can picture.
 :::
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-[`appraisals/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals).*
-:::
-:::
+## Where I overstated this before
 
-## Is there better evidence?
+The blog post said:
+
+> Among different doses, 1450–1500 ppm F toothpaste was the only one which led to
+> lower tooth decay in children and adolescents compared to all the lower doses.
+
+That is not what the review found, and it is the kind of sentence this book
+exists to object to.
+
+The review reports **one** head-to-head comparison in which 1,450 to 1,500ppm
+beat a lower band: against 1,000 to 1,250ppm, at SMD −0.08. It did not find that
+band superior to "all the lower doses." In primary teeth the comparison of
+1,055 against 550ppm found essentially nothing (MD −0.05 dmfs, 95% CI −0.38 to
+0.28). And I gave no confidence interval anywhere, which turned an estimate whose
+upper bound is nearly zero into a flat statement of fact.
+
+I have also dropped the accompanying claim that "amounts over 1500 ppmF didn't
+perform better." The two relevant comparisons are SMD 0.04 (95% CI −0.07 to
+0.15), from **indirect evidence only**, and SMD −0.05 (95% CI −0.14 to 0.05)
+from two studies. Those intervals include worthwhile benefit as well as none.
+"No evidence of a difference" is right; "didn't perform better" implies a
+demonstrated equivalence that these data cannot support. That is the
+absence-of-evidence error, committed by me, in a post complaining about it.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+The Cochrane review's own search ran to 15 August 2018 across the Cochrane Oral
+Health trials register, CENTRAL, MEDLINE and Embase, with two trial registries
+for ongoing studies. I have not attempted to reproduce that; a single person with
+PubMed cannot improve on it.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
+I searched PubMed on 15 August 2026 for any update or successor to
+CD007868.pub3. None was found; the 2019 version remains current. Full record in
+`appraisals/searches/`.
+
+The gap is worth stating plainly: the newest trial in the review was published
+in **2014**. The evidence base for the concentration in your toothpaste is now
+more than a decade old, and the review's authors say themselves that these
+estimates "could be challenged by further research."
 :::
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-[`appraisals/searches/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals/searches).*
-:::
-:::
+## The bundle, one layer down
 
-## Verdict
+So the single bullet "with toothpaste containing 1,350 to 1,500ppm fluoride"
+contains a very strong claim and a weak one, welded together.
+
+*Use fluoride toothpaste* is supported by 55 randomised trials at high to
+moderate certainty with an effect four times larger. *Use this particular band
+rather than an ordinary 1,000ppm one* is supported by ten studies at moderate
+certainty with an effect whose confidence interval nearly touches zero.
+
+Both get the same three words of typography and the same Strong label.
+
+This is exactly the pattern of [Chapter -@sec-bundling], and finding it inside
+the best-evidenced component of the guideline is, I think, the strongest form of
+the argument. It is not that DBOH picked bad evidence. It picked excellent
+evidence, described it accurately in chapter 13, and then wrote a summary table
+that cannot transmit the distinction.
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   **For "use fluoride toothpaste":** [high to moderate]{.certainty .high}. 55
+    randomised trials, consistent, precise, direct.
+    **For "use 1,350 to 1,500ppm rather than 1,000ppm":**
+    [moderate]{.certainty .moderate}, for a small effect (SMD −0.08, 95% CI
+    −0.14 to −0.01).
 
 Directness to the advice as worded
-:   *TBD*
+:   **Excellent.** The review's question is the recommendation's question:
+    right population, right comparison, right outcome, randomised, followed for
+    at least a year. The only indirectness worth noting is age: the newest
+    included trial is from 2014, and background fluoride exposure has changed.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes for the first claim, and emphatically so.** This is what a Strong
+    recommendation should rest on, and I would defend it against anyone.
+    **Arguable for the second.** An effect of SMD −0.08 whose interval reaches
+    −0.01 is thin ground for a Strong recommendation to buy one product rather
+    than another. Conditional would fit it better. But because the two claims
+    share a bullet, no reader can tell that they are differently supported.
 
 What would change my mind
-:   *TBD*
+:   For the first claim, essentially nothing short of a large contrary trial,
+    and I do not expect one. For the second, an updated review including trials
+    published since 2014, or any head-to-head trial of 1,450ppm against
+    1,000ppm powered for a patient-important outcome rather than a surface
+    count, would move the estimate either way. I would also revise this if
+    someone showed that the SMD back-transformation above is misleading in a
+    direction I have not accounted for.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Use fluoride toothpaste. This is the single best-supported thing in this book and
+it is not close: dozens of randomised trials, measuring actual tooth decay,
+consistently finding less of it. If you take one instruction away from these
+pages, take this one.
+
+The specific number on the tube matters much less. Ordinary adult toothpaste in
+the UK is already 1,350 to 1,500ppm, so for most people this is a decision they
+never have to make. If you find yourself choosing between a 1,000ppm paste and a
+1,450ppm one, the higher one is probably very slightly better, and "very
+slightly" is doing real work in that sentence. What is not worth doing is paying
+a premium for anything above 1,500ppm without a dentist telling you to: nobody
+has shown a benefit there, though nobody has shown its absence either.
