@@ -1,5 +1,139 @@
 # The appraisal tools, and why each one {#sec-app-tools}
 
-::: {.callout-warning title="Draft"}
-This appendix is generated from `appraisals/` at build time.
-:::
+Five instruments appear throughout this book. They are often used
+interchangeably, including by me in the blog posts this book grew from, and
+they are not interchangeable. This appendix says what each one is for, so that
+a reader can tell whether I have used it properly.
+
+The short version: **three of them appraise a study or a review, and two of
+them appraise the evidence.** Running all five at one target and reporting five
+adverse verdicts is not thoroughness. It is counting the same problem five
+times.
+
+## What each tool takes as its input
+
+| Tool | Input | Answers |
+|:---------|:------------------------------------|:-------------------------------|
+| RoB 2 | one randomised trial | could this trial's result be wrong because of how it was run? |
+| ROBINS-I | one non-randomised study of an intervention | same question, plus confounding |
+| AMSTAR 2 | one systematic review | was this review conducted well? |
+| ROBIS | one systematic review | is this review's result at risk of bias? |
+| GRADE | a body of evidence, for **one outcome** | how much should we trust the estimate, and how firmly should we recommend? |
+
+The distinction that matters most is the last row. GRADE does not appraise a
+paper. It appraises what we collectively know about one outcome, which may come
+from twenty studies or from one, and which would still need rating even if
+every study in it were flawless.
+
+## RoB 2
+
+The Cochrane risk-of-bias tool for randomised trials, in five domains:
+randomisation process; deviations from intended interventions; missing outcome
+data; measurement of the outcome; selection of the reported result. Each is
+judged low risk, some concerns, or high risk, and the overall judgment is
+driven by the worst domain rather than by an average.
+
+Two things it requires that are easy to skip.
+
+**You must state the effect of interest.** RoB 2 asks separately about the
+effect of *assignment* to an intervention (what a policy maker wants) and the
+effect of *adhering* to it (what a physiologist wants). The answers can differ.
+Every RoB 2 assessment in this book is for the effect of assignment, and says
+so.
+
+**Absence of reporting is not the same as absence of rigour.** A 1995 paper
+that does not describe its allocation concealment may well have concealed it
+properly; reporting standards were different. That justifies "some concerns,"
+not "high risk." Judging old trials by modern reporting norms is a way of
+manufacturing findings.
+
+## ROBINS-I
+
+The equivalent for non-randomised studies of interventions, with seven domains.
+The first, confounding, does most of the work, and it is assessed against an
+explicitly stated target trial: what randomised experiment would this
+observational study be trying to emulate?
+
+ROBINS-I judgments run to "critical," a category RoB 2 does not have, for
+studies too problematic to include in any synthesis.
+
+## AMSTAR 2 and ROBIS
+
+Both appraise systematic reviews. They overlap heavily, and using both on the
+same review, as I did in the original blog post, produces two versions of the
+same verdict dressed as independent corroboration.
+
+**AMSTAR 2** has 16 items, of which **seven are critical**: protocol registered
+in advance, adequacy of the literature search, justification for excluding
+individual studies, risk of bias assessment of included studies, appropriateness
+of the meta-analytical methods, consideration of risk of bias when interpreting
+results, and assessment of publication bias. The overall confidence rating is
+driven by how many *critical* items fail, not by a total count.
+
+This is why reporting "flaws in five domains," as I did, is not a finding.
+Five non-critical flaws give a rating of low; one critical flaw gives low; more
+than one critical flaw gives critically low. The number alone determines
+nothing. Every AMSTAR 2 assessment in this book names which critical domains
+failed.
+
+**ROBIS** works in four phases, assessing the review's eligibility criteria,
+its identification and selection of studies, its data collection and appraisal,
+and its synthesis, before reaching an overall risk of bias.
+
+The choice between them is one of purpose: AMSTAR 2 asks whether the review was
+*conducted* well, ROBIS asks whether its *conclusions* are at risk of bias. I
+use one per review and say which.
+
+## GRADE
+
+The one that matters most here, because it is the system *Delivering Better
+Oral Health* itself uses.
+
+**Certainty of evidence** starts from design: randomised trials at high,
+observational studies at low. It then moves.
+
+Rate **down** for:
+
+- risk of bias in the contributing studies;
+- inconsistency between their results;
+- **indirectness**, where the evidence does not match the question on
+  population, intervention, comparator or outcome;
+- imprecision, where the confidence interval spans importantly different
+  conclusions;
+- publication bias.
+
+Rate **up**, for observational evidence only:
+
+- a large magnitude of effect;
+- a dose-response gradient;
+- where all plausible residual confounding would work *against* the observed
+  effect, so it survives despite the biases rather than because of them.
+
+The upgrade criteria are the ones people forget. I forgot them, and the
+correction is worked through in the chapter on brushing frequency. Forgetting
+them biases an appraisal systematically towards pessimism, which for a book like
+this is the error to guard hardest against.
+
+Indirectness deserves a note of its own, because it is the domain this book
+leans on most. It is the only GRADE domain that can be triggered by a perfectly
+conducted study. A flawless randomised trial of salivary fluoride is flawless,
+and is still indirect evidence for a recommendation about what time to brush.
+Indirectness is a property of the *relationship* between evidence and question,
+not a criticism of anyone's work.
+
+**Strength of recommendation** is a separate judgment with four inputs
+[@andrews2013]: the size of desirable and undesirable effects, confidence in
+those estimates, patients' values and preferences, and resource use. Certainty
+is one input of four, which is why a Strong recommendation on low-certainty
+evidence is not automatically wrong. The chapter on certainty and strength deals
+with when it is and is not defensible.
+
+## The two errors this appendix exists to prevent
+
+**Calling a certainty rating a strength, or the reverse.** "The strength of the
+recommendation is very low" is a sentence I wrote and had to retract. Strength
+is Strong or Conditional. Certainty is high, moderate, low or very low.
+
+**Stacking tools to inflate a verdict.** Three adverse ratings on one review
+sound like three problems and are usually one problem, counted three times. Pick
+the tool that answers the question you are asking, report it, and stop.

@@ -1,5 +1,168 @@
 # Glossary {#sec-app-glossary}
 
-::: {.callout-warning title="Draft"}
-This appendix is generated from `appraisals/` at build time.
-:::
+Terms as this book uses them. Where a word has a loose everyday meaning and a
+strict technical one, the strict one is given, because the gap between the two
+is where most of the confusion in this subject lives.
+
+**AMSTAR 2**
+:   A 16-item instrument for judging how well a systematic review was
+    conducted. Seven of the items are *critical*, and the overall rating depends
+    on how many of those fail, not on the total count. See
+    [Appendix -@sec-app-tools].
+
+**Approximal**
+:   Between adjacent teeth, on the surfaces that touch. Where a toothbrush
+    cannot reach, and where several of the trials in this book measured their
+    outcome.
+
+**Caries**
+:   Tooth decay. The disease process, as distinct from the cavity it eventually
+    produces.
+
+**Certainty of evidence**
+:   How much we should trust an estimate of an effect: high, moderate, low or
+    very low. A property of a *body of evidence about one outcome*, not of a
+    paper and not of a recommendation. Compare **strength of recommendation**,
+    with which it is constantly confused.
+
+**Cluster-randomised trial**
+:   A trial that randomises groups, such as schools or clinics, rather than
+    individuals. Its analysis must account for the fact that people within a
+    group resemble each other, or its confidence intervals come out too narrow.
+
+**Conditional recommendation**
+:   In GRADE, a recommendation where the panel is less confident that the
+    desirable effects outweigh the undesirable ones, so reasonable well-informed
+    people might choose differently. The clinician's job becomes helping this
+    particular person decide.
+
+**Confounding**
+:   When a third factor causes both the exposure and the outcome, making them
+    look related when the relationship is partly or wholly borrowed. People who
+    brush twice a day are also, on average, wealthier and more likely to attend
+    a dentist, and both of those independently reduce decay.
+
+**Cross-over trial**
+:   Each participant receives both interventions in sequence, acting as their
+    own control. Efficient, and appropriate for short-lived outcomes such as a
+    fluoride concentration. Not appropriate where the first intervention changes
+    the person permanently.
+
+**Cross-sectional study**
+:   Exposure and outcome measured at the same moment. Cannot establish which
+    came first, and so is weak evidence for causation.
+
+**DMFT, DMFS, dmft, dmfs**
+:   Counts of decayed, missing and filled **t**eeth or tooth **s**urfaces.
+    Lower case for primary teeth, upper case for permanent. The standard outcome
+    in dental research, and a compromise: it counts a filling and an extraction
+    as equivalent to untreated decay, and it counts nothing a patient feels.
+
+**Directed acyclic graph (DAG)**
+:   A diagram of assumed causal relationships, used to work out which variables
+    must be adjusted for and, just as importantly, which must not be.
+
+**Discordant recommendation**
+:   GRADE's term for a Strong recommendation resting on low or very low
+    certainty evidence. Permitted in specific circumstances, and expected to be
+    uncommon and explained. See [Chapter -@sec-certainty-strength].
+
+**Ecological fallacy**
+:   Inferring something about individuals from a relationship observed between
+    group averages. Trials that instructed twice-daily brushing had larger
+    fluoride effects; concluding that *you* will benefit from brushing twice is
+    a different claim, and the data do not reach it.
+
+**Fluorosis**
+:   Disturbance of enamel formation caused by swallowing too much fluoride while
+    teeth are still developing. Usually appears as faint white flecking. The
+    reason children are told to use a smear or a pea rather than a strip.
+
+**Good practice statement**
+:   In *Delivering Better Oral Health*, advice that clinical opinion supports but
+    for which "no robust underpinning research evidence exists." An honest
+    category, used {{< var dboh.goodpractice >}} times in the 2025 edition.
+
+**GRADE**
+:   Grading of Recommendations Assessment, Development and Evaluation. The
+    system used to rate certainty of evidence and strength of recommendations,
+    and the system *Delivering Better Oral Health* uses.
+
+**Indirectness**
+:   The GRADE domain covering a mismatch between the evidence and the question,
+    in population, intervention, comparator or outcome. The only domain that a
+    perfectly conducted study can still trigger, and the one this book leans on
+    most.
+
+**Intention to treat**
+:   Analysing participants in the group they were randomised to, whatever they
+    subsequently did. Analysing only those who completed the study instead
+    discards the protection randomisation bought.
+
+**Meta-analysis**
+:   Statistically combining results across studies to estimate an effect.
+
+**Meta-regression**
+:   Asking whether the size of an effect varies across studies according to some
+    characteristic of those studies. The comparison is between studies, not
+    within them, so it is observational even when every included study was
+    randomised.
+
+**Odds ratio**
+:   The odds of an outcome in one group divided by the odds in another. For rare
+    outcomes it approximates the risk ratio. For common outcomes, and dental
+    caries is very common, it does not: it is further from 1 than the risk
+    ratio, sometimes substantially.
+
+**ppm F**
+:   Parts per million of fluoride. Ordinary adult toothpaste is 1,350 to 1,500;
+    prescription pastes reach 2,800 or 5,000.
+
+**Prevented fraction (PF)**
+:   The proportion of disease prevented, relative to the control group. A PF of
+    24% means the intervention group developed 24% fewer new lesions.
+
+**Publication bias**
+:   The tendency for studies with striking results to be published, and
+    published sooner, than those without, so the visible literature overstates
+    effects.
+
+**RoB 2**
+:   The Cochrane risk-of-bias tool for randomised trials, in five domains, with
+    the overall judgment set by the worst domain.
+
+**ROBINS-I**
+:   The equivalent for non-randomised studies of interventions, with confounding
+    as its first and heaviest domain.
+
+**ROBIS**
+:   A four-phase tool for judging whether a systematic review's conclusions are
+    at risk of bias.
+
+**Standardised mean difference (SMD)**
+:   A difference between groups expressed in standard deviations, used when
+    studies measured the same thing on different scales. Not a quantity anyone
+    has intuitions about; wherever possible this book converts it back into
+    natural units.
+
+**Strength of recommendation**
+:   In GRADE, Strong or Conditional. How firmly you are being told to do
+    something, which depends on the balance of benefits and harms, patients'
+    values, and resources, as well as on certainty. Compare **certainty of
+    evidence**.
+
+**Strong recommendation**
+:   The panel is confident the desirable effects outweigh the undesirable ones
+    for nearly everyone the advice is aimed at, so a clinician can simply advise
+    it.
+
+**Surrogate outcome**
+:   Something measured as a stand-in for what we actually care about. Fluoride
+    concentration in saliva is a surrogate for tooth decay, which is itself
+    arguably a surrogate for pain and tooth loss. Each substitution adds an
+    assumption.
+
+**Systematic review**
+:   A review that states its question and methods in advance, searches
+    comprehensively, and appraises what it finds, so that the result does not
+    depend on which papers the author happened to know.
