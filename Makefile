@@ -56,5 +56,6 @@ clean:  ## Remove build output, keep the freeze cache
 deep-clean: clean  ## Also drop the Quarto freeze cache
 	rm -rf .quarto _freeze
 
-extract:  ## Re-extract DBOH 2025 into appraisals/ and _variables.yml
+extract:  ## Re-extract DBOH 2025 into appraisals/, _variables.yml and the appendices
 	python3 scripts/extract_dboh.py
+	python3 scripts/make_appendices.py
