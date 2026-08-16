@@ -13,8 +13,10 @@ the trial I had described.
 >
 > Strength of recommendation: **Strong**
 >
-> --- *Delivering Better Oral Health*, chapter 2, tables 1b, 1d and 1f
-> [@dboh2025]
+> --- *Delivering Better Oral Health*, chapter 2, tables 1d and 1f [@dboh2025]
+
+Table 1b, for children aged three to six, carries the same instruction without
+the words "with water".
 
 ## What the guideline says its evidence is
 
@@ -95,8 +97,8 @@ mouthwash.
 So the trial DBOH cites as moderate-certainty evidence for "spit, don't rinse"
 is a trial of a four-part technique in which one part is a form of rinsing, one
 part is not eating or drinking for two hours afterwards, and one part is how you
-apply the paste in the first place. Only item 4's second clause corresponds to
-what a modern reader understands by "don't rinse."
+apply the paste in the first place. Only the first clause of item 4 corresponds
+to what a modern reader understands by "don't rinse."
 
 This is [Chapter -@sec-bundling]'s problem again, one level further down. The
 guideline bundles six instructions and lets the best-evidenced one carry the
@@ -123,13 +125,25 @@ reported detail in a 1995 paper is weaker evidence of a problem than it would be
 today.
 
 *Deviations from intended interventions.* The trial is described as double-blind,
-which refers to the two toothpastes. It cannot be blind for the technique
-instruction, since the instruction is the intervention. Adherence to a four-part
-daily behaviour over three years in four-year-olds is unlikely to have been
-complete and is not reported. **High.**
+which refers to the two toothpastes; it cannot be blind for the technique
+instruction, since the instruction is the intervention. For the effect of
+*assignment*, though, lack of blinding is only a problem if it produced deviations
+beyond what would happen in usual practice, and if those were not analysed
+appropriately. Adherence to a four-part daily behaviour over three years in
+four-year-olds was surely incomplete, but incomplete adherence is exactly what
+assignment to this advice means in the real world, and non-adherence is not itself
+a deviation that biases the assignment effect. What I cannot check is whether the
+analysis was by assigned group, because group sizes are reported as completers.
+**Some concerns**, downgraded from the High I first assigned.
 
-*Missing outcome data.* 24% did not complete, results are reported on completers,
-and there is no analysis of whether attrition differed by group. **High.**
+*Missing outcome data.* 24% did not complete and the analysis is on completers.
+RoB 2 asks whether missingness could depend on the true outcome. Attrition in a
+three-year study of four-year-olds is often ordinary loss to follow-up, but here
+it is substantial, no comparison of attrition by group is given, and no
+sensitivity analysis is reported. That is enough for **some concerns** and, given
+the size, arguably High. I judge **High**, on the basis that a quarter of a
+caries trial's participants is enough to move a 0.41-surface difference, and that
+nothing in the report allows the possibility to be excluded.
 
 *Measurement of the outcome.* Approximal lesions scored on bitewing radiographs,
 restricted to the distal surface of the first and mesial surface of the second
@@ -138,9 +152,12 @@ blinding to group is not reported. **Some concerns.**
 
 *Selection of the reported result.* No protocol available. **Some concerns.**
 
-**Overall: high risk of bias.** This agrees with the conclusion I reached in
-2023, though for partly different reasons, and it sits awkwardly with DBOH's
-rating of moderate certainty. Full domain judgments in the appraisal data.
+**Overall: high risk of bias**, driven by the missing outcome data domain alone,
+with some concerns in three others. This is a weaker basis than the blog post
+claimed, where I recorded High in two domains; applying the signalling questions
+rather than the general impression moved the deviations domain down. The overall
+judgment is unchanged, and it still sits awkwardly with DBOH's rating of moderate
+certainty. Full domain judgments in the appraisal data.
 :::
 
 ## The Scottish study
@@ -168,34 +185,46 @@ comparing groups that chose their own exposure, in a population where oral
 hygiene habits track socioeconomic position closely.
 
 **The four categories became two.** The authors collapsed the four rinsing
-methods into beaker versus everything else, on the stated grounds that three of
-them gave similar results. Deciding on a grouping after seeing the results is
-selective analysis, or analysis specified after the fact.
+methods into beaker versus everything else, giving as their reason that three of
+them produced similar results.
 
-In the blog post I called this "p-hacking." I have changed that. P-hacking
-usually means trying analyses until one crosses a significance threshold, and I
-have no evidence that is what happened here. Collapsing categories because they
-look alike is a defensible exploratory move; the failure is presenting the result
-as if it had been planned, and citing it as though it were a trial result.
+In the blog post I called this "p-hacking." I have withdrawn that. P-hacking
+means running analyses until one crosses a significance threshold, and I have no
+evidence of it. What I can say is weaker and still worth saying: the grouping is
+**data-driven on the authors' own account**, and with no protocol available there
+is no way to know whether it was specified in advance. Collapsing categories
+because they look alike is a legitimate exploratory move. The problem is what
+happens two citations later, when an exploratory contrast within an observational
+sub-analysis is cited by a national guideline as evidence for a Strong
+recommendation.
 
 **Confounding.** The four groups differ at baseline in caries experience and in
 sex distribution. If you were designing this analysis today you would specify a
 causal model and adjust for the common causes of both rinsing habit and caries.
 
 ::: {.callout-note title="What you would need to adjust for" collapse="true"}
-Drawing the directed acyclic graph for "does using a beaker cause caries" gives a
-minimal adjustment set of socioeconomic position, age, sex and parental
-education: each plausibly influences both the choice of rinsing method and the
-caries outcome, and none lies on the causal path between them.
+In the blog version I drew a directed acyclic graph and read a "minimal
+adjustment set" off it: socioeconomic position, age, sex and parental education.
+I have withdrawn that phrase, because a minimal adjustment set is only minimal
+relative to a stated graph, and the graph was mine rather than anything the data
+supported.
 
-Two cautions I did not give in the blog version. Adjusting for a variable that
-sits *between* rinsing and caries, such as fluoride concentration retained in the
-mouth, would block the very effect we want to estimate. And adjusting for a
-variable caused by both, such as overall oral hygiene score, could open a path
-rather than close one. "Control for everything you measured" is not a method.
+What I can offer instead is a list of **candidate confounders**: variables that
+plausibly influence both which rinsing method a twelve-year-old uses and how much
+caries they develop. Socioeconomic position, parental education, sex, diet,
+baseline caries experience, dental attendance and fluoride exposure all qualify,
+and the trial report shows the four rinsing groups differing at baseline in
+caries experience and in sex distribution. Which of these actually need adjusting
+depends on assumptions I cannot verify from a published table.
 
-None of this is available without the individual data, so this remains a
-statement about what the study cannot tell us rather than a re-analysis.
+Two cautions worth keeping whatever graph you draw. Adjusting for a variable that
+sits *between* rinsing and caries, such as fluoride retained in the mouth, would
+block the very effect being estimated. And adjusting for a common effect of both,
+such as an overall oral hygiene score, can open a path rather than close one.
+"Control for everything you measured" is not a method.
+
+None of this can be settled without the individual data, so this remains a
+statement about what the study cannot tell us, not a re-analysis.
 :::
 
 ## Where does "moderate" come from?
@@ -224,12 +253,16 @@ Four records, all screened in full. Full strategy and screening decisions in
 `appraisals/searches/ch07-post-brushing-rinsing.md`.
 
 **No randomised trial isolating post-brushing rinsing with a caries outcome was
-found.** Everything published since 2000 measures salivary fluoride retention,
-which is the same surrogate problem as [Chapter -@sec-last-thing]:
+found.** Of the four records this search returned, three measure salivary
+fluoride retention, which is the same surrogate problem as
+[Chapter -@sec-last-thing]:
 
 - A crossover in 10 adults found higher salivary fluoride for up to 30 minutes
-  without rinsing, and no significant difference in systemic absorption, which is
-  reassuring on safety [@parakaw2024].
+  without rinsing, and reported no significant difference in plasma or urinary
+  fluoride between methods [@parakaw2024]. With ten participants, that is a
+  failure to detect a difference rather than a demonstration of equivalence, and
+  the paper is a phase I study; I note it because it is the only safety data
+  found, not because it settles anything.
 - A randomised trial in 120 adults across 12 arms found rinsing significantly
   affected salivary fluoride retention to 90 minutes [@albahrani2022].
 - A crossover in 32 children found the same [@nazzal2016].
@@ -262,36 +295,49 @@ Certainty of evidence
     which is more than either of the two preceding chapters can say.
 
 Directness to the advice as worded
-:   **Moderate.** The Swedish trial has the right population, a
-    patient-relevant outcome and a three-year follow-up. Its intervention is a
-    bundle of which not rinsing is one part, so the effect cannot be attributed
-    to the advice as worded. The Scottish analysis is indirect on design.
+:   **Poor on intervention, good on everything else.** The Swedish trial has the
+    right population, a patient-relevant outcome and a three-year follow-up. Its
+    intervention is a four-part bundle of which not rinsing is one part, so the
+    effect cannot be attributed to the advice as worded: that is indirectness on
+    the intervention, and it is the decisive one here. The Scottish analysis
+    matches the question reasonably well on population and outcome; its problem is
+    uncontrolled confounding and a data-driven grouping, which are risk of bias,
+    not indirectness. I had these filed under the wrong heading in an earlier
+    draft.
 
 Is the strength label defensible?
 :   **Arguably yes, unlike the previous two chapters.** This is the best
     candidate in the brushing bundle for a legitimate discordant recommendation:
-    the intervention is free, has no plausible harm, the mechanism is clear, and
-    the one randomised trial points the right way. A Strong recommendation on
-    low-certainty evidence is defensible here. What is not defensible is stating
-    the certainty as moderate without showing how.
+    the burden is close to zero, no harm has been identified, the mechanism is
+    clear and consistent with the salivary fluoride studies, and the one
+    randomised trial points the right way. A Strong recommendation on
+    low-certainty evidence is defensible here on those grounds, subject to the
+    same caveat as everywhere in this book that I have not run a full
+    evidence-to-decision assessment. What is not defensible is stating the
+    certainty as moderate without showing how.
 
 What would change my mind
 :   A trial randomising people to rinse or not rinse after brushing, with
     everything else identical, and caries measured at two years or more. That is
-    a cheap, ethical, entirely feasible trial that nobody has run in thirty
-    years. Alternatively, publication of the reasoning behind DBOH's moderate
+    a cheap, ethical, entirely feasible trial that these searches did not
+    find in thirty years of literature. Alternatively, publication of the reasoning behind DBOH's moderate
     rating would settle whether I have simply missed something the panel saw.
 :::
 
 ## What this means for you
 
 Spit, don't rinse. Of the three pieces of brushing advice in this part of the
-book, this is the one I would defend most readily: it is the only one with a
-randomised trial behind it, that trial found less decay, and there is no
-conceivable downside to not reaching for a glass of water.
+book, this is the one I would defend most readily, and I follow it myself.
 
-Two honest caveats. The trial that supports it also told children not to eat or
-drink for two hours afterwards, and nobody knows how much of the benefit came
-from that instead. And the children in that trial did swill toothpaste foam
-around their mouths for a minute, so if you want to follow what was actually
-tested, "spit, don't rinse" is not quite it.
+But I have to state the finding precisely, because stating it loosely would
+commit the exact error this book is about. **A randomised trial found that a
+four-part toothpaste technique reduced approximal decay by about 26% over three
+years. The effect of the one component that corresponds to "don't rinse" is not
+identifiable from it.** The trial also told children not to eat or drink for two
+hours afterwards, and to swill toothpaste foam around the mouth for a minute
+first. Any of those could be carrying the benefit.
+
+So: a sensible practice, a plausible mechanism, one supportive randomised trial
+of a bundle that includes it, and no direct evidence for the component itself.
+That is a good enough reason to keep doing it. It is not the same as "this has
+been shown to work," and the distinction is the whole point of the book.

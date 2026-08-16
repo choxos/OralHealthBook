@@ -12,21 +12,26 @@ Britain's national oral health guidance is a document called *Delivering Better
 Oral Health*, and it is a good document. It is careful, it is written by serious
 people, and unlike most dental advice you encounter it tells you how confident it
 is in each thing it says. Some advice is labelled **Strong**. Some is
-**Conditional**. Some is **Good practice**, which is the honest admission that
-there is no research behind it at all. That transparency is rare and it deserves
-credit.
+**Conditional**. Some is **Good practice**, which its own definition describes as
+advice for which "no robust underpinning research evidence exists," resting
+instead on extrapolation from related research and on clinical consensus. That
+transparency is rare and it deserves credit.
 
-So I took one of the Strong recommendations, "brush last thing at night and on
-one other occasion," and I followed the citation to see the trial that proved it.
+So I took a bullet from one of the Strong recommendations, "last thing at night
+(or before bedtime) and on one other occasion," and I followed the citation to
+see the trial that proved it.
 
 There is no trial. There is a one-page conference abstract from 2001, presented
 at an ORCA congress by two researchers at Unilever Dental Research, which
 measured how much fluoride was left in people's saliva overnight
 [@duckworth2001]. It did not compare brushing at bedtime against brushing
-earlier. Everyone in it brushed at bedtime. What it compared was two
-toothpastes. The Scottish guideline that first cited it describes it, correctly,
-as an observational study, and attaches no evidence grade to the recommendation
-it supports [@sign138].
+earlier. Everyone in it brushed at bedtime. What it compared was two toothpastes.
+
+The Scottish guideline that first cited it describes it, correctly, as an
+observational study, and marks the recommendation it supports with the symbol its
+own key defines as a **Good Practice Point**: "recommended best practice based on
+the clinical experience of the guideline development group" [@sign138]. Somewhere
+between that sentence and a summary table, clinical experience became **Strong**.
 
 I checked another one. Then another.
 
@@ -69,12 +74,12 @@ the ordinary condition of being a person who has to decide what to do this
 evening.
 
 It is also not an attack on the people who wrote the guideline. Chapter 13 of the
-2025 edition publishes the certainty rating behind every recommendation, and by
-doing so it hands critics like me the rope. Very few guidelines anywhere are that
-open. My argument, developed in [Chapter -@sec-bundling], is not that the authors
-were careless. It is that a specific and defensible drafting convention, stated
-plainly in the guideline's own methods, has a consequence I do not think anyone
-intended.
+2025 edition publishes an evidence statement for most recommendations and a
+certainty rating for many of them, in plain language, and by doing so it hands
+critics like me the rope. Very few guidelines anywhere are that open. My argument,
+developed in [Chapter -@sec-bundling], is not that the authors were careless. It
+is that a specific and defensible drafting convention, stated plainly in the
+guideline's own methods, has a consequence I do not think anyone intended.
 
 ## How to read this
 

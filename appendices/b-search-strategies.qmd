@@ -64,9 +64,12 @@ caries claim.
 
 ### Conclusion
 
-Kumar 2016 remains the only systematic review whose primary question is the
-effect of brushing frequency on caries. Nothing more recent was found. It is not
-cited by the guideline.
+Kumar 2016 was the only systematic review identified by these searches whose
+primary question is the effect of brushing frequency on caries, and nothing more
+recent came back. It is not cited by the guideline.
+
+This is a PubMed-only, single-screener search. It supports "I did not find
+another", not "another does not exist".
 
 ### Limitation
 
@@ -118,9 +121,11 @@ had to be traced through the printed reference list.
 
 ### Conclusion
 
-No trial has compared toothbrushing at different times of day with a caries
-outcome. This is an absence of evidence, and the chapter says so in those terms
-rather than treating it as evidence of absence.
+These searches identified no trial comparing toothbrushing at different times of
+day with a caries outcome. Given that only the top 20 of 249 records were
+screened, in one database, by one person, that is a statement about the search
+and not about the literature. The chapter is worded accordingly: absence of
+evidence found, not evidence of absence.
 
 ### Limitation
 
@@ -187,9 +192,13 @@ quietly becomes a clinical claim.
 
 ### Conclusion
 
-Thirty years after the Swedish trial, nobody has run the straightforward
-randomised comparison of rinsing against not rinsing with a caries outcome. The
-literature has moved entirely to the surrogate.
+Thirty years after the Swedish trial, this search found no randomised comparison
+of rinsing against not rinsing with a caries outcome. Of the four records it
+returned, three measure salivary fluoride and one uses an in-situ model with two
+variables changed at once.
+
+The query is narrow and a known gap is recorded below, so this supports "not
+found here" rather than "does not exist".
 
 ### Limitation
 

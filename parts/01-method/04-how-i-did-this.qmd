@@ -17,9 +17,12 @@ and assess whether that evidence answers the question the recommendation asks.
 
 Two things it is not.
 
-It is **not a systematic review**. I am not pooling studies to estimate an
-effect. Where a good systematic review of the question exists, I use it, and my
-job is to check whether the guideline used it correctly.
+It is **not a systematic review**, and the reason is not that it contains no
+meta-analysis, since plenty of systematic reviews do not. It is that it lacks
+the features that make a review systematic: the searches are single-database,
+screening was partial, there was one screener with no independent duplication,
+and there is no registered protocol. Where a good systematic review of a question
+exists I use it, and my job is to check whether the guideline used it correctly.
 
 It is **not an appraisal of the guideline development process**. I was not in
 the room. I cannot know what a panel discussed and decided not to write down.
@@ -57,9 +60,17 @@ to the advice on four axes:
 - *Comparator*: is this the alternative the advice implies?
 - *Outcome*: is this something a patient would notice or care about?
 
-A mismatch on any axis is **indirectness** in GRADE's vocabulary. It is the
-single most common problem I found, and it is invisible unless you go and look,
-because a citation looks the same whether or not it is on-topic.
+A mismatch on any axis raises **indirectness** in GRADE's vocabulary. Two steps,
+not one: finding a mismatch identifies *potential* indirectness, and a separate
+judgment then asks whether the mismatch is serious enough to change the answer.
+Evidence in twelve-year-olds applied to fourteen-year-olds is a mismatch that
+changes nothing. Evidence about salivary fluoride applied to a claim about tooth
+decay is a mismatch that changes everything. I try to keep the two steps
+visibly apart, and where I rate certainty down for indirectness I say what
+about the mismatch I think matters.
+
+This is the single most common problem I found, and it is invisible unless you go
+and look, because a citation looks the same whether or not it is on-topic.
 
 **4. Appraising it.** With the appropriate tool, and with the judgments shown
 rather than summarised:
@@ -103,6 +114,27 @@ rather than to imply currency the book does not have.
   discordant recommendation, a good practice statement in disguise, or one that
   should have been Conditional.
 - *What would change my mind.* Discussed below.
+
+  ::: {.callout-warning title="What that third field can and cannot claim"}
+  Strength, as [Chapter -@sec-certainty-strength] insists, depends on four
+  things: the size of desirable and undesirable effects, certainty in those
+  estimates, patients' values and preferences, and resource use. A full
+  evidence-to-decision assessment weighs all of them, plus acceptability,
+  feasibility and equity.
+
+  **I have not run one.** I have no data on how patients value the burden of
+  brushing at a particular hour, no cost analysis, and no survey of
+  acceptability. What I can assess is the evidential half: what the certainty is,
+  whether the cited evidence is direct, and whether the published reasoning
+  supports the published label.
+
+  So when a verdict says a Strong label is not defensible, it means: *on the
+  evidence and the reasoning the guideline has published, I cannot get there.* It
+  does not mean the panel, with the values and resource judgments it holds and I
+  do not, could not. Where I think a discordant Strong recommendation is
+  defensible anyway, as for spitting rather than rinsing, I say so and give the
+  reason.
+  :::
 
 **7. What this means for you.** One paragraph, plain language, no hedging beyond
 what is honest.
@@ -171,6 +203,73 @@ other people's citation practice should show its own errata:
   something more specific. [Chapter -@sec-spit].
 - I attributed *Delivering Better Oral Health* to Public Health England, which
   has not owned it since 2021.
+
+## What I got wrong in the drafts of this book
+
+The chapters above were reviewed adversarially before publication, by a model
+instructed to find factual errors, GRADE misapplications, overstatement and
+unfairness, with the archived guideline and the appraisal data available to
+check against. It found a great deal. The substantive corrections:
+
+- I described SIGN 138 as attaching **no grade** to the bedtime-brushing
+  recommendation, and as citing a single source for it. Both wrong. SIGN cites
+  two sources, and marks the recommendation with the symbol its own key defines
+  as a **Good Practice Point**, "recommended best practice based on the clinical
+  experience of the guideline development group." That is a better fact than the
+  one I had, and it makes the argument sharper rather than weaker.
+- I read Kumar's two brushing-frequency thresholds as the marginal effects of a
+  first and a second daily brushing. They are two different dichotomies of the
+  same variable, from overlapping but non-identical study sets, with no test for
+  trend and no interaction test. The inference does not follow.
+  [Chapter -@sec-twice-daily].
+- I wrote "I did not rate down further, because low is already low." GRADE runs
+  to very low. That is a straightforward error and it is corrected in place.
+- I said the guideline "cannot be interpreted" and that a Strong label on a
+  bundle communicates confidence about "at least one" component. DBOH says the
+  main component *determined* the strength; it does not define the label's scope
+  that way, and it never identifies which component is main. My identification of
+  fluoride toothpaste as the main component is an inference and is now marked as
+  one. [Chapter -@sec-bundling].
+- I quoted recommendations as verbatim while merging wordings that differ between
+  tables: table 1a says "on one other occasion," not "on at least one other
+  occasion," and table 1b omits "with water" from the rinsing bullet. In a book
+  whose method is verbatim quotation, that is not a small thing.
+- I called Kumar 2016 direct evidence that answers the question while dismissing
+  SIGN's cross-sectional studies. Both bodies are observational. The difference
+  is real but narrower than I made it.
+- I assigned RoB 2 judgments of High to two domains of the Swedish trial on
+  general impression rather than by working through the signalling questions. One
+  moved to Some concerns on doing it properly. The overall judgment did not
+  change, but the basis is now stated.
+- I filed the Scottish study's uncontrolled confounding under **indirectness**.
+  Confounding is risk of bias. Indirectness is about population, intervention,
+  comparator and outcome.
+- I claimed a "minimal adjustment set" from a DAG I did not publish. A minimal
+  adjustment set is minimal only relative to a stated graph. It is now a list of
+  candidate confounders.
+- I concluded chapter 7 by saying "spit, don't rinse" has a randomised trial
+  behind it that found less decay, four pages after explaining that the trial
+  tested a four-part bundle whose components cannot be separated. That is the
+  same attribution error I accuse the guideline of, in my own conclusion.
+- Several absence claims exceeded the searches that supported them: "nobody has
+  measured," "never been tested," "everything published since 2000." A
+  PubMed-only search with one screener supports "I did not find one."
+- I described a null result for systemic fluoride absorption in ten people as
+  "reassuring on safety." Failure to detect a difference is not evidence of
+  equivalence.
+- I discussed a cluster-randomised trial's results without citing it, from
+  memory of the blog post. The passage is removed rather than patched.
+- I said the six-bullet brushing structure recurs across age groups. The bundles
+  are five, six, three and three.
+- I said Good practice means "no research behind it at all." DBOH's definition is
+  narrower and explicitly permits extrapolation from related research.
+
+Two things about that list. First, it is long, and it was produced against
+chapters I had already written carefully; I include it because a book making this
+argument has no standing to hide its own corrections. Second, the review also
+disputed judgments I have kept, on the grounds that the disputes are about
+interpretation rather than fact. Where that happened I have said so in the chapter
+rather than quietly holding my ground.
 
 ## What I cannot do
 

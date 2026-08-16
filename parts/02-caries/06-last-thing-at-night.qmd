@@ -11,11 +11,16 @@ fatal one.
 >
 > Strength of recommendation: **Strong**
 >
-> --- *Delivering Better Oral Health*, chapter 2, tables 1a, 1b, 1d and 1f
+> --- *Delivering Better Oral Health*, chapter 2, tables 1b, 1d and 1f
 > [@dboh2025]
 
-The instruction appears in this form for every age group, from babies to adults,
-always as a bullet inside a larger brushing recommendation.
+The instruction appears as a bullet inside a larger brushing recommendation for
+every age group. The wording above is that of tables 1b, 1d and 1f; table 1a, for
+children under three, says "and on one other occasion" without the "at least".
+Table 4a, on tooth wear, carries the same advice as **Good practice** rather than
+Strong, which is worth noticing: the identical instruction holds two different
+strength labels in the same document, depending on which disease the table is
+about.
 
 Note what it actually asks. It is not "brush twice a day," which is
 [Chapter -@sec-twice-daily]. It is a claim about **when**: that one of your two
@@ -52,8 +57,16 @@ SIGN 138 §5.7.2 is short enough to quote entirely:
 >
 > --- SIGN 138, §5.7.2 [@sign138]
 
-Two sentences, then the recommendation. Two references: one for the physiological
-rationale [@davies2003], one for the observational study.
+Two sentences, then the recommendation. Two references: reference 95, a *British
+Dental Journal* review, for the physiological rationale that salivary flow falls
+during sleep [@davies2003]; and reference 101 for the observational study.
+
+Note what precedes the recommendation in the printed guideline: the tick symbol
+that SIGN's own key, on page ii, defines as a **Good Practice Point**,
+"recommended best practice based on the clinical experience of the guideline
+development group." The recommendation directly above it, on rinsing, carries a
+grade **A**. SIGN classified this one as clinical experience, deliberately and in
+its own notation.
 
 That observational study is reference 101, and it is:
 
@@ -65,15 +78,14 @@ supplement of the 48th congress of the European Organisation for Caries Research
 [@duckworth2001]. There is no full paper. Both authors were at Unilever Dental
 Research in Bebington.
 
-That is the entire evidential basis for telling every person in the United
-Kingdom to brush their teeth immediately before bed.
+That is the only empirical study cited for telling every person in the United
+Kingdom to brush their teeth immediately before bed. The other reference supports
+the physiology, not the recommendation.
 
-Two things in SIGN's favour before I go further. It describes the source
-accurately as "an observational study," and it attaches **no evidence grade to
-this recommendation at all**, in contrast to the recommendation directly above
-it about rinsing, which is graded A. SIGN did not claim more than it had. The
-Strong label appears later, downstream, when this becomes a bullet in a DBOH
-table.
+SIGN did not claim more than it had. It described its source accurately and
+classified the recommendation as clinical experience. The **Strong** label appears
+later, downstream, when this becomes a bullet in a DBOH table alongside fluoride
+toothpaste.
 
 ## Does it answer the question?
 
@@ -131,8 +143,13 @@ The reason this matters is more than pedantry. Leading with the weak objection
 invites the reply "twelve is fine for a cross-over," which is correct, and which
 then makes the real objection look like more of the same. The real objection is
 that **the study did not compare brushing times.** No sample size fixes that. A
-version of this study with twelve thousand participants would be exactly as
-irrelevant.
+version of this study with twelve thousand participants would tell us about
+overnight fluoride kinetics with great precision, and would still not tell us
+whether brushing at eleven beats brushing at nine.
+
+That is not the same as saying the study is worthless. It supports the biological
+plausibility of the recommendation, and I return to that below. It cannot
+estimate the comparative clinical effect the recommendation asserts.
 
 ## The industry question
 
@@ -157,32 +174,38 @@ is one page, "we cannot tell" is the appraisal.
 ## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-PubMed, searched 15 August 2026, for trials comparing toothbrushing at different
-times of day with a caries or patient-important outcome. Nothing directly
-relevant was found. Full strategy in `appraisals/searches/`.
+PubMed, 15 August 2026, for trials comparing toothbrushing at different times of
+day with a caries or patient-important outcome. The query returned 249 records,
+of which the top 20 by relevance were screened on title and abstract. **Nothing
+directly relevant was found.** The top hit was the brushing-*frequency* review
+from [Chapter -@sec-twice-daily]; the rest concerned frequency, supervised
+brushing programmes, or fluoride kinetics.
 
-The nearest thing remains the "Brush Day & Night" cluster-randomised programme
-evaluations, discussed below. Note that these are also Unilever-sponsored, and
-that the programme's name contains the recommendation being tested, which is not
-the same as testing it.
+The limits matter and I would rather state them than imply a completeness the
+search does not have: one database, one screener, and 20 of 249 records read. A
+trial ranked below 20 with an uninformative title would have been missed. This
+supports "I did not find one," not "there is none." Full record in
+`appraisals/searches/ch06-brushing-timing.md`.
+
+The recommendation's own citation could not have been found this way in any
+case. A one-page congress abstract with no DOI and no PubMed record is invisible
+to a database search, and had to be traced by hand through SIGN 138's printed
+reference list.
 :::
 
-The nearest relevant work is a cluster-randomised evaluation of an oral health
-education programme, in which over four thousand children in Indonesia and
-Nigeria received either a 21-day "Brush Day & Night" programme or toothbrushes
-and toothpaste alone. Both groups reported less mouth pain at six months, with
-small differences between them.
+In the blog post I discussed a cluster-randomised evaluation of an oral health
+education programme called "Brush Day & Night," and argued from one of its
+figures that the programme had not worked.
 
-I used this in the blog post to argue that the programme did not work. On
-re-reading, I do not think I can. The comparison I drew was from one figure, on
-one outcome, in one country, and it was not the trial's primary outcome. Cluster
-trials need analyses that account for clustering, and eyeballing a bar chart is
-exactly the reading-off-a-figure move I criticise elsewhere in this book. I have
-removed the claim.
-
-What remains true, and is enough, is that the trial does not address the
-question. Everyone in both arms was encouraged to brush at night. There is no
-comparison of timings, because once again nobody built one.
+I have removed that argument, and I have not replaced it with a corrected
+version. Two reasons. The claim I made came from reading a bar chart for a
+secondary outcome in one of the participating countries, which is the same
+reading-off-a-figure move I criticise elsewhere in this book, and a cluster trial
+needs an analysis that accounts for clustering before anything can be said about
+it. And the trial does not bear on this chapter's question in any case: everyone
+in both arms was encouraged to brush at night, so once again no comparison of
+timings exists. Rather than restate someone else's results at second hand from
+memory, I leave the point out.
 
 ## The rationale, taken seriously
 
@@ -219,11 +242,20 @@ Directness to the advice as worded
     twelve adults, measuring salivary fluoride.
 
 Is the strength label defensible?
-:   **No.** This is not a legitimate discordant recommendation. It is a good
-    practice statement in disguise: clinical reasoning from plausible physiology,
-    with no research appropriate for rating certainty. DBOH has a category for
-    exactly that, and uses it {{< var dboh.goodpractice >}} times elsewhere.
-    This belongs in it. SIGN 138 effectively said as much by attaching no grade.
+:   **Not on the published reasoning.** The recommendation is supported by
+    plausible physiology and by one indirect measurement, with no study of the
+    comparison it asserts. On DBOH's own definitions that is the profile of a
+    **Good practice** point: advice resting on extrapolation from related
+    research and on clinical consensus. SIGN 138 classified it exactly that way,
+    in its own notation, before DBOH bundled it into a Strong recommendation.
+
+    Two qualifications. Calling it a good practice point is not the same as saying
+    the evidence is unrateable; I have rated it very low above, and both
+    statements can stand because DBOH's category is defined by the *kind* of
+    evidence available, not by the impossibility of grading it. And as everywhere
+    in this book, I have not run a full evidence-to-decision assessment
+    ([Chapter -@sec-method]), so this is a judgment about the published
+    justification, not a claim that no panel could reach Strong.
 
 What would change my mind
 :   A randomised trial allocating people to brush last thing at night versus
@@ -237,12 +269,13 @@ What would change my mind
 
 ## What this means for you
 
-Brush before bed. It is free, it takes no extra effort given that you were going
-to brush anyway, and the reasoning behind it is sound even though it has never
-been tested.
+Brush before bed. Given that you were going to brush twice anyway, choosing when
+costs you nothing extra that I can see, and the physiological reasoning behind it
+is coherent even though the comparison it implies has not been tested.
 
-What you should not believe is that anyone has demonstrated it. If you brush at
-nine and go to bed at eleven, nobody can tell you what that costs you, because
-nobody has measured it. If a dentist tells you that brushing at bedtime is
-strongly evidence-based, they have been misled by a table, and it is not their
-fault.
+What has not been demonstrated is how much it matters. If you brush at nine and
+go to bed at eleven, the searches described here found nothing that can tell you
+what that costs you. And if you are given the impression that this specific
+instruction is backed by strong evidence, the summary table is the reason: it does
+not disclose that the component-level certainty behind that bullet is low, or
+that the guideline it came from classified it as clinical experience.

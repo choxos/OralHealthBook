@@ -56,9 +56,13 @@ quietly becomes a clinical claim.
 
 ## Conclusion
 
-Thirty years after the Swedish trial, nobody has run the straightforward
-randomised comparison of rinsing against not rinsing with a caries outcome. The
-literature has moved entirely to the surrogate.
+Thirty years after the Swedish trial, this search found no randomised comparison
+of rinsing against not rinsing with a caries outcome. Of the four records it
+returned, three measure salivary fluoride and one uses an in-situ model with two
+variables changed at once.
+
+The query is narrow and a known gap is recorded below, so this supports "not
+found here" rather than "does not exist".
 
 ## Limitation
 

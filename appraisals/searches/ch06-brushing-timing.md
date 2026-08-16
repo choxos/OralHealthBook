@@ -42,9 +42,11 @@ had to be traced through the printed reference list.
 
 ## Conclusion
 
-No trial has compared toothbrushing at different times of day with a caries
-outcome. This is an absence of evidence, and the chapter says so in those terms
-rather than treating it as evidence of absence.
+These searches identified no trial comparing toothbrushing at different times of
+day with a caries outcome. Given that only the top 20 of 249 records were
+screened, in one database, by one person, that is a statement about the search
+and not about the literature. The chapter is worded accordingly: absence of
+evidence found, not evidence of absence.
 
 ## Limitation
 

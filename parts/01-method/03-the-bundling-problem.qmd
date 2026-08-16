@@ -10,15 +10,22 @@ Better Oral Health*, in the introduction, and it is not hidden:
 > --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
 Read it twice. It says that when one recommendation contains several separate
-instructions, the panel looked at the evidence for each, and then gave the whole
-recommendation the strength earned by **one** of them.
+instructions, the panel looked at the evidence for each, and then set the
+strength of the whole recommendation by reference to **one** of them.
 
-Everything else in this book follows from that sentence.
+Everything else in this book follows from that sentence. So does a caveat I want
+to put in early, because the argument is easy to overstate and I overstated it in
+my first draft. DBOH does not say that the strength label applies to only one
+component, and it does not say which component was the main one in any given row.
+It says the main component determined the strength. What follows is therefore an
+argument about **what a reader can recover from the published tables**, not a
+claim about what the panel believed.
 
 ## What it looks like in practice
 
 The clearest example is the brushing advice for children aged three to six. In
-the summary table a parent would actually read, it appears once, with one label:
+the summary table, which DBOH addresses to dental teams rather than to the
+public, it appears once, with one label:
 
 > **Teeth should be brushed by a parent or carer. As the child gets older, a
 > parent or carer should assist them to brush their own teeth:**
@@ -67,11 +74,18 @@ review of topical fluoride as a cause of fluorosis [@wong2010]. Not one of them
 studied what time of day to brush. The timing bullet's evidence, traced through
 SIGN 138, is the ORCA abstract from [Chapter -@sec-why-audit].
 
-The Strong label is honest about the main component. It is the fluoride
-toothpaste, and moderate certainty from a large Cochrane review is a perfectly
-good basis for telling parents to use it. But the label sits at the end of all
-six bullets, and the reader has no way to know that two of them are low
-certainty and one is not about tooth decay at all.
+Which of the six is the "main component"? DBOH does not say, here or anywhere.
+My inference is that it is brushing with fluoride toothpaste: it is the only
+component with moderate certainty from a large body of randomised evidence, it is
+the one chapter 8 of the guideline describes as the key message, and a Strong
+label would be hard to justify on any of the others. [Chapter -@sec-ppm] sets out
+that evidence and concludes the label is thoroughly deserved.
+
+But that is an inference, and the fact that a reader has to make it is the
+problem. The label sits at the end of all six bullets. Nothing in the table
+records that two of them are low certainty, that one is a judgment about
+fluorosis risk rather than about tooth decay, or which of them the panel had in
+mind when it wrote **Strong**.
 
 ## This is not one bad row
 
@@ -81,21 +95,34 @@ Of the {{< var dboh.total >}} recommendations in the 2025 edition,
 bundle under a single Strong label has {{< var dboh.largest_strong_bundle >}}
 components.
 
-::: {.callout-note title="How these numbers were produced" collapse="true"}
+::: {.callout-important title="How these numbers were produced, and what they undercount"}
 Every recommendation in chapter 2 was extracted with its strength label, joined
-to its chapter 13 evidence statement, and the components counted from the
+to its chapter 13 evidence statement, and its components counted from the
 guideline's own bullets. The code is `scripts/extract_dboh.py` and the output is
 `appraisals/dboh-2025.csv`. None of the counts in this book are typed by hand;
 they are read from that file at build time.
 
-The count is a floor, not a ceiling. A recommendation written as flowing prose
-can bundle just as much and will count as one. "Minimise the amount and
-frequency of consumption of sugar-containing food and drinks" is two
-instructions, amount and frequency, in a single line with no bullets.
+**The count is a floor, and a conservative one.** It counts bullets, not
+instructions, and it undercounts in two ways.
+
+It ignores imperatives in the stem above the bullets. The recommendation quoted
+above opens "Teeth should be brushed by a parent or carer. As the child gets
+older, a parent or carer should assist them to brush their own teeth," which is
+itself two instructions about supervision, counted here as none.
+
+And a recommendation written as flowing prose can bundle just as much while
+counting as one. "Minimise the amount and frequency of consumption of
+sugar-containing food and drinks" is two instructions, amount and frequency, on a
+single line with no bullets.
+
+I have kept the bullet rule because it is mechanical and reproducible, and
+because erring low is the right direction for a claim of this kind. Every figure
+in this chapter would be larger under a more generous rule.
 :::
 
-The same six-bullet structure, with the same mixed certainties underneath,
-recurs for children under three, for children aged 7 to 18, and for adults.
+The same pattern recurs across the age groups, though not in the same size. The
+recommendation for children under three has five bullets, the one for children
+aged 7 to 18 has three, and the adult one has three.
 
 The adult version is worth its own look. Its evidence statement reads:
 
@@ -108,12 +135,19 @@ The adult version is worth its own look. Its evidence statement reads:
 >
 > --- *Delivering Better Oral Health*, chapter 13, table 6 [@dboh2025]
 
-Every component of the advice given to adults rests on evidence from children.
-The guideline says so plainly, three times, in one paragraph. That is
-indirectness, GRADE's own term for evidence that does not quite match the
-question, and it is exactly the sort of thing that ought to move a certainty
-rating down. Instead it is disclosed in a chapter most readers will never open,
-under a table that says **Strong**.
+Three of the four components of the advice given to adults are explicitly sourced
+to evidence from children and adolescents. The guideline says so plainly, three
+times, in one paragraph. (The fourth, the value of brushing with fluoride
+toothpaste, carries no such qualifier here, though the underlying review's adult
+evidence is three studies against 85 in children [@walsh2019].)
+
+That is potential **indirectness**, GRADE's own term for evidence that does not
+match the question on population, intervention, comparator or outcome. Whether it
+warrants rating certainty down depends on whether the mismatch plausibly changes
+the effect, which is a judgment rather than an automatic consequence, and
+[Chapter -@sec-method] describes how I made it. What is not in doubt is that the
+judgment has been disclosed in a chapter most readers will never open, under a
+table that says **Strong**.
 
 ## Why this is different from the usual complaint
 
@@ -127,49 +161,54 @@ not certain about the details," nobody could object, least of all me.
 Bundling is a different failure, and it survives that defence.
 
 The problem is not that the panel was too confident. It is that the label
-**cannot be interpreted**. A Strong label on a single recommendation carries
-information: it tells you the panel thinks nearly everyone should do this thing.
-A Strong label on a bundle of six tells you the panel thinks that about **at
-least one** of them, and does not tell you which. The reader cannot recover the
-message, because the message has been averaged away.
+**cannot be resolved to its parts**. A Strong label on a single recommendation
+carries a clear message: the panel thinks nearly everyone should do this thing.
+A Strong label on a bundle of six carries a message the guideline's own methods
+tell us was set by one component, without telling us which. The reader is left to
+guess, and the guess is not recoverable from the table.
 
 That has practical consequences, and they are not symmetric:
 
-**For the person following the advice.** If you have limited attention, and
-almost everyone does, you would like to know which instruction matters most.
-The answer is available: use fluoride toothpaste. But it has been hidden inside
-five other bullets of equal apparent authority. A parent who buys 1,000ppm
-toothpaste and cannot reliably get their toddler to brush at bedtime has done
-the thing that matters, and has been given no way to know it.
+**For the clinician the table is written for.** A Strong recommendation is what
+you cite when a patient pushes back. If a patient asks "does the timing really
+matter?", the honest answer is "probably, but the evidence for that specific part
+is low certainty, and it is the fluoride toothpaste that carries the weight." The
+table does not let you give that answer without going to chapter 13, and chapter
+13 is a separate document on a separate web page.
 
-**For the clinician.** A Strong recommendation is what you cite when a patient
-pushes back. If a patient asks "does the timing really matter?", the honest
-answer is "probably, but the evidence for that specific part is low certainty."
-The table does not let you give that answer without going to chapter 13.
+**For the person who eventually receives the advice.** Attention is finite. It
+would help to know which instruction matters most. That information exists in the
+guideline and does not survive the journey to the summary table, still less to
+the leaflet after that. A parent who buys 1,000ppm toothpaste and cannot reliably
+get a toddler to brush at bedtime has probably done the part that matters, and
+has no way to know it.
 
-**For anyone who later doubts one component.** This is the serious one. If a
-reader discovers on their own that the bedtime-brushing bullet rests on a
-conference abstract, they do not conclude "that bullet was weak." They conclude
-that the Strong label was oversold, and they discount the whole
-recommendation, including the fluoride toothpaste that actually earned it. A
-bundle transmits doubt as efficiently as it transmits authority. That is how
-good advice gets destroyed by its own packaging, and it is the main reason I
-think this is worth fixing.
+**For anyone who later doubts one component.** This is the one I care about most.
+If a reader discovers on their own that the bedtime-brushing bullet rests on a
+conference abstract, the conclusion they are likely to draw is not "that bullet
+was weak." It is that the Strong label was oversold, and to discount the whole
+recommendation, fluoride toothpaste included. A bundle transmits doubt as
+efficiently as it transmits authority. That is how good advice can be damaged by
+its own packaging, and it is the main reason I think this is worth fixing.
 
 ## What would fix it
 
-Not much, which is the frustrating part.
+Less than you might think, which is the frustrating part.
 
 A recommendation with six components could carry six labels, or one label plus a
-line saying which component it rests on. The information already exists. Chapter
-13 has it. The panel did the work, wrote it down, and published it. All that is
-missing is carrying it forward into the table people actually read.
+line naming the component it was set by. Much of what that would need already
+exists: chapter 13 publishes component-level certainty in plain language, which
+is more than most guidelines do anywhere.
 
-The 2025 edition is already a long way towards this. Publishing chapter 13 at
-all, with per-component certainty ratings in plain language, is more than most
-guidelines do, and it is the reason this book can be written at all. My argument
-is not that DBOH is careless. It is that DBOH did the hard part and then stopped
-one step short.
+What does not yet exist is the strength judgment at component level. Chapter 13
+tells us how certain the evidence is for each part; it does not tell us which
+part the panel treated as main, or what strength each part would carry on its
+own. Those are decisions only the panel can publish, and the ask of this book is
+that it should.
+
+The 2025 edition is already most of the way there. My argument is not that DBOH
+is careless. It is that DBOH did the hard part, wrote it down, and then stopped
+one step short of the table people read.
 
 ## Where this leaves the audits
 

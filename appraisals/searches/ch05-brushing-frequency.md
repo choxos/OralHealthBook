@@ -45,9 +45,12 @@ caries claim.
 
 ## Conclusion
 
-Kumar 2016 remains the only systematic review whose primary question is the
-effect of brushing frequency on caries. Nothing more recent was found. It is not
-cited by the guideline.
+Kumar 2016 was the only systematic review identified by these searches whose
+primary question is the effect of brushing frequency on caries, and nothing more
+recent came back. It is not cited by the guideline.
+
+This is a PubMed-only, single-screener search. It supports "I did not find
+another", not "another does not exist".
 
 ## Limitation
 

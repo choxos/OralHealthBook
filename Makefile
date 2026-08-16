@@ -13,13 +13,14 @@ help:  ## Show this help
 web:  ## Build the free website into _book/
 	quarto render --profile web
 
-print: pdf epub  ## Build both paid-edition formats into dist/
+# One invocation, not two. Quarto cleans output-dir on each render, so
+# `make pdf && make epub` leaves only the epub.
+print:  ## Build both paid-edition formats into dist/
+	quarto render --profile print
 
-pdf:  ## Build the KDP paperback PDF
-	quarto render --profile print --to pdf
+pdf: print  ## Build the KDP paperback PDF (builds the epub too)
 
-epub:  ## Build the Kindle EPUB
-	quarto render --profile print --to epub
+epub: print  ## Build the Kindle EPUB (builds the PDF too)
 
 covers:  ## Regenerate cover art (paperback spine tracks the PDF page count)
 	python3 scripts/make_cover.py

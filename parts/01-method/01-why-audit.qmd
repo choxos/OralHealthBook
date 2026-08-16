@@ -25,23 +25,33 @@ do, it tells you how confident it is that you should do it.
 I expected to spend an afternoon on it. Instead I spent three weeks, because
 one of the five would not check out.
 
-The recommendation was "brush last thing at night and on one other occasion."
-It is labelled **Strong**. I wanted to link to the trial. There is no trial.
-The chain, followed link by link, runs: *Delivering Better Oral Health* cites
-the Scottish guideline SIGN 138 [@sign138]; SIGN 138 §5.7.2 cites a single
-source, its reference 101; reference 101 is a one-page abstract from the 48th
-ORCA congress, by two researchers at Unilever Dental Research
-[@duckworth2001]. Its subject is how much fluoride sits in your saliva twelve
-hours after brushing. Everyone in it brushed at bedtime. Nobody was asked to
-brush at any other time, so no comparison of timings was possible, and none was
-made.
+The recommendation was the bullet "last thing at night (or before bedtime) and on
+one other occasion," which sits inside a recommendation labelled **Strong**. I
+wanted to link to the trial. There is no trial.
 
-I want to be precise about who did what here, because it matters. SIGN 138 did
-not overclaim. It describes that source as "an observational study," which is
-generous but not wrong, and it attaches **no evidence grade at all** to the
-timing recommendation, while the recommendation immediately above it about
-rinsing gets a grade A. SIGN was being careful. Somewhere between that careful
-ungraded sentence and the word **Strong** on a summary table, the care was lost.
+The chain, followed link by link, runs like this. *Delivering Better Oral Health*
+cites the Scottish guideline SIGN 138 [@sign138]. SIGN 138 §5.7.2 is two
+sentences long and cites two sources: one for the physiological rationale that
+salivary flow falls during sleep [@davies2003], and one described as "an
+observational study" of salivary fluoride, its reference 101. Reference 101 is a
+one-page abstract from the 48th ORCA congress, by two researchers at Unilever
+Dental Research [@duckworth2001]. Its subject is how much fluoride sits in your
+saliva twelve hours after brushing. Everyone in it brushed at bedtime. Nobody was
+asked to brush at any other time, so no comparison of timings was possible, and
+none was made.
+
+I want to be precise about who did what here, because it matters. **SIGN 138 did
+not overclaim.** It describes its source accurately, and it marks the timing
+recommendation with the tick symbol that its own key on page ii defines as a
+**Good Practice Point**: "recommended best practice based on the clinical
+experience of the guideline development group." The recommendation immediately
+above it, about rinsing, gets a grade **A**. SIGN drew that distinction
+deliberately.
+
+That is the step this whole book is about. A guideline said, in its own notation,
+*this is our clinical experience.* A later guideline turned it into a bullet in a
+recommendation marked **Strong**, and nothing in the summary table a reader sees
+records that the transformation happened.
 
 That is not a scandal. Nobody falsified anything. But if you are a parent
 standing over a four-year-old at half past seven in the evening, and you have
@@ -70,9 +80,13 @@ A with C, or compared two versions of A, or had no comparison group at all.
 teeth. The study measured parts per million of fluoride in saliva, or plaque
 scores at four days, or a number on an index that nobody has ever felt.
 
-**The wrong design for the claim.** The claim is causal. The data are
-observational, and the people who chose to do the thing differ from the people
-who did not in every way that also affects the outcome.
+**Uncontrolled confounding.** The claim is causal, the data are observational,
+and the people who chose to do the thing differ systematically from those who did
+not in ways that also affect the outcome. This is not a blanket objection to
+observational research, which can support causal conclusions when the confounders
+are identified, measured and adjusted for under stated assumptions. The objection
+is to the specific studies where that work was not done, and where the guideline
+cites the result as though it had been.
 
 **The bundle.** The advice contains four instructions. The evidence covers one
 of them. This one is the subject of [Chapter -@sec-bundling], and it turns out
