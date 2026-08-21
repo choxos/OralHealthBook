@@ -1,75 +1,208 @@
 # Tobacco: what a strong recommendation looks like {#sec-tobacco}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+If you want to know whether this book is a hatchet job, this is the chapter to
+read.
+
+Tobacco is the one subject in *Delivering Better Oral Health* where the
+underlying science is overwhelming. Smoking causes oral cancer. Stopping helps.
+Nobody serious disputes either claim, and the guideline is right to push it as
+hard as it does. I have no interest in manufacturing a complaint here.
+
+What I want to do instead is apply the same method to a case where the answer
+comes out largely favourable, because a method that only ever finds fault is not
+a method. And then look at one row, because even here the guideline does the
+thing this book is about, and here it may be entitled to.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+Tobacco gets five Strong recommendations across two tables, organised around a
+structure called Very Brief Advice: **ask, advise, act.**
+
+> **Ask.** At every opportunity, ask patients if they smoke and record smoking
+> status (smoker, ex-smoker, never smoker). — **Strong**
+>
+> **Advise.** Explain that a combination of behavioural support and the
+> medication varenicline, or short-acting with long-acting Nicotine Replacement
+> Therapy, are likely to be most effective. — **Strong**
+>
+> **Act.** Refer people who want to stop smoking to local stop smoking support,
+> preferably where behavioural support and prescribed stop smoking medicines are
+> available. — **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 3a [@dboh2025]
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+For the **Act** step:
 
-## Following the citation
+> Moderate certainty evidence. NICE guidance supports this recommendation as
+> "evidence and expert opinion showed that support provided by these services is
+> clinically effective and highly cost-effective in helping people to stop
+> smoking".
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+That is a straightforward, well-supported, correctly labelled recommendation.
+Referral to stop smoking services works, it is cost-effective, and moderate
+certainty comfortably supports a Strong recommendation. There is nothing here
+for me to say except that it is right.
 
-## Appraising it
+Now read the evidence statement for the **Ask** step.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+> **No specific evidence regarding asking about smoking**; however, it is an
+> integral part of the Ask, Advise, Act pathway.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
+A **Strong** recommendation, and the guideline's own evidence statement opens by
+saying there is no specific evidence for it.
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
+## Is that a scandal?
 
-## Is there better evidence?
+No. And working out why not is more useful than pretending it is.
+
+This is the clearest instance in the entire guideline of a component taking its
+strength from the structure it sits in rather than from evidence of its own. It
+is the pattern of [Chapter -@sec-bundling], stated openly. But unlike the
+brushing bundle, here I think the borrowing is **defensible**, for three reasons
+that are worth spelling out because they are exactly what a Strong recommendation
+on no direct evidence has to demonstrate.
+
+**The component is logically necessary to the pathway.** You cannot advise a
+smoker to quit, or refer them, without first establishing that they smoke. Asking
+is not a separate intervention competing for the patient's attention; it is the
+entry condition for the interventions that do have evidence. Demanding a
+randomised trial of *asking*, against a comparator of not asking but somehow
+still advising, is demanding a trial of something incoherent.
+
+**The burden is trivial and the harm is close to nil.** One question in a medical
+history. There is no plausible mechanism by which asking a patient whether they
+smoke makes their health worse, and nothing else is displaced by it.
+
+**The downstream effect is large.** Brief opportunistic advice to stop smoking
+has a real effect on quit rates, and the population impact of applying it at
+scale is substantial because the underlying harm is enormous. When the thing
+downstream is that valuable, an entry step with no trial of its own inherits a
+strong case.
+
+Those three conditions together are close to what GRADE has in mind when it
+allows a Strong recommendation despite low or absent certainty
+[@andrews2013]. Recall from [Chapter -@sec-certainty-strength] that Alexander
+and colleagues found only 15.6% of discordant WHO recommendations met that bar
+[@alexander2015]. This one does. I have criticised bundling repeatedly in this
+book; intellectual honesty requires saying clearly when the same move is
+justified.
+
+What the guideline could still do, and does not, is say **which** of those three
+reasons it relied on. "No specific evidence, but it is integral to the pathway"
+is half of the argument. The half that is missing is the half that would let a
+reader check it.
+
+## What the dental evidence actually shows
+
+There is one further thing worth surfacing, and it is not a criticism of the
+recommendation so much as a correction to how it is often described.
+
+The Cochrane review of tobacco cessation **delivered by dental professionals**
+includes 20 trials in 14,897 participants [@holliday2021]. According to PubMed,
+its findings are:
+
+| Intervention | Effect on abstinence at ≥6 months | Certainty |
+|:-----------------------------------------|:------------------------|:-------------|
+| Behavioural support, one session | RR 1.86 (95% CI 1.01 to 3.41), I²=66%, 4 studies | [very low]{.certainty .very-low} |
+| Behavioural support, more than one session | RR 1.90 (95% CI 1.17 to 3.11), I²=61%, 7 studies | [very low]{.certainty .very-low} |
+| **Behavioural support plus NRT or e-cigarettes** | **RR 2.76 (95% CI 1.58 to 4.82), I²=0%, 4 studies** | [moderate]{.certainty .moderate} |
+| Behavioural support in schools or colleges | RR 1.51 (95% CI 0.86 to 2.65), I²=83%, 3 studies | [very low]{.certainty .very-low} |
+
+: Tobacco cessation delivered by dental professionals [@holliday2021]. Risk
+ratios above 1 favour the intervention {#tbl-holliday}
+
+Sixteen of the twenty trials were judged at **high** risk of bias, three at low,
+one unclear. The review's own conclusion is that quit rates increase with
+behavioural support at very low certainty, and that abstinence increases at
+moderate certainty when pharmacotherapy is added.
+
+Two things follow.
+
+**The strongest result in the table is the one that involves medication.** The
+only moderate-certainty finding, and by some distance the largest effect, is
+behavioural support *combined with* NRT or e-cigarettes, with no heterogeneity at
+all (I²=0%). That is a striking result and it maps exactly onto what the
+guideline tells dental teams to do: refer to services "preferably where
+behavioural support and prescribed stop smoking medicines are available." The
+recommendation and its best evidence line up. This is what the previous chapters
+kept failing to find.
+
+**Behavioural support delivered by dental teams alone is very low certainty.**
+This matters for how the profession talks about itself. The claim "dentists can
+help patients quit smoking" is supported; the claim "this has been robustly
+demonstrated for dental settings specifically" is not, and the review says so.
+The absolute numbers are modest: for a single session, roughly 45 quitters per
+1,000 against 24 per 1,000.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026. The Cochrane review's own search ran to February 2020
+across the Cochrane Tobacco Addiction Group's Specialised Register; I have not
+attempted to reproduce it. I checked for a `.pub5` update and found none, so
+CD005084.pub4 remains current.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+**Limitation.** As with every Cochrane review in this book, I have the structured
+abstract but not the full text: Cochrane deposits into PubMed Central sit outside
+its Open Access subset, so the risk-of-bias table and the characteristics of the
+twenty included studies are not available to me. Where I report that sixteen
+studies were at high risk of bias, that is the review's own summary statement,
+not my reading of its domain judgments.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch21-tobacco.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   **Mixed, and correctly described by the guideline.**
+    [Moderate]{.certainty .moderate} for referral to stop smoking services and
+    for behavioural support combined with pharmacotherapy.
+    [Very low]{.certainty .very-low} for behavioural support delivered by dental
+    professionals on its own. **None at all** for the asking step, as chapter 13
+    states in terms.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Good.** The cited evidence is about smoking cessation, in the settings and
+    populations the advice addresses, measuring abstinence at six months or more.
+    That is a patient-important outcome measured directly, which is more than most
+    chapters of this book can say.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes**, including for the Ask step with no evidence behind it. It meets what
+    GRADE requires of a discordant recommendation: the component is logically
+    necessary to a pathway whose downstream steps are well supported, the burden
+    is a single question, and no plausible harm attaches to it. This is the
+    category that [Chapter -@sec-certainty-strength] said exists and is rare, and
+    here it applies.
+
+    The criticism that survives is smaller and is about drafting, not judgment:
+    the guideline states that there is no specific evidence and that the step is
+    integral to the pathway, but does not set out why that combination justifies
+    Strong. A reader is asked to accept the conclusion without the reasoning.
 
 What would change my mind
-:   *TBD*
+:   For the Ask step, evidence that recording smoking status displaces something
+    more valuable in a short appointment, or that it deters attendance among
+    people who smoke. For the dental-delivered behavioural support, better trials:
+    the review asks specifically for biochemical validation of abstinence rather
+    than self-report, and sixteen of twenty trials at high risk of bias is a
+    literature with a great deal of room to improve.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If you smoke, the single most useful thing in this entire book is on this page,
+and it is not about your teeth. Stopping smoking is worth more to your health
+than every other recommendation in *Delivering Better Oral Health* put together.
+
+If your dentist asks whether you smoke and it feels intrusive or repetitive, it
+is the entry point to the one intervention here with a large effect on
+mortality. And if you want to stop, the evidence points clearly at one thing:
+behavioural support **combined with** medication, through a stop smoking service,
+rather than willpower alone or advice alone.

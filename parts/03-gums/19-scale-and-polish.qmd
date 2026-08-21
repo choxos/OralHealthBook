@@ -1,75 +1,193 @@
 # Scale, polish, and being told what to do {#sec-scale-polish}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
+Every chapter so far has asked whether a recommendation is better supported than
+it looks. This one asks the reverse question. What happens when the evidence is
+excellent, unambiguous, and says the thing does not work?
+
+The answer turns out to be interesting, because *Delivering Better Oral Health*
+gets this right, and a great many dental practices do not.
+
+## The advice, and what is missing from it
+
+Here is the thing to notice first. Search the guideline for a recommendation to
+give patients a routine scale and polish, and you will not find one.
+
+What table 2a contains is this:
+
+> Correct factors that impede effective plaque control including supra and
+> subgingival calculus, open margins and restoration overhangs and contours,
+> which prevent effective plaque removal
+>
+> Strength of recommendation: **Good practice**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 2a [@dboh2025]
+
+That is a recommendation to remove calculus **where it is impeding plaque
+control**, labelled honestly as clinical consensus rather than research. It is
+not a recommendation that healthy adults should have their teeth scaled every six
+months.
+
+The absence is the finding. If you have ever been booked in for a six-monthly
+"scale and polish" as a matter of course, you have received something the
+national guideline does not recommend, and the reason it does not recommend it is
+that the question has been asked properly and answered.
+
+## What the evidence says
+
+The Cochrane review of routine scale and polish included two trials in 1,711
+adults, both conducted in UK general dental practice, in adults without severe
+periodontitis who attended regularly [@lamont2018]. One followed participants for
+24 months, the other for 36.
+
+According to PubMed, comparing planned six- or twelve-monthly scale and polish
+against **no scheduled treatment**:
+
+| Outcome | Finding | Certainty |
+|:---------------------------------|:-----------------------------------|:-----------------|
+| Gingivitis | little or no difference; SMD −0.01 (95% CI −0.13 to 0.11) at six months, −0.04 (−0.16 to 0.08) at twelve | [high]{.certainty .high} |
+| Probing depths | little or no difference | [high]{.certainty .high} |
+| Oral health-related quality of life | little or no difference | [high]{.certainty .high} |
+| Plaque | little or no difference | [low]{.certainty .low} |
+| Calculus | small reduction; SMD −0.32 (95% CI −0.44 to −0.20) six-monthly, −0.19 (−0.31 to −0.07) twelve-monthly | [high]{.certainty .high} |
+| Self-reported oral cleanliness | higher with treatment | [low]{.certainty .low} |
+
+: Routine scale and polish against no scheduled treatment [@lamont2018]
+{#tbl-scale-polish}
+
+And comparing six-monthly against twelve-monthly: little or no difference in
+gingivitis (SMD 0.03, 95% CI −0.09 to 0.15, I²=0%), probing depths or quality of
+life, all at high certainty, with a small extra calculus reduction from the more
+frequent option.
+
+Read the certainty column, because it is doing something unusual for this book.
+**High certainty, from randomised trials, in the right population, in the right
+setting, measuring outcomes patients can feel.** These are not weak studies that
+failed to find an effect. This is a well-designed body of evidence that looked
+hard and found little or nothing.
+
+The one thing routine scaling reliably does is remove calculus. Which is to say:
+it achieves its immediate technical objective, and that does not translate into
+less gum inflammation, shallower pockets, or a patient who feels better. The
+review's own phrase for the calculus finding is that "the clinical importance of
+these small reductions is unclear."
+
+::: {.callout-note title="How I judged this: why absence of effect is not absence of evidence" collapse="true"}
+[Chapter -@sec-method] warns against treating absence of evidence as evidence of
+absence. This chapter is the case where the distinction runs the other way, and
+it is worth being precise.
+
+For gingivitis, the pooled estimate is SMD −0.01 with a confidence interval from
+−0.13 to 0.11. That interval is **narrow and centred on zero**. It excludes any
+effect a patient would notice. That is not "we looked and found nothing"; it is
+"we measured it precisely and it is very close to nothing." GRADE's high-certainty
+rating reflects exactly that: randomised evidence, consistent across the two
+trials, precise enough to rule out an important benefit.
+
+Compare with [Chapter -@sec-last-thing], where no study of the question exists at
+all. Both chapters can be summarised as "no demonstrated benefit," and they mean
+completely different things. One is an empty literature. This one is a full
+answer.
+
+What the review could not assess is also worth recording: neither trial measured
+adverse effects, changes in attachment level, tooth loss, or halitosis. Scaling
+is invasive and has been associated with tooth sensitivity and damage to tooth
+surfaces. So the harm side of the ledger is not empty because it is zero; it is
+empty because nobody filled it in.
 :::
 
-## The advice
+## The other half of table 2a
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+Alongside the plaque-control row sits a set of recommendations about telling
+patients what to do, and these deserve their own look because they are graded
+**Conditional**:
 
-## What the guideline says its evidence is
+> Use behaviour change methods with oral hygiene instruction — **Conditional**
+>
+> Advise best methods of plaque removal to prevent gingivitis and achieve lowest
+> risk of periodontitis and tooth loss — **Conditional**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 2a [@dboh2025]
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+The Cochrane review of one-to-one oral hygiene advice given in a dental setting
+[@soldani2018] is the relevant evidence, and the Conditional label is a fair
+reflection of it. This is the guideline doing precisely what
+[Chapter -@sec-certainty-strength] asks: where the evidence is uncertain and
+reasonable people might weigh it differently, it says Conditional rather than
+Strong.
 
-## Following the citation
-
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
-
-## Appraising it
-
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
-
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
+I note this without a complaint attached, which is the point of including it.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026. The Cochrane review's own search ran to **10 January
+2018** across the Cochrane Oral Health Trials Register, CENTRAL, MEDLINE Ovid and
+Embase Ovid, with two trial registries for ongoing studies. I checked for a
+`.pub6` update and found none; CD004625.pub5 remains current.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+As throughout, I have the structured abstract and not the full text, for the
+reasons set out in `appraisals/searches/ch21-tobacco.md`.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
-:::
-:::
+**The age gap matters here.** Only two trials have ever addressed this question,
+both in the UK, and the evidence has not moved since 2018. High certainty from
+two trials is high certainty about two trials.
 
-## Verdict
+Full record in `appraisals/searches/ch19-scale-and-polish.md`.
+:::
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [High]{.certainty .high} that routine scale and polish makes little or no
+    difference to gingivitis, probing depths or quality of life in adults without
+    severe periodontitis who attend regularly. [High]{.certainty .high} that it
+    produces a small reduction in calculus of unclear clinical importance.
+    **Absent** on adverse effects, tooth loss and attachment level, which no
+    included trial measured.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Excellent, and the advice is correspondingly narrow.** DBOH does not
+    recommend routine scaling, and the evidence is why. The recommendation it does
+    make, to correct calculus that is impeding plaque control, is a different and
+    narrower claim which these trials do not address, and which the guideline
+    correctly labels Good practice.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes, and this is the guideline at its best.** Faced with high-certainty
+    evidence of no benefit, it declines to recommend the intervention. Faced with
+    a narrower clinical judgment it cannot support with research, it says Good
+    practice. Faced with uncertain evidence on oral hygiene instruction, it says
+    Conditional. Three different situations, three different labels, each
+    correct.
+
+    The gap in this chapter is not in the guideline. It is between the guideline
+    and routine practice.
 
 What would change my mind
-:   *TBD*
+:   A trial in adults **with** periodontitis, or in irregular attenders, either
+    of whom might benefit where the studied population did not; the review's
+    population is explicitly healthy regular attenders. A trial measuring
+    attachment level or tooth loss over longer than three years. Or evidence on
+    the harm side, which is currently unmeasured rather than absent.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If you are a healthy adult who sees a dentist regularly and does not have severe
+gum disease, the best available evidence says a routine six-monthly scale and
+polish will not measurably improve your gums, your pocket depths, or how your
+mouth feels. It will remove calculus, and your teeth will feel cleaner
+afterwards, which the trials did measure and which is a real thing to value if
+you value it.
+
+What you should not believe is that it is preventing gum disease. Two randomised
+trials in exactly your situation looked for that and found little or nothing, and
+the certainty of that finding is as high as anything in this book.
+
+This is different advice from most of the chapters here, and worth being clear
+about. Elsewhere I say: keep doing it, the evidence is just weaker than the label
+suggests. Here I say: this is a treatment you may reasonably decline, and the
+national guideline does not ask you to have it.
+
+If your gums bleed, if you have been told you have periodontitis, or if you do
+not attend regularly, none of the above applies to you. The trials were not in
+people like you, and [Chapter -@sec-method] explains why that matters.
