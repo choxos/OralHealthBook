@@ -1,75 +1,212 @@
 # Flossing, and what replaced it {#sec-flossing}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+In 2016 the Associated Press asked the US federal government for the evidence
+behind its flossing recommendation, did not get a satisfactory answer, and ran a
+story. "Medical benefits of dental floss unproven" went around the world. The
+recommendation was quietly dropped from the US dietary guidelines. Most people
+who read about it concluded that flossing had been debunked.
+
+That is not what the evidence says, and it is not what the guideline says
+either. This chapter is the one where almost everybody is wrong, including me.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> **Interdental plaque control:**
+>
+> - clean daily between the teeth to below the gum line before toothbrushing
+> - where there is space for an interdental or single-tufted brush, this should
+>   be used
+> - for small spaces between teeth, use dental floss or tape
+>
+> Strength of recommendation: **Conditional**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 2b [@dboh2025]
+
+Note the label before going further. **Conditional**, not Strong. And note the
+ordering: interdental brushes first, floss only for gaps too small to take one.
+Floss has been demoted from the default to the fallback.
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on low certainty evidence for an added benefit from
+> flossing, **though it is unclear if this benefit is clinically important**; EFP
+> recommends floss only where gaps are too small for interdental brushes. Low
+> certainty evidence that use of interdental brushes is beneficial and that they
+> are more effective than floss, but again **the clinical importance of the
+> difference is uncertain**.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-## Following the citation
+I want to record that this is a good evidence statement. It gives the certainty,
+names the direction of the effect, and twice flags that statistical benefit may
+not amount to clinical benefit. That last distinction is one most guidelines skip
+entirely. Nothing in this chapter is a complaint about it.
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+## Where I was wrong
 
-## Appraising it
+Here is what I wrote in 2023:
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+> While some studies have assessed the sole effect of flossing on interproximal
+> dental caries, an updated Cochrane review in 2019 showed that we still don't
+> have any trial evaluating the impact of flossing+toothbrushing versus
+> toothbrushing alone.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+That is factually wrong, and reading the review properly is what corrected it.
+
+Worthington and colleagues included **35 randomised trials in 3,929 adults**
+[@worthington2019]. Of those, **fifteen** compared flossing plus toothbrushing
+against toothbrushing alone. That is precisely the comparison I said did not
+exist.
+
+What does not exist is something narrower, and the review states it in one
+sentence:
+
+> No trials assessed interproximal caries, and most did not assess periodontitis.
+>
+> --- Worthington and colleagues, 2019 [@worthington2019]
+
+So the accurate claim is not "nobody has tested flossing." It is: **thirty-five
+trials have tested flossing, and not one of them measured tooth decay between the
+teeth.** They measured gingivitis and plaque, over one to six months.
+
+The difference matters. My version implied an empty literature, which invites the
+conclusion that the recommendation is baseless. The true version says the
+literature is reasonably large and points the right way for gum inflammation,
+while the specific outcome most people think flossing prevents has never been
+measured. That is a more interesting finding and a more defensible one, and I
+should not have needed a full text to get it right. I had been relying on the
+abstract and on my memory of it.
+
+## What 35 trials found
+
+| Device, added to toothbrushing | Gingivitis | Certainty |
+|:---------------------------|:---------------------------------------|:-------------|
+| **Floss** | SMD −0.58 (95% CI −1.12 to −0.04) at 1 month, 8 trials, 585 participants; effects also at 3 and 6 months | [low]{.certainty .low} |
+| **Interdental brushes** | MD −0.53 (95% CI −0.83 to −0.23) at 1 month, 1 trial, 62 participants | [very low]{.certainty .very-low} |
+| Wooden cleaning sticks | bleeding sites MD −0.25 (−0.37 to −0.13) at 3 months, 1 trial, 24 participants | [very low]{.certainty .very-low} |
+| Rubber cleaning sticks | no effect on gingivitis (MD −0.01, −0.19 to 0.21, 1 trial, 12 participants) | [very low]{.certainty .very-low} |
+| Oral irrigators | SMD −0.48 (−0.89 to −0.06) at 1 month, 4 trials, 380 participants; **not** at 3 or 6 months | [very low]{.certainty .very-low} |
+
+: Interdental cleaning added to toothbrushing [@worthington2019]. Negative values
+favour the device {#tbl-interdental}
+
+And head to head, at low certainty, **interdental brushes may reduce gingivitis
+more than floss** at one and three months. That is where DBOH's ordering comes
+from, and it is the substantive change since the 2011 version of this review.
+
+::: {.callout-note title="How I judged this: four things that limit all of it" collapse="true"}
+The review is well conducted; these are limits in the underlying trials, and the
+review names every one of them.
+
+**Nobody can be blinded.** You know whether you have been flossing. Every trial
+is at high risk of performance bias for that reason, and it is not fixable. Only
+two of 35 were otherwise at low risk of bias.
+
+**A floor effect.** "Many participants had a low level of baseline gingival
+inflammation." If your gums are already close to healthy, there is very little
+room for an intervention to improve them, and the average effect across such a
+population understates what might happen in people with inflamed gums. This cuts
+in the intervention's favour, and it is the strongest single argument that these
+trials underestimate the benefit.
+
+**Short follow-up.** One to six months. Periodontitis develops over years and
+interproximal caries over years. A six-month trial cannot see either, which is
+the mechanical reason the caries outcome is missing rather than an oversight by
+trialists.
+
+**Tiny trials.** Look at the participant counts in the table: 62, 24, 12, 31.
+Several of the device comparisons rest on a single small trial. The flossing
+estimate, at 8 trials and 585 participants, is by some way the best-supported
+line in the table, which is ironic given the public story.
+
+The review's own summing up is the sentence to keep: "the effect sizes observed
+may not be clinically important." A gingival index is a 0 to 3 scale scored by an
+examiner. An SMD of −0.58 on it is a real statistical signal. Whether it
+corresponds to anything you would notice in your mouth is genuinely unknown.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for an update to CD012018. None found; the 2019 version
+(`.pub2`) remains current. The review's own search ran to 16 January 2019.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
+Unlike the earlier chapters, I have the **full text** for this review, supplied
+during writing, including the characteristics of included studies and the
+risk-of-bias tables. Statements above about blinding, baseline inflammation and
+trial sizes are from the review body, not from its abstract.
+
+Full record in `appraisals/searches/ch17-interdental.md`.
 :::
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
-:::
-:::
+## Did the newspapers get it wrong?
 
-## Verdict
+Partly, and in an instructive way.
+
+The 2016 story was accurate about one thing: the evidence for flossing is weak,
+short-term, and measured on surrogate outcomes. It was wrong to present that as
+a discovery, since Cochrane had been saying so since 2011, and wrong to let
+readers infer that flossing had been shown not to work.
+
+"No trial has measured whether flossing prevents cavities between your teeth" and
+"flossing does not prevent cavities between your teeth" are different sentences.
+The first is true. The second has never been tested. This is the same distinction
+[Chapter -@sec-scale-polish] turns the other way: there, a precise estimate
+centred on zero really does mean the intervention does not work. Here there is no
+estimate at all.
+
+It is worth noticing what happened next. A recommendation was withdrawn because
+journalists asked for its evidence and found the answer thin. Whatever you think
+of the outcome, that is the process this book is doing, at scale and in public.
+The lesson I take is not that the journalists were wrong to ask. It is that a
+guideline which had labelled the recommendation honestly in the first place would
+have had a much better answer ready.
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Low]{.certainty .low} that flossing added to toothbrushing reduces gingivitis
+    in the short term. [Low]{.certainty .low} that interdental brushes do so, and
+    may do so more than floss. **No evidence at all** on interproximal caries: 35
+    trials, none measuring it.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Good on population and intervention, poor on outcome and duration.** The
+    trials are in adults doing the thing the advice describes. But they measure
+    gingival indices and plaque scores over one to six months, and the advice is
+    ultimately aimed at preventing periodontitis and decay over decades.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes.** Conditional is the right label for low-certainty evidence of an
+    effect of unclear clinical importance, and DBOH says so in those words. The
+    ordering of devices, interdental brushes before floss, follows the head-to-head
+    evidence rather than tradition.
+
+    This is the third chapter running where the guideline comes out well, and I
+    would rather say so than manufacture a complaint. The criticism in this chapter
+    is directed at my own earlier writing and at the press coverage, not at
+    *Delivering Better Oral Health*.
 
 What would change my mind
-:   *TBD*
+:   A trial long enough to measure interproximal caries, which means two years
+    minimum and realistically longer, with radiographic scoring. That trial is
+    expensive and nobody has commercial reason to fund it, which is why it does
+    not exist. Also useful: a trial recruiting people **with** gingival
+    inflammation rather than the near-healthy participants who dominate the
+    current literature, since the floor effect plausibly hides a real benefit.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Clean between your teeth. A toothbrush does not reach roughly a third of each
+tooth's surface, and 35 trials agree that cleaning those surfaces reduces gum
+inflammation, even if they disagree about how much.
+
+Use an **interdental brush** if one fits. That is what the head-to-head evidence
+supports and what the guideline now recommends first. Floss where the gaps are
+too tight for a brush.
+
+What nobody can tell you is whether any of this prevents cavities between your
+teeth, because in 35 trials nobody has looked. If a dentist tells you flossing
+prevents interproximal decay, they are stating something plausible that has never
+been measured. And if someone tells you flossing was debunked, they have
+confused an unasked question with an answered one.

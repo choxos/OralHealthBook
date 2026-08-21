@@ -194,6 +194,12 @@ other people's citation practice should show its own errata:
   evidence on **caries**. There is evidence on plaque removal. Stating absence
   of evidence loosely is the error I accuse the guideline of.
   [Chapter -@sec-brush-design].
+- I said the 2019 Cochrane review showed "we still don't have any trial
+  evaluating the impact of flossing plus toothbrushing versus toothbrushing
+  alone." It includes **fifteen** such trials. What it has none of is a trial
+  measuring interproximal caries. I had written that from the abstract and from
+  memory of it, and reading the full review is what caught it. It is the largest
+  factual error in the original series. [Chapter -@sec-flossing].
 - I attacked a twelve-person cross-over study for being underpowered. For a
   salivary pharmacokinetic cross-over, twelve may be perfectly adequate; the
   fatal problem is indirectness, not power. Leading with the weaker argument

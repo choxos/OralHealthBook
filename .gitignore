@@ -60,3 +60,8 @@ sources/BlogPosts/**/*.jpeg
 sources/BlogPosts/**/*.gif
 sources/BlogPosts/**/*.webp
 sources/BlogPosts/**/*_files/
+
+# Working library of source PDFs and Cochrane full texts, supplied for writing
+# the audits. Third-party copyrighted material: read locally, never published.
+# Every claim drawn from it is quoted with its source in the text.
+documentation/
