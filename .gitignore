@@ -44,3 +44,19 @@ sources/**/*.woff
 sources/**/*.woff2
 
 **/*.quarto_ipynb
+
+# Third-party material kept locally but never redistributed.
+#
+# SIGN 138 is Healthcare Improvement Scotland copyright. The book quotes it for
+# criticism and review under CDPA s30; republishing the whole PDF is not covered.
+sources/Books/SIGN_Scot/*.pdf
+#
+# The saved Medium pages embed figures taken from journal articles. The book
+# redraws every figure from the underlying numbers precisely so that it never
+# reproduces one, and the repo should hold to the same rule.
+sources/BlogPosts/**/*.png
+sources/BlogPosts/**/*.jpg
+sources/BlogPosts/**/*.jpeg
+sources/BlogPosts/**/*.gif
+sources/BlogPosts/**/*.webp
+sources/BlogPosts/**/*_files/

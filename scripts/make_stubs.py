@@ -140,8 +140,8 @@ just the conclusion.*
 :::
 
 ::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-[`appraisals/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals).*
+*The full domain-by-domain judgments are in `appraisals/`, published when the
+manuscript is complete.*
 :::
 :::
 
@@ -155,8 +155,8 @@ just the conclusion.*
 :::
 
 ::: {.content-visible when-profile="web"}
-*The full search strategy is in
-[`appraisals/searches/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals/searches).*
+*The full search strategy is in `appraisals/searches/`, published when the
+manuscript is complete.*
 :::
 :::
 

@@ -102,11 +102,30 @@ confused, including by me in the original blog posts, and
 I trained as a dentist and I work as a health research methodologist. I have
 received no funding for this book from any toothpaste manufacturer, professional
 body, or public health agency, and I have no financial interest in anything
-discussed in it. Every appraisal I made, including the ones where I later decided
-I had been wrong, is published in machine-readable form at
-[github.com/choxos/OralHealthBook](https://github.com/choxos/OralHealthBook), so
-you can check my work rather than take it on trust. That is, after all, the entire
-point.
+discussed in it.
+
+Every appraisal I made, including the ones where I later decided I had been
+wrong, is recorded in machine-readable form: one row per recommendation in
+`appraisals/dboh-2025.csv`, with my judgments in their own columns beside the
+guideline's, and one file per chapter in `appraisals/searches/` giving each
+search as it was run, with its date and what it returned.
+
+::: {.callout-note title="A note on the state of this edition"}
+This book is being written in the open, and you are reading it before it is
+finished. Chapters marked as drafts are exactly that.
+
+The appraisal data described above will be published in full, in the repository
+at `github.com/choxos/OralHealthBook`, when the manuscript is complete. Until
+then the files are named throughout the text so you can see what exists and hold
+me to producing it, but they are not yet public, and I would rather say so than
+leave you clicking a link that does not work.
+
+The reason for the delay is ordinary rather than principled: the appraisals for
+unwritten chapters are unfinished, and publishing half of them invites people to
+cite judgments I have not yet made. If that trade seems wrong to you, you are
+holding me to the standard this book asks of everyone else, which is the right
+instinct.
+:::
 
 ::: {.callout-important title="This is not medical advice"}
 This book examines research evidence. It is not medical or dental advice, it is

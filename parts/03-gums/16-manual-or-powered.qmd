@@ -32,7 +32,7 @@ just the conclusion.*
 
 ::: {.content-visible when-profile="web"}
 *The full domain-by-domain judgments are in
-[`appraisals/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals).*
+`appraisals/`.*
 :::
 :::
 
@@ -47,7 +47,7 @@ just the conclusion.*
 
 ::: {.content-visible when-profile="web"}
 *The full search strategy is in
-[`appraisals/searches/`](https://github.com/choxos/OralHealthBook/tree/main/appraisals/searches).*
+`appraisals/searches/`.*
 :::
 :::
 

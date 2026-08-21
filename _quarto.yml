@@ -14,10 +14,17 @@ book:
   language: en-GB
   search: true
   reader-mode: true
-  repo-url: https://github.com/choxos/OralHealthBook
-  repo-actions: [issue, source]
+  # repo-url and repo-actions are disabled while the repository is private:
+  # they render "Edit this page" and "Report an issue" links in the sidebar,
+  # and both 404 for a reader who is not signed in as the owner. Restore both
+  # when the repo is made public on completion of the manuscript.
+  # repo-url: https://github.com/choxos/OralHealthBook
+  # repo-actions: [issue, source]
   sharing: [twitter, linkedin]
-  downloads: [pdf, epub]
+  # NO `downloads:` here. The PDF and EPUB are the paid Amazon edition;
+  # offering them from the free site would both give away the artifact and,
+  # since the web profile renders html only, link to files that are not there.
+  # The free site is the full body text. The paid edition adds the appendices.
   page-footer:
     left: "© 2026 Ahmad Sofi-Mahmudi. CC BY-NC-ND 4.0."
     right: "Built with [Quarto](https://quarto.org)."
