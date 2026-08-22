@@ -1,5 +1,162 @@
 # Short answers {#sec-short-answers}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet.
+Questions people ask that do not need a chapter each. The format is the same
+throughout: what the claim is, what supports it, and how confident anyone should
+be.
+
+Two general warnings before starting. Almost none of these correspond to a
+recommendation in *Delivering Better Oral Health*, so there is nothing to audit in
+the sense the rest of the book means. And I have not systematically reviewed the
+literature for any of them. These are considered answers, not audits, and where
+that distinction matters I say so.
+
+## Should I use mouthwash?
+
+Probably not routinely, and if you do, not straight after brushing.
+
+The second half of that is the firmer claim and comes from
+[Chapter -@sec-spit]: rinsing after brushing washes away the fluoride you have
+just applied, and a mouthwash is a rinse. If you want to use one, use it at a
+different time of day, which is exactly what DBOH says about fluoride mouth
+rinses in [Chapter -@sec-rinse].
+
+Antibacterial mouthwashes containing chlorhexidine do reduce plaque and
+gingivitis, and are genuinely useful short-term after oral surgery or during acute
+gum problems. Long-term daily use causes staining and taste disturbance and is not
+recommended. Cosmetic mouthwashes mask smell without addressing its cause; see
+[Chapter -@sec-halitosis].
+
+## Does oil pulling work?
+
+No good evidence, and a plausible harm.
+
+Oil pulling means swishing coconut or sesame oil around the mouth for ten to
+twenty minutes. The trials that exist are small, short, mostly from a single
+research tradition, and typically compare oil pulling against nothing rather than
+against brushing.
+
+The harm is opportunity cost. Twenty minutes of oil swishing is twenty minutes not
+spent doing the thing with 55 randomised trials behind it. There are also case
+reports of lipoid pneumonia from aspiration, which is rare but real.
+
+## Should I scrape my tongue?
+
+Reasonable if you have bad breath, pointless otherwise.
+
+See [Chapter -@sec-halitosis]. The mechanism is direct, most of the responsible
+bacteria are on the back of the tongue, and the evidence is thin and measured
+mostly on volatile sulphur compounds rather than on whether anyone noticed.
+
+## Does chewing gum help?
+
+A little, and the mechanism is well understood.
+
+Sugar-free gum stimulates salivary flow, and saliva buffers acid, clears debris
+and carries calcium and phosphate for remineralisation. Chewing after a meal is a
+reasonable thing to do when you cannot brush.
+
+Xylitol gum is often claimed to do more, on the basis that *Streptococcus mutans*
+cannot metabolise xylitol. The trial evidence for a caries benefit specifically
+from xylitol, as opposed to from chewing anything sugar-free, is weaker than the
+marketing implies. Chew it if you like it; the saliva is doing most of the work.
+
+## Should my wisdom teeth come out?
+
+Not unless there is a reason.
+
+Prophylactic removal of asymptomatic, disease-free wisdom teeth was routine for
+decades and is no longer recommended in the UK. NICE guidance restricts extraction
+to teeth with actual pathology: recurrent infection, decay that cannot be
+restored, cysts, damage to the neighbouring tooth.
+
+This is another case, like [Chapter -@sec-scale-polish] and
+[Chapter -@sec-recall], where guidance moved away from a routine intervention and
+practice took a long time to follow. The harms of surgery are real and immediate;
+the benefits of removing a tooth that is not causing trouble are speculative.
+
+## Are water flossers as good as floss?
+
+On the current evidence, worse for gingivitis than either floss or interdental
+brushes, though the studies are small.
+
+[Chapter -@sec-flossing] has the numbers: oral irrigators reduced gingivitis at
+one month (SMD −0.48, 95% CI −0.89 to −0.06) but not at three or six months, and
+showed no reduction in bleeding sites or plaque. Interdental brushes performed
+better [@worthington2019].
+
+If you cannot manage floss or brushes because of dexterity, arthritis, or
+orthodontic appliances, a water flosser is much better than doing nothing.
+
+## Do I need to replace my toothbrush every three months?
+
+Nobody has established the interval.
+
+The evidence on worn brushes and plaque removal is mixed, and SIGN 138 reviewed
+the question without arriving at a recommendation. Replace it when the bristles
+splay, which for most people is somewhere in the region of three months and is a
+judgment you can make by looking at it.
+
+## Is an interdental brush better than floss?
+
+For most people with spaces that will take one, yes, on low-certainty evidence.
+
+This is DBOH's own ordering and it changed relatively recently. See
+[Chapter -@sec-flossing].
+
+## Does whitening damage teeth?
+
+Professionally supervised whitening with peroxide is generally safe. Sensitivity
+during treatment is common and usually temporary.
+
+The concerns are with unregulated high-concentration products bought online, and
+with anything applied by someone who is not a registered dental professional. In
+the UK, tooth whitening is legally restricted to dental professionals for good
+reason: the agents are caustic at high concentration and gum burns are the
+predictable result of poor technique.
+
+## Should I worry about mercury in amalgam fillings?
+
+No, on current evidence, and the question is becoming moot.
+
+Amalgam has been studied extensively for mercury release and no convincing
+evidence of harm from ordinary fillings has emerged. Its use is being phased down
+internationally for **environmental** reasons rather than patient-safety ones,
+under the Minamata Convention, and it is already restricted in the UK for children
+and for pregnant and breastfeeding women.
+
+Removing sound amalgam fillings to eliminate mercury exposure exposes you to more
+mercury during the removal than leaving them alone, and destroys tooth structure.
+Do not do it on health grounds.
+
+## Is it true that you inherit bad teeth?
+
+Partly, and much less than people think.
+
+Tooth shape, enamel thickness, saliva composition and flow, and the shape of the
+grooves in your molars all have a heritable component and all influence caries
+risk. Some genuine enamel defects are inherited.
+
+But so are diet, oral hygiene habits, dental attendance and socioeconomic
+position, none of which are genetic and all of which run in families. "Bad teeth
+run in my family" describes a real observation with mostly non-genetic causes, and
+it is a belief that predicts giving up, which is the actual harm.
+
+::: {.callout-note title="What I searched, and when" collapse="true"}
+**No systematic searches were run for this chapter.**
+
+These are considered answers drawing on the mechanisms and evidence established in
+earlier chapters, on UK guidance where it exists (NICE for wisdom teeth, GDC
+regulation for whitening, the Minamata Convention for amalgam), and on general
+professional knowledge.
+
+Where a claim traces to a review I read in detail for another chapter, it is cited
+and the numbers are given. Where it does not, I have kept the claim
+correspondingly vague and said what kind of thing supports it.
+
+This chapter would not survive the standard applied in Part II, and it is not
+meant to. It is here because these are the questions people actually ask, and
+declining to answer them would leave the field to sources with no standards at
+all.
+
+Full record in `appraisals/searches/ch30-short-answers.md`.
 :::

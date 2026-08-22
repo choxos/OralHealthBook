@@ -1,75 +1,145 @@
 # Bad breath {#sec-halitosis}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
+Halitosis is the condition people are most likely to worry about privately and
+least likely to ask about directly. It is also, unlike everything else in this
+book, almost entirely absent from *Delivering Better Oral Health*: search the
+summary tables and you will find nothing.
+
+That absence is defensible, since DBOH is a prevention toolkit for caries,
+periodontal disease, oral cancer and tooth wear, and halitosis is none of those.
+But it leaves a gap, and gaps of this kind are where the commercial market lives.
+
+## Where the smell comes from
+
+The mechanism here is better established than most things in this book, and it is
+worth understanding because it makes the useless remedies obvious.
+
+Around 85 to 90% of persistent bad breath originates **in the mouth**. Anaerobic
+bacteria, living mostly on the back of the tongue and in periodontal pockets,
+break down proteins and release **volatile sulphur compounds**: hydrogen
+sulphide, methyl mercaptan, dimethyl sulphide. Those are the smell. They are the
+same compounds that make rotten eggs unpleasant, and the nose detects them at very
+low concentrations.
+
+The remaining 10 to 15% is mostly ear, nose and throat causes such as tonsil
+stones and sinus infection, with a small residue of systemic causes.
+
+Two consequences follow immediately.
+
+**The tongue is the main site.** The dorsum of the tongue, particularly the back
+third, has a large surface area with papillae that hold bacteria and debris. This
+is why a person with excellent teeth and healthy gums can still have bad breath.
+
+**Anything that only perfumes is useless.** A mint or a mouthwash that masks the
+smell for twenty minutes has not touched the bacteria producing it. This is a
+large market selling a temporary cover for an ongoing process.
+
+## Morning breath is not halitosis
+
+Everyone has bad breath on waking, and it is not a condition.
+
+Salivary flow falls during sleep. Saliva clears bacteria, buffers acid and
+carries oxygen; anaerobic bacteria flourish without it. Overnight you get a
+predictable accumulation of exactly the compounds described above, which is why
+your mouth tastes as it does at 7am and why brushing fixes it in two minutes.
+
+This is the same physiological fact that [Chapter -@sec-last-thing],
+[Chapter -@sec-quieter-tier] and [Chapter -@sec-breastfeeding] all lean on, which
+is worth noticing. Reduced overnight salivary flow is doing an enormous amount of
+work across dentistry for something that has been directly tested against
+patient-relevant outcomes remarkably rarely.
+
+## What actually helps
+
+Ordered by how well established the reasoning is, which is not the same as how
+well tested it is. I want to be clear that this section rests on mechanism and
+clinical consensus rather than on the sort of evidence Part II demanded, and I
+have not conducted a systematic review of the halitosis literature.
+
+**Treat gum disease if you have it.** Periodontal pockets are anaerobic
+environments producing exactly these compounds. If your gums bleed, this is the
+first thing to address, and it has the added benefit of being worth doing anyway.
+
+**Clean your tongue.** Given that most of the bacteria are there, this follows
+directly. A tongue scraper or the back of a toothbrush, gently, once a day. The
+evidence base is thin and mostly measures volatile sulphur compounds rather than
+whether anyone noticed, but the mechanism is about as direct as mechanisms get.
+
+**Clean between your teeth.** [Chapter -@sec-flossing] found no trial measuring
+halitosis, and interdental spaces are stagnant sites where the same bacteria
+accumulate.
+
+**Address dry mouth.** Medications that reduce salivary flow, of which there are
+many, will produce bad breath by the mechanism described above. This is worth
+raising with whoever prescribes them.
+
+**See a dentist to rule out the treatable.** Untreated decay, a failing filling, a
+food trap, or a partial denture that is not being cleaned will all do it.
+
+## What does not help, or helps less than advertised
+
+**Mouthwash, mostly.** An antibacterial mouthwash containing chlorhexidine, zinc
+compounds or cetylpyridinium chloride does more than a cosmetic one, because it
+reduces the bacteria rather than covering the smell. But mouthwash reaches the
+front of the mouth far better than the back of the tongue, which is where the
+problem is. And [Chapter -@sec-spit] gives a separate reason not to rinse with
+anything immediately after brushing.
+
+**Mints and chewing gum.** Sugar-free gum stimulates saliva, which genuinely helps
+a little and briefly. Mints do nothing except smell.
+
+**Anything promising to cure halitosis systemically.** Since the cause is local in
+roughly nine cases out of ten, a product acting elsewhere is treating the wrong
+site.
+
+::: {.callout-important title="When bad breath is not a dental problem"}
+Two situations where the answer is not in this chapter.
+
+**Persistent bad breath that dental treatment does not fix.** After gum disease
+has been treated, decay restored and the tongue cleaned, a persistent problem
+needs ENT assessment for tonsil stones or chronic sinus infection, and
+occasionally investigation of systemic causes. Do not accept an indefinite
+programme of dental appointments for something dentistry has not fixed.
+
+**Believing you have bad breath when you do not.** Halitophobia is a recognised
+and genuinely distressing condition, in which someone is convinced they smell
+despite objective assessment and the reassurance of others. It is not helped by
+more mouthwash, and it is not a dental problem. If this describes you, it is worth
+saying so to a doctor, and it is far more common than most people realise.
 :::
-
-## The advice
-
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
-
-## What the guideline says its evidence is
-
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
-
-## Following the citation
-
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
-
-## Appraising it
-
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
-
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+**This chapter is different from the rest of the book, and I want to be explicit
+about it.**
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+*Delivering Better Oral Health* makes no recommendation about halitosis, so there
+is no recommendation to audit, no strength label to check and no evidence
+statement to trace. The seven-step method does not apply and there is no verdict
+box.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
-:::
-:::
+What I have written above is conventional clinical understanding, grounded in the
+volatile sulphur compound mechanism, which is well established. I have **not**
+conducted a systematic search of the halitosis treatment literature, and I have
+not appraised the trials of tongue scraping, mouth rinses or the various
+commercial products. Reviews of those exist and I have not read them.
 
-## Verdict
+So this chapter is the one place where I am telling you what dentists generally
+think rather than what I have checked. That is a lower standard than the rest of
+the book holds itself to, and rather than dress it up I am flagging it and
+marking the chapter as one to revisit properly.
 
-::: {.verdict}
-[Verdict]{.verdict-title}
-
-Certainty of evidence
-:   *TBD*
-
-Directness to the advice as worded
-:   *TBD*
-
-Is the strength label defensible?
-:   *TBD*
-
-What would change my mind
-:   *TBD*
+Full record in `appraisals/searches/ch27-halitosis.md`.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If your breath is bad in the morning, that is everybody, and brushing fixes it.
+
+If it is bad persistently, it is almost certainly coming from your mouth, and most
+likely from the back of your tongue or from gum disease. Clean your tongue daily,
+clean between your teeth, get your gums checked, and stop buying mints.
+
+If none of that works, ask about ENT causes rather than accepting more dentistry.
+And if people keep telling you your breath is fine and you cannot believe them,
+that is a real and treatable problem in its own right, and worth mentioning to
+your doctor.

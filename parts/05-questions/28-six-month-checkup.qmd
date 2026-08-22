@@ -31,8 +31,8 @@ not.
 >
 > --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-NICE CG19 is *Dental checks: intervals between oral health reviews*. It was
-published in **2004**.
+NICE CG19 is *Dental checks: intervals between oral health reviews* [@niceCG19].
+It was published in **2004**.
 
 ## Following the citation, and finding it is out of date
 

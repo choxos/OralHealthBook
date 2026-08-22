@@ -208,7 +208,8 @@ other people's citation practice should show its own errata:
   selective analysis, or analysis decided after seeing the data. P-hacking means
   something more specific. [Chapter -@sec-spit].
 - I attributed *Delivering Better Oral Health* to Public Health England, which
-  has not owned it since 2021.
+  has not owned it since 2021. The edition the blog series audited [@dboh2021] is
+  also not the edition this book audits [@dboh2025].
 
 ## What I got wrong in the drafts of this book
 

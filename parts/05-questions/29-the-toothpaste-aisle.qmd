@@ -1,5 +1,154 @@
 # The toothpaste aisle {#sec-aisle}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet.
+A large supermarket stocks around sixty toothpastes. They differ in price by a
+factor of ten and in fluoride content, which is the only thing with strong
+evidence behind it, hardly at all.
+
+This chapter is a walk down that aisle with the method from
+[Chapter -@sec-method] in hand. It is shorter and less formal than the audit
+chapters, because most of what is on sale has no guideline recommendation to
+audit and often no trial to appraise. Where I am relying on mechanism rather than
+evidence, I say so.
+
+The rule that survives the whole aisle is the one from [Chapter -@sec-ppm]:
+**buy a toothpaste with 1,350 to 1,500ppm fluoride and stop thinking about it.**
+Everything below is a variation on why the other claims do not change that.
+
+## Charcoal toothpaste
+
+The claim is whitening and detoxification. The second word is meaningless in this
+context and should be treated as a marketing signal.
+
+Two real concerns. First, charcoal pastes are often **abrasive**, and abrasion
+removes enamel permanently. [Chapter -@sec-wear] explains why that matters:
+enamel does not grow back, and teeth get *yellower* as it thins, because the
+dentine underneath is yellow and starts to show through. A whitening product that
+thins enamel makes teeth darker in the long run.
+
+Second, and more important: **many charcoal toothpastes contain no fluoride.**
+That is not a small trade-off. You would be giving up the single best-evidenced
+intervention in this book in exchange for a cosmetic claim with essentially no
+supporting trials.
+
+Check the tube. If it says no fluoride, put it back.
+
+## Whitening toothpaste
+
+Whitening toothpastes work by removing surface stains, generally through
+abrasives and sometimes through low concentrations of peroxide. They do not change
+the underlying colour of your teeth, because the colour of your teeth is mostly
+dentine seen through translucent enamel.
+
+So they can return a stained tooth to its natural shade, which for a coffee
+drinker is a real if modest effect. They cannot make a naturally ivory tooth
+white, and any product promising several shades is describing something a
+toothpaste cannot do.
+
+The relevant caution is again abrasivity, and the relevant question is whether the
+paste also contains 1,350 to 1,500ppm fluoride. Most mainstream ones do.
+
+## Hydroxyapatite toothpaste
+
+This is the interesting one, and the only entry in the aisle where I think the
+science is genuinely open rather than merely absent.
+
+Hydroxyapatite is the mineral teeth are made of. The proposal is that a paste
+containing nano-particles of it can deposit onto and remineralise the enamel
+surface, achieving what fluoride achieves without using fluoride. It is
+established in Japan and increasingly marketed in Europe, usually to people
+looking for a fluoride-free option.
+
+The mechanism is coherent, which is more than can be said for charcoal. There is
+a growing trial literature, some of it reporting non-inferiority to fluoride
+toothpaste. I have not systematically reviewed it, and I want to flag two things
+that would need checking before anyone treats the question as settled.
+
+**Most of the trials are small, short, and industry-funded**, which is the same
+configuration [Chapter -@sec-powered] found in the toothbrush literature and which
+[@lundh2017] gives empirical reason to discount.
+
+**Non-inferiority is a specific and demanding claim.** A non-inferiority trial
+requires a pre-specified margin, adequate power, and analysis conventions that
+differ from a superiority trial. A small trial that fails to find a difference has
+not shown non-inferiority; it has failed to find a difference, which
+[Chapter -@sec-scale-polish] explains is a different thing.
+
+Set against that: fluoride toothpaste has 55 randomised trials at high to moderate
+certainty behind it. Hydroxyapatite would need a great deal of evidence to
+displace that, and it does not have it yet. If you have a specific reason to avoid
+fluoride, this is the most plausible alternative on the shelf. If you do not, the
+case for switching is not there.
+
+## "SLS-free", "natural", "herbal"
+
+Sodium lauryl sulphate is the detergent that makes toothpaste foam. Some people
+with recurrent mouth ulcers report fewer of them on SLS-free paste. The evidence
+is thin, the mechanism is plausible, the cost of trying is low, and it makes no
+difference to the fluoride. If you get ulcers, try it.
+
+"Natural" and "herbal" are not regulated claims. The only question worth asking of
+such a tube is the same one: **does it contain 1,350 to 1,500ppm fluoride?** Many
+do not.
+
+## Sensitivity toothpaste
+
+Sensitivity pastes contain potassium nitrate, which damps down nerve response, or
+stannous fluoride or arginine compounds, which physically occlude the open dentine
+tubules that cause the pain. These have a reasonable evidence base and they work
+for many people, though the effect builds over weeks rather than days.
+
+One caveat worth stating: sensitivity is a **symptom**. It can be exposed dentine
+from gum recession or tooth wear, and it can be a cracked tooth or decay. A paste
+that removes the warning without addressing the cause is not always a good
+outcome. If it is new, localised, or severe, get it looked at rather than
+managing it.
+
+## The high-fluoride prescriptions
+
+2,800ppm and 5,000ppm pastes are available on prescription, and
+[Chapter -@sec-ppm] found the evidence for going above 1,500ppm to be thinner
+than most people assume: SMD 0.04 (95% CI −0.07 to 0.15) for 1,700 to 2,200ppm
+against 1,450 to 1,500ppm, from indirect evidence only, and −0.05 (−0.14 to
+0.05) for 2,400 to 2,800ppm.
+
+DBOH recommends them **Conditionally**, for people with active decay, and its own
+evidence statement concedes there is "no reliable evidence of superior
+effectiveness but some suggestion of a dose-response relationship (though it may
+not extend to concentrations this high)".
+
+That is an honest statement and Conditional is the right label. If a dentist has
+prescribed one because you have active decay, use it; the reasoning is sound even
+though the trials are not there.
+
+::: {.callout-note title="What I searched, and when" collapse="true"}
+**This chapter is less rigorous than the audit chapters and is marked as such.**
+
+Almost nothing in the toothpaste aisle corresponds to a DBOH recommendation, so
+there is nothing to trace and no strength label to check. I have not systematically
+reviewed the literature on charcoal, hydroxyapatite, whitening, SLS or sensitivity
+agents.
+
+What I have done is apply the mechanisms established in earlier chapters, which
+are well grounded, and flag where a claim depends on evidence I have not
+appraised. The hydroxyapatite section in particular names what would need checking
+rather than reaching a verdict.
+
+The one claim here carried over with full support is the fluoride concentration
+evidence from [Chapter -@sec-ppm], which comes from a Cochrane review I read in
+detail.
+
+Full record in `appraisals/searches/ch29-toothpaste-aisle.md`.
 :::
+
+## What this means for you
+
+Turn the tube over and look for the fluoride concentration. If it says 1,350 to
+1,500ppm, it will do. If it says nothing, or says fluoride-free, put it back
+unless you have a specific reason.
+
+Everything else on the front of the packet is either a modest cosmetic effect, an
+unregulated word, or a claim that has not been tested to anything like the
+standard the fluoride claim has been.
+
+The cheapest tube on the shelf with the right fluoride content is, on the evidence
+in this book, as good as the most expensive one.

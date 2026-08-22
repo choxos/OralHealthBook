@@ -1,5 +1,169 @@
 # How dental research should change {#sec-research}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet.
+Thirty-one chapters of complaint earn one chapter of proposal.
+
+The pattern this book found is not that dental researchers are careless. It is
+that the field has, over decades, optimised for a kind of study that is cheap,
+publishable and fast, and that answers a question adjacent to the one patients
+have. Almost every gap in this book has the same shape.
+
+Five things would fix most of it.
+
+## 1. Measure what patients feel
+
+The single most common failure in this book is the surrogate outcome.
+
+[Chapter -@sec-last-thing]: fluoride concentration in saliva.
+[Chapter -@sec-flossing]: gingival index over one month.
+[Chapter -@sec-powered]: plaque scores after a single brushing.
+[Chapter -@sec-scale-polish]: calculus levels.
+
+Every one of those is a step removed from what a person cares about, which is
+pain, keeping their teeth, and being able to eat and speak and smile without
+thinking about it.
+
+The counter-example is instructive. FiCTION ([Chapter -@sec-fiction]) used
+**episodes of dental pain and infection** as its co-primary outcomes, and the
+result is the most directly useful trial in this book. The INTERVAL trial
+([Chapter -@sec-recall]) used oral-health-related quality of life alongside
+caries, and produced the only high-certainty answer to a question the public
+actually asks.
+
+It can be done. It is done, occasionally, usually when a funder insists.
+
+## 2. Adopt and enforce a core outcome set
+
+The reason [Chapter -@sec-twice-daily] reports a standardised mean difference,
+which nobody can interpret, is that the included studies measured caries on
+different indices at different thresholds. Pooling required abstracting away the
+units.
+
+A **core outcome set** is an agreed minimum list of outcomes, measured in agreed
+ways, that every trial in a field reports. Other specialties have them.
+Cochrane's oral health reviews repeatedly note the absence of one here: recall
+that Worthington and colleagues asked future interdental trials to "report
+participant periodontal status according to the new periodontal diseases
+classification, and last long enough to measure interproximal caries and
+periodontitis" [@worthington2019]. That is a core outcome set request in all but
+name.
+
+Journals and funders could require it tomorrow.
+
+## 3. Run trials long enough to see the disease
+
+Caries and periodontitis develop over years. A large part of the dental literature
+runs for weeks.
+
+[Chapter -@sec-flossing] is the clearest case: 35 randomised trials of interdental
+cleaning, and **not one** measured interproximal caries, because a one-to-six
+month trial cannot. The evidence gap is a direct consequence of the trial
+duration, and the trial duration is a consequence of what is affordable and
+publishable.
+
+This is expensive to fix and there is no way around the expense. But the current
+arrangement spends a great deal of money on studies that are individually cheap
+and collectively unable to answer the question, which is not obviously a saving.
+
+## 4. Fund the boring comparisons
+
+Here is a list of trials that do not exist, each of which would settle a question
+this book found open, and none of which is scientifically difficult:
+
+- brushing at bedtime against brushing two hours earlier, caries at three years
+  ([Chapter -@sec-last-thing]);
+- rinsing against not rinsing after brushing, everything else identical, caries at
+  three years ([Chapter -@sec-spit]);
+- once against twice daily brushing, with adherence measured
+  ([Chapter -@sec-twice-daily]);
+- fluoride varnish twice a year against once and against three times
+  ([Chapter -@sec-varnish]);
+- supervised brushing against unsupervised, with toothpaste supplied to both arms
+  ([Chapter -@sec-quieter-tier]).
+
+Every one of these compares an existing practice against a slightly different
+existing practice. None involves a new product. And that is precisely why none has
+been done: there is no commercial sponsor for a trial whose result cannot be put
+on a package.
+
+[Chapter -@sec-powered] found that the powered toothbrush literature is large and
+substantially industry-financed. The contrast is the argument. We know a great
+deal about which brush to sell you and remarkably little about how to use one.
+
+Public funders exist for exactly this gap. FiCTION and INTERVAL were both
+publicly funded, both answered questions no company would ask, and both are the
+best studies in this book.
+
+## 5. Publish the reasoning, not just the rating
+
+This is the recommendation aimed at guideline developers, and it is the smallest
+of the five.
+
+*Delivering Better Oral Health* already does more than most: chapter 13 publishes
+an evidence statement and a certainty rating for most recommendations, which is
+the reason this book could be written at all. Three further steps would close
+nearly every gap it found.
+
+**Label components, not bundles.** [Chapter -@sec-bundling] found
+{{< var dboh.bundled >}} recommendations containing two or more separable
+instructions, {{< var dboh.bundled_strong >}} of them Strong. The certainty
+information already exists per component in chapter 13. Carrying it into the table
+people read would cost a column.
+
+**Say which component the strength label came from.** The methods state that
+strength is set "on the main component". Naming that component in each row would
+remove the need for a reader to guess, and would have removed most of
+[Chapter -@sec-bundling].
+
+**Show the evidence-to-decision reasoning where a recommendation is discordant.**
+[Chapter -@sec-tobacco] argued that a Strong recommendation with no direct
+evidence can be entirely legitimate. What is missing is one sentence explaining
+why. "No specific evidence, but integral to the pathway" is half an argument; the
+half that would let a reader check it is the half omitted.
+
+## The trial I want to run
+
+I should declare an interest, since [Chapter -@sec-method] says to.
+
+When I took a course in the design of randomised controlled trials, I chose as my
+project the trial that [Chapter -@sec-flossing] shows still does not exist: a
+randomised comparison of interdental cleaning plus toothbrushing against
+toothbrushing alone, long enough and powered to measure **interproximal caries**
+rather than a gingival index at one month.
+
+It remains, as far as these searches found, the largest single hole in everyday
+oral hygiene advice. Thirty-five trials, nearly four thousand participants, and
+nobody has measured the outcome that the advice is actually about.
+
+::: {.callout-note title="A note on this section"}
+The trial design I worked up for that course is not reproduced here. It should
+be, and it will be in a later revision: a book that spends a chapter demanding
+that other people run the missing trials should show its own protocol rather than
+allude to it.
+
+That is an outstanding item rather than a completed one, and this note is here so
+that the omission is visible rather than quietly absent.
 :::
+
+## The shape of the problem
+
+Step back and the pattern across all thirty-one chapters is consistent.
+
+We have excellent evidence about **substances**: fluoride toothpaste, fluoride
+varnish, sealants. Three of the strongest recommendations in the book, all things
+that can be manufactured and sold.
+
+We have weak evidence about **behaviours**: when to brush, how long, how often,
+whether to rinse, whether to floss. All free, all unsellable, all universally
+recommended.
+
+And we have essentially no evidence about **the things clinicians do routinely**:
+recall intervals, scale and polish, supervised brushing, restoring baby teeth,
+until somebody publicly funded a trial, at which point three out of four turned
+out not to work as assumed.
+
+That distribution is not what you would design if you were allocating research
+effort to what patients need to know. It is what you get when the market pays for
+research and the questions with no product attached wait their turn.
+
+Fixing it does not require a methodological breakthrough. It requires deciding
+that the boring questions are worth funding, and then funding them.

@@ -277,3 +277,181 @@ The review reports **one** such head-to-head comparison, against 1,000-1,250ppm,
 at SMD -0.08. The blog also claimed amounts over 1,500ppm "didn't perform
 better," where the data show no evidence of a difference on intervals that
 include worthwhile benefit. Both are corrected in the chapter.
+
+
+## Chapter 17: interdental cleaning
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Source
+
+Cochrane review [@worthington2019], CD012018.pub2, search to 16 January 2019.
+Checked for a `.pub3` update: none found, current version.
+
+**Full text available.** Unlike most reviews in this book, the complete review
+including characteristics of included studies and risk-of-bias tables was
+supplied during writing. Claims about blinding, baseline gingival inflammation
+and per-trial sample sizes come from the review body.
+
+### Key figures, from the review
+
+35 RCTs, 3,929 randomised adults.
+
+Devices vs toothbrushing alone: floss (15 trials), interdental brushes (2),
+wooden sticks (2), rubber/elastomeric sticks (2), oral irrigators (5).
+Head to head vs floss: interdental brushes (9), wooden sticks (3), rubber sticks
+(9), oral irrigators (2). Rubber sticks vs interdental brushes (3).
+
+| Comparison | Estimate | studies | n | certainty |
+|---|---|---:|---:|---|
+| Floss, gingival index, 1 month | SMD -0.58 (95% CI -1.12 to -0.04) | 8 | 585 | low |
+| Interdental brush, GI, 1 month | MD -0.53 (-0.83 to -0.23) | 1 | 62 | very low |
+| Interdental brush, bleeding sites | MD -0.05 (-0.13 to 0.03) | 1 | 31 | very low |
+| Interdental brush, plaque | SMD -1.07 (-1.51 to -0.63) | 2 | 93 | low |
+| Wooden sticks, bleeding, 3 months | MD -0.25 (-0.37 to -0.13) | 1 | 24 | very low |
+| Rubber sticks, GI | MD -0.01 (-0.19 to 0.21) | 1 | 12 | very low |
+| Oral irrigator, GI, 1 month | SMD -0.48 (-0.89 to -0.06) | 4 | 380 | very low |
+| Oral irrigator, bleeding, 1 month | MD -0.00 (-0.07 to 0.06) | 2 | 126 | low |
+| Oral irrigator, plaque, 1 month | SMD -0.16 (-0.41 to 0.10) | 3 | 235 | low |
+
+Interdental brushes may reduce gingivitis more than floss at 1 and 3 months
+(low certainty); no difference for probing pocket depth.
+
+Adverse events: no severe events; no evidence of between-group differences in
+minor effects such as gingival irritation.
+
+### THE finding
+
+> "No trials assessed interproximal caries, and most did not assess
+> periodontitis."
+
+35 trials, zero measuring the outcome flossing is popularly believed to prevent.
+
+### Limits stated by the review
+
+- All trials at high risk of performance bias; blinding impossible.
+- Only 2 of 35 otherwise at low risk of bias.
+- "Many participants had a low level of baseline gingival inflammation" -> floor
+  effect, which would bias toward the null.
+- Outcomes mostly 1 to 6 months.
+- "the effect sizes observed may not be clinically important" (authors' words).
+
+### Correction logged
+
+The original blog post said the 2019 review "showed that we still don't have any
+trial evaluating the impact of flossing+toothbrushing versus toothbrushing
+alone." **Wrong: 15 such trials are included.** The correct claim is that no
+trial measured interproximal caries. Corrected in the chapter, with the error
+shown rather than silently fixed.
+
+
+## Chapter 19: routine scale and polish
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Deferring to the Cochrane search
+
+Cited source is a Cochrane review [@lamont2018] whose search ran to **10 January
+2018** across the Cochrane Oral Health Trials Register, CENTRAL (2017 Issue 12),
+MEDLINE Ovid (1946 onwards) and Embase Ovid (1980 onwards), plus
+ClinicalTrials.gov and the WHO ICTRP. No independent search of the primary
+literature was attempted.
+
+### Query: newer version?
+
+`Lamont Worthington Clarkson Beirne routine scale and polish periodontal health Cochrane`
+**1 record.** PMID 30590875, CD004625.pub5. No `.pub6`. Current.
+
+### Figures extracted, all from the structured abstract
+
+Two trials, 1711 participants, UK general dental practice, adults without severe
+periodontitis, regular attenders. Follow-up 24 and 36 months.
+
+Versus no scheduled treatment:
+
+| Outcome | Estimate | certainty |
+|---|---|---|
+| Gingivitis, 6-monthly | SMD -0.01 (95% CI -0.13 to 0.11), 2 trials, n=1087 | high |
+| Gingivitis, 12-monthly | SMD -0.04 (95% CI -0.16 to 0.08), 2 trials, n=1091 | high |
+| Calculus, 6-monthly | SMD -0.32 (95% CI -0.44 to -0.20), 2 trials, n=1088 | high |
+| Calculus, 12-monthly | SMD -0.19 (95% CI -0.31 to -0.07), 2 trials, n=1088 | high |
+| Probing depths, QoL | little or no difference | high |
+| Plaque | little or no difference | low |
+| Self-reported cleanliness | higher with treatment | low |
+
+Six- versus twelve-monthly: gingivitis SMD 0.03 (95% CI -0.09 to 0.15, I2=0%,
+2 trials, n=1090), high certainty; calculus SMD -0.13 (95% CI -0.25 to -0.01),
+high certainty.
+
+**Not measured by either trial:** adverse effects, changes in attachment level,
+tooth loss, halitosis. No study compared delivery by dentists against therapists
+or hygienists. Cost evidence very low certainty.
+
+### Note on interpretation
+
+This is the one chapter where "no demonstrated benefit" means a precise estimate
+centred on zero rather than an empty literature. The gingivitis interval
+(-0.13 to 0.11) excludes any patient-noticeable effect. Recorded here because the
+distinction is easy to lose and the book leans on it elsewhere in the opposite
+direction.
+
+### Limitation: no full text
+
+Same as `ch21-tobacco.md`: Cochrane deposits sit outside the PMC Open Access
+subset, so the structured abstract is available and the risk-of-bias table and
+characteristics of included studies are not.
+
+
+## Chapter 21: tobacco cessation delivered by dental professionals
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Deferring to the Cochrane search
+
+The cited source is a Cochrane review [@holliday2021] whose own search ran to
+**February 2020** across the Cochrane Tobacco Addiction Group's Specialised
+Register. No independent search of the primary literature was attempted.
+
+### Query: is there a newer version?
+
+```
+Holliday Hong McColl interventions tobacco cessation delivered by dental
+professionals Cochrane
+```
+
+**1 record.** PMID 33605440, CD005084.pub4, doi:10.1002/14651858.CD005084.pub4.
+No `.pub5` found. Current version.
+
+### Figures extracted, all from the structured abstract
+
+| Comparison | RR | 95% CI | I2 | studies | n | certainty |
+|---|---|---|---|---:|---:|---|
+| Behavioural support, 1 session | 1.86 | 1.01 to 3.41 | 66% | 4 | 6328 | very low |
+| Behavioural support, >1 session | 1.90 | 1.17 to 3.11 | 61% | 7 | 2639 | very low |
+| Behavioural + NRT/e-cigarettes | 2.76 | 1.58 to 4.82 | 0% | 4 | 1221 | moderate |
+| Behavioural support, school/college | 1.51 | 0.86 to 2.65 | 83% | 3 | 1020 | very low |
+
+20 trials, 14,897 participants. Risk of bias as stated by the review: 3 low,
+1 unclear, 16 high.
+
+### Limitation: no full text
+
+Cochrane reviews are deposited in PubMed Central but sit **outside** the PMC Open
+Access subset. Verified on 21 August 2026 by four routes:
+
+- PubMed MCP `get_full_text_article` returns an empty `full_text` field
+- NCBI `efetch db=pmc` returns front matter only: no `<body>`, no `<table-wrap>`,
+  no `<ref>`
+- the PMC OA service returns `idIsNotOpenAccess`
+- Europe PMC `fullTextXML` returns 404 and `supplementaryFiles` returns
+  `"Article with id ... is not open access one"`
+
+So for every Cochrane review in this book I have the structured abstract, which
+carries the effect estimates, confidence intervals, heterogeneity, certainty
+ratings, search dates and authors' conclusions, but **not** the risk-of-bias
+table or the characteristics of included studies. Statements in the chapters
+about risk of bias across included studies are the reviews' own summary
+statements, quoted as such, and are marked that way in the text.
