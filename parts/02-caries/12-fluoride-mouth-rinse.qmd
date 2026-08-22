@@ -1,75 +1,134 @@
 # Fluoride mouth rinse {#sec-rinse}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+A small chapter with one large problem in it, and the problem is a kind of
+mismatch this book has not yet met head-on: evidence gathered in one setting,
+applied to a completely different one.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> Use a fluoride mouth rinse daily (0.05% NaF; 230ppm fluoride) at a different
+> time to brushing
+>
+> Strength of recommendation: **Conditional**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1e and 1g [@dboh2025]
+
+Conditional, and aimed only at children from 8 years and adults **giving concern
+because of dental caries risk**. Both restrictions are appropriate and the
+guideline deserves credit for them.
+
+Note the "at a different time to brushing." That is a sensible piece of
+reasoning, and it comes from the same place as [Chapter -@sec-spit]: do not wash
+away the toothpaste you just applied. It is also, like most of that chapter,
+untested.
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on **moderate certainty evidence from supervised school
+> use** in children and adolescents.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-## Following the citation
+The citation is the Cochrane review of fluoride mouthrinses [@marinho2016rinse].
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+I want to point at that sentence and say: this is exactly the right way to write
+an evidence statement. It gives the certainty **and** the setting the evidence
+came from, in one line, which lets a reader see the gap without going anywhere
+else. Most of the statements in chapter 13 do not do this. This one does.
 
-## Appraising it
+## The gap it discloses
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+The evidence is from **supervised school programmes**: a teacher or dental worker
+handing out rinse to a class, watching them use it, on a schedule, every school
+day.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+The recommendation is for **daily unsupervised home use** by an individual.
+
+Those differ in almost every way that determines whether a preventive
+intervention works:
+
+**Adherence.** A supervised school programme has near-perfect adherence by
+construction. Daily home use of a mouth rinse, by a teenager, indefinitely, does
+not. The effect estimate from the trials embeds a level of compliance that home
+use will not reach.
+
+**Population.** School programmes are typically population-wide. The
+recommendation targets individuals already identified as at higher risk, who have
+more to gain in absolute terms but who may also be the group least likely to
+sustain a daily routine.
+
+**Timing.** The school programme is at school; the recommendation specifies "at a
+different time to brushing", which is a constraint the trials did not impose and
+which makes the home routine harder to fit in.
+
+None of this means rinses do not work. Fluoride delivered to teeth reduces decay;
+that is the most robust finding in this book. It means the *size* of the benefit
+observed under supervision is an upper bound on what unsupervised daily use will
+deliver, and the recommendation does not say so.
+
+::: {.callout-note title="How I judged this: why Conditional is right anyway" collapse="true"}
+Under GRADE, this is textbook **indirectness**: a mismatch on the intervention as
+delivered, and arguably on population, between the evidence and the question.
+Moderate certainty for supervised school use translates into something lower for
+unsupervised home use, and the amount of the downgrade is a judgment nobody has
+published.
+
+But the recommendation is **Conditional**, and that changes what I can complain
+about. Conditional means the panel is not confident enough to tell everyone to do
+this, and expects the decision to depend on the person. That is precisely the
+right response to evidence that may not transfer. Had this been labelled Strong I
+would be objecting at length. It is not, so I am not.
+
+The cost side also matters and is favourable: a fluoride rinse is cheap, available
+over the counter, and its harms are minor, with the practical caveat that it
+should not be given to children who cannot reliably avoid swallowing it, which is
+why the age threshold is 8.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for an update to CD002284. None found; the 2016 version
+(`.pub2`) remains current.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+I have the abstract for this review, not the full text; it was not among the
+documents supplied. Statements about the supervised-school setting come from
+DBOH's own evidence statement and the review's abstract, and the strength of this
+chapter's argument does not depend on details I have not seen.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch12-fluoride-rinse.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Moderate]{.certainty .moderate} for supervised school-based use, as DBOH
+    states. **Lower for the advice as given**, which is unsupervised daily home
+    use, on account of indirectness that nobody has quantified.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Poor on the setting, and the guideline says so.** This is the clearest
+    example in the book of a chapter 13 statement that discloses its own gap. The
+    disclosure is the good practice; the gap is still a gap.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes.** Conditional is the right call for evidence that may not transfer from
+    supervised to unsupervised use, aimed at a subgroup rather than everyone. Along
+    with [Chapter -@sec-flossing] and [Chapter -@sec-scale-polish], this is the
+    guideline handling uncertainty properly.
 
 What would change my mind
-:   *TBD*
+:   A trial of unsupervised daily home rinsing, with adherence measured rather
+    than assumed, in people at high caries risk. Also worth knowing: whether "at
+    a different time to brushing" matters, which is the same untested timing claim
+    as [Chapter -@sec-last-thing] wearing different clothes.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If a dentist has told you that you or your child are at high risk of decay and
+suggested a daily fluoride rinse, it is a reasonable thing to try. It is cheap
+and the fluoride will do something.
+
+Expect less than the trials found. Those were school programmes where an adult
+watched every child use it every day. The honest version of this advice is: this
+probably helps if you actually do it daily, and daily is harder than it sounds.

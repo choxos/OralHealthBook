@@ -1,75 +1,175 @@
 # Sugar: how much is too much? {#sec-sugar}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Everything else in this book is about defending teeth from decay. This chapter is
+about the thing that causes it.
+
+It is also the chapter where I have to be most careful, because the causal claim
+is not in doubt and the *quantitative* claim, which is what the recommendation
+actually makes, rests on much less than people assume.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> Minimise the amount and frequency of consumption of sugar-containing food and
+> drinks
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1a, 1b, 1d and 1f
+> [@dboh2025]
+
+Note that this single line contains two instructions, **amount** and
+**frequency**, with no bullets to separate them. It is a bundle that
+[Chapter -@sec-bundling]'s counting method scores as one, which is why that
+chapter calls its own figures a floor.
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on **moderate-certainty evidence** that dental caries is
+> lower when free-sugars intake is <10% and on **very low certainty evidence**
+> that dental caries is lower when free-sugars intake is <5% energy, and in line
+> with WHO and SACN guidelines.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-## Following the citation
+Two thresholds, two very different certainties, in one sentence. The citation is
+Moynihan and Kelly's review, written to inform the WHO guideline
+[@moynihan2014].
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+## Vipeholm, and how not to cite it
 
-## Appraising it
+Before the modern evidence, a word about the study everybody reaches for.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+The Vipeholm study ran in Sweden from 1945 to 1955. Its participants were 436
+adults institutionalised at Vipeholm Hospital with intellectual disabilities, and
+they were fed large quantities of sweets, in various patterns, to see what
+happened to their teeth. What happened was a great deal of tooth decay,
+particularly in the groups given sticky sweets between meals.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+In my original blog post I wrote that this "showed a causal relationship between
+sugar and tooth decay." I have changed that, for two reasons.
+
+The first is scientific. Vipeholm was not randomised in any modern sense, the
+groups were not comparable, and the exposure was extreme. It is cited so often
+because its finding is memorable and its direction is right, not because its
+design would support a causal claim today.
+
+The second reason is that describing it in one clause, as I did, sanitises it.
+The participants could not consent. The study deliberately caused irreversible
+harm to people who were in institutional care, and it is a standard case in
+research ethics teaching for exactly that reason. A book about evidential honesty
+should not use it as a throwaway citation for a claim that has better support
+elsewhere. I mention it here because it is part of how we came to believe what we
+believe, and then set it aside.
+
+## The modern evidence
+
+Moynihan and Kelly screened 5,990 records and assessed the body of evidence with
+GRADE. Their conclusions:
+
+> This in-depth systematic review shows **consistent evidence of moderate
+> quality** supporting a relationship between the amount of sugars consumed and
+> dental caries development. There is evidence of moderate quality to show that
+> dental caries is lower when free-sugars intake is **< 10% E**.
+>
+> --- Moynihan and Kelly, 2014 [@moynihan2014]
+
+So: moderate certainty that less sugar means less decay, and moderate certainty
+for the 10%-of-energy threshold specifically. For most adults, 10% of energy is
+roughly 55 g of free sugars a day; for a 4- to 6-year-old, about 44 g; for a 1-
+to 3-year-old, about 32 g.
+
+The 5% threshold is different, and DBOH says so: **very low certainty**. The
+review is candid about why. The evidence for going below 5% rests substantially
+on older population-level data using standards the authors themselves describe as
+not "low" by modern reckoning, with caries diagnosed at thresholds that would not
+be used today.
+
+::: {.callout-note title="How I judged this: what kind of evidence this is" collapse="true"}
+Almost none of this is randomised, and it could not be. You cannot allocate
+children to a decade of high sugar intake. The review therefore pools
+intervention, cohort, population and cross-sectional studies, and grades the body
+accordingly.
+
+That is the correct approach, and moderate certainty from observational evidence
+is a **higher** rating than the default, which means the GRADE upgrade criteria
+from [Chapter -@sec-certainty-strength] were engaged: consistency across study
+types and populations, a dose-response relationship, and a large, biologically
+coherent effect. This is what upgrading observational evidence properly looks
+like, and it is the contrast case for [Chapter -@sec-twice-daily], where I
+looked for the same thing and could not find it.
+
+Two limits worth naming. Measuring what people eat is notoriously unreliable, and
+misreporting of sugar in particular is systematic rather than random. And sugar
+intake is entangled with everything else that predicts decay: income, education,
+dental attendance, fluoride exposure. The review's moderate rating is a judgment
+that the consistency of the finding survives both problems. I think that judgment
+is defensible.
+
+**The frequency half.** The recommendation says "amount **and** frequency". The
+review's graded conclusion is about amount. Frequency has a long-standing
+mechanistic rationale, each sugar exposure dropping the pH for a period, so more
+exposures mean more time demineralised, and it is the part of the Vipeholm
+finding that has best survived. But the moderate-certainty statement DBOH cites
+is about quantity, and the two are being carried by one label.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026. Moynihan and Kelly's own search covered multiple
+databases to 2013 for the WHO guideline process. I checked for a more recent
+systematic review of sugars and caries intended to inform guidelines and found
+none superseding it.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+I have the full text and all six supplementary files, supplied during writing,
+including the GRADE profile tables.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
-:::
-:::
+**Age of the evidence**: this review is now twelve years old and is the basis of
+the WHO's current sugars guidance.
 
-## Verdict
+Full record in `appraisals/searches/ch13-sugar.md`.
+:::
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Moderate]{.certainty .moderate} that lower free-sugars intake means less
+    dental caries, and for the <10% of energy threshold. [Very low]{.certainty .very-low}
+    for the <5% threshold, as DBOH states. I agree with both ratings, and note that
+    the moderate rating represents a legitimate upgrade of observational evidence
+    rather than a downgrade of trials.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Good on amount, weaker on frequency.** The graded evidence concerns how
+    much; the recommendation says how much and how often. The frequency claim is
+    mechanistically strong and separately less well graded.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes.** This is the clearest Strong recommendation in Part II after fluoride
+    toothpaste. The evidence is consistent, the mechanism is understood, the
+    direction is not in dispute, and the harms of eating less sugar are nil.
+
+    The drafting point stands: "amount and frequency" is two instructions in one
+    line, and the <10% and <5% thresholds carry moderate and very low certainty
+    respectively while appearing in the same guidance.
 
 What would change my mind
-:   *TBD*
+:   On the direction, essentially nothing. On the thresholds, an updated review
+    using modern caries diagnostic criteria and better dietary measurement, which
+    would either firm up the 5% figure or retire it. On frequency, a study that
+    separates the number of sugar exposures from the total quantity, which is
+    hard but not impossible with modern dietary monitoring.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Eat less sugar, and eat it less often. Of everything in this book, this is the
+advice with the least argument against it and the fewest caveats attached.
+
+If you want a number, 10% of your energy intake is the one with real evidence
+behind it, roughly 55 g of free sugars a day for an adult. The 5% figure that
+appears in some guidance is a stretch goal resting on very low certainty
+evidence, and the guideline says so.
+
+And the frequency really does matter, or at least the mechanism says it should: a
+single sweet dessert is easier on your teeth than the same amount of sugar spread
+across six moments of the day.

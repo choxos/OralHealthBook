@@ -1,75 +1,155 @@
 # How much toothpaste, and does fluorosis matter? {#sec-amount}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Every other recommendation in this book is about preventing tooth decay. This
+one is the only place where the guideline weighs a benefit against a harm, and
+it does it in a single bullet, without saying that is what it is doing.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> - using only a smear of toothpaste *(children under 3)*
+> - using a pea-sized amount of the toothpaste *(children 3 to 6)*
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1a and 1b [@dboh2025]
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Advice to use a smear only based on possible fluorosis risk (**inconclusive
+> evidence**).
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 1 [@dboh2025]
 
-## Following the citation
+and for the pea:
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+> Advice to use pea-sized amount based on possible fluorosis risk.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 2 [@dboh2025]
 
-## Appraising it
+Read those twice, because they are doing something none of the other bullets in
+the same recommendation do.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+**This component is not about tooth decay at all.** Everything else in that
+Strong recommendation is aimed at preventing caries. This one is aimed at
+preventing something else, dental fluorosis, and it does so by *limiting* the
+intervention that prevents caries. It points in the opposite direction from its
+neighbours.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+And the guideline's own word for the evidence is **inconclusive**.
+
+## What fluorosis is, and how worried to be
+
+Fluorosis is a disturbance of enamel formation caused by swallowing too much
+fluoride while the permanent teeth are still forming under the gum, roughly
+before age six. In its mild forms, which are the forms this argument is about, it
+appears as faint white flecks or lines on the enamel. It is not painful, it does
+not weaken the tooth, and in most cases nobody but a dentist notices it.
+
+The Cochrane review DBOH cites here is about topical fluoride as a cause of
+fluorosis [@wong2010]. Its relevant findings, as SIGN 138 summarises them, are
+that starting fluoride toothpaste before 12 months of age may be associated with
+an increased risk of mild fluorosis, and, notably, that there was **no
+significant association with the frequency of toothbrushing** (brushing less than
+twice daily compared with twice daily or more: OR 0.88, 95% CI 0.71 to 1.08)
+[@sign138].
+
+SIGN's own assessment of the trade-off is worth quoting because it is the clearest
+statement of it anywhere in this chain:
+
+> While the review provides some evidence that brushing a child's teeth with
+> fluoride toothpaste before the age of 12 months may be associated with an
+> increased risk of developing mild fluorosis, for children assessed by their
+> dentist to be at high risk of tooth decay **the benefit of reducing caries
+> probably outweighs the risk of mild fluorosis**.
+>
+> --- SIGN 138 [@sign138]
+
+SIGN also flags a methodological point I would have made myself: fluorosis was
+treated as binary, present or absent, when it is in reality a continuum, and all
+the evidence in the review concerns mild levels judged on appearance.
+
+## The problem with a smear
+
+Here is what nobody has established: that a smear delivers enough fluoride.
+
+The evidence for fluoride toothpaste, set out in [Chapter -@sec-ppm], comes from
+trials in which participants used a normal amount of toothpaste. The
+concentration was varied and studied; the **quantity** was not. So the smear
+recommendation asks parents to use less of an intervention than the trials used,
+on the basis of inconclusive evidence about a different outcome, inside a
+recommendation labelled Strong for reasons that have nothing to do with either.
+
+I want to be careful here, because this is the point at which a reader could take
+the wrong lesson. I am **not** saying use more toothpaste. A smear or a pea is
+almost certainly fine, the amount of fluoride in a pea of 1,000ppm paste is not
+trivial, and the reason for the limit is a real if modest harm in a group who
+cannot reliably spit. What I am saying is that this is a genuine benefit-harm
+trade-off, made on inconclusive evidence, presented to parents as a Strong
+instruction with no indication that a trade-off was involved.
+
+::: {.callout-note title="How I judged this: the trade-off that is not shown" collapse="true"}
+GRADE's evidence-to-decision framework exists precisely for cases like this. When
+a recommendation balances a benefit against a harm, the panel is supposed to
+consider the magnitude of each, how patients value them, and the certainty of
+both.
+
+Some of that work has clearly been done: the smear-versus-pea distinction by age
+tracks the period of enamel formation and the child's ability to spit, which is
+sensible. What is not published is the reasoning. How much caries prevention is
+being given up? How much fluorosis is being avoided? At what certainty, on each
+side? Chapter 13 gives one clause, "based on possible fluorosis risk
+(inconclusive evidence)", for what is a two-sided judgment.
+
+I cannot reconstruct the calculation, and neither can a parent.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for updates to CD007693. None found; the 2010 review
+remains current, which is itself worth noting: the evidence on fluoride toothpaste
+and fluorosis has not been systematically updated in fifteen years.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
+I have the abstract and SIGN 138's summary of this review, not its full text.
+Full record in `appraisals/searches/ch09-toothpaste-amount.md`.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
-:::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Very low]{.certainty .very-low} for the quantity of toothpaste as a
+    caries-relevant decision, because no trial has varied it. The guideline's own
+    word for the fluorosis evidence underneath is **inconclusive**, and the review
+    behind it is fifteen years old.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Poor, and in an unusual way.** The evidence concerns fluorosis; the
+    recommendation sits inside a caries-prevention bundle. It is not that the
+    evidence fails to match the advice, but that the advice has quietly changed
+    outcome without saying so.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Not as it stands.** On DBOH's own categories this looks like a Good practice
+    point: a sensible precaution resting on clinical consensus and inconclusive
+    research. It may well be the right precaution. Labelling it Strong, alongside
+    five caries bullets, tells a parent that limiting the toothpaste is as
+    well-established as using it, which is the reverse of the truth.
 
 What would change my mind
-:   *TBD*
+:   A trial randomising smear against pea against a full brush-length in young
+    children, measuring both caries increment and fluorosis at age eight. That
+    trial has ethical complications but is not impossible. Failing that, an
+    updated systematic review of the fluorosis evidence, and publication of the
+    trade-off reasoning the panel actually used.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Use a smear for a child under three and a pea for a child of three to six. It is
+sensible, the fluorosis it avoids is real if minor, and no one is suggesting
+otherwise.
+
+What you should not conclude, if you have ever squeezed out slightly too much, is
+that you have done something dangerous. The amount is a precaution against faint
+white marks on adult teeth, taken on evidence the guideline itself calls
+inconclusive. The part of the instruction that has actually been tested, and that
+matters far more, is that the toothpaste contains fluoride at all.

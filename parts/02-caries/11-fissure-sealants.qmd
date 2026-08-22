@@ -1,75 +1,174 @@
 # Fissure sealants {#sec-sealants}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+A back tooth is not a smooth dome. Its biting surface is a landscape of pits and
+narrow grooves, some of them narrower than a toothbrush bristle. Those grooves
+are where decay in permanent molars usually starts, for the straightforward
+reason that nothing can clean them.
+
+A sealant is a resin painted into the grooves to fill them in. The logic is
+almost too obvious to need testing, which is exactly the situation this book
+keeps warning about. So it is a relief to report that it was tested, thoroughly,
+and it works.
+
+The interesting problem in this chapter is when.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> Apply resin sealant to permanent teeth on eruption
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 1e [@dboh2025]
+
+This sits in table 1e, for children from 7 years and young people up to 18
+**giving concern because of dental caries risk**. It is not universal advice.
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on moderate certainty evidence of a benefit of resin-based
+> sealant maintained up to at least 48 months of follow-up **in both low risk and
+> high risk populations**.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+
+The citation is the Cochrane review of pit and fissure sealants [@ahovuo2017].
 
 ## Following the citation
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+Thirty-eight trials, 7,924 children aged 5 to 16. Fifteen compared resin-based
+sealant against no sealant; three compared glass ionomer against no sealant;
+twenty-four compared one sealant against another.
 
-## Appraising it
+The headline result is one of the largest in this book:
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+| Comparison | Effect | 95% CI | Trials | Certainty |
+|:-----------------------------|:-----------|:--------------|-------:|:-------------|
+| Resin sealant vs none, 24 months | OR **0.12** | 0.08 to 0.19 | 7 | [moderate]{.certainty .moderate} |
+| Resin sealant vs none, 48 to 54 months | OR 0.21 | 0.16 to 0.28 | 4 | [moderate]{.certainty .moderate} |
+| Glass ionomer vs none, 24 months | inconclusive | — | 3 | [very low]{.certainty .very-low} |
+| One sealant type vs another | unknown | — | 24 | [very low]{.certainty .very-low} |
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+: Pit and fissure sealants [@ahovuo2017] {#tbl-sealants}
+
+An odds ratio of 0.12 is an enormous effect. The review helpfully translates it
+into absolute terms, which more reviews should do:
+
+- if 16% of unsealed surfaces decay over 24 months, sealing reduces that to
+  **5.2%** (95% CI 3.1% to 7.4%);
+- if 40% decay, sealing reduces it to **6.3%** (3.8% to 9.6%);
+- if 70% decay, sealing reduces it to **19%** (12.3% to 27.2%).
+
+Note what those three lines show: the higher the baseline risk, the more decay
+sealing prevents in absolute terms. This is why the recommendation targets
+children at higher risk, and it is the guideline reading its evidence correctly.
+
+## The problem with the seven trials
+
+Now the caveat, and it is a substantial one that DBOH does not mention.
+
+The 24-month estimate, the moderate-certainty headline, comes from seven trials.
+**Five of them were published in the 1970s.** Two are from the 2010s.
+
+That matters for the same reason it matters in
+[Chapter -@sec-fluoridation-works]. In the 1970s, fluoride toothpaste was not yet
+universal, caries rates were far higher, and the amount of decay a sealant could
+prevent was correspondingly greater. A child in 1975 with unsealed molars was at
+much higher risk than a child today.
+
+The review adds a detail that makes this harder to resolve:
+
+> Trials rarely reported background exposure to fluoride of trial participants or
+> baseline caries prevalence.
+>
+> --- Ahovuo-Saloranta and colleagues, 2017 [@ahovuo2017]
+
+So the one variable that would let you adjust for the era mostly was not
+recorded.
+
+::: {.callout-note title="How I judged this: a bias that cannot be removed" collapse="true"}
+There is one risk-of-bias problem in this literature that no amount of care can
+fix, and the review is admirably direct about it:
+
+> Although studies were generally well conducted, we assessed **blinding of
+> outcome assessment for caries at high risk of bias for all trials** (blinding of
+> outcome assessment is not possible in sealant studies because outcome assessors
+> can see and identify sealant).
+
+An examiner scoring a tooth can see whether it has been sealed. There is no way
+to hide it. So every trial in this literature is at high risk of detection bias,
+permanently, and the moderate certainty rating already reflects a downgrade for
+it.
+
+This is worth contrasting with [Chapter -@sec-flossing], where blinding is also
+impossible but the effect is small and the certainty low. Here the effect is so
+large that even a generous allowance for detection bias leaves a real benefit.
+Effect size and bias have to be weighed together, not separately.
+
+**What the review could not answer.** Which sealant material is best is unknown
+at very low certainty, across 24 trials. Glass ionomer against no sealant is
+inconclusive. So the recommendation's specification of *resin* is doing real work
+and is supported, while the profession's choice between resin products is not.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for an update to CD001830. None found; the 2017 version
+(`.pub5`) remains current.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+I have the full text of this review, supplied during writing. The statements about
+the publication dates of the seven trials, the absence of recorded background
+fluoride exposure, and the universal high risk of detection bias are from the
+review body, not its abstract.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch11-sealants.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Moderate]{.certainty .moderate} that resin-based sealants substantially
+    reduce caries in first permanent molars, sustained to at least 48 months. I
+    agree with DBOH. [Very low]{.certainty .very-low} for glass ionomer and for
+    any comparison between sealant materials.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Good on population and outcome, questionable on era.** Right children,
+    right teeth, caries measured over years. But five of the seven trials behind
+    the headline estimate are from the 1970s, in a pre-fluoride-toothpaste
+    population, and background fluoride exposure was rarely recorded.
+
+    DBOH's claim that the benefit holds "in both low risk and high risk
+    populations" is supported by the review's absolute-risk translation, but that
+    translation is an arithmetic projection from the pooled odds ratio, not a
+    finding from modern low-risk populations.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes.** The effect is large enough to survive its caveats, and the
+    recommendation is correctly aimed at children at higher risk, where the
+    absolute benefit is greatest. Of everything in Part II, this and fluoride
+    toothpaste are the two I would defend most confidently.
+
+    The improvement I would want is transparency about the age of the evidence,
+    which affects how much benefit a child today should expect.
 
 What would change my mind
-:   *TBD*
+:   Trials in contemporary populations with recorded fluoride exposure. If the
+    two trials from the 2010s show a materially smaller effect than the five from
+    the 1970s, that is the finding, and the review does not report the comparison.
+    I would also want the harm side filled in: sealants can fail, and a partially
+    lost sealant over a carious lesion is a scenario the trials do not describe.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If your child is offered fissure sealants, and particularly if a dentist has said
+they are at higher risk of decay, take them. Along with fluoride toothpaste, this
+is one of the two strongest recommendations in this book.
+
+Ask for **resin**. That is what the evidence supports; glass ionomer is
+inconclusive and no one knows which brand of resin is best.
+
+The one thing to hold lightly is the size of the benefit. The figures come mostly
+from children in the 1970s who had far more decay than children do now. Sealants
+almost certainly still work. They may not work quite as spectacularly as an odds
+ratio of 0.12 suggests.

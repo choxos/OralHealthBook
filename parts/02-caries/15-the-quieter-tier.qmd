@@ -1,75 +1,176 @@
-# The quieter tier: supervised brushing, sugar-free medicines, bedtime sugar {#sec-quieter-tier}
+# The quieter tier {#sec-quieter-tier}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Most of this book has been about **Strong** recommendations, because that is
+where the gap between label and evidence does the most damage. But of the
+{{< var dboh.total >}} recommendations in *Delivering Better Oral Health*, only
+{{< var dboh.strong >}} are Strong. The other two thirds are Conditional or Good
+practice, and they are worth a chapter of their own, because they are where the
+guideline is at its most honest and where nobody is looking.
 
-## The advice
+This chapter takes three of them together.
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+## Supervised toothbrushing
 
-## What the guideline says its evidence is
+> Parent or carer to assist and supervise toothbrushing if required
+>
+> Strength of recommendation: **Good practice**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 1e [@dboh2025]
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+DBOH cites dos Santos and colleagues' systematic review of supervised
+toothbrushing [@dossantos2018]. Its conclusion, in the authors' words:
 
-## Following the citation
+> There is **no conclusive** [evidence] ...
+>
+> --- dos Santos and colleagues [@dossantos2018]
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+The review searched 2,046 records and found four controlled trials. It could not
+perform a meta-analysis, because of clinical heterogeneity among the studies and
+differences in how caries incidence was reported. Of the four trials, two found
+statistically significant differences favouring supervised brushing, but
+"information about the magnitude and/or the precision of the effect estimate was
+lacking", and in one trial the clustering effect was not taken into account.
 
-## Appraising it
+That last detail is worth dwelling on. A trial that randomises schools but
+analyses children as though they were independent will produce confidence
+intervals that are too narrow and a p-value that is too small. It is one of the
+most common statistical errors in this literature, and the review caught it.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+So: four trials, no poolable estimate, effect sizes not reported, one analysis
+with a known error. The right label for that is **Good practice**, and that is
+the label it has. The guideline is not overclaiming; it is describing a genuine
+gap.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
+The thing worth noticing is *which* gap. Supervised brushing is one of the most
+widely implemented public health interventions in children's dentistry.
+Childsmile in Scotland is built on it. And nobody has established its independent
+effect, as distinct from the effect of the fluoride toothpaste it delivers. The
+review's stated aim was exactly this: "The anticaries effect of supervised
+toothbrushing, **irrespective of the effect of fluoride toothpaste**, has not
+been clearly determined yet."
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
+## Sugar at bedtime
 
-## Is there better evidence?
+> Avoid sugar-containing foods and drinks at bedtime when saliva flow is reduced
+> and buffering capacity is lost
+>
+> Strength of recommendation: **Conditional** (Good practice for under-3s)
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1a to 1f [@dboh2025]
+
+> Recommendation based on **very low certainty evidence** for increased risk of
+> dental caries associated with bedtime consumption of food and drinks containing
+> free sugars (in children aged 3 years and older).
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+
+The citation is Baghlaf and colleagues [@baghlaf2018]. Eighteen studies met the
+inclusion criteria: **13 cross-sectional, 4 cohort, 1 case-control.** Six were
+rated good quality, eight fair, four poor. And:
+
+> It was not possible to conduct a meta-analysis, because of the considerable
+> variations [in the studies].
+>
+> --- Baghlaf and colleagues [@baghlaf2018]
+
+No pooled estimate, mostly cross-sectional data, very low certainty. Conditional
+is the correct label and DBOH applies it.
+
+I find this recommendation the most persuasive of the three despite having the
+weakest formal evidence, and it is worth saying why, because it illustrates
+something [Chapter -@sec-certainty-strength] argued in the abstract.
+
+The mechanism here is the same one as [Chapter -@sec-last-thing], and it is the
+same one that makes the [Chapter -@sec-breastfeeding] night-feeding signal
+plausible: salivary flow falls during sleep, so anything left on the teeth stays
+there, unbuffered and uncleared, for hours. Three separate recommendations in
+this guideline lean on that single physiological fact. **None of them has been
+tested directly.** They are all the same untested assumption wearing different
+clothes, and their apparent independent agreement is an illusion.
+
+That is not a reason to disbelieve it. It is a reason to notice that a guideline
+can look better-corroborated than it is, when several of its recommendations rest
+on one shared premise.
+
+## Sugar-free medicines
+
+> Use sugar-free versions of medicines if possible
+>
+> Strength of recommendation: **Good practice**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 1a to 1g [@dboh2025]
+
+Chapter 13 offers no evidence statement for this at all. It is one of the
+{{< var dboh.no_certainty_stated >}} recommendations in the guideline whose
+evidence statement names no certainty level.
+
+And that is fine. This is what the Good practice category is *for*: advice that
+is obviously sensible, costs nothing, harms nobody, and that no one is ever going
+to randomise. A child on long-term liquid medication is bathing their teeth in
+sugar several times a day. You do not need a trial.
+
+I include it to make a point about proportion. This book has spent a lot of pages
+on recommendations whose labels outrun their evidence. Here is one with no
+evidence at all, correctly labelled, and I have nothing to say against it. The
+category works when it is used.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for updates to the three reviews cited. None found: dos
+Santos 2018 and Baghlaf 2018 both remain current, and no systematic review of
+sugar-free medicines and caries was identified.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+I have full text for dos Santos 2018 and Baghlaf 2018 including supplements,
+supplied during writing.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch15-quieter-tier.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   **Supervised brushing:** [very low]{.certainty .very-low}. Four trials, no
+    meta-analysis possible, effect sizes unreported, one analysis ignoring
+    clustering.
+    **Bedtime sugar:** [very low]{.certainty .very-low}. Eighteen studies, mostly
+    cross-sectional, no meta-analysis possible.
+    **Sugar-free medicines:** no evidence, and none needed.
 
 Directness to the advice as worded
-:   *TBD*
+:   Reasonable throughout. These reviews are about the interventions the advice
+    describes, in the right people. The problem is quantity and quality of
+    evidence, not relevance, which makes this part of the guideline a cleaner
+    case than most of Part II.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes, for all three, and this is the guideline working as designed.**
+    Very low certainty gets Conditional. No rateable evidence gets Good practice.
+    Nothing is dressed up.
+
+    The observation that survives is not a criticism of any single row. It is that
+    the bedtime recommendation, the last-thing-at-night recommendation and the
+    night-feeding caveat all rest on **one** untested physiological premise about
+    salivary flow, and read as three independent supports when they are one.
 
 What would change my mind
-:   *TBD*
+:   For supervised brushing: a cluster trial, correctly analysed, isolating
+    supervision from toothpaste supply. Given how much public money rests on this
+    intervention, its absence is remarkable. For bedtime sugar: any prospective
+    study measuring timing of intake rather than reconstructing it from a
+    questionnaire.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Supervise your child's brushing until they are old enough to do it properly.
+Nobody has proved this helps independently of getting fluoride onto the teeth,
+but getting fluoride onto the teeth is the point, and a six-year-old left alone
+generally does not.
+
+Do not send children to bed on sugar. The formal evidence is very low certainty
+and the mechanism is untested, but it is free, and the reasoning is the same one
+that underpins several other pieces of advice in this book.
+
+Ask for sugar-free medicine if your child is on something long-term. This is the
+easiest recommendation in the guideline to follow and there is no argument
+against it.

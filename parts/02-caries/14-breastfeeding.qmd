@@ -1,75 +1,197 @@
 # Breastfeeding and decay {#sec-breastfeeding}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+This is the flagship example of the argument in [Chapter -@sec-bundling], and it
+is also the chapter where getting the framing wrong would do the most harm.
+
+So let me put the conclusion at the top. **Nothing in this chapter is an argument
+against breastfeeding.** The case for breastfeeding rests on a large body of
+evidence about infant health that has nothing to do with teeth, and it is not
+in question here. What is in question is a specific caries claim attached to it,
+and whether a **Strong** label on a dental guideline is the right way to carry
+that claim.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> Breastfed babies experience less tooth decay and breastfeeding provides the
+> best nutrition for a baby's overall health. Support mothers to:
+>
+> - breastfeed exclusively for around the first 6 months of a baby's life
+> - continue breastfeeding while introducing solids from around the age of 6
+>   months
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 1a [@dboh2025]
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on **WHO guidelines**, taking into account benefits of
+> exclusive breastfeeding for first 6 months on overall health, as well as **low
+> certainty evidence of a dental caries-preventive effect**. Weaning advice is
+> from UK SACN guidelines. **Some very low certainty evidence of increase in
+> dental caries risk beyond 12 months breastfeeding**, but this was observed in
+> children experiencing high frequency of nocturnal breastfeeding and may also be
+> influenced by confounders that the studies did not assess, for example,
+> sugar-sweetened food and drink consumption.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 1 [@dboh2025]
 
-## Following the citation
+Read that carefully, because it is one of the most honest paragraphs in the whole
+guideline. It says the Strong label comes primarily from **WHO guidance on
+overall health**. It rates the caries-preventive claim **low certainty**. It
+discloses a signal in the *opposite* direction beyond 12 months, rates that **very
+low**, and volunteers the confounder that might explain it.
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+That is a panel showing its working. My complaint is not with this paragraph. It
+is with the fact that a reader of the summary table sees only the sentence
+"Breastfed babies experience less tooth decay", stated flatly, with **Strong**
+beside it.
 
-## Appraising it
+## What the evidence actually shows
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+The citation is Tham and colleagues' systematic review and meta-analysis, which
+included 63 papers [@tham2015].
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+| Comparison | Odds ratio | 95% CI | I² |
+|:-------------------------------------------|:---------|:-------------|------:|
+| More vs less breastfeeding, **up to 12 months** | 0.50 | 0.25 to 0.99 | 86.8% |
+| Breastfed **>12 months** vs <12 months | 1.99 | 1.35 to 2.95 | 69.3% |
+| Among those breastfed >12 months: nocturnal or more frequent feeding | **7.14** | 3.14 to 16.23 | 77.1% |
+
+: Breastfeeding and dental caries [@tham2015]. Below 1 favours breastfeeding
+{#tbl-tham}
+
+Three things jump out.
+
+**The protective estimate is fragile.** OR 0.50 sounds substantial, but the
+confidence interval runs to 0.99. It only just excludes no effect. And I² of
+**86.8%** is extreme heterogeneity: the studies being pooled disagree with each
+other profoundly. A pooled estimate with that much inconsistency is a weak summary
+of a scattered literature, and low certainty is the right rating.
+
+**The direction reverses after 12 months.** Children breastfed beyond a year had
+roughly twice the odds of caries. DBOH reports this, rates it very low, and
+correctly notes it may be confounded.
+
+**The nocturnal figure is the one to be careful with.** OR 7.14 is a large number
+and it will be quoted. Its interval runs from 3.14 to 16.23, which is enormously
+wide, I² is 77%, and it comes from five observational studies. The review's own
+authors are explicit about the limitation:
+
+> There was a lack of studies on children aged >12 months simultaneously
+> assessing caries risk in breastfed, bottle-fed and children not bottle or
+> breastfed, alongside specific breastfeeding practices, consuming sweet drinks
+> and foods, and oral hygiene practices **limiting our ability to tease out the
+> risks attributable to each**.
+>
+> --- Tham and colleagues, 2015 [@tham2015]
+
+That sentence should accompany the number every time it is used. Children who are
+breastfed frequently at night after their first birthday differ from other
+children in many ways, and the studies could not separate them.
+
+The review's own conclusion is deliberately modest: "Breastfeeding in infancy
+**may** protect against dental caries. Further research needed to understand the
+increased risk of caries in children breastfed after 12 months."
+
+::: {.callout-note title="How I judged this: borrowing strength, legitimately" collapse="true"}
+[Chapter -@sec-tobacco] argued that a Strong recommendation with no direct
+evidence can be justified when a component is necessary to a well-supported
+pathway. Something similar, but not identical, is happening here.
+
+The Strong label is not really being earned by the caries evidence. DBOH says so:
+it rests on WHO guidance about overall infant health, which is a large and
+separate literature that this book has not audited and is not qualified to
+audit. If the recommendation read "breastfeed for the reasons WHO gives; the
+dental evidence is weak but points the same way", it would be unimpeachable.
+
+Is that a legitimate borrowing? **I think so**, and more clearly than in the
+brushing bundle. The advice is correct on other grounds, following it costs
+nothing dentally, and the alternative, a dental guideline conspicuously
+*declining* to endorse breastfeeding, would be actively harmful and would be
+reported as a dental body casting doubt on infant feeding advice. There is no
+version of this recommendation that should be weaker.
+
+The problem is confined to one sentence: **"Breastfed babies experience less
+tooth decay."** Stated flatly, next to Strong, that is a stronger claim than
+OR 0.50 (0.25 to 0.99) with I² of 86.8% supports. "May experience less tooth
+decay" would cost nothing and would be true.
 :::
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
+## The part nobody says out loud
 
-## Is there better evidence?
+There is a real clinical issue underneath the 12-month finding, and I want to
+state it carefully because it is easy to weaponise.
+
+Prolonged frequent night feeding, of anything, keeps fermentable carbohydrate
+against the teeth during the hours when saliva flow is lowest. That is the same
+mechanism as [Chapter -@sec-last-thing], and it is why the guideline elsewhere
+tells parents not to put babies to bed with a bottle. Whether it applies to
+breastmilk to the same degree as to formula or juice is genuinely disputed, and
+the studies that would settle it have not been done.
+
+What a parent should take from this is not "stop breastfeeding". It is that once
+teeth are present, cleaning them matters, and that is a recommendation with far
+better evidence behind it than anything in this chapter.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for systematic reviews of breastfeeding and dental caries
+published since Tham 2015. Tham remains the review DBOH relies on. I have its
+full text, supplied during writing.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+**Limitation of this chapter.** I have audited the dental claim only. The WHO
+guidance on exclusive breastfeeding, which is what the Strong label actually
+rests on, concerns infant nutrition, infection and mortality. Auditing it is
+outside this book's scope and outside my competence, and I have not attempted it.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch14-breastfeeding.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Low]{.certainty .low} that breastfeeding up to 12 months reduces caries: one
+    pooled estimate whose interval nearly touches no effect, with I² of 86.8%.
+    [Very low]{.certainty .very-low} for the increased risk beyond 12 months and
+    for the nocturnal-feeding figure. This matches DBOH's own ratings exactly.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Adequate on population and outcome, poor on the causal claim.** These are
+    observational studies in the right children measuring caries, and they cannot
+    separate breastfeeding from the social and dietary factors that travel with
+    it. The review says so.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes, for the recommendation. No, for the sentence.**
+
+    The recommendation to breastfeed is correctly Strong, on grounds DBOH states
+    plainly and which lie outside dentistry. That is legitimate borrowing, and
+    demanding otherwise would be both wrong and harmful.
+
+    But the flat assertion "Breastfed babies experience less tooth decay",
+    presented in the advice column with a Strong label, outruns the low-certainty,
+    highly heterogeneous evidence behind it. One word, "may", would fix it.
 
 What would change my mind
-:   *TBD*
+:   A cohort study following children from birth that measures breastfeeding
+    duration and night-feeding frequency prospectively, alongside sugar intake,
+    toothbrushing and socioeconomic position, with caries at age five. The review
+    identifies precisely this gap. Until someone fills it, the 12-month reversal
+    stays uninterpretable.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Breastfeed if you can, for the reasons your midwife and health visitor give you.
+Those reasons are about your baby's overall health, they are much better
+established than anything in this chapter, and no dental finding should shift
+them.
+
+On teeth specifically: the evidence that breastfeeding protects against decay is
+weak and inconsistent, and the evidence about feeding beyond a year points the
+other way but is weaker still and probably confounded. Neither is a reason to do
+anything differently.
+
+The thing that is well established, and which applies from the moment the first
+tooth appears, is in [Chapter -@sec-ppm]: brush it, with fluoride toothpaste.
