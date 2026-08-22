@@ -1,75 +1,170 @@
 # Looking for oral cancer, and the tests you are told not to use {#sec-cancer-screening}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Oral cancer is the reason a dentist asks you to stick out your tongue and then
+holds it in a piece of gauze while looking under it. It is the most serious thing
+they are looking for, and survival depends heavily on how early it is found.
+
+This chapter contains the most unusual recommendation in the guideline: a
+**Strong** recommendation **not** to do something. It is also, on the evidence, an
+excellent one.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> It's not recommended to use vital staining, oral cytology or light-based
+> detection and/or oral spectroscopy for evaluating lesions for malignancy.
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 3e [@dboh2025]
 
-## What the guideline says its evidence is
+Alongside it, two Good practice points: examine everyone at every oral health
+assessment, and refer urgently on a specified list of signs.
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+## Why the negative recommendation is the strongest thing here
 
-## Following the citation
+> Recommendation based on **moderate certainty evidence** from a well conducted
+> systematic review of **diagnostic accuracy** of index tests for the detection of
+> oral cancer and potentially malignant disorders of the lip and oral cavity, in
+> patients presenting with clinically evident lesions.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+Three features make this the cleanest evidence-to-recommendation match in the
+whole guideline, and it is worth naming them because the rest of this book has
+been a catalogue of the opposite.
 
-## Appraising it
+**The evidence is the right design for the question.** A diagnostic accuracy
+review is what you need to answer "does this test tell you anything useful". Not
+a proxy, not a mechanism, not an observational association.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+**The population matches.** Patients presenting with clinically evident lesions,
+which is exactly when a clinician would be tempted to reach for an adjunctive
+test.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+**The direction matches.** Moderate certainty that the tests do not perform well
+enough, supporting a recommendation not to use them.
+
+There is also a structural reason a negative recommendation is easier to get
+right. When you recommend *for* something, the harm side is often unmeasured
+(see nearly every chapter in Part II). When you recommend *against* a diagnostic
+test, the harms are the point: a false positive means an unnecessary biopsy and
+weeks of fear, a false negative means false reassurance about a cancer. The
+evidence-to-decision reasoning is doing visible work.
+
+Devices in this category are sold to dental practices, often at meaningful cost,
+on the promise of catching cancers earlier. The guideline says the evidence does
+not support them. That is a commercially inconvenient recommendation to make, and
+making it plainly deserves credit.
+
+## The uncomfortable part: what supports the examination itself
+
+Now the awkward question, which the guideline handles honestly and which most
+readers will not have considered.
+
+The instruction to **perform the examination** is not Strong. It is **Good
+practice**, with no evidence statement in chapter 13.
+
+And the referral criteria, the specific list of signs that should trigger an
+urgent cancer-pathway referral, carry this:
+
+> **NICE guidance found no evidence with regard to the positive predictive values
+> of different symptoms of oral cancer in primary care.** The benefits of rapid
+> referrals need balancing against the harms of over-referral.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+
+Read that again. The list of warning signs that determines who gets referred
+urgently for suspected oral cancer is not underpinned by evidence about how
+predictive those signs actually are.
+
+This is not a scandal, for the same reasons set out in [Chapter -@sec-tobacco].
+An ulcer that has not healed in three weeks is a reasonable thing to investigate
+whether or not anyone has calculated its positive predictive value. Withholding
+referral until the arithmetic exists would be indefensible. And DBOH labels it
+Good practice, discloses the gap, and names the trade-off with over-referral in
+the same sentence.
+
+But it is worth a reader knowing that the screening examination itself, one of
+the most routine acts in dentistry, sits on much thinner evidence than the
+recommendation against the gadgets.
+
+::: {.callout-note title="How I judged this: screening is not the same as examining" collapse="true"}
+A distinction this chapter has to keep straight.
+
+**Does opportunistic examination reduce oral cancer deaths?** That is a
+population screening question, and it is genuinely hard. Screening programmes are
+only justified when early detection changes outcomes enough to outweigh the harms
+of over-diagnosis, and for oral cancer in general populations the evidence has
+never been strong enough to support a national screening programme.
+
+**Should a clinician who is already looking in your mouth look properly?**
+Different question, obviously yes, no trial needed.
+
+DBOH is asking the second question, not the first, and Good practice is the right
+label for it. I flag the distinction because "there is no good evidence for oral
+cancer screening" is a true sentence about the first question that would be badly
+misleading if applied to the second.
+
+**One limitation of my own.** I have not obtained the diagnostic accuracy review
+DBOH cites for the negative recommendation; it was not among the documents
+supplied and I have relied on DBOH's characterisation of it, which is detailed and
+specific. Everything I say about that recommendation therefore rests on the
+guideline's own account rather than on my reading of the source, and this is the
+one chapter in the book where that is true of the central claim.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for systematic reviews of adjunctive tests for oral
+cancer detection. I did not obtain the specific review DBOH cites. See the
+limitation above.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
+Full record in `appraisals/searches/ch20-oral-cancer.md`.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
-:::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Moderate]{.certainty .moderate} that vital staining, oral cytology and
+    light-based detection do not perform well enough to be used for evaluating
+    lesions, per DBOH's account of a diagnostic accuracy review I have not read.
+    **None stated** for the examination itself or for the referral criteria, and
+    the guideline says so.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Excellent for the negative recommendation**, on the account available: right
+    test, right population, right outcome measure. Not assessed for the Good
+    practice points, which carry no evidence to be direct or indirect about.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes, and this is the guideline's best single row.** A Strong recommendation
+    against an intervention, grounded in a diagnostic accuracy review of the right
+    design, in the right population, where the harms of getting it wrong are
+    explicit. If every recommendation in *Delivering Better Oral Health* were
+    constructed like this one, this book would not exist.
+
+    Good practice is also right for the examination and the referral list, with
+    the gap disclosed.
 
 What would change my mind
-:   *TBD*
+:   New-generation adjunctive tests with better accuracy data, which would make
+    the negative recommendation obsolete rather than wrong. And work on the
+    positive predictive values of oral cancer symptoms in primary care, which NICE
+    identified as missing and which would let the referral criteria be tuned
+    rather than asserted.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If a dental practice offers you an extra oral cancer test, a dye rinse, a special
+light, a brush biopsy, often for a fee, the national guideline says do not
+bother. That is a Strong recommendation and it is well founded.
+
+What you should do instead is let a dentist look, properly, at every check-up, and
+take these seriously if they persist: an ulcer in your mouth lasting more than
+three weeks, an unexplained lump in your neck, a red or red-and-white patch, or
+persistent hoarseness or pain on swallowing for more than three weeks.
+
+Nobody has calculated how predictive each of those signs is. They are the list
+because clinicians agree they matter, which is the honest reason, and the
+guideline says so.

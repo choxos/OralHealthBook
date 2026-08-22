@@ -1,75 +1,157 @@
 # Manual or powered? {#sec-powered}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+An electric toothbrush costs between twenty and three hundred pounds. A manual
+one costs two. So this is the recommendation with the largest price tag attached,
+and it is the one where the guideline does something I have not seen it do
+anywhere else: it declines to choose.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> Toothbrush type: use a manual **or** powered toothbrush
+>
+> Strength of recommendation: **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 2a [@dboh2025]
 
-## What the guideline says its evidence is
+A **Strong** recommendation to do either of two things. It is worth pausing on
+how unusual that is. Strong normally means the panel is confident nearly everyone
+should do a particular thing. Here it means the panel is confident that it does
+not matter much which you pick, which is a different and less common kind of
+confidence.
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+I think it is the right call, and this chapter is mostly about why the evidence
+supports being that relaxed.
 
 ## Following the citation
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+DBOH cites two reviews here [@wang2020; @elkerbout2020], and notably **not** the
+Cochrane review of powered versus manual toothbrushing, which is the largest
+piece of work on the question. I will come back to that.
 
-## Appraising it
+**Wang and colleagues, 2020** pooled 21 randomised studies. According to the
+paper, powered brushes outperformed manual on every index:
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+| Outcome | SMD | 95% CI | I² |
+|:---------------------------|:--------|:---------------|------:|
+| Plaque index | 0.86 | 0.58 to 1.14 | 91.5% |
+| Gingival index | 0.47 | 0.12 to 0.82 | 88.7% |
+| Bleeding index | 0.92 | 0.43 to 1.40 | 91.8% |
+| **Oscillating-rotating brushes vs manual, gingivitis** | **0.07** | **−0.20 to 0.33** | 57.2% |
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+: Powered against manual toothbrushes [@wang2020] {#tbl-powered}
+
+Look at that last row, because it is the one nobody quotes. When the analysis is
+restricted to **oscillating-rotating** brushes, the design most commonly sold and
+most commonly recommended, the gingivitis difference disappears: SMD 0.07 with a
+confidence interval straddling zero.
+
+And look at the I² column. Ninety-one per cent. Heterogeneity that high means the
+included trials are not estimating the same thing, and the paper says as much,
+attributing it partly to differing assessment standards between studies. A pooled
+SMD of 0.86 across trials that disagree that violently is a number I would not
+put much weight on.
+
+**Elkerbout and colleagues, 2020** is narrower and cleaner. It examined plaque
+removal after a **single brushing exercise**, and concluded at moderate certainty
+that powered brushes removed more plaque, with a difference in means of −0.15
+(95% CI −0.22 to −0.08) on one index and −0.15 (−0.18 to −0.12) on another.
+
+The authors are unusually candid about what that does and does not show:
+
+> There is a small difference in plaque removal in favour of the PTB. The single
+> brushing design is rather direct as it does not reflect long-term use. As the
+> risk of bias varied from "low to high" and **many studies were
+> industry-financed** reporting bias cannot be ruled out.
+>
+> --- Elkerbout and colleagues, 2020 [@elkerbout2020]
+
+A single brushing exercise, in a laboratory-like setting, is about as far from
+"does this keep your gums healthy over decades" as a study can get while still
+being about toothbrushes.
+
+::: {.callout-note title="How I judged this: three problems that run through both" collapse="true"}
+**The outcome is plaque, not disease.** Every estimate above is a plaque or
+gingival index. Nobody in these reviews measured tooth loss, periodontitis
+progression, or caries. Plaque scores are a surrogate, and a fairly distant one.
+
+**Blinding is impossible.** You know which sort of toothbrush you are holding.
+Every trial in this literature has that problem, as in [Chapter -@sec-flossing]
+and [Chapter -@sec-sealants].
+
+**Industry funding is pervasive.** Elkerbout says so directly. Toothbrush trials
+are largely funded by the companies that sell toothbrushes, and the empirical
+finding that industry-sponsored research more often favours the sponsor
+[@lundh2017] applies with unusual force to a market this size. This does not make
+the results wrong. It is a reason for the certainty rating to be lower than the
+confidence intervals alone suggest.
+
+**On the missing Cochrane review.** DBOH cites two 2020 reviews rather than the
+Cochrane review of powered versus manual brushing. I do not know why, and I will
+not speculate about motive; there are innocent explanations, including currency
+at the time of drafting. But the pattern in this book is that the most directly
+relevant systematic review sometimes goes uncited, as in
+[Chapter -@sec-twice-daily], and it is worth flagging when it recurs.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026. I have full text and supplementary material for both
+Wang 2020 and Elkerbout 2020, supplied during writing. I did not run an
+independent search of the primary toothbrush literature, which is large and
+industry-dominated, and I would not trust a single-screener search of it.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+SIGN 138 records the relevant null for caries specifically: "No evidence was
+identified to show that powered toothbrushes are more effective than manual
+toothbrushes in preventing dental caries in children" [@sign138].
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch16-powered.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Low]{.certainty .low} that powered brushes reduce plaque and gingivitis more
+    than manual ones in ordinary use. Downgraded from the reviews' own ratings for
+    extreme heterogeneity (I² above 88% on every pooled outcome in Wang),
+    surrogate outcomes, impossible blinding and pervasive industry funding.
+    [Moderate]{.certainty .moderate} that powered brushes remove more plaque in a
+    single supervised brushing, which is a much smaller claim.
+    **No evidence** that either type prevents caries better.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Adequate.** The trials compare the two things the advice offers, in the
+    right people. The weakness is outcome: plaque and gingival indices over weeks,
+    for a choice people make for decades.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes, and it is the right shape.** A Strong recommendation that either
+    option is acceptable is well supported by evidence showing small,
+    heterogeneous, surrogate-outcome differences. If the evidence were stronger,
+    "use a manual or powered toothbrush" would be the wrong recommendation. Because
+    it is weak, it is the right one.
+
+    I would go further than the guideline in one respect: it is worth saying
+    out loud that the oscillating-rotating subgroup showed no gingivitis benefit at
+    all, since those are the brushes most people buy.
 
 What would change my mind
-:   *TBD*
+:   A trial measuring periodontitis progression or tooth loss over five years or
+    more, independently funded. Failing that, an analysis explaining the
+    heterogeneity: with I² above 90%, the interesting question is not the average
+    effect but why the trials disagree so much.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Use whichever you will actually use, twice a day, for two minutes, with fluoride
+toothpaste. That last clause is doing all the work, and the guideline agrees.
+
+If you already own an electric toothbrush, keep using it: it probably removes
+slightly more plaque, and nothing suggests it does harm. If you do not, the
+evidence does not justify the purchase on health grounds alone. The pooled
+differences come from trials that disagree with each other enormously, measured
+on plaque scores rather than disease, mostly funded by manufacturers, and the
+subgroup covering the commonest type of powered brush found no gingivitis benefit
+at all.
+
+The honest summary is the guideline's own: **either is fine.**

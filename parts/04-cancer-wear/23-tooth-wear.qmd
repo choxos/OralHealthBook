@@ -1,75 +1,184 @@
 # Erosion, wear, and the acid myth {#sec-wear}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Tooth wear is the quiet epidemic of modern dentistry: enamel dissolving from
+acid, grinding away from friction, or both, in people who have very little decay
+and think their mouths are healthy.
+
+It is also, in *Delivering Better Oral Health*, the only disease domain where
+**every single recommendation is Good practice.** Not one Strong. Not one
+Conditional. Five recommendations, five admissions that no rateable research
+underpins them.
+
+That is the finding of this chapter, and it deserves to be better known.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+All five, in full:
 
-## What the guideline says its evidence is
+> Maintain standard oral hygiene practices as detailed in table 2. Brush teeth at
+> least twice daily: last thing at night (or before bedtime) and at least on one
+> other occasion; with toothpaste containing fluoride; spitting out after
+> brushing, rather than rinsing with water — **Good practice**
+>
+> Maintain good dietary practice in line with the Eatwell Guide including avoiding
+> or minimising sugar sweetened drinks (especially carbonated) and fruit juice
+> and/or smoothies (limited to 150ml per day) — **Good practice**
+>
+> Assess tooth wear using a validated tool (for example Basic Erosive Wear
+> Examination) at the start of any new course of treatment — **Good practice**
+>
+> Identify possible sources of risk: intrinsic, extrinsic and mechanical —
+> **Good practice**
+>
+> Support patient in risk reduction and management — **Good practice**
+>
+> --- *Delivering Better Oral Health*, chapter 2, tables 4a and 4b [@dboh2025]
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+## The thing to notice first
 
-## Following the citation
+Read that first recommendation again, then go back to [Chapter -@sec-spit].
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+It is **the same brushing advice**. Brush twice daily, last thing at night and one
+other time, with fluoride toothpaste, spitting rather than rinsing. Word for word
+the same instruction that appears in tables 1a, 1b, 1d and 1f.
 
-## Appraising it
+In the caries tables it is **Strong**. Here it is **Good practice**.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+The same words. The same behaviour. Two different strength labels, in the same
+document, thirty pages apart.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+There is a defensible explanation: strength is assigned per recommendation in the
+context of a specific disease, and the evidence that brushing prevents *caries*
+is not evidence that it prevents *tooth wear*. On that reading the guideline is
+being scrupulous, downgrading the label because the caries evidence does not
+transfer.
+
+I think that is what happened, and it is to the panel's credit. But consider what
+it means for [Chapter -@sec-bundling]'s argument. A strength label is not a
+property of the advice. It is a property of the advice **plus** the disease
+context **plus** which component the panel treated as main. The same sentence can
+carry Strong or Good practice depending on which table you found it in, and
+nothing on the page tells you that.
+
+A patient told to "brush twice daily, it's a Strong recommendation" is being given
+a label whose meaning depends on a context they were never shown.
+
+## Where the acid myth comes in
+
+The most widely repeated piece of tooth-wear advice is not in the guideline at
+all: **do not brush for thirty minutes after eating or drinking something acidic**,
+because the enamel is temporarily softened and brushing will scrub it away.
+
+You will find this on toothpaste packaging, in dental practice leaflets, and in
+most newspaper articles about erosion. It is not in *Delivering Better Oral
+Health*, in any table, at any strength.
+
+The reasoning behind it is real: acid does temporarily demineralise the enamel
+surface, and abrasion of softened enamel has been demonstrated in laboratory and
+in-situ models. The question is whether that translates into measurable tooth
+wear in actual humans over years, and whether the advice does more good than the
+harm of giving people a reason to postpone, and then skip, brushing.
+
+The guideline's silence on it is, I think, deliberate and correct. It recommends
+what it can support and leaves out what it cannot.
+
+## What the Good practice label is carrying here
+
+Two of these five rows have an evidence statement in chapter 13, and both point
+at Royal College of Surgeons guidance rather than at research. The other three
+have nothing.
+
+The dietary row is worth a moment. "Avoiding or minimising sugar sweetened drinks
+(especially carbonated) and fruit juice and/or smoothies (limited to 150ml per
+day)" bundles at least three separate instructions and a specific numeric
+threshold, all at Good practice, all uncited. The 150ml figure comes from general
+dietary guidance rather than from erosion research.
+
+The mechanism is not in doubt: acidic drinks dissolve enamel, and this is
+demonstrable in a glass. What has not been established is how much wear a given
+consumption pattern causes in a real mouth, where saliva buffers and
+remineralises continuously.
+
+::: {.callout-note title="How I judged this: why this domain is so evidence-poor" collapse="true"}
+Tooth wear is genuinely harder to study than caries, and it is worth
+understanding why before treating the gap as negligence.
+
+**It is slow.** Wear accumulates over decades. A three-year trial, long by dental
+standards, may not detect a difference.
+
+**It is hard to measure.** Caries has DMFT, crude but standardised for a century.
+Tooth wear indices are newer, more subjective, and less comparable between
+studies. BEWE, which DBOH recommends using, is itself a relatively recent tool.
+
+**It is multi-causal.** Dietary acid, stomach acid from reflux or vomiting,
+grinding, and abrasion all contribute, often in the same person, and separating
+them requires measurement nobody routinely does.
+
+**The obvious trial is unethical.** You cannot randomise people to drink more
+cola for ten years.
+
+So the honest position is that Good practice is the correct label, and the
+guideline reaching that conclusion five times out of five is a sign of discipline
+rather than neglect. My complaint here is not that the labels are wrong. It is
+that a reader comparing the caries tables with the tooth wear tables has no way
+to see that one domain is built on randomised trials and the other on clinical
+consensus, unless they count the labels themselves.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for systematic reviews of interventions to prevent tooth
+wear with a wear outcome, and for the post-acid brushing delay specifically. I did
+not identify a systematic review that would support upgrading any of these
+recommendations, which is consistent with DBOH assigning Good practice throughout.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+This is a thinner search than the Part II chapters received, and the conclusion
+is correspondingly weaker: I did not find such evidence, rather than it does not
+exist.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch23-tooth-wear.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   **None rateable**, across all five recommendations, which is what Good
+    practice means and what the guideline states. Two rows cite Royal College of
+    Surgeons guidance; three cite nothing.
 
 Directness to the advice as worded
-:   *TBD*
+:   Not applicable in the usual sense. There is no evidence base to be direct or
+    indirect about. The one exception is the brushing row, whose evidence exists
+    but concerns a different disease, which is precisely why it is labelled Good
+    practice here.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes, five times out of five.** This is the most consistently honest domain
+    in the guideline. Faced with an area where the research does not exist, it
+    says so repeatedly rather than borrowing authority from adjacent evidence.
+
+    The finding worth carrying forward is comparative, not critical: identical
+    brushing advice is **Strong** in the caries tables and **Good practice** here.
+    That is defensible per-disease reasoning, and it demonstrates that a strength
+    label cannot be read without knowing which table it came from.
 
 What would change my mind
-:   *TBD*
+:   A cohort study measuring wear with a validated index against recorded dietary
+    acid exposure over ten years or more. And, for the acid myth specifically, any
+    human study of post-acid brushing delay with a wear outcome rather than an
+    in-situ enamel model.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If your teeth are getting thinner, shorter, more sensitive or more yellow as the
+enamel thins, that is tooth wear, and it is not the same problem as decay.
+
+The advice is sensible and none of it has been tested: cut down on acidic drinks,
+especially fizzy ones, keep fruit juice to about a glass a day, and mention reflux
+or grinding to your dentist because both are treatable causes.
+
+On not brushing for half an hour after something acidic: it is a laboratory
+finding that may or may not matter in a real mouth, and the national guideline
+does not recommend it. If it makes you brush less often overall, it is doing more
+harm than good.

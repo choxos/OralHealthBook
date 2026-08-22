@@ -1,75 +1,181 @@
 # Bristles, heads, and the two-minute rule {#sec-brush-design}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Three small pieces of advice about the object itself. Two of them are
+Conditional, one is not really a recommendation at all, and the last is the most
+famous instruction in dentistry.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+> Toothbrush type: use a small toothbrush head, medium texture
+>
+> Strength of recommendation: **Conditional**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 2a [@dboh2025]
 
-## What the guideline says its evidence is
+And, from the caries tables:
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> brush all tooth surfaces
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 1b [@dboh2025]
 
-## Following the citation
+Notice what is **not** there. Search *Delivering Better Oral Health* for the
+two-minute rule and you will not find it as a recommendation. That absence is the
+most interesting thing in this chapter, and I got it wrong the first time.
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+## Bristle stiffness
 
-## Appraising it
+The citation is Ranzan and colleagues [@ranzan2019], a systematic review asking
+whether bristle stiffness and end-shape cause adverse effects on soft tissue.
+Note the framing: this is a review about **harm**, not benefit. Nobody is
+claiming a medium brush cleans better. The claim is that a hard one damages you.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+Its conclusion:
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
+> **Soft and extra-soft toothbrushes tend to be safer.** Oral soft tissue injuries
+> are similar for both tapered and end-rounded bristles. Further studies
+> investigating adverse effects as a primary outcome are recommended.
+>
+> --- Ranzan and colleagues, 2019 [@ranzan2019]
+
+The underlying finding, from one included study, is that hard brushes produced
+more gingival lesions than soft or medium at four and eight weeks, with **no
+significant difference between medium and soft**. And a limitation the review
+states plainly: **only four of the included studies had adverse effects as their
+primary outcome.** Everything else was measuring something else and noticed harm
+in passing.
+
+So the evidence supports "not hard". It does not distinguish medium from soft,
+and the review's own conclusion leans toward soft while DBOH recommends medium.
+That is a small, real divergence, on very low certainty evidence, in a
+Conditional recommendation. It is about as low-stakes as a disagreement can be,
+and I note it only because the book's method requires noticing when the
+recommendation and its citation do not quite line up.
+
+## Head size
+
+I could find no evidence statement in chapter 13 for the small-head element, and
+no citation. It travels with the bristle recommendation on the same line, at
+Conditional. It is a reasonable piece of clinical logic, a smaller head reaches
+further back and around corners, and it is untested.
+
+## The two-minute rule
+
+Everybody knows you should brush for two minutes. Timers are built into electric
+toothbrushes, apps count it down, and the number is on the packaging.
+
+It is not in *Delivering Better Oral Health* as a recommendation.
+
+SIGN 138 explains why, in §5.5.2, and the passage is worth quoting in full
+because it is a model of how to write about an absence:
+
+> Toothbrushing for at least two minutes is recommended by the Childsmile
+> programme, the SDCEP guidance and some toothpaste manufacturers. However, **no
+> studies were identified relating to duration of brushing and caries
+> prevention.**
+>
+> There is insufficient evidence on which to recommend a specific duration for an
+> episode of toothbrushing for the prevention of caries.
+>
+> --- SIGN 138, §5.5.2 [@sign138]
+
+That is exactly right, and it is exactly what a guideline should say when the
+evidence is not there. SIGN names who recommends it, states the gap, and declines
+to make a recommendation.
+
+### Where I overstated this
+
+In my original blog post I wrote:
+
+> We all know about the (at least) two-minute rule, and it's been encouraged by
+> the Childsmile programme, the SDCEP guidance, dental professionals, and
+> toothpaste manufacturers. But in fact, **there is no evidence to support this.**
+
+The last sentence is too broad, and it is the error this book exists to object
+to.
+
+There is no evidence on **caries**, which is what SIGN searched for and what the
+sentence should have said. There is evidence on **plaque removal**: longer
+brushing removes more plaque, which is unsurprising and has been shown in
+brushing-exercise studies of the sort discussed in [Chapter -@sec-powered].
+
+Saying "no evidence" when you mean "no evidence for this outcome" is the same
+move as treating absence of evidence as evidence of absence, and I made it in a
+post complaining about people who make it. The distinction is not pedantic: a
+reader of my sentence would reasonably conclude that brushing duration does not
+matter, which is not what anyone has shown.
+
+::: {.callout-note title="How I judged this: why the caries gap is structural" collapse="true"}
+Why has nobody run the trial? Because it is unusually hard.
+
+To test duration against caries you would need to randomise people to brush for
+fixed different lengths of time, verify adherence over years, and hold everything
+else constant, including how much toothpaste they use and how well they cover
+their teeth. Brushing time and brushing thoroughness are entangled: someone who
+brushes for two minutes almost certainly covers more surfaces than someone who
+brushes for thirty seconds, so a duration trial is really a thoroughness trial
+with a clock attached.
+
+That is why the guideline says "brush all tooth surfaces" rather than "brush for
+two minutes". It targets the thing that plausibly matters rather than the
+convenient proxy. That is a good drafting decision and I want to credit it.
+
+The two-minute rule is best understood as a **usable heuristic for
+thoroughness**, not a finding. Two minutes is roughly how long covering every
+surface takes. That is a perfectly respectable reason to keep saying it, provided
+nobody claims it was measured.
 :::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for studies of toothbrushing duration with a caries
+outcome. None identified, consistent with SIGN's finding. Searches for duration
+and **plaque** return results; I have not appraised that literature in detail,
+and this chapter's claim about it is deliberately limited to its existence.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+I have the full text of Ranzan 2019, supplied during writing.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch18-brush-design.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Very low]{.certainty .very-low} for medium-texture bristles: a small review
+    of harm, in which only four studies measured adverse effects as a primary
+    outcome, showing hard is worse and medium indistinguishable from soft.
+    **None** for head size. **None on caries** for brushing duration, and the
+    guideline correspondingly makes no duration recommendation.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Partial.** Ranzan supports "not hard" rather than "medium", and its own
+    conclusion favours soft. Head size is uncited. The duration evidence that
+    exists is about plaque, not caries.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes.** Conditional is right for very low certainty evidence about a
+    low-stakes choice, and declining to recommend a brushing duration is exactly
+    what the evidence supports.
+
+    This chapter's correction is aimed at me, not at the guideline. On the two
+    most famous pieces of toothbrush advice, DBOH is more careful than the
+    profession that repeats them and more careful than I was.
 
 What would change my mind
-:   *TBD*
+:   A trial with adverse effects as the primary outcome comparing soft against
+    medium, which would settle whether DBOH or its own citation has the better of
+    it. On duration, honestly, nothing: the trial is not worth running, and
+    "cover every surface" is better advice than any number of seconds.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Do not use a hard toothbrush. That is the one part of this with evidence behind
+it, and hard brushes damaged gums in the studies that looked.
+
+Beyond that, soft or medium, small head or slightly larger: nobody has shown it
+matters, and the guideline labels it Conditional accordingly.
+
+Brush for about two minutes if it helps you. But the reason is not that two
+minutes was tested and found to be the right number; it was not. The reason is
+that covering every surface of every tooth takes roughly that long, and covering
+every surface is the actual instruction.

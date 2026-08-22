@@ -1,75 +1,151 @@
 # Alcohol, AUDIT-C, and the fourteen-unit line {#sec-alcohol}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
-:::
+Alcohol is in a dental guideline for one reason: it causes oral cancer, and
+combined with tobacco it does so far more than either alone. The recommendations
+that follow are about a dentist asking you how much you drink.
+
+This chapter is short, because the pattern is one the book has already
+established twice, and because I have less to add than in Part II.
 
 ## The advice
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+Three Strong recommendations, structured like the tobacco pathway:
+
+> **Ask.** Use the AUDIT-C tool (or similar) to assess a patient's level of risk of
+> alcohol harm by completing 3 consumption questions. — **Strong**
+>
+> **Advise.** If AUDIT-C score is 4 or below, give positive feedback... If score is
+> 5 to 10, give brief advice to encourage a reduction. — **Strong**
+>
+> **Act.** Feed back that their level of drinking is putting them at risk...
+> Highlight 'low risk' guidelines from UK Chief Medical Officers: not more than 14
+> units a week on a regular basis... — **Strong**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 3c [@dboh2025]
 
 ## What the guideline says its evidence is
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+> Recommendation based on **moderate certainty evidence** from a systematic review
+> showed that brief interventions can reduce alcohol consumption in those drinking
+> hazardous or harmful amounts of alcohol when compared to minimal or no
+> interventions.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-## Following the citation
+That evidence statement attaches to the **Ask** row. The Advise and Act rows carry
+no evidence statement at all in chapter 13.
 
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
+## The same structure as tobacco, one step weaker
 
-## Appraising it
+[Chapter -@sec-tobacco] set out three conditions under which a component with no
+direct evidence can legitimately inherit a Strong label: it is logically necessary
+to a pathway whose downstream steps work, the burden is trivial, and the harm is
+nil. Alcohol brief intervention meets the first two comfortably. Screening
+questions cost nothing and you cannot advise without asking.
 
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
+But there is a real difference from tobacco, and it is worth being precise about
+because it is the only thing this chapter adds.
 
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
+**The evidence is about brief interventions in general, not in dental settings.**
+The tobacco chapter had a Cochrane review of cessation *delivered by dental
+professionals*, 20 trials, in dental clinics. Here the moderate-certainty evidence
+is for brief alcohol interventions as a class, largely from primary care. Whether
+a conversation about drinking works the same way when it happens with a dental
+nurse holding a suction tube is an open question, and it is precisely the kind of
+setting mismatch that [Chapter -@sec-rinse] flagged for supervised school
+programmes.
 
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
+DBOH does not disclose this one the way it disclosed the school-programme gap.
+Chapter 13 says "a systematic review showed that brief interventions can reduce
+alcohol consumption" without noting where those interventions were delivered.
+Given how well the same chapter handles the equivalent gap for mouth rinses, this
+looks like an inconsistency in drafting rather than a considered judgment.
 
-## Is there better evidence?
+## The fourteen units
+
+The number in the Act row is not DBOH's. It comes from the UK Chief Medical
+Officers' guidelines, and the guideline correctly presents it as such: "Highlight
+'low risk' guidelines for alcohol consumption from UK Chief Medical Officers."
+
+I am not going to audit the CMO guidance. It rests on a large body of
+epidemiology about all-cause mortality and a wide range of cancers, it was
+developed through its own process, and doing it justice would be a different book
+by a different author. Relaying another body's guidance, clearly attributed, is a
+reasonable thing for a dental guideline to do, and it is the same legitimate
+borrowing as [Chapter -@sec-breastfeeding].
+
+What I will note is that the oral cancer risk is the part relevant to a dental
+setting, and the 14-unit threshold was not derived from it specifically.
+
+## The pregnancy row
+
+> For those who are pregnant or think they could become pregnant, the safest
+> approach is not to drink alcohol at all. — **Good practice**
+>
+> A well conducted systematic review highlights **the paucity of evidence
+> evaluating light drinking in pregnancy compared with abstinence**. Based on this
+> research, the CMO's guidance supports a '**precautionary**' approach.
+>
+> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+
+This is a model row and I want to hold it up as one. It states the evidence gap,
+names the reasoning as precautionary rather than empirical, attributes the
+recommendation to its source, and labels it Good practice rather than Strong.
+
+Every criticism in this book is a request for other rows to be written like this
+one.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026. I did not obtain the systematic review of brief alcohol
+interventions that DBOH cites; it was not among the supplied documents, and this
+chapter relies on DBOH's characterisation of it.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+I have not audited the UK CMO alcohol guidelines, which are the source of the
+14-unit figure. That is outside this book's scope and I say so rather than
+implying coverage.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch22-alcohol.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Moderate]{.certainty .moderate} that brief interventions reduce alcohol
+    consumption in hazardous or harmful drinkers, per DBOH's account of a review I
+    have not read, **in settings that are mostly not dental**. **None stated** for
+    the Advise and Act steps. **Explicitly paucity** for light drinking in
+    pregnancy, and the guideline says so.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Good on intervention and outcome, unassessed on setting.** The gap between
+    brief interventions in general and brief interventions in a dental chair is
+    real and undisclosed, which is the one thing this chapter holds against the
+    guideline.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Yes, on the tobacco reasoning.** Asking about alcohol costs nothing, harms
+    nobody, and is a necessary entry to advice that works. The pathway structure
+    justifies the label even where individual steps lack their own evidence.
+
+    The improvement wanted is one clause: name the setting the evidence came from,
+    as the same chapter does for supervised school mouth rinse programmes.
 
 What would change my mind
-:   *TBD*
+:   A trial of alcohol brief intervention delivered in dental practice, which
+    would close the setting gap. And, for the dental purpose specifically, evidence
+    on whether reducing consumption from hazardous levels reduces oral cancer
+    incidence, which is the outcome the recommendation is ultimately aimed at and
+    which nobody has demonstrated within this evidence base.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If a dentist asks how much you drink, they are not being nosy. Alcohol and
+tobacco together are the main modifiable causes of oral cancer, and the mouth is
+where the consequence shows up first.
+
+The brief conversation that follows has moderate-certainty evidence behind it,
+from other healthcare settings. Fourteen units a week is the UK Chief Medical
+Officers' threshold, not a dental one, and it is about your health generally
+rather than your mouth specifically.
