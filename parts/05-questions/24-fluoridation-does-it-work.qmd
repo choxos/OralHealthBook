@@ -1,75 +1,169 @@
 # Does water fluoridation work? {#sec-fluoridation-works}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
+Adding fluoride to public water is the most politically charged thing in this
+book. It is also, unusually, a question where the evidence changed recently and
+in a direction that neither side of the argument expected.
+
+I am going to give the answer plainly first, because the rest of this chapter is
+detail and the detail gets quoted selectively.
+
+**Water fluoridation probably still works, and it works considerably less well
+than it used to.** Not because the chemistry changed, but because fluoride
+toothpaste became universal in the mid-1970s, and you cannot get much extra
+benefit from putting fluoride in the water of people who are already putting it
+on their teeth twice a day.
+
+That claim is not mine. It is the conclusion of the 2024 update of the Cochrane
+review [@iheozor2024], and it is the reason this chapter exists.
+
+## What the review found
+
+157 studies, all non-randomised, because you cannot randomise a water supply. The
+review's key methodological decision, and the one that changed the picture, was
+to **stratify the results by whether data were collected before or after 1975**,
+the point at which fluoride toothpaste became widespread.
+
+Contemporary evidence, meaning after 1975:
+
+| Outcome | Effect | 95% CI | Studies | Certainty |
+|:--------------------------------------|:-------------|:-----------------|-------:|:-------------|
+| Change in dmft (baby teeth) | MD **0.24** | −0.03 to 0.52 | 2 | [low]{.certainty .low} |
+| Proportion caries-free, primary teeth | MD −0.04 | −0.09 to 0.01 | 2 | [low]{.certainty .low} |
+| Proportion caries-free, permanent teeth | MD −0.03 | −0.07 to 0.01 | 2 | [low]{.certainty .low} |
+| Change in DMFT (adult teeth) | very uncertain | — | 4 | very low |
+| Effect of **cessation** | could not determine | — | 1 | very low |
+
+: Community water fluoridation, post-1975 evidence [@iheozor2024] {#tbl-cwf}
+
+A difference of 0.24 dmft is about a quarter of one decayed, missing or filled
+baby tooth per child. And the confidence interval runs from −0.03 to 0.52, which
+**includes no benefit at all**. The caries-free proportions work out at about 4
+and 3 percentage points respectively, again with intervals crossing zero.
+
+The review's own summary of this: initiation "**may** lead to a slightly greater
+reduction in dmft" and "**may** lead to a slightly greater increase in the
+proportion of caries-free children, but with **smaller effect sizes than pre-1975
+studies**."
+
+For the older evidence, from 1975 or earlier, the review was "unsure of the size
+of effects" on every outcome, at very low certainty. So the famous large benefits
+everyone cites come from a body of evidence the reviewers could not rely on
+either.
+
+## Reading this honestly, in both directions
+
+This is the chapter where selective quotation does the most damage, so let me set
+out what each side gets right and wrong.
+
+**What the critics get right.** The modern effect is small, the confidence
+interval includes zero, the evidence is low certainty and non-randomised, and
+there are only two contemporary studies for the primary outcome. Anyone who tells
+you contemporary evidence shows a large benefit is not describing this review.
+And there are **no eligible studies reporting caries outcomes in adults at all**,
+which is remarkable for an intervention delivered to entire adult populations.
+
+**What the critics get wrong.** Every estimate points the same direction, toward
+benefit. "The confidence interval includes zero" is not "the effect is zero"; it
+is also compatible with half a tooth per child, which across a population is not
+nothing. The evidence for **stopping** fluoridation is very low certainty from a
+single study, so anyone claiming that cessation is demonstrably safe is doing the
+thing this book objects to, in reverse.
+
+**What defenders get wrong.** Continuing to cite pre-1975 effect sizes, or the
+often-repeated "25% reduction", as though the 2024 update had not happened. It
+did happen, it was conducted by the same Cochrane group whose fluoride toothpaste
+review underpins [Chapter -@sec-ppm], and its finding is that the benefit has
+shrunk.
+
+::: {.callout-note title="How I judged this: why the design cannot be fixed" collapse="true"}
+Every study here is non-randomised, so under GRADE the body starts at low
+certainty, and the review downgraded further for confounding and lack of blinded
+outcome assessment. It also downgraded older evidence for **indirectness**, on the
+grounds that pre-1975 societies are not applicable to contemporary ones. That is
+exactly the reasoning [Chapter -@sec-sealants] applies to sealant trials from the
+1970s, and it is the right move.
+
+Could randomisation ever happen? Not realistically. You would need to allocate
+water supplies to communities and follow them for years, with people moving in
+and out. The review notes migration as a specific complication.
+
+So this is a permanent state of affairs: a population intervention that cannot be
+tested to the standard we would demand of a toothpaste. That is a reason for
+humility on all sides, not a trump card for either.
+
+**The equity question is unresolved.** Fluoridation's strongest argument has
+always been that it reaches people who do not brush regularly, narrowing the gap
+between rich and poor. The review found only **one** post-1975 study reporting
+disparities by socioeconomic status, "with no evidence that deprivation influenced
+the relationship". One study is not enough to confirm or refute the central policy
+claim for the intervention. That gap should trouble supporters more than it
+troubles critics.
 :::
-
-## The advice
-
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
-
-## What the guideline says its evidence is
-
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
-
-## Following the citation
-
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
-
-## Appraising it
-
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
-
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026, for updates to CD010856. The 2024 version (`.pub3`)
+remains current. Its own search ran to 16 August 2023 across CENTRAL, MEDLINE,
+Embase and four other databases, with two trial registers and backward citation
+searching.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+I have the full text of this review, supplied during writing, including the
+characteristics of the included studies.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
-:::
-:::
+Note the review did **not** search for new evidence on fluorosis for this update;
+those figures are carried forward from the 2015 version. That matters for
+[Chapter -@sec-fluoridation-harm].
 
-## Verdict
+Full record in `appraisals/searches/ch24-fluoridation.md`.
+:::
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   [Low]{.certainty .low} that initiating community water fluoridation slightly
+    reduces caries in children's baby teeth in contemporary populations.
+    [Very low]{.certainty .very-low} for permanent teeth in contemporary
+    populations, for the effect of cessation, and for all pre-1975 estimates.
+    **No evidence** in adults.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Good on the intervention, poor on population coverage.** These are studies
+    of communities receiving fluoridated water, which is the intervention. But no
+    study reports adult outcomes, and only one addresses the socioeconomic
+    disparity question that is fluoridation's main policy justification.
 
 Is the strength label defensible?
-:   *TBD*
+:   **Not applicable, and that is itself worth noting.** Water fluoridation is not
+    among the {{< var dboh.total >}} recommendations in *Delivering Better Oral
+    Health*'s summary tables; it is policy set elsewhere, and the guideline
+    discusses it in its fluoride chapter rather than recommending it to clinicians.
+
+    So this chapter audits a policy rather than a recommendation. My conclusion is
+    that the contemporary evidence supports a **small** benefit at low certainty,
+    which is a considerably weaker basis than the public debate on either side
+    assumes.
 
 What would change my mind
-:   *TBD*
+:   More contemporary studies, particularly any reporting adults, and any
+    reporting outcomes by socioeconomic position. Two studies is a thin basis for
+    a national policy in either direction. A well-conducted study of a cessation
+    event, of which several have occurred, would be more informative than
+    anything else available and would be relatively cheap to do.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+If you live in a fluoridated area, the water is contributing something to your
+teeth, and on the best current evidence it is contributing less than it did to
+your grandparents, because you have fluoride toothpaste and they did not.
+
+If you live in an unfluoridated area, the thing that protects your teeth is in
+[Chapter -@sec-ppm], and it is on your bathroom shelf.
+
+If you are arguing about fluoridation policy, the honest position is that the
+contemporary benefit is small and uncertain, that the evidence for stopping is
+weaker still, and that the equity claim which motivates the whole policy rests on
+a single study. Whether a small, uncertain, population-wide benefit justifies the
+intervention is a question about values and costs, not a question the evidence
+settles. [Chapter -@sec-fluoridation-harm] deals with the other side of the
+ledger.

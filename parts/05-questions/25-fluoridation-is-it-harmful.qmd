@@ -1,75 +1,215 @@
 # Is water fluoridation harmful? {#sec-fluoridation-harm}
 
-::: {.callout-warning title="Draft"}
-This chapter is not written yet. The skeleton below is the fixed
-seven-step structure every audit chapter follows.
+This is the most consequential chapter in the book to get right, and the easiest
+to get wrong in either direction.
+
+If I understate the evidence on harms, I am doing exactly what this book accuses
+guidelines of doing. If I overstate it, I hand ammunition to a campaign that has
+spent seventy years making claims the evidence does not support, and the
+foreseeable result is children with more tooth decay.
+
+So I am going to be slower and more explicit here than anywhere else, and I am
+going to separate three questions that are routinely mashed together:
+
+1. Does fluoride at **any** dose harm neurodevelopment?
+2. Does fluoride at the **concentrations used in water fluoridation** harm
+   neurodevelopment?
+3. What about fluorosis, which is the one harm nobody disputes?
+
+The answers are different, and the difference is the whole chapter.
+
+## Fluorosis: the undisputed harm
+
+Start with the one everyone agrees on, because it is a useful calibration.
+
+The Cochrane review reports, carrying figures forward from its 2015 version
+[@iheozor2024]:
+
+| At a fluoride level of 0.7 ppm | Proportion affected | 95% CI | Studies |
+|:--------------------------------|:-----------------|:-------------|-------:|
+| Fluorosis **of aesthetic concern** | ~12% | 8% to 17% | 40 |
+| Fluorosis of **any** level | ~40% | 35% to 44% | 90 |
+
+: Dental fluorosis and water fluoridation [@iheozor2024], low certainty
+{#tbl-fluorosis}
+
+Roughly one in eight people in a fluoridated population at 0.7 ppm has fluorosis
+that someone judged to be of aesthetic concern. That is not a trivial number, and
+it is the harm side of the ledger whose benefit side is
+[Chapter -@sec-fluoridation-works]'s 0.24 of a baby tooth.
+
+Two honest qualifications, in both directions. "Of aesthetic concern" is a
+judgment made by examiners, not by the people whose teeth they are, and mild
+fluorosis is frequently invisible to its owner. But these figures are low
+certainty, they were **not updated** in the 2024 review, which did not search for
+new fluorosis evidence, and the same review was "unsure" about skeletal fluorosis,
+bone fractures and skeletal maturity, at very low certainty from five studies.
+
+So: a common, mostly cosmetic, mostly mild harm, reasonably well established, sat
+next to a small, uncertain benefit. Whatever you conclude about neurodevelopment,
+that trade-off is the one actually on the table, and it is closer than
+fluoridation's defenders usually admit.
+
+## Neurodevelopment: what the evidence says
+
+Two documents dominate this argument. I have read both.
+
+The **US National Toxicology Program monograph** [@ntp2024fluoride] concluded,
+after an unusually contested review process, that higher fluoride exposure is
+associated with lower IQ in children. Its confidence statement is deliberately
+bounded, and the boundary is the point: the association is drawn from studies of
+exposures **above** the concentrations used in water fluoridation, principally
+areas of naturally high fluoride, and the monograph does not conclude that
+fluoridation at Western levels lowers IQ.
+
+The **JAMA Pediatrics meta-analysis** [@taylor2025fluorideiq] pooled 74
+cross-sectional and prospective cohort studies. It found significant inverse
+associations between fluoride exposure and children's IQ scores. And then it did
+the thing that matters, which is to restrict by exposure level:
+
+> For fluoride measured **in water**, associations remained inverse when exposed
+> groups were restricted to less than 4 mg/L or less than 2 mg/L **but not when
+> restricted to less than 1.5 mg/L**; for fluoride measured **in urine**,
+> associations remained inverse at less than 4 mg/L, less than 2 mg/L, and less
+> than 1.5 mg/L.
+>
+> --- Taylor and colleagues, 2025 [@taylor2025fluorideiq]
+
+Read that carefully, because it is the single most important sentence in this
+chapter.
+
+UK water fluoridation schemes target **1 mg/L**. England's is 1 mg/L; the World
+Health Organization's guideline value is 1.5 mg/L.
+
+For fluoride measured **in water**, the association disappears below 1.5 mg/L.
+That is the measure most directly comparable to a fluoridation scheme, and at
+fluoridation concentrations the signal is not there.
+
+For fluoride measured **in urine**, the association persists below 1.5 mg/L. And
+urinary fluoride reflects total intake from all sources: water, tea, toothpaste
+swallowed, food, air. It is a better measure of what actually got into the
+child, and a worse measure of what the water supply contributed.
+
+That discrepancy is the crux, and it is genuinely unresolved. It could mean water
+concentration is too crude a proxy and the urinary finding is the real one. It
+could mean the urinary studies are confounded by whatever else drives total
+fluoride intake. Nobody has settled it, and anyone telling you it is settled, in
+either direction, is not describing this literature.
+
+::: {.callout-note title="How I judged this: why I am not going further" collapse="true"}
+Three limits on what I can say, stated rather than concealed.
+
+**These are observational studies.** 74 of them, cross-sectional and cohort. The
+same confounding problem that runs through [Chapter -@sec-twice-daily] applies
+here with more force: areas with naturally high fluoride differ from other areas
+in nutrition, iodine status, lead exposure, socioeconomic position and much else,
+all of which affect childhood IQ. The meta-analysis reports that inverse
+associations persisted among the subset of low risk-of-bias studies, which is a
+meaningful robustness check, and it is not the same as randomisation.
+
+**IQ is a difficult outcome.** Measured with different instruments across
+countries and cultures, pooled as standardised mean differences, in a literature
+where publication of positive findings is more likely.
+
+**This is outside my competence.** I am a dentist and a methodologist, not a
+neurotoxicologist. I can appraise a meta-analysis's structure and read its
+restriction analyses. I cannot independently evaluate the toxicology, the
+biological plausibility at low doses, or the adequacy of the exposure
+assessment. Where this book's other chapters give you my judgment, this one gives
+you the literature's own stratification and stops.
+
+**What I will not do** is convert "the water-based association disappears below
+1.5 mg/L" into "fluoridation is proven safe". That is absence of evidence again,
+and it would be the same error in the opposite direction from the one I usually
+catch. The honest statement is that at fluoridation concentrations, the
+water-based signal is not detectable, the urine-based signal is, and the reason
+for the discrepancy is unknown.
 :::
 
-## The advice
+## What follows for policy, and what does not
 
-> *Quote the recommendation verbatim from DBOH 2025, chapter 2, with its
-> strength label and the table it appears in.*
+Here is where I think the reasoning has to land.
 
-## What the guideline says its evidence is
+**The benefit is small and the harm is real but mostly cosmetic.** Post-1975, 0.24
+dmft with an interval crossing zero, against roughly 12% fluorosis of aesthetic
+concern. Reasonable people can weigh those differently. That is a values question
+and I am not going to pretend the evidence resolves it.
 
-> *Quote the matching row from DBOH 2025, chapter 13, with its certainty
-> rating and cited reference.*
+**The neurodevelopmental question does not currently justify stopping
+fluoridation, and does justify studying it properly.** The water-based analyses at
+fluoridation-relevant concentrations do not show the association. The urinary
+analyses do, and that finding deserves serious, well-funded, prospective work in
+fluoridated Western populations rather than dismissal.
 
-## Following the citation
-
-*Read the cited source. Does it answer the question the advice asks?
-Population, intervention, comparator, outcome, one at a time.*
-
-## Appraising it
-
-::: {.callout-note title="How I judged this" collapse="true"}
-*Risk of bias, review quality, GRADE domains. Show the judgments, not
-just the conclusion.*
-
-::: {.content-visible when-profile="print"}
-*The full domain-by-domain judgments are in @sec-app-evidence.*
-:::
-
-::: {.content-visible when-profile="web"}
-*The full domain-by-domain judgments are in
-`appraisals/`.*
-:::
-:::
-
-## Is there better evidence?
+**Nothing here should change what you do at home.** Everything in this chapter is
+about fluoride in *water*, at a population level, swallowed. The recommendation
+with the strongest evidence in this book, [Chapter -@sec-ppm], is about fluoride
+in *toothpaste*, applied to the tooth surface and spat out. The whole point of
+[Chapter -@sec-spit] is that you are not meant to swallow it. Someone who reads
+this chapter and stops using fluoride toothpaste has read it backwards.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-*Database, date, hits, what was screened in.*
+PubMed, 21 August 2026. I have the full text of the NTP monograph and of the JAMA
+Pediatrics meta-analysis with its supplementary material, supplied during
+writing. Fluorosis figures are from the Cochrane review, which did **not** update
+its fluorosis searches for the 2024 version.
 
-::: {.content-visible when-profile="print"}
-*The full search strategy is in @sec-app-searches.*
-:::
+**This is the least independent chapter in the book.** I have not appraised the 74
+included studies, I have not assessed exposure measurement, and I have relied on
+the reviews' own stratified analyses rather than reconstructing them. That is a
+deliberate limit, stated here rather than implied.
 
-::: {.content-visible when-profile="web"}
-*The full search strategy is in
-`appraisals/searches/`.*
+Full record in `appraisals/searches/ch25-fluoridation-harm.md`.
 :::
-:::
-
-## Verdict
 
 ::: {.verdict}
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   *TBD*
+:   **Fluorosis:** [low]{.certainty .low}, and not updated since 2015.
+    Approximately 12% of aesthetic concern at 0.7 ppm.
+    **Neurodevelopment above fluoridation levels:** an association reported across
+    74 observational studies, robust to restricting to low risk-of-bias studies.
+    **Neurodevelopment at fluoridation levels:** not detected for water-measured
+    fluoride below 1.5 mg/L; detected for urine-measured fluoride below 1.5 mg/L.
+    Unresolved.
+    **Skeletal harms:** [very low]{.certainty .very-low}, five studies, uncertain.
 
 Directness to the advice as worded
-:   *TBD*
+:   **Poor, and this is the central difficulty.** Most of the neurodevelopmental
+    evidence comes from regions of naturally high fluoride, at concentrations
+    above those any Western scheme uses. Applying it to 1 mg/L schemes is exactly
+    the indirectness this book objects to elsewhere, and I decline to do it.
 
 Is the strength label defensible?
-:   *TBD*
+:   Not applicable: this is a policy question rather than a DBOH recommendation.
+    My position is that the current evidence does not support stopping
+    fluoridation on neurodevelopmental grounds, does support taking the question
+    seriously enough to fund proper prospective research in fluoridated
+    populations, and that the benefit-versus-fluorosis trade-off is closer than
+    public debate usually allows.
 
 What would change my mind
-:   *TBD*
+:   A prospective cohort in a fluoridated Western population, with individual
+    urinary fluoride measured repeatedly through pregnancy and childhood,
+    adjusting for lead, iodine and socioeconomic position, with a standardised
+    cognitive outcome. That study would resolve the water-versus-urine discrepancy,
+    and it is the study this field needs. Conversely, an explanation of that
+    discrepancy showing the urinary finding to be confounded would move me the
+    other way.
 :::
 
 ## What this means for you
 
-*One paragraph. Plain language. No jargon, no hedging beyond what is
-honest.*
+Fluoride in your **toothpaste** is the best-supported recommendation in this book
+and nothing in this chapter touches it. Use it, spit it out, do not swallow it.
+
+Fluoride in your **water**, if you live somewhere fluoridated, is contributing a
+small and uncertain benefit and carries a real chance of mild cosmetic marking of
+the enamel. If you are pregnant or have small children and this worries you,
+using a filter that removes fluoride, or bottled water, is a reasonable personal
+choice with a small dental cost that fluoride toothpaste more than covers.
+
+What I would not do is stop using fluoride toothpaste, and what I would not tell
+you is that this question is settled. It is not. The people who tell you it is,
+on either side, are describing something other than the evidence.
