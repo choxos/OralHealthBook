@@ -53,23 +53,58 @@ Full-text search of all thirteen chapters and the appendix of *Delivering Better
 Oral Health* (10 September 2025 edition, archived in `sources/Books/DBOH_UK/`)
 for "Kumar".
 
-**Result: not cited.** Two hits, both in chapter 5 (periodontal diseases) and
-chapter 6 (oral cancer), neither the caries review.
+**Result: not cited.** The name appears in **chapter 6 (oral cancer)** only, as
+Kumar N and colleagues on the oral management of oncology patients. A different
+author and a different paper. There are no occurrences in chapter 5 (periodontal
+diseases); an earlier version of this record said there were.
 
-The only brushing-frequency systematic review DBOH cites anywhere is
-Zimmermann and colleagues 2015, on **periodontitis**, in the periodontal
-chapter. Chapter 8 (oral hygiene) asserts "Frequency of brushing is important.
-Brushing should occur twice daily as a minimum" with no citation attached to the
-caries claim.
+The only brushing-frequency systematic review DBOH cites anywhere is Zimmermann
+and colleagues 2015, on **periodontitis**, and it is cited in **chapter 8 (oral
+hygiene)**, in the periodontitis subsection, not in chapter 5. Chapter 8 asserts
+"Frequency of brushing is important. Brushing should occur twice daily as a
+minimum" with no citation attached to the caries claim.
+
+### Query 4, added after review: the frequency search these queries never ran
+
+The three queries above cannot support the sentence they were used for.
+
+Query 1 is a **known-item** retrieval: it names the journal, the year and the
+design, and it is date-limited **2015 to 2018**. It was written to find Kumar,
+and it found Kumar. It could not have returned anything published after 2018.
+
+Query 2 is a **timing** search. Its terms are "toothbrushing timing", "time of
+day brushing" and "bedtime brushing". A systematic review of brushing
+*frequency* would appear in that result set only by accident.
+
+So "nothing more recent came back" described a search that was not looking. Re-run
+without the date cap and with frequency terms:
+
+```
+toothbrushing frequency AND dental caries AND (systematic review[pt] OR meta-analysis[pt])
+```
+
+Screened in, and **not cited anywhere in this book's first draft**:
+
+- **41469640** — Al-Sharani HM, Stormon N, Al-Hutbany N, Zhang Y, Zulfiqar T.
+  Optimal tooth brushing initiation age and frequency for preventing early
+  childhood caries: a systematic review and meta-analysis. *BMC Oral Health*
+  2025;25(1):2006. doi:10.1186/s12903-025-07179-5. Published 30 December 2025.
+  32 studies (27 cross-sectional, 5 longitudinal); 8 contributed to the frequency
+  meta-analysis. Brushing fewer than twice daily: **OR 2.11**, p = 0.0052, with
+  substantial heterogeneity and no evidence of publication bias.
 
 ### Conclusion
 
-Kumar 2016 was the only systematic review identified by these searches whose
-primary question is the effect of brushing frequency on caries, and nothing more
-recent came back. It is not cited by the guideline.
+Kumar 2016 remains the review whose primary question is closest to the
+recommendation's, and it is not cited by the guideline. But it is **not** the only
+systematic review of brushing frequency and caries published before this book's
+search date: Al-Sharani 2025 exists, is limited to early childhood caries and to
+observational studies, and points the same way.
 
-This is a PubMed-only, single-screener search. It supports "I did not find
-another", not "another does not exist".
+The chapter is worded accordingly, and the irony is recorded rather than buried:
+a chapter whose complaint is that the guideline failed to cite the relevant review
+had itself failed to cite a more recent one, for the same reason, which is that
+nobody ran the search that would have found it.
 
 ### Limitation
 
@@ -102,14 +137,18 @@ with a caries or patient-important outcome.
 
 The top hit was 27334438 (Kumar 2016), which is about **frequency**, not timing,
 and is handled in chapter 5. The remainder were about brushing frequency,
-supervised brushing programmes, or fluoride kinetics.
+supervised brushing programs, or fluoride kinetics.
 
 ### What the recommendation actually rests on
 
 Traced by hand rather than by search, through the citation chain:
 
 1. *Delivering Better Oral Health* 2025, chapter 13, tables 1 and 6 → cites SIGN 138.
-2. SIGN 138 §5.7.2 → cites its reference 101, and attaches **no evidence grade**.
+2. SIGN 138 §5.7.2 → cites its references 95 and 101, and marks the
+   recommendation with the tick symbol its own key on page ii defines as a
+   **Good Practice Point**: "recommended best practice based on the clinical
+   experience of the guideline development group." An earlier version of this
+   record said SIGN attached no grade; it attaches that one, deliberately.
 3. SIGN 138 reference 101 = Duckworth RM, Moore MS. Salivary fluoride
    concentrations after overnight use of toothpastes. *Caries Res*
    2001;35(4):285.
@@ -279,6 +318,407 @@ better," where the data show no evidence of a difference on intervals that
 include worthwhile benefit. Both are corrected in the chapter.
 
 
+## Chapter 9: amount of toothpaste, fluorosis and caries
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026, in two passes
+**Question:** Does the quantity of toothpaste used affect caries, and what is the
+current evidence on topical fluoride as a cause of fluorosis?
+
+### Pass 1, and why it failed
+
+Searched for an update to the Cochrane review of topical fluoride and fluorosis
+**by review identifier**:
+
+```
+CD007693
+```
+
+**Returned nothing useful.** I concluded from this that the 2010 version was
+still current, and wrote in the chapter that the evidence "has not been
+systematically updated in fifteen years."
+
+That conclusion was wrong. The failure was the method: a Cochrane review's
+identifier is not reliably indexed as a searchable term in PubMed, so an ID-only
+query is not an update search.
+
+### Pass 2
+
+```
+Topical fluoride as a cause of dental fluorosis in children[Title]
+```
+
+**3 records.** Screened in:
+
+- **38899538** Wong MCM, Zhang R, Luo BW, Glenny AM, Worthington HV, Lo ECM.
+  Topical fluoride as a cause of dental fluorosis in children. *Cochrane Database
+  Syst Rev* 2024 Jun 20;6(6):CD007693. doi:10.1002/14651858.CD007693.pub3.
+  **This is the current version.** Its own search ran to 28 July 2022; 43 studies
+  (3 RCTs, 4 cohort, 10 case-control, 26 cross-sectional).
+- 20091645 is the 2010 version, superseded.
+- 41839071 is an *American Family Physician* summary, not the review.
+
+### Quantity of toothpaste against caries
+
+No trial randomizing the amount of paste against a caries outcome was found.
+Walsh 2019 (chapter 8) varies concentration, not quantity. Recorded as a null
+from this search, not as a claim about the literature.
+
+### Conclusion
+
+The guideline cites the 2010 review. The 2024 update exists, was published 15
+months before DBOH's September 2025 edition, and changes the relevant numbers.
+The chapter has been rewritten against the update.
+
+
+## Chapter 10: fluoride varnish
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+**Question:** Is there an update to the Cochrane review of fluoride varnish, and
+is there evidence bearing on the recommended twice-yearly frequency?
+
+### Query
+
+```
+Fluoride varnishes for preventing dental caries[Title]
+```
+
+Also checked by identifier CD002279.
+
+**Result:** no `.pub3`. Marinho VCC, Worthington HV, Walsh T, Clarkson JE.
+Fluoride varnishes for preventing dental caries in children and adolescents.
+*Cochrane Database Syst Rev* 2013;(7):CD002279.pub2 remains current.
+
+The review's own search ran to **13 May 2013** across CENTRAL, MEDLINE, EMBASE,
+CINAHL, LILACS, BBO, ProQuest Dissertations and Theses, and Web of Science
+Conference Proceedings, with no language restriction.
+
+### Full text
+
+Held: full text including characteristics of included studies
+(`documentation/refs/`). Statements in the chapter about the meta-regression
+findings, the 17-of-22 trials using twice-yearly application, and the
+adverse-effects gap are from the review body rather than the abstract.
+
+### Not searched
+
+Primary trials of varnish published since 2013. The chapter's "the evidence is
+ageing" point rests on the review's own newest included trial being from 2012,
+which is a fact about the review, not a claim that nothing has been published
+since. That distinction is stated in the chapter.
+
+
+## Chapter 11: pit and fissure sealants
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+**Question:** Is there an update to the Cochrane review of pit and fissure
+sealants?
+
+### Query
+
+```
+Pit and fissure sealants for preventing dental decay[Title]
+```
+
+**Result:** no `.pub6`. Ahovuo-Saloranta A, Forss H, Walsh T, Nordblad A,
+Mäkelä M, Worthington HV. *Cochrane Database Syst Rev* 2017;(7):CD001830.pub5
+remains current.
+
+### Full text
+
+Held (`documentation/refs/`), including the summary-of-findings tables and their
+footnotes. The chapter's statements about the following are from the review body:
+
+- the 24-month estimate covering **children aged 5 to 10**, from 7 trials;
+- five of those seven trials published **1976 to 1979**;
+- water fluoridation status: 3 fluoridated, 2 not, 2 unreported;
+- the GRADE downgrade being for **indirectness** (era), with risk of bias
+  explicitly **not** used as a downgrade despite all trials being at high risk of
+  detection bias;
+- the two modern Chinese trials' control event rates (17% and 15%) against the
+  1970s range of 37% to 69%.
+
+The third and fifth of those corrected errors in an earlier draft of the chapter.
+
+
+## Chapter 12: fluoride mouth rinse
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+**Question:** Is there an update to the Cochrane review of fluoride mouthrinses,
+and does it address unsupervised home use?
+
+### Query
+
+```
+Fluoride mouthrinses for preventing dental caries in children and adolescents[Title]
+```
+
+**Result:** no `.pub3`. Marinho VCC, Chong LY, Worthington HV, Walsh T.
+*Cochrane Database Syst Rev* 2016;7(7):CD002284.pub2 (PMID 27472005,
+doi:10.1002/14651858.CD002284.pub2) remains current. Its own search ran to
+**22 April 2016**.
+
+### What the abstract establishes
+
+- 37 trials, 15,813 children and adolescents.
+- D(M)FS prevented fraction **27% (95% CI 23% to 30%)**, 35 trials, 15,305
+  participants, moderate certainty.
+- "All trials tested supervised use of fluoride mouthrinse in schools, **with two
+  studies also including home use**."
+- "the findings may be applicable to children in other settings with supervised
+  or unsupervised rinsing, although the size of the caries-preventive effect is
+  less clear."
+- 28 of 37 trials at high risk of bias, 9 unclear.
+
+The last three points corrected an earlier draft of the chapter, which argued
+that the supervised-to-unsupervised gap went undisclosed.
+
+### Full text
+
+**Not held.** Abstract only. The chapter says so.
+
+
+## Chapter 13: sugars and dental caries
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+**Question:** Is there a systematic review of sugars and caries more recent than
+Moynihan and Kelly 2014 that is intended to inform guidelines?
+
+### Result
+
+None superseding it was identified. Moynihan PJ, Kelly SAM. Effect on caries of
+restricting sugars intake: systematic review to inform WHO guidelines. *J Dent
+Res* 2014;93(1):8-18. doi:10.1177/0022034513508954 remains the basis of WHO
+guidance and of DBOH's citation.
+
+### The review's own search
+
+**1950 through November 2011**, multiple databases. The paper is dated 2014. An
+earlier draft of the chapter gave the search end-date as 2013; it is November
+2011, which makes the evidence base fifteen years old at the time of writing
+rather than twelve.
+
+### Full text and supplements
+
+Held: full text plus all six supplementary files, including the GRADE profile
+tables (`documentation/refs/`). Three things in the chapter come from those
+tables rather than the paper:
+
+- the upgrade is for **large effect size** only (SMD 0.82, 95% CI 0.67 to 0.97
+  for DMFT; prevalence RR 7.15, 95% CI 2.82 to 8.14);
+- "dose-response effect noted from Rugg-Gunn cohort study also supported by
+  population studies **but not further upgraded**";
+- the <5% body is three Japanese ecological studies from 1959 and 1960, rated
+  very low after downgrading for risk of bias from per-capita data.
+
+The first two corrected an earlier draft that listed consistency and
+dose-response among the upgrade criteria applied.
+
+### Gram figures
+
+The chapter's gram equivalents are taken from DBOH chapter 10 (19 g at ages 4 to
+6, 30 g from age 11, both at the 5% level) and from WHO's own 10% illustration of
+roughly 50 g on a 2,000 kcal diet. An earlier draft gave figures I could not
+source, and they have been removed.
+
+
+## Chapter 14: breastfeeding and dental caries
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+**Question:** Is there a systematic review of breastfeeding and dental caries
+more recent than Tham 2015?
+
+### Result
+
+None identified that supersedes it for this purpose. Tham R, Bowatte G,
+Dharmage SC, and colleagues. Breastfeeding and the risk of dental caries: a
+systematic review and meta-analysis. *Acta Paediatr* 2015;104(S467):62-84,
+remains the review DBOH relies on for the dental claim. Full text held.
+
+### What DBOH actually footnotes
+
+The chapter 13 clause "low certainty evidence of a dental caries-preventive
+effect" carries **two** footnotes, not one: SACN, *Feeding in the first year of
+life* (2018), and Tham 2015. The overall-health basis for the Strong label is a
+third footnote, the WHO *Global Strategy for Infant and Young Child Feeding*
+(2003).
+
+This chapter audits **Tham only**. It does not audit SACN or WHO.
+
+### Limitation
+
+The Strong label rests substantially on infant nutrition, infection and mortality
+evidence, which is outside this book's scope and outside my competence. The
+chapter says so rather than implying it audited the whole recommendation.
+
+
+## Chapter 15: supervised brushing, sugar-free medicines, bedtime sugar
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Supervised toothbrushing
+
+Checked for an update to dos Santos APP and colleagues' systematic review of
+supervised toothbrushing programmes. None identified. Full text held.
+
+### Sugars at bedtime
+
+Checked for an update to Baghlaf K, Muirhead V, Moynihan P, Weston-Price S,
+Pine C. Free sugars consumption around bedtime and dental caries in children: a
+systematic review. None identified. Full text and supplement held.
+
+The review's own statement on pooling, quoted in full because an earlier draft of
+the chapter truncated it inside quotation marks: "It was not possible to conduct
+a meta-analysis, because of the considerable variations **in the type of bedtime
+exposure and outcome measures**."
+
+### Sugar-free medicines
+
+**No systematic review of sugar-free medicines and dental caries was identified
+by this search.** This is a genuine null and it is the weakest-bounded claim in
+the chapter: a single PubMed pass by one screener supports "I did not find one,"
+and the chapter is worded that way.
+
+### Recommendation wording
+
+The quoted sentence "Use sugar-free versions of medicines if possible" appears in
+chapter 2 tables **1a and 1b only**. Tables 1c, 1e and 1g carry differently
+worded professional-intervention rows; 1d and 1f have no medicines row. An
+earlier draft attributed the sentence to "tables 1a to 1g".
+
+
+## Chapter 16: powered against manual toothbrushes
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### What was and was not searched
+
+I did **not** run an independent search of the primary toothbrush trial
+literature. It is large, industry-dominated, and a single-screener pass over it
+would produce a set I would not trust. The chapter is written from two
+systematic reviews and says so.
+
+Full text and supplementary material held for both:
+
+- Wang P and colleagues, 2020, on powered versus manual brushing.
+- Elkerbout TA, Slot DE, Rosema NAM, Van der Weijden GA, 2020, on plaque removal
+  after a single brushing exercise.
+
+### Corrections this record exists to note
+
+From Elkerbout, tables 3 and 4: the **overall** differences of means are
+**−0.14 (95% CI −0.19 to −0.09)** on the Quigley and Hein index (15 comparisons)
+and **−0.10 (−0.14 to −0.06)** on the Rustogi modified Navy index (8
+comparisons). The figures of −0.15 (−0.22 to −0.08) and −0.15 (−0.18 to −0.12)
+that appeared in an earlier draft are the **Procter and Gamble** and **Colgate**
+brand subanalyses respectively.
+
+Elkerbout's included studies are self-performed brushing in humans aged 18 and
+over, with plaque accumulation from 12 hours to 4 days. Not laboratory models.
+
+### Caries
+
+SIGN 138 §5.7.3: "No evidence was identified to show that powered toothbrushes
+are more effective than manual toothbrushes in preventing dental caries **in
+children**." That is SIGN's search and SIGN's population. I did not search the
+adult primary literature for a caries outcome, and the chapter's absence claim is
+bounded accordingly.
+
+### DBOH's own citation
+
+The chapter 13 evidence row for this recommendation cites Wang 2020 and
+Elkerbout 2020. DBOH **chapter 8** separately cites the Cochrane review (Yaacob
+and colleagues, 2014) for a moderate-certainty plaque and gingivitis statement.
+An earlier draft said the guideline had omitted Cochrane; it had not.
+
+
 ## Chapter 17: interdental cleaning
 
 **Database:** PubMed
@@ -346,6 +786,62 @@ trial measured interproximal caries. Corrected in the chapter, with the error
 shown rather than silently fixed.
 
 
+## Chapter 18: toothbrush design and brushing duration
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Brushing duration and caries
+
+Searched for studies relating toothbrushing duration to a caries outcome.
+**None identified**, consistent with SIGN 138 §5.5.2, which reached the same
+conclusion from its own search.
+
+Searches for duration and **plaque** do return results. That literature exists
+and the chapter says so; I have not appraised it, and the chapter's claim about
+it is deliberately limited to its existence.
+
+### Bristle stiffness
+
+Full text held for Ranzan N, Muniz FWMG, Rösing CK. Are bristle stiffness and
+bristle end-shape related to adverse effects on soft tissues during
+toothbrushing? A systematic review. *Int Dent J* 2019.
+
+Its Table 3 rates the quality of evidence **LOW** (⨁⨁◯◯) for both bristle
+stiffness and end-shape, downgrading for very serious risk of bias and serious
+indirectness, and recording a dose-response gradient under other considerations.
+DBOH's own statement is "low certainty evidence of gingival lesions when hard
+bristle brushes were used."
+
+An earlier draft of the chapter rated this **very low**, one level below both,
+without naming the additional domain. Corrected to low.
+
+### Head size
+
+DBOH provides no component-specific evidence statement or citation for
+toothbrush head size, and **I did not search that literature**. The chapter says
+the guideline gives no evidence for it, which is a claim about the guideline, not
+about the world.
+
+### The two-minute rule
+
+Not a graded recommendation in chapter 2. It **is** in chapter 8, which advises
+that thorough cleaning "may take at least 2 minutes," refers to "the recommended
+2 minutes," and discusses timers, giving coverage of all surfaces rather than
+caries as the rationale. An earlier draft said the rule was not in the guideline
+at all.
+
+
 ## Chapter 19: routine scale and polish
 
 **Database:** PubMed
@@ -404,7 +900,88 @@ subset, so the structured abstract is available and the risk-of-bias table and
 characteristics of included studies are not.
 
 
-## Chapter 21: tobacco cessation delivered by dental professionals
+## Chapter 20: oral cancer examination and adjunctive tests
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026, in two passes
+**Question:** What is the current evidence on the diagnostic accuracy of
+adjunctive tests for oral cancer and potentially malignant disorders?
+
+### Pass 1, and why it failed
+
+A general search for systematic reviews of adjunctive oral cancer tests, which
+did not surface the Cochrane update. I recorded in the chapter that I had not
+obtained the review DBOH cites and was relying on the guideline's account of it.
+
+That was a search failure, not an access problem. The update is freely available
+in PubMed Central.
+
+### Pass 2
+
+```
+Diagnostic tests for oral cancer and potentially malignant disorders in patients
+presenting with clinically evident lesions[Title]
+```
+
+Screened in:
+
+- **34282854** Walsh T, Macey R, Kerr AR, Lingen MW, Ogden GR, Warnakulasuriya S.
+  *Cochrane Database Syst Rev* 2021;7(7):CD010276.
+  doi:10.1002/14651858.CD010276.pub3. PMCID PMC8407012.
+  **Current version.** Own search to 20 October 2020. 63 studies, 79 datasets,
+  7,942 lesions.
+
+DBOH cites the 2015 version (CD010276.pub2). The update predates DBOH's
+September 2025 edition by more than four years.
+
+### What the update changes
+
+Summary estimates, with certainty per test rather than as a block:
+
+| Test | Sensitivity | Specificity | Certainty (sens / spec) |
+|---|---|---|---|
+| Oral cytology | 0.90 (0.82-0.94) | 0.94 (0.88-0.97) | moderate / moderate |
+| Vital staining | 0.86 (0.79-0.90) | 0.68 (0.58-0.77) | low / very low |
+| Light-based, spectroscopy | 0.87 (0.78-0.93) | 0.50 (0.32-0.68) | low / very low |
+| Combined | 0.78 (0.45-0.94) | 0.71 (0.53-0.84) | very low / very low |
+
+Authors' conclusion: none can be recommended "as a **replacement** for the
+currently used standard of a surgical biopsy and histological assessment," with
+cytology offering "the most potential."
+
+Applicability: 33 studies at low concern, generalisable to patients attending
+**secondary** care.
+
+### Full text
+
+Abstract and summary estimates held; full text not held. QUADAS-2 judgments
+reported in the chapter are the reviewers' summary, not my reading.
+
+### Referral criteria
+
+No search run. The chapter reproduces DBOH chapter 2 table 3e verbatim and
+reports DBOH's own statement that NICE found no primary-care evidence on the
+positive predictive values of these symptoms. That is a bounded report of a
+bounded claim, not a current search.
+
+
+## Chapter 21: tobacco
+
+**Two searches.** The first, in the original pass, covered only the Cochrane
+review of dental-delivered cessation. The second was added after the chapter was
+found to have skipped DBOH-074, the e-cigarette row, entirely.
+
+### Search 1: tobacco cessation delivered by dental professionals
 
 **Database:** PubMed
 **Date run:** 21 August 2026
@@ -455,3 +1032,661 @@ ratings, search dates and authors' conclusions, but **not** the risk-of-bias
 table or the characteristics of included studies. Statements in the chapters
 about risk of bias across included studies are the reviews' own summary
 statements, quoted as such, and are marked that way in the text.
+
+
+---
+
+### Search 2: the e-cigarette row (DBOH-074)
+
+**Date run:** 20 August 2026
+
+#### Why this was missed the first time
+
+The chapter opened by stating that tobacco gets "five Strong recommendations
+across two tables" and then audited three rows from table 3a. The actual count
+across tables 3a and 3b is **seven** rows: six Strong and one Conditional.
+DBOH-074 is the Conditional one, and it was neither quoted nor searched.
+
+The miscount and the omission share a cause. I worked from the three-step
+Ask/Advise/Act structure rather than from the extracted rows, and the e-cigarette
+row does not fit that structure, so it fell out of the chapter without leaving a
+gap that was visible from inside it. The extraction CSV had it correctly all
+along, as did appendix A.
+
+#### The row
+
+`DBOH-074`, table 3a, **Conditional**: "Acknowledge that e-cigarettes may be
+helpful for some smokers for quitting or reducing smoking."
+
+Chapter 13 table 15: "Recommendation based on low certainty evidence from one
+systematic review; insufficient evidence to demonstrate the long-term effects."
+
+Cited: Hartmann-Boyce J, McRobbie H, Bullen C, Begh R, Stead LF, Hajek P.
+*Electronic cigarettes for smoking cessation.* Cochrane Database of Systematic
+Reviews 2016; (9). doi:10.1002/14651858.CD010216.pub3
+
+#### Query
+
+```
+Electronic cigarettes for smoking cessation[Title] AND Cochrane Database Syst Rev[Journal]
+```
+
+**24 records**, and a narrower author query returning 19. Full version history and
+the extracted figures are recorded once, in `ch32-half-life.md`, because chapter
+32 argues from the same search. In summary:
+
+- DBOH cites `.pub3`, which searched to January 2016.
+- `.pub9` was published 29 January 2025 and was the current version on
+  10 September 2025, the date of the DBOH edition audited here.
+- `.pub9` reports **high** certainty that nicotine EC increase quit rates versus
+  NRT: RR 1.59 (95% CI 1.30 to 1.93), I2 0%, 7 studies, 2,544 participants.
+- `.pub10`, 10 November 2025, is current: RR 1.55 (95% CI 1.28 to 1.88), 104
+  studies, 30,366 participants, high certainty.
+- Every version from `.pub8` onward declares in its abstract that it is a living
+  systematic review searched monthly.
+
+#### What this does and does not support
+
+It supports the claim that DBOH's **certainty statement** for this row describes
+a superseded evidence base.
+
+It does **not** support a claim that the strength label is wrong. Conditional on
+high-certainty benefit is a legitimate evidence-to-decision position given the
+residual imprecision on serious adverse events, which persists in `.pub10`
+(RR 1.22, 95% CI 0.73 to 2.03; 8 studies, 2,950 participants; low certainty).
+The chapter is written to that narrower claim.
+
+
+## Chapter 22: alcohol, AUDIT-C and brief intervention
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### What was not obtained
+
+The systematic review of brief alcohol interventions that DBOH cites was **not**
+among the supplied documents and was not obtained. The chapter relies on DBOH's
+characterization of it and says so.
+
+Worth recording for anyone re-running this: DBOH's own footnote for the Ask row
+resolves to Kaner EFS and colleagues' Cochrane review of brief interventions,
+whose title names the setting as **primary care populations**. The setting
+question the chapter raises is therefore visible from the citation itself, which
+is a smaller criticism than the chapter first made.
+
+### What was not audited
+
+The UK Chief Medical Officers' alcohol guidelines, which are the source of the
+14-unit figure. Outside this book's scope, stated in the chapter rather than
+implied.
+
+### Quotation check
+
+The chapter 2 table 3c wording was checked character by character against
+`sources/Books/DBOH_UK/`. An earlier draft had three silent omissions inside
+quotation marks in the Act row, one of which ("to keep health risks from alcohol
+to a low level, it is safest not to drink more than 14 units a week") converted a
+risk-minimising statement into a flat limit. Corrected.
+
+
+## Chapter 23: tooth wear
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Queries
+
+Systematic reviews of interventions to prevent tooth wear with a **wear**
+outcome, and separately the post-acid brushing delay.
+
+**No systematic review was identified that would support upgrading any of the
+five Good practice recommendations**, which is consistent with DBOH assigning
+Good practice throughout.
+
+This is a thinner search than the Part II chapters received, and the chapter's
+conclusion is correspondingly weaker: I did not find such evidence, rather than
+it does not exist.
+
+### Guideline text check, and a failure in my own tooling
+
+The chapter's original claim that DBOH "tells you nothing" about the same
+brushing advice carrying different labels in different tables was **wrong**.
+Chapter 13 table 21 states it explicitly:
+
+> Good practice for preventing tooth wear. Strong recommendation for preventing
+> dental caries and conditional for periodontal disease.
+
+The reason I missed it: `scripts/extract_dboh.py` failed to join this row
+(`DBOH-087`) to its chapter 13 counterpart, scoring the fuzzy match at 0.44 and
+filing it under `KNOWN_UNMATCHED`. The chapter was then written from the CSV
+rather than from the guideline HTML.
+
+Recorded here because it is the clearest instance in this project of the failure
+mode the book is about: trusting a derived artifact instead of the source.
+
+
+## Chapter 24: does water fluoridation work?
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+**Question:** Is there an update to the Cochrane review of water fluoridation?
+
+### Result
+
+The 2024 version is current. Iheozor-Ejiofor Z and colleagues. Water
+fluoridation for the prevention of dental caries. *Cochrane Database Syst Rev*
+2024;10:CD010856.pub3. Its own search ran to **16 August 2023** across CENTRAL,
+MEDLINE, Embase and four other databases, with two trial registers and backward
+citation searching.
+
+### Full text
+
+Held, including characteristics of included studies (`documentation/refs/`).
+
+### Key figures used in the chapter, all from the review
+
+- 157 studies, all non-randomised.
+- Post-1975 change in dmft: MD 0.24 (95% CI −0.03 to 0.52), 2 studies, 2,908
+  children, low certainty.
+- Post-1975 change in proportion caries-free, primary dentition: MD −0.04 (−0.09
+  to 0.01), 2 studies, 2,908 children; permanent dentition MD −0.03 (−0.07 to
+  0.01), 2 studies, 2,348 children. Both low certainty, both favouring
+  fluoridation.
+- **Sign convention**, from the review's own table footnote: "A negative value
+  represents a greater increase in the proportion of caries-free children from
+  baseline to follow-up in the water fluoridation group." Negative is benefit.
+- Change in DMFT post-1975: 4 studies, 2,856 **children**, very uncertain.
+- Cessation: 1 study, could not determine.
+- One post-1975 study reported disparities by socioeconomic status.
+- No eligible studies reporting caries outcomes in adults.
+
+### Not updated by the 2024 version
+
+Fluorosis. The review did not re-run its fluorosis searches; those figures are
+carried forward from the 2015 version. This matters for chapter 25 and is stated
+there.
+
+
+## Chapter 25: is water fluoridation harmful?
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Sources held
+
+- NTP monograph on fluoride exposure and neurodevelopment and cognition (2024),
+  full text.
+- Taylor KW and colleagues. Fluoride exposure and children's IQ scores: a
+  systematic review and meta-analysis. *JAMA Pediatr* 2025. Full text with
+  supplementary material.
+- Iheozor-Ejiofor 2024 (chapter 24) for fluorosis.
+
+### What this chapter did not do
+
+**No independent appraisal of the 74 included studies**, no assessment of
+exposure measurement, no reconstruction of the pooled analyses. The chapter
+relies on the reviews' own stratified analyses and says so. It is the least
+independent chapter in the book.
+
+### Figures used, and one correction
+
+From Taylor 2025:
+
+- 74 studies; **52 at high risk of bias, 22 at low**.
+- Pooled SMD **−0.45 (95% CI −0.57 to −0.33)**, 59 studies with group-level
+  exposure measures.
+- Individual-level: **−1.63 IQ points (−2.33 to −0.93)** per 1 mg/L urinary
+  fluoride; **−1.14 (−1.68 to −0.61)** among low risk-of-bias studies.
+- Water fluoride, all studies, <1.5 mg/L: β **0.05 (−0.36 to 0.45)**, P = .82.
+- Water fluoride, **low risk-of-bias** studies, <1.5 mg/L: β **−0.32 (−0.91 to
+  0.26)**, P = .28, 3 studies, 879 children.
+- Water fluoride, low risk-of-bias studies, <2 mg/L: β **−0.33 (−0.53 to −0.13)**,
+  P = .001.
+
+An earlier draft of the chapter quoted the paper's Key Points sentence and cut it
+at a semicolon, **before** the clause reading "and among the subset of low
+risk-of-bias studies, there were inverse associations when exposed groups were
+restricted to less than 4 mg/L, less than 2 mg/L, and less than 1.5 mg/L for
+analyses of fluoride measured both in water and in urine." That omitted clause
+complicates the conclusion the chapter then drew, and the quotation and the
+conclusion have both been corrected.
+
+From the NTP monograph, page ii: the monograph "does not address whether the sole
+exposure to fluoride added to drinking water in some countries (i.e.,
+fluoridation, at 0.7 mg/L in the United States and Canada) is associated with a
+measurable effect on IQ."
+
+
+## Chapter 26: filling children's teeth (FiCTION)
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Sources held
+
+- Innes NP and colleagues. Child Caries Management: A Randomized Controlled Trial
+  in Dental Practice (FiCTION). *J Dent Res* 2020. Full text.
+- The NIHR HTA monograph for FiCTION.
+- Freeman R and colleagues, the associated qualitative and process work, with
+  supplement.
+
+### Figures used
+
+All intervals from FiCTION are **97.5% confidence intervals**, reflecting the
+trial's three-arm structure, and the chapter labels them as such throughout.
+
+- Conventional treatment versus biological management: adjusted risk difference
+  −2% (97.5% CI −10% to 6%).
+- Conventional versus prevention alone: 4% (97.5% CI −4% to 12%).
+- Episodes, adjusted incident rate ratios: 0.95 (97.5% CI 0.75 to 1.21) and 1.18
+  (0.94 to 1.48).
+
+### Powering
+
+The original power calculation was for the **incidence** co-primary only. The
+comparison of mean number of episodes was explicitly unpowered and reported as an
+exploratory hypothesis test. The chapter states this.
+
+### Retention
+
+1,144 randomized; 86 (8%) attended no study visits; 1,058 formed the modified
+intention-to-treat set. So 92.5% contributed **at least one** analysed visit,
+which is not the same as retention to 33.8 months. A sensitivity analysis
+restricted to participants with at least 23 months of follow-up.
+
+### Conclusion wording
+
+Quoted in full, including the qualifier an earlier draft dropped: "there was no
+evidence of a difference among the 3 treatment approaches for incidence or number
+of episodes of dental pain **and/or** infection experienced by these participants
+**with high caries risk and established disease**."
+
+
+## Chapter 27: bad breath
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** none
+**Date run:** not applicable
+
+### This chapter ran no systematic search of its own
+
+Recorded explicitly, because the chapter gives practical advice and the reader is
+entitled to know it rests on mechanism and clinical consensus rather than on a
+search run for this book.
+
+### Two sources located after review, and now cited
+
+- **35212093** Memon MA and colleagues. Aetiology and associations of halitosis:
+  a systematic review. *Oral Dis* 2023;29(4):1432-1438. doi:10.1111/odi.14172.
+  Reports 80% to 90% of halitosis as intra-oral, with coated tongue, periodontal
+  disease and poor oral hygiene the principal factors, and 10% to 20% extra-oral
+  and associated with systemic disease. This replaced an uncited "85 to 90%
+  against 10 to 15%, mostly ENT" split in an earlier draft.
+
+- **31825092** Kumbargere Nagraj S and colleagues. Interventions for managing
+  halitosis. *Cochrane Database Syst Rev* 2019;12(12):CD012213.
+  doi:10.1002/14651858.CD012213.pub2. 44 randomized trials, 1,809 participants;
+  three at low risk of bias, 16 high, 25 unclear; mostly one to four weeks of
+  follow-up. Low to very low certainty throughout, and no conclusion possible
+  about the superiority of any intervention.
+
+The second is directly relevant to the advice this chapter gives, and an earlier
+draft did not mention it. A chapter recommending tongue cleaning while a Cochrane
+review of tongue cleaning sits uncited is the failure this book is about.
+
+### Why the file exists
+
+The chapter names this path. Under the rule in `README.md`, an undocumented null
+is indistinguishable from not having looked; a file that says "no search was run"
+is the honest form of that.
+
+
+## Chapter 28: dental recall intervals
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Result
+
+No `.pub6`. Fee PA, Riley P, Worthington HV, Clarkson JE, Boyers D, Beirne PV.
+Recall intervals for oral health in primary care patients. *Cochrane Database
+Syst Rev* 2020;(10):CD004346.pub5 remains current.
+
+### Sources held
+
+Full text of the review with characteristics of included studies; the INTERVAL
+main trial report (Clarkson and colleagues, *Br Dent J* 2021;230:236-243,
+doi:10.1038/s41415-021-2612-0); and the NIHR HTA monograph, whose cost analysis I
+have **not** audited.
+
+### Figures used, with sample sizes and strata
+
+Risk-based versus 6-month, whole sample:
+
+- tooth surfaces with any caries MD 0.15 (95% CI −0.77 to 1.08), n = 1,478, high
+- % sites with gingival bleeding MD 0.78% (−1.17% to 2.73%), n = 1,472, high
+- OHIP-14 MD −0.35 (−1.02 to 0.32), n = 1,551, high
+- moderate-to-extensive caries RR 1.04 (0.99 to 1.09), n = 1,478, **moderate**
+
+24-month versus 6-month, **restricted to the stratum whose own dentist judged
+them suitable for a 24-month interval**:
+
+- tooth surfaces with any caries MD −0.60 (−2.54 to 1.34), n = 271, **moderate**
+- OHIP-14 MD −0.24 (−1.55 to 1.07), n = 305, high
+
+### Two corrections this record exists to note
+
+**The evidence statement.** DBOH's adult row (tables 1f and 1g; chapter 13 table
+6) reads "Recommendation based on moderate certainty evidence that recall
+interval can be varied on individual basis without negative effects for adults
+who regularly attend dentist. Evidence not available for 'hard-to-reach' adults
+or those with more complex presentations. Recommendation in line with NICE
+(CG19)." The "very low certainty evidence" sentence belongs to the **children's**
+3-to-12-month rows (DBOH-008, 014, 025). An earlier draft of the chapter quoted
+the children's statement against the adult recommendation.
+
+**What the review says about further research.** "Further studies comparing
+dental recall intervals for adults in primary care seem unnecessary, given the
+moderate to high certainty of the evidence for the outcomes of this review." The
+review does **not** say four years is too short; the word "decades" does not
+appear in it. An earlier draft attributed that caveat to the review.
+
+
+## Chapter 29: the toothpaste aisle
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** PubMed
+**Date run:** 21 August 2026
+
+### Scope
+
+This chapter is a consumer guide rather than an audit, and its searches were
+correspondingly light. It leans on evidence appraised elsewhere in the book,
+principally Walsh 2019 on fluoride concentration (chapter 8), rather than on new
+searches of its own.
+
+### What was not searched systematically
+
+Charcoal, whitening, hydroxyapatite, herbal and SLS-free toothpastes. No
+systematic search of those literatures was run. Statements about them in the
+chapter should be read as informed clinical opinion, not as appraisal, and the
+chapter is worded to make that clear.
+
+### High-concentration toothpaste
+
+The chapter's statements about concentrations above 1,500 ppm rest on the
+comparisons already tabulated in chapter 8 from Walsh 2019: 1,700 to 2,200 ppm
+against 1,450 to 1,500 ppm, SMD 0.04 (95% CI −0.07 to 0.15), indirect evidence
+only; and 2,400 to 2,800 ppm against 1,450 to 1,500 ppm, SMD −0.05 (−0.14 to
+0.05), two studies. Head-to-head trials **do** exist; what they do not show is
+superiority.
+
+DBOH's own adult row for obvious active coronal or root caries adds
+moderate-certainty evidence for 5,000 ppm fluoride **for root caries
+specifically**, which is a narrower claim than the child 10-and-over row and is
+quoted separately in the chapter.
+
+
+## Chapter 30: short answers
+
+::: provenance
+**How this record was produced.** The searches below were run on the dates
+stated and disclosed in the chapter at the time. This file was written up
+afterwards, from that disclosure and from the working notes, when an audit found
+that the chapter pointed at a record file that did not yet exist. It is therefore
+a faithful account of what was done, not a contemporaneous log, and it is marked
+as such because the alternative is to let a reader assume otherwise. Where a
+search failed and had to be re-run, the failure is recorded first.
+:::
+
+**Database:** none, other than the sources already appraised elsewhere in the book
+**Date run:** not applicable
+
+### No systematic searches were run for this chapter
+
+Recorded explicitly. The chapter answers a list of common questions in a few
+sentences each, and the answers rest on evidence appraised in other chapters, on
+named guidance, or on clinical consensus. Where it rests on consensus the chapter
+says so.
+
+### Consequences, stated in the chapter
+
+- **Oil pulling.** No search was run. The chapter therefore does not characterise
+  the size, duration or comparators of that trial literature, and confines itself
+  to saying that it would not trade brushing time for it on mechanism alone, and
+  that aspiration lipoid pneumonia is reported in case reports.
+- **Water flossers.** Statements rest on Worthington 2019, already appraised in
+  chapter 17. Against toothbrushing alone, oral irrigators may reduce the gingival
+  index at one month (SMD −0.48, 95% CI −0.89 to −0.06, 4 trials, 380
+  participants, very low certainty) but not at three or six months, and did not
+  reduce bleeding sites or plaque. Against floss, short-term gingivitis may favour
+  irrigators. There is **no** irrigator-versus-interdental-brush comparison in the
+  review.
+- **Wisdom teeth.** NICE TA1 concerns **pathology-free impacted** third molars.
+- **Amalgam.** The UK restriction covers deciduous teeth, patients under 15, and
+  pregnant or breastfeeding women, except where the practitioner judges it
+  strictly necessary.
+
+
+## Chapter 32: the half-life of a recommendation
+
+**Database:** PubMed
+**Date run:** 20 August 2026
+
+### Provenance
+
+Unlike the Part II to Part V records, this one was written **at the same time as
+the chapter** rather than reconstructed afterwards from a chapter's disclosure.
+The searches below were run while drafting.
+
+### Query 1: the version history of CD010216
+
+The chapter's central example is DBOH-074, the e-cigarette recommendation, which
+cites `CD010216.pub3`.
+
+```
+Electronic cigarettes for smoking cessation[Title] AND Cochrane Database Syst Rev[Journal]
+```
+
+**24 records.** Sorted by publication date. A second, narrower query:
+
+```
+Hartmann-Boyce[Author] AND Electronic cigarettes for smoking cessation[Title]
+```
+
+**19 records.**
+
+Metadata retrieved and structured abstracts read for four versions:
+
+| Version | PMID | Published | Search closed | Studies | Participants | RCTs |
+|---|---|---|---|---:|---:|---:|
+| `.pub3` | 27622384 | 14 Sep 2016 | Jan 2016 | 24 | 662 in the cessation MA | 3 |
+| `.pub8` | 38189560 | 8 Jan 2024 | 1 Jul 2023 | 88 | 27,235 | 47 |
+| `.pub9` | 39878158 | 29 Jan 2025 | 1 Feb 2024 | 90 | 29,044 | 49 |
+| `.pub10` | 41212103 | 10 Nov 2025 | 1 Mar 2025 | 104 | 30,366 | 61 |
+
+`.pub4` through `.pub7` were **not** retrieved. The chapter's phrase "superseded
+seven times" is arithmetic on the version numbers, not a claim about four
+abstracts I have read, and the chapter says so.
+
+Nicotine EC versus NRT, abstinence at six months or longer:
+
+| Version | RR | 95% CI | I2 | studies | n | certainty |
+|---|---|---|---|---:|---:|---|
+| `.pub3` | not pooled | - | - | 1 | 584 | very low |
+| `.pub8` | 1.59 | 1.29 to 1.93 | 0% | 7 | 2,544 | high |
+| `.pub9` | 1.59 | 1.30 to 1.93 | 0% | 7 | 2,544 | high |
+| `.pub10` | 1.55 | 1.28 to 1.88 | 0% | 9 | 2,703 | high |
+
+`.pub3` reported nicotine EC versus **placebo EC** at RR 2.29 (95% CI 1.05 to
+4.96; 2 studies, 662 participants), GRADE low, and versus nicotine patch at
+RR 1.26 (95% CI 0.68 to 2.34; 584 participants), GRADE very low. Its stated
+conclusion includes "the long-term safety of ECs is unknown," which is what
+DBOH's evidence statement paraphrases.
+
+#### The living-review declaration
+
+`.pub8`, `.pub9` and `.pub10` each carry this sentence in the published abstract:
+
+> To ensure the review continues to provide up-to-date information to
+> decision-makers, this review is a living systematic review. We run searches
+> monthly, with the review updated when relevant new evidence becomes available.
+
+`.pub10` records funding from Cancer Research UK (PICCTR-2024/100012).
+
+**The key date.** The DBOH edition audited in this book was published on
+10 September 2025. The current version of CD010216 on that date was `.pub9`,
+published 29 January 2025, which reported high certainty. DBOH cites `.pub3`
+and reports low certainty.
+
+### Query 2: the living systematic review methods literature
+
+```
+Elliott JH[Author] AND living systematic review[Title]
+```
+
+**5 records.** PMID 28912002, *J Clin Epidemiol* 2017;91:23-30,
+doi:10.1016/j.jclinepi.2017.08.010 is the defining paper and the source of both
+quoted phrases in the chapter: the "decay in review currency, accuracy, and
+utility," and the three-part triage rule (evidence emerging rapidly, current
+evidence uncertain, new research may change decisions).
+
+### Not a search: the citation-age computation
+
+@tbl-citation-age is computed by `scripts/extract_dboh.py`, not searched.
+
+Method: for each of the 91 recommendations, take every 4-digit year in the range
+1950 to 2029 appearing in the `references` column, take the **maximum** per row,
+and subtract from 2025. Rows with no dated citation are excluded.
+
+Results, written to `_variables.yml`:
+
+| Metric | Value |
+|---|---:|
+| Recommendations with at least one dated citation | 74 of 91 |
+| Median age of newest citation, at publication | 7 years |
+| Newest citation 5 years or older | 64 of 74 |
+| Newest citation 10 years or older | 16 of 74 |
+| Newest citation from the publication year | 1 of 74 |
+| Oldest | 13 years (DBOH-076, NICE PH39 2012, Strong) |
+
+**Known limitations, both conservative.**
+
+1. The year is read off the citation string, so a review whose own search closed
+   years before publication is scored as younger than its evidence. Marinho 2013
+   scores as 12 years old; its newest included trial is from 2012 and its search
+   closed 13 May 2013.
+2. The 17 recommendations citing nothing dated are excluded rather than counted
+   as maximally stale.
+3. `"NICE. Stop smoking services. 2008 [updated 2018]"` resolves to 2018, which
+   is the intended behavior: the max-year rule treats an updated guidance
+   document by its update.
+
+**Negative check on the year regex.** The 1950 to 2029 window was chosen so that
+DOI fragments and volume/page numbers cannot match. Verified against the actual
+reference strings: `10.1002/14651858.CD008286.pub3` contributes no match
+(`1465`, `1858`, `0082` all fall outside the window), and
+`10.1136/bmjopen-2016-015410` correctly contributes 2016 only.
+
+### Rows found resting on a superseded version of their own cited review
+
+| Row | Cited | Current at DBOH's publication | Update published |
+|---|---|---|---|
+| DBOH-074 | `CD010216.pub3` (2016) | `CD010216.pub9` | 29 Jan 2025 |
+| DBOH-084 | `CD010276.pub2` (2015) | `CD010276.pub3` | Jul 2021 |
+
+DBOH-084 was already documented in `ch20-oral-cancer.md` during the first pass.
+DBOH-074 was found only on the second pass, because the first pass did not audit
+the row at all. See `ch21-tobacco.md`.
+
+### This book's own instances of the same failure
+
+Recorded here because the chapter argues from them:
+
+- `ch09-toothpaste-amount.md`: identifier query for `CD007693` returned nothing
+  useful; concluded the 2010 version was current; `CD007693.pub3` (2024) exists.
+- `ch20-oral-cancer.md`: identifier query missed `CD010276.pub3` (2021), the same
+  update DBOH missed.
+- `ch05-brushing-frequency.md`: a date-limited known-item query could not have
+  retrieved a review published after its date limit.
+
+Common lesson, already recorded in `README.md`: searching for a review by its
+identifier is not an update search.

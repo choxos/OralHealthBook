@@ -47,7 +47,7 @@ Every audit chapter does these, in this order, under these headings.
 **1. The advice.** Quoted verbatim from chapter 2 of *Delivering Better Oral
 Health* [@dboh2025], with its strength label and the table it appears in. Not
 paraphrased. If a recommendation sounds worse when quoted exactly than when
-summarised, that is information, and paraphrasing would destroy it.
+summarized, that is information, and paraphrasing would destroy it.
 
 **2. What the guideline says its evidence is.** Quoted verbatim from chapter 13,
 with its certainty rating and its cited references. Again not paraphrased.
@@ -73,12 +73,12 @@ This is the single most common problem I found, and it is invisible unless you g
 and look, because a citation looks the same whether or not it is on-topic.
 
 **4. Appraising it.** With the appropriate tool, and with the judgments shown
-rather than summarised:
+rather than summarized:
 
 | What I am appraising | Tool |
 |---|---|
-| An individual randomised trial | RoB 2 |
-| An individual non-randomised study of an intervention | ROBINS-I |
+| An individual randomized trial | RoB 2 |
+| An individual non-randomized study of an intervention | ROBINS-I |
 | Whether a systematic review was well conducted | AMSTAR 2 |
 | Whether a systematic review is at risk of bias | ROBIS |
 | A body of evidence for one outcome | GRADE |
@@ -98,8 +98,12 @@ were among them.
 **5. Is there better evidence?** A search, recorded so it can be repeated:
 database, full strategy, date run, number of hits, and what was screened in.
 "I searched PubMed" is not a method. The strategies are in
-[Appendix -@sec-app-searches] in the print edition and in
-`appraisals/searches/` in the repository.
+`appraisals/searches/` in the repository, one file per chapter that reaches a
+verdict.
+
+::: {.content-visible when-profile="print"}
+They are also reproduced in [Appendix -@sec-app-searches] of this edition.
+:::
 
 Searches were run to a stated cut-off date, given per chapter. Anything
 published after that date is not in this book, and the honest thing is to say so
@@ -147,7 +151,7 @@ original blog series all three were sometimes missing. "14% fewer" and "0.41
 fewer surfaces" and "0.28 standardised mean difference" all appeared without
 intervals, which invites the reader to treat a noisy estimate as a fact.
 
-Standardised mean differences are converted back to natural units wherever the
+Standardized mean differences are converted back to natural units wherever the
 review reports enough to do it, because "0.28 of a standard deviation" is not a
 quantity anyone has intuitions about, and judging it with adjectives is worse
 than not judging it at all.
@@ -162,7 +166,7 @@ Every verdict box ends with this field, and it is not decoration.
 
 A criticism that no evidence could answer is not a criticism, it is a posture.
 If I say the evidence for brushing at bedtime is indirect, I should be able to
-state what direct evidence would look like: a trial randomising people to brush
+state what direct evidence would look like: a trial randomizing people to brush
 last thing at night versus two hours earlier, everything else held constant,
 with caries or pain measured at three years. If such a trial exists and I missed
 it, that field tells you exactly what to send me.
@@ -181,12 +185,13 @@ other people's citation practice should show its own errata:
 - I described the strength of a recommendation as "very low," which confuses
   strength with certainty. [Chapter -@sec-certainty-strength].
 - I rated a body of observational evidence as low certainty without considering
-  GRADE's three criteria for rating observational evidence **up**, one of which
-  (dose-response) the review in question actually reports.
-  [Chapter -@sec-twice-daily].
+  GRADE's three criteria for rating observational evidence **up**. Considering
+  them properly does not change the answer, because the review reports two
+  overlapping dichotomies rather than an ordered gradient, but failing to ask was
+  a genuine misapplication. [Chapter -@sec-twice-daily].
 - I gave the Swedish rinsing trial as having 131 participants in one post and
   369 in another. Both numbers appear in the literature because they refer to
-  different things: 369 were randomised and 281 completed, of whom 131 were in
+  different things: 369 were randomized and 281 completed, of whom 131 were in
   the test groups [@sjogren1995]. There is also a doctoral thesis reporting the
   same trial alongside other sub-studies [@sjogren1995thesis], and the two are
   routinely conflated. [Chapter -@sec-spit].
@@ -254,7 +259,7 @@ check against. It found a great deal. The substantive corrections:
 - I claimed a "minimal adjustment set" from a DAG I did not publish. A minimal
   adjustment set is minimal only relative to a stated graph. It is now a list of
   candidate confounders.
-- I concluded chapter 7 by saying "spit, don't rinse" has a randomised trial
+- I concluded chapter 7 by saying "spit, don't rinse" has a randomized trial
   behind it that found less decay, four pages after explaining that the trial
   tested a four-part bundle whose components cannot be separated. That is the
   same attribution error I accuse the guideline of, in my own conclusion.
@@ -264,19 +269,116 @@ check against. It found a great deal. The substantive corrections:
 - I described a null result for systemic fluoride absorption in ten people as
   "reassuring on safety." Failure to detect a difference is not evidence of
   equivalence.
-- I discussed a cluster-randomised trial's results without citing it, from
+- I discussed a cluster-randomized trial's results without citing it, from
   memory of the blog post. The passage is removed rather than patched.
 - I said the six-bullet brushing structure recurs across age groups. The bundles
   are five, six, three and three.
 - I said Good practice means "no research behind it at all." DBOH's definition is
   narrower and explicitly permits extrapolation from related research.
 
-Two things about that list. First, it is long, and it was produced against
-chapters I had already written carefully; I include it because a book making this
-argument has no standing to hide its own corrections. Second, the review also
-disputed judgments I have kept, on the grounds that the disputes are about
-interpretation rather than fact. Where that happened I have said so in the chapter
-rather than quietly holding my ground.
+## The second pass, and the errors it found
+
+The finished manuscript was then read again, chapter by chapter, by two
+independent models working from the same brief and with the archived guideline,
+the appraisal data and the supplied full texts available to check against. They
+were told to verify every quotation and every number against its source rather
+than against my summary of it. They agreed on several findings and each caught
+things the other missed. The substantive corrections:
+
+**Searches that were not searches.** Three of my update searches queried a
+Cochrane review by its identifier and returned nothing, and I recorded the nothing
+as meaning no update existed. Two updates existed. Wong and colleagues updated the
+fluoride-and-fluorosis review in June 2024 [@wong2024], and Walsh and colleagues
+updated the oral-cancer diagnostic review in July 2021 [@walsh2021]. Both were
+published before the edition of DBOH this book audits, and both change what the
+relevant chapter can say. My brushing-frequency search was worse: it was a
+known-item query capped at 2018, and could not have found the 2025 review it
+missed [@alsharani2025]. All three failures are recorded in
+`appraisals/searches/` rather than quietly re-run.
+
+**Nineteen search records that did not exist.** Chapters pointed the reader at
+`appraisals/searches/chNN-*.md` files for nineteen chapters where no such file had
+been written. That is the failure this book exists to object to, committed by the
+book, and `scripts/check_citations.py` now fails the build if a chapter names a
+record that is not there.
+
+**A recommendation left unaudited.** [Chapter -@sec-tobacco] stated that tobacco
+carries five Strong recommendations across two tables and then audited three rows
+from one of them. The true count is seven rows: six Strong and one Conditional.
+The Conditional row, DBOH-074 on e-cigarettes, was neither quoted nor searched. It
+turned out to be the most consequential row in the guideline for this book's
+argument, because its cited review had been superseded seven times and had moved
+from low to high certainty before DBOH went to press. That finding is now
+[Chapter -@sec-half-life], which is new in this pass.
+
+**A quotation cut before the clause that complicated it.**
+[Chapter -@sec-fluoridation-harm] quoted the Key Points of the fluoride and IQ
+meta-analysis and stopped at a semicolon, omitting the clause reporting that among
+low risk-of-bias studies the inverse association held below 1.5 mg/L for water as
+well as urine. The chapter then concluded that at fluoridation concentrations "the
+signal is not there." Both the quotation and the conclusion are corrected.
+
+**An evidence statement attached to the wrong recommendation.**
+[Chapter -@sec-recall] quoted the adult recall recommendation and then quoted the
+**children's** evidence statement against it, which made the guideline look far
+more pessimistic than it is. DBOH rates the adult row moderate and states the
+INTERVAL finding. The chapter's argument changed accordingly.
+
+**A GRADE domain the wrong way round, again.** I wrote that the moderate rating
+for fissure sealants "already reflects a downgrade" for unblindable detection
+bias. The review downgraded for **indirectness**, and says explicitly that it did
+**not** downgrade for risk of bias. [Chapter -@sec-sealants].
+
+**An absence that was not one.** I wrote that no trial has compared fluoride
+varnish application frequencies. At least two trials inside the very review I was
+citing randomized frequency, one of them reporting a dose-response
+[@weintraub2006]. [Chapter -@sec-varnish].
+
+**A failed join that became a factual claim.** [Chapter -@sec-wear] said
+nothing in the guideline discloses that identical brushing advice carries
+different labels for different diseases. Chapter 13 discloses exactly that, in one
+sentence. My extraction script had failed to match the row and I wrote the chapter
+from my own spreadsheet instead of from the source.
+
+**Brand subgroups reported as headline results.** The two plaque figures in
+[Chapter -@sec-powered] were a Procter and Gamble subanalysis and a Colgate
+subanalysis, not the review's overall estimates, in a chapter whose main
+complaint is industry funding.
+
+**Silent edits inside quotation marks.** A misquoted CMO drinking guideline that
+turned a risk-minimising statement into a flat limit; a guideline typo I had
+tidied up; several omissions marked with no ellipsis; and a shortened cancer
+referral list. Each is corrected in place and the method chapter's promise of
+verbatim quotation now holds.
+
+**Medical advice beyond the evidence.** A suggestion that worried parents might
+switch to filtered or bottled water, in a chapter whose own verdict is that the
+question is unresolved; an unqualified instruction to accept fluoride varnish, for
+a product with listed contraindications; and a claim that people whose gums bleed
+were not in the scale-and-polish trials, when the larger trial enrolled BPE 0 to 3
+and balanced its arms on gingival bleeding. All three are removed or bounded.
+
+**Certainty ratings that were mine rather than the sources'.** Very low where
+Ranzan and DBOH both say low; "high to moderate" as though a certainty rating
+could be a range; low where Cochrane says very low for interdental brushes; and
+consistency listed as a GRADE upgrade criterion, which it is not.
+
+## What that list is for
+
+First, it is long, and it was produced against chapters I had already written
+carefully and already corrected once. I include it because a book making this
+argument has no standing to hide its own corrections, and because the pattern in
+it is the same pattern the book documents in the guideline: not carelessness, but
+a citation followed one step less far than it should have been.
+
+Second, both passes disputed judgments I have kept, on the grounds that the
+disputes are about interpretation rather than fact. Where that happened I have
+said so in the chapter rather than quietly holding my ground.
+
+Third, and least comfortably: the errors above were found by checking my
+citations against their sources. That is precisely the method of this book, and it
+took two outside readers to apply it to me. If the argument here is right, nobody
+should be exempt from it, including its author.
 
 ## What I cannot do
 
@@ -296,7 +398,7 @@ the English abstract, and I flag it where it happens.
 
 And I am not neutral. I think oral health guidance should say what it knows and
 what it does not, and I started this project already annoyed about a particular
-recommendation. Declaring that is better than pretending otherwise. The defence
+recommendation. Declaring that is better than pretending otherwise. The defense
 against it is not my good intentions, it is the fact that every judgment I made
 is published in a file you can open.
 

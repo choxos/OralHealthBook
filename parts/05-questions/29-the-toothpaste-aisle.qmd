@@ -36,7 +36,7 @@ Check the tube. If it says no fluoride, put it back.
 
 Whitening toothpastes work by removing surface stains, generally through
 abrasives and sometimes through low concentrations of peroxide. They do not change
-the underlying colour of your teeth, because the colour of your teeth is mostly
+the underlying color of your teeth, because the color of your teeth is mostly
 dentine seen through translucent enamel.
 
 So they can return a stained tooth to its natural shade, which for a coffee
@@ -73,7 +73,7 @@ differ from a superiority trial. A small trial that fails to find a difference h
 not shown non-inferiority; it has failed to find a difference, which
 [Chapter -@sec-scale-polish] explains is a different thing.
 
-Set against that: fluoride toothpaste has 55 randomised trials at high to moderate
+Set against that: fluoride toothpaste has 55 randomized trials at high to moderate
 certainty behind it. Hydroxyapatite would need a great deal of evidence to
 displace that, and it does not have it yet. If you have a specific reason to avoid
 fluoride, this is the most plausible alternative on the shelf. If you do not, the

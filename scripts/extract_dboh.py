@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import csv
 import re
+import statistics
 import sys
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -180,13 +181,34 @@ MATCH_FUZZY = 0.72
 #             health". Correct.
 REVIEWED_JOINS = {"DBOH-051", "DBOH-053", "DBOH-066"}
 
-# Chapter 2 recommendations with no chapter 13 counterpart at all. Both are
-# real gaps in the guideline's own cross-referencing, not parser failures.
+# Chapter 2 recommendations with no chapter 13 counterpart at all.
+#
 #   DBOH-069  "Some medications can affect gingival health" points the reader
-#             at the BNF instead of at evidence.
-#   DBOH-087  the tooth wear table restates the oral hygiene advice by
-#             cross-reference to table 2 rather than in its own words.
-KNOWN_UNMATCHED = {"DBOH-069", "DBOH-087"}
+#             at the BNF instead of at evidence. A real gap in the guideline's
+#             cross-referencing.
+#
+# DBOH-087, the tooth wear brushing row, used to be listed here and should not
+# have been. It DOES have a chapter 13 counterpart, in table 21, and that
+# counterpart carries the most interesting sentence in the guideline for this
+# book's argument: "Good practice for preventing tooth wear. Strong
+# recommendation for preventing dental caries and conditional for periodontal
+# disease." The join scored 0.44 because chapter 2 spells the advice out while
+# chapter 13 words it slightly differently, and marking it unmatched hid the
+# sentence. A chapter was then written from this file rather than from the
+# guideline, and got the fact backwards.
+#
+# The lesson is the one the book is about, so the fix is not to special-case
+# the row but to make a silent drop impossible: anything that lands between
+# MATCH_FUZZY and a confident join, or fails to join at all, is written to the
+# unmatched CSV and must be signed off in REVIEWED_JOINS or here by hand.
+KNOWN_UNMATCHED = {"DBOH-069"}
+
+# Joins recovered by hand after the automatic matcher missed them. Keyed to the
+# chapter 13 table they belong to, so the CSV can carry the evidence text even
+# where the fuzzy score was too low to trust on its own.
+MANUAL_JOINS = {
+    "DBOH-087": 21,
+}
 
 
 def best_match(key: str, index: dict[str, list[dict]]) -> tuple[dict | None, float]:
@@ -337,9 +359,28 @@ def main() -> int:
     unmatched: list[dict] = []
     used: set[int] = set()
 
+    # chapter 13 rows, flattened once so a manual join can find one by table
+    ch13_by_table: dict[int, list[dict]] = {}
+    for cands in index.values():
+        for c in cands:
+            # ch13_table comes off a regex group, so it is a string; key on
+            # str() so MANUAL_JOINS can be written with plain integers.
+            ch13_by_table.setdefault(str(c["ch13_table"]), []).append(c)
+
     for i, rec in enumerate(ch2_rows, start=1):
+        rid = f"DBOH-{i:03d}"
         key = normalise(rec["recommendation"])
         ev, score = best_match(key, index)
+
+        # A row the matcher cannot reach, joined by hand to a named chapter 13
+        # table. Only ever used for ids listed in MANUAL_JOINS, and only when
+        # the automatic match failed, so it cannot silently override a real one.
+        if ev is None and rid in MANUAL_JOINS:
+            cands = ch13_by_table.get(str(MANUAL_JOINS[rid]), [])
+            if cands:
+                ev = max(cands, key=lambda c: len(c["evidence_base"] or ""))
+                score = -1.0        # marks a hand join in the audit column
+
         if ev is not None:
             used.add(id(ev))
 
@@ -385,7 +426,8 @@ def main() -> int:
                 else ""
             ),
             "join_note": (
-                "checked by hand" if f"DBOH-{i:03d}" in REVIEWED_JOINS
+                "joined by hand" if score == -1.0
+                else "checked by hand" if f"DBOH-{i:03d}" in REVIEWED_JOINS
                 else "no chapter 13 counterpart"
                 if f"DBOH-{i:03d}" in KNOWN_UNMATCHED else ""
             ),
@@ -448,6 +490,35 @@ def main() -> int:
     return 0
 
 
+# The year DBOH's audited edition was published. Citation ages are measured
+# against this, not against today, so the figures describe how current the
+# guideline was at the moment it was published rather than how current it is now.
+EDITION_YEAR = 2025
+
+# Publication years only: 1950 to 2029. Narrow enough that DOI fragments
+# ("10.1002/14651858.CD008286.pub3") and volume/page numbers cannot match.
+_YEAR = re.compile(r"\b(19[5-9]\d|20[0-2]\d)\b")
+
+
+def _citation_ages(rows: list[dict]) -> list[int]:
+    """Age, in years at EDITION_YEAR, of the newest citation on each row.
+
+    A recommendation is only as current as its most recent support, so this
+    takes the maximum year per row and ignores the older references beneath
+    it. "2008 [updated 2018]" resolves to 2018 for the same reason.
+
+    This is a lower bound on staleness twice over: a review published in
+    2013 closed its own search before 2013, and rows citing no dated source
+    at all are excluded rather than counted as infinitely old.
+    """
+    ages = []
+    for r in rows:
+        years = [int(y) for y in _YEAR.findall(r.get("references") or "")]
+        if years:
+            ages.append(EDITION_YEAR - max(years))
+    return ages
+
+
 def _write_variables(rows: list[dict], refs: dict[str, dict]) -> None:
     """Write _variables.yml so the book never hand-types a count.
 
@@ -459,6 +530,7 @@ def _write_variables(rows: list[dict], refs: dict[str, dict]) -> None:
     def n(pred) -> int:
         return sum(1 for r in rows if pred(r))
 
+    ages = _citation_ages(rows)
     strong = [r for r in rows if r["strength"] == "Strong"]
     good = [r for r in rows if r["strength"].startswith("Good practice")]
 
@@ -493,6 +565,18 @@ def _write_variables(rows: list[dict], refs: dict[str, dict]) -> None:
         "  # Join quality between chapter 2 and chapter 13",
         f"  joined: {n(lambda r: r['matched'] == 'yes')}",
         f"  unjoined: {n(lambda r: r['matched'] == 'NO')}",
+        "  # Age of the newest citation supporting each recommendation, in",
+        "  # years at the edition's own publication date. See _citation_ages.",
+        f"  dated: {len(ages)}",
+        f"  age_median: {int(statistics.median(ages))}",
+        f"  age_max: {max(ages)}",
+        f"  age_5plus: {sum(1 for a in ages if a >= 5)}",
+        f"  age_10plus: {sum(1 for a in ages if a >= 10)}",
+        f"  age_same_year: {sum(1 for a in ages if a == 0)}",
+        f"  age_undated: {len(rows) - len(ages)}",
+        "  # The publication year a median-aged recommendation rests on, so the",
+        "  # prose never hard-codes an arithmetic result of the two above.",
+        f"  age_median_year: {EDITION_YEAR - int(statistics.median(ages))}",
     ]
     (ROOT / "_variables.yml").write_text("\n".join(lines) + "\n")
 

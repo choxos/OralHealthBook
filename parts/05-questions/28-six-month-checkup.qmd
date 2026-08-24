@@ -26,13 +26,30 @@ not.
 
 ## What the guideline says its evidence is
 
-> Recommendation based on **very low certainty evidence**. Recommendation in line
-> with NICE (CG19).
+> Recommendation based on **moderate certainty evidence** that recall interval can
+> be varied on individual basis without negative effects for adults who regularly
+> attend dentist. Evidence not available for 'hard-to-reach' adults or those with
+> more complex presentations. Recommendation in line with NICE (CG19).
 >
-> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+> --- *Delivering Better Oral Health*, chapter 13, table 6 [@dboh2025]
 
-NICE CG19 is *Dental checks: intervals between oral health reviews* [@niceCG19].
-It was published in **2004**.
+Two things to note before going on, because I got both wrong in an earlier draft
+and the chapter's argument changed when I fixed them.
+
+First, that statement is the **adult** one. The children's rows, for the 3 to 12
+month range, carry a different sentence: "Recommendation based on very low
+certainty evidence. Recommendation in line with NICE (CG19)." I had quoted the
+children's evidence against the adult recommendation, which made the guideline
+look far more pessimistic than it is. The rest of this chapter is what remains
+once the right sentence is in place.
+
+Second, the adult statement is not a bare deferral to an old guideline. It states
+the trial's own finding, that the interval can be varied without negative
+effects; it names the population that finding applies to, regular attenders; and
+it names the population it does not, hard-to-reach adults and complex
+presentations. NICE CG19 is *Dental checks: intervals between oral health
+reviews* [@niceCG19], published in **2004**, but the row cites it **alongside**
+the 2020 Cochrane review of the INTERVAL trial, not instead of it.
 
 ## Following the citation, and finding it is out of date
 
@@ -44,53 +61,64 @@ with outcomes at **four years**.
 
 Here is what it found.
 
-| Comparison | Outcome | Effect | 95% CI | Certainty |
-|:-------------------|:------------------------|:-----------|:--------------|:-------------|
-| **Risk-based vs 6-month** | tooth surfaces with any caries | MD 0.15 | −0.77 to 1.08 | [high]{.certainty .high} |
-| Risk-based vs 6-month | % sites with gingival bleeding | MD 0.78% | −1.17% to 2.73% | [high]{.certainty .high} |
-| Risk-based vs 6-month | quality of life (OHIP-14) | MD −0.35 | −1.02 to 0.32 | [high]{.certainty .high} |
-| Risk-based vs 6-month | moderate-to-extensive caries | RR 1.04 | 0.99 to 1.09 | [moderate]{.certainty .moderate} |
-| **24-month vs 6-month** | tooth surfaces with any caries | MD −0.60 | −2.54 to 1.34 | [moderate]{.certainty .moderate} |
-| 24-month vs 6-month | quality of life (OHIP-14) | MD −0.24 | −1.55 to 1.07 | [high]{.certainty .high} |
+| Comparison | Outcome | Effect | 95% CI | n | Certainty |
+|:-----------------|:---------------------|:---------|:-------------|-----:|:-------------|
+| **Risk-based vs 6-month** | tooth surfaces with any caries | MD 0.15 | −0.77 to 1.08 | 1,478 | [high]{.certainty .high} |
+| Risk-based vs 6-month | % sites with gingival bleeding | MD 0.78% | −1.17% to 2.73% | 1,472 | [high]{.certainty .high} |
+| Risk-based vs 6-month | quality of life (OHIP-14) | MD −0.35 | −1.02 to 0.32 | 1,551 | [high]{.certainty .high} |
+| Risk-based vs 6-month | moderate-to-extensive caries | RR 1.04 | 0.99 to 1.09 | 1,478 | [moderate]{.certainty .moderate} |
+| **24-month vs 6-month** | tooth surfaces with any caries | MD −0.60 | −2.54 to 1.34 | 271 | [moderate]{.certainty .moderate} |
+| 24-month vs 6-month | quality of life (OHIP-14) | MD −0.24 | −1.55 to 1.07 | 305 | [high]{.certainty .high} |
 
 : Recall intervals in adults, four-year follow-up [@fee2020] {#tbl-recall}
 
-Read the certainty column. **High.** Repeatedly.
+Read the certainty column, and then read the sample sizes next to it, because the
+two halves of this table are not the same strength of finding.
+
+The **risk-based versus six-month** rows are high certainty on about 1,500
+people. That comparison is as solid as anything in this book.
+
+The **24-month versus six-month** rows are not the same. Only patients whose own
+dentist had already judged them suitable for a two-year interval were eligible for
+that randomization, so the comparison rests on 271 participants drawn from a
+pre-selected group, and Fee and colleagues rate the caries outcome **moderate**
+rather than high, downgrading for imprecision: the interval includes little to no
+difference but also a difference larger than the minimal important difference. I
+had this row marked high in an earlier draft, which overstated it.
 
 This is, along with [Chapter -@sec-scale-polish], one of only two places in this
 entire book where I have found high-certainty evidence, and both of them are
 findings of **no important difference**. Adults who attended every six months did
 not end up with fewer decayed surfaces, less gum bleeding, or better
 oral-health-related quality of life than adults on risk-based or two-yearly
-recall. The intervals are narrow and centred near zero, which as
+recall. The intervals are narrow and centered near zero, which as
 [Chapter -@sec-scale-polish] explains is a real answer rather than an empty
 literature.
 
-## The part that is genuinely odd
+## The gap that is left
 
-DBOH rates this recommendation **very low certainty**.
+Set against that table, DBOH rates the adult row **moderate**. Fee and colleagues
+rate the risk-based comparison **high** for three patient-relevant outcomes. So
+there is a gap, but it is one rating wide rather than the chasm I first described,
+and the guideline gives its reason in the same sentence.
 
-The Cochrane review it cites contains **high**-certainty evidence for three
-patient-relevant outcomes.
+The reason is the second half of the statement: "Evidence not available for
+'hard-to-reach' adults or those with more complex presentations." That is a real
+limit and DBOH is right to record it. INTERVAL recruited adults who had seen a
+dentist within the previous two years, in general practice, with mouths in
+reasonable order. The trial establishes that lengthening the interval does not
+harm **those** people. It says nothing about the people who worry a public health
+body most, and a recommendation written for the whole adult population has to
+carry the weaker of the two.
 
-I do not think this is carelessness, and there is a reading that makes sense of
-it. Fee 2020 provides high-certainty evidence that **lengthening intervals does
-not harm** low-risk regular attenders. It provides very little about what the
-*optimal* interval is for any given person, or about children, where the only
-evidence is one small Norwegian study with very low certainty. If DBOH's "very
-low" refers to the evidence supporting a **risk-based assignment across the 3-to-24
-month range**, rather than to the specific comparisons the trial ran, then it is
-defensible.
+Whether that justifies moving high down to moderate for the population the trial
+did cover is a judgment I would make differently, and it is a narrow
+disagreement rather than a finding of neglect. What I would want is the
+distinction stated: high certainty for regular attenders, no evidence for anyone
+else, rather than a single moderate covering both.
 
-But that is my reconstruction, not the guideline's statement. And the practical
-effect of writing "very low certainty" against this row is to understate what is
-now known. A dentist reading chapter 13 would reasonably conclude that the
-evidence on recall intervals is thin. It is thin for the specific question of
-personalising the interval. It is not thin at all for the question the public
-actually cares about, which is whether six-monthly is necessary.
-
-Add to that the deferral to a guideline from **2004**, which predates the INTERVAL
-trial entirely, and this row reads as one the 2025 update did not revisit.
+The children's rows are a separate matter and the very low rating there is
+plainly right: the only paediatric evidence is one small Norwegian study.
 
 ::: {.callout-note title="How I judged this: the population matters" collapse="true"}
 Who was in these trials? Adults who were **regular attenders**, defined as having
@@ -106,9 +134,14 @@ It says nothing about people who do not attend, who have untreated disease, or
 who are at high risk. For them the whole question is different, and the answer is
 probably that they need to be seen more, not less.
 
-**What was not measured.** Neither study measured other potential adverse effects.
-And four years is not long for a disease that develops over decades. The review is
-explicit about both.
+**What was not measured.** Neither trial assessed adverse effects of different
+recall intervals, and the review says so. The review does **not** say that four
+years is too short; that caveat is mine, and I should not have attributed it. If
+anything Fee and colleagues lean the other way, concluding that "further studies
+comparing dental recall intervals for adults in primary care seem unnecessary,
+given the moderate to high certainty of the evidence for the outcomes of this
+review." They do call for trials in children, and for work on potential harms
+such as overtreatment.
 :::
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
@@ -127,13 +160,17 @@ Full record in `appraisals/searches/ch28-recall.md`.
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   [High]{.certainty .high} that, for adults who attend regularly, risk-based or
-    24-month recall produces no important difference from 6-month recall in
-    caries, gingival bleeding or oral-health-related quality of life over four
-    years. [Very low]{.certainty .very-low} for children, from one small study.
+:   [High]{.certainty .high} that, for adults who attend regularly, **risk-based**
+    recall produces no important difference from 6-month recall in caries,
+    gingival bleeding or oral-health-related quality of life over four years
+    (n ≈ 1,500). [Moderate]{.certainty .moderate} for the **24-month** comparison,
+    which rests on 271 participants their own dentist had already judged suitable
+    for a two-year interval. [Very low]{.certainty .very-low} for children, from
+    one small study.
 
-    **This is higher than DBOH's stated rating**, and the discrepancy is the
-    finding of this chapter.
+    DBOH rates the adult row moderate. For the risk-based comparison in regular
+    attenders I would say high; for the population as a whole, where the trial is
+    silent, DBOH's caution is defensible.
 
 Directness to the advice as worded
 :   **Excellent for the six-month question, poor for the risk-based question.**
@@ -143,11 +180,18 @@ Directness to the advice as worded
     range, which is what the recommendation actually asks clinicians to do.
 
 Is the strength label defensible?
-:   **Conditional is right; the certainty rating is not.** Rating this very low,
-    and deferring to a 2004 NICE guideline, understates high-certainty evidence
-    that the six-month default is unnecessary for regular attenders. This is the
-    only place in the book where I think the guideline is **too pessimistic** about
-    its own evidence, and the effect is to leave an outdated norm unchallenged.
+:   **Conditional is right, and the certainty rating is defensible but blunt.**
+    This is the one place in the book where my complaint runs the other way: not
+    that a label overstates its evidence, but that a single moderate is asked to
+    cover a population in which the evidence is high for one part and absent for
+    another. The remedy is the same as everywhere else in this book, which is to
+    say which part the rating belongs to.
+
+    What I would still press on is the effect downstream. Nothing in the tables a
+    patient or a practice ever sees records that six-monthly recall has been
+    tested against risk-based recall in a four-year randomized trial and found to
+    make no important difference for regular attenders. That is a strong,
+    reassuring, publicly useful finding, and it is not reaching anyone.
 
 What would change my mind
 :   Evidence that four years is too short and differences emerge later. Evidence
@@ -159,15 +203,27 @@ What would change my mind
 ## What this means for you
 
 If you are an adult who goes to the dentist reasonably regularly and your mouth
-is in decent shape, there is high-certainty evidence that you do not need to go
-every six months. Going less often, or on a schedule your dentist sets based on
-your actual risk, produced no measurable difference over four years in decay,
-bleeding gums, or how your mouth felt.
+is in decent shape, there is high-certainty evidence that a schedule your dentist
+sets based on your actual risk works as well as going every six months. Over four
+years it produced no measurable difference in decay, bleeding gums, or how your
+mouth felt.
 
 The national guideline already says this: 3 to 24 months, based on need. Six
 months is not in it.
 
-Two caveats. If you have untreated decay or gum disease, or you rarely attend,
-none of this applies to you; the trials were in people who were already doing
-fine. And in England, whether you can *get* an appointment is a more pressing
-constraint than how often you should want one.
+Three caveats, and the third is the one I nearly left out.
+
+If you have untreated decay or gum disease, or you rarely attend, none of this
+applies to you; the trials were in people who were already doing fine. In England,
+whether you can *get* an appointment is a more pressing constraint than how often
+you should want one.
+
+And the same trial that found no clinical difference also found that patients
+"greatly value and are willing to pay for frequent dental check-ups"
+[@clarkson2020interval]. That is not a nuisance finding to be argued away. Under
+GRADE, what people value is one of the four inputs to a recommendation, on the
+same footing as the effect estimate. So the honest statement is narrower than
+"you do not need to go every six months." It is that the **clinical** case for a
+six-month default in regular attenders has not survived testing, while the
+reasons a person might still want to go that often, reassurance among them, are
+untouched by any of this and are a legitimate basis for choosing.

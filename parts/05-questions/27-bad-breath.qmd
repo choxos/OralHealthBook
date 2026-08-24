@@ -14,15 +14,21 @@ But it leaves a gap, and gaps of this kind are where the commercial market lives
 The mechanism here is better established than most things in this book, and it is
 worth understanding because it makes the useless remedies obvious.
 
-Around 85 to 90% of persistent bad breath originates **in the mouth**. Anaerobic
+Around **80 to 90%** of halitosis originates in the mouth, on the estimate of a
+systematic review of its causes [@memon2022], with coated tongue, periodontal
+disease and poor oral hygiene the main contributors. Anaerobic
 bacteria, living mostly on the back of the tongue and in periodontal pockets,
 break down proteins and release **volatile sulphur compounds**: hydrogen
 sulphide, methyl mercaptan, dimethyl sulphide. Those are the smell. They are the
 same compounds that make rotten eggs unpleasant, and the nose detects them at very
 low concentrations.
 
-The remaining 10 to 15% is mostly ear, nose and throat causes such as tonsil
-stones and sinus infection, with a small residue of systemic causes.
+The remaining **10 to 20%** is attributed to causes outside the mouth, associated
+with ear, nose and throat, gastrointestinal and other systemic conditions
+[@memon2022]. An earlier draft of this chapter gave the split as 85 to 90% against
+10 to 15%, with no citation and with the extra-oral share described as mostly ENT.
+The published figures are wider than that and the review does not say the
+remainder is mostly ENT.
 
 Two consequences follow immediately.
 
@@ -88,9 +94,10 @@ anything immediately after brushing.
 **Mints and chewing gum.** Sugar-free gum stimulates saliva, which genuinely helps
 a little and briefly. Mints do nothing except smell.
 
-**Anything promising to cure halitosis systemically.** Since the cause is local in
-roughly nine cases out of ten, a product acting elsewhere is treating the wrong
-site.
+**Anything promising to cure halitosis systemically.** Since the cause is
+intra-oral in most cases, a product acting elsewhere is usually treating the wrong
+site. That is a statement about where the problem usually is, not a diagnosis of
+where yours is.
 
 ::: {.callout-important title="When bad breath is not a dental problem"}
 Two situations where the answer is not in this chapter.
@@ -99,9 +106,9 @@ Two situations where the answer is not in this chapter.
 has been treated, decay restored and the tongue cleaned, a persistent problem
 needs ENT assessment for tonsil stones or chronic sinus infection, and
 occasionally investigation of systemic causes. Do not accept an indefinite
-programme of dental appointments for something dentistry has not fixed.
+program of dental appointments for something dentistry has not fixed.
 
-**Believing you have bad breath when you do not.** Halitophobia is a recognised
+**Believing you have bad breath when you do not.** Halitophobia is a recognized
 and genuinely distressing condition, in which someone is convinced they smell
 despite objective assessment and the reassurance of others. It is not helped by
 more mouthwash, and it is not a dental problem. If this describes you, it is worth
@@ -118,15 +125,32 @@ statement to trace. The seven-step method does not apply and there is no verdict
 box.
 
 What I have written above is conventional clinical understanding, grounded in the
-volatile sulphur compound mechanism, which is well established. I have **not**
-conducted a systematic search of the halitosis treatment literature, and I have
-not appraised the trials of tongue scraping, mouth rinses or the various
-commercial products. Reviews of those exist and I have not read them.
+volatile sulphur compound mechanism, which is well established, plus one
+systematic review of causes [@memon2022]. I have **not** conducted a systematic
+search of the halitosis literature myself.
 
-So this chapter is the one place where I am telling you what dentists generally
-think rather than what I have checked. That is a lower standard than the rest of
-the book holds itself to, and rather than dress it up I am flagging it and
-marking the chapter as one to revisit properly.
+One review does bear directly on the advice in this chapter, and leaving it
+unmentioned would have been the error this book is about. Kumbargere Nagraj and
+colleagues assembled **44 randomized trials in 1,809 participants** of
+interventions for halitosis: tongue cleaning, chewing gums, toothpastes,
+mouthrinses, systemic agents and combinations [@nagraj2019]. Their finding is
+uncomfortable for a chapter like this one:
+
+> We found low- to very low-certainty evidence to support the effectiveness of
+> interventions for managing halitosis compared to placebo or control ... We were
+> unable to draw any conclusions regarding the superiority of any intervention or
+> concentration.
+>
+> --- Kumbargere Nagraj and colleagues, 2019 [@nagraj2019]
+
+Most of those trials ran for one to four weeks; only one followed participants for
+three months. Three were at low risk of bias, sixteen at high, and 25 unclear.
+
+So the practical advice above, including tongue cleaning, rests on mechanism and
+clinical consensus rather than on demonstrated superiority of any particular
+measure. It is cheap and harmless, which is why I still give it, but this is the
+one chapter where I am telling you what dentists generally think rather than what
+has been shown, and I would rather mark it than dress it up.
 
 Full record in `appraisals/searches/ch27-halitosis.md`.
 :::

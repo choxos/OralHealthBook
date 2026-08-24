@@ -10,7 +10,7 @@ excellent one.
 
 ## The advice
 
-> It's not recommended to use vital staining, oral cytology or light-based
+> It's not recommended to use vital staining, oral cytology or light‐based
 > detection and/or oral spectroscopy for evaluating lesions for malignancy.
 >
 > Strength of recommendation: **Strong**
@@ -34,15 +34,52 @@ whole guideline, and it is worth naming them because the rest of this book has
 been a catalogue of the opposite.
 
 **The evidence is the right design for the question.** A diagnostic accuracy
-review is what you need to answer "does this test tell you anything useful". Not
-a proxy, not a mechanism, not an observational association.
+review is what you need to answer "how well does this test discriminate". It is
+not a proxy, not a mechanism, not an observational association. It is also not a
+measure of *clinical utility*: sensitivity and specificity against biopsy tell you
+how the test performs, not whether using it changes referrals, stage at diagnosis,
+morbidity or survival. Nobody has measured that, and it is worth holding in mind
+before calling this row perfect.
 
 **The population matches.** Patients presenting with clinically evident lesions,
 which is exactly when a clinician would be tempted to reach for an adjunctive
 test.
 
-**The direction matches.** Moderate certainty that the tests do not perform well
-enough, supporting a recommendation not to use them.
+**The direction matches.** The tests do not perform well enough to substitute for
+the established pathway, supporting a recommendation not to rely on them.
+
+### The review DBOH cites has been updated, and the update splits the tests apart
+
+DBOH cites the 2015 version of this Cochrane review. There is a 2021 update
+[@walsh2021], published four years before DBOH's own September 2025 edition, and I
+missed it too until a reviewer checked the citation. It includes 63 studies and 79
+datasets covering 7,942 lesions, and its central contribution is that it stops
+grading the adjunctive tests as a block:
+
+| Test | Sensitivity (95% CI) | Specificity (95% CI) | Certainty |
+|:---|:---|:---|:---|
+| Oral cytology | 0.90 (0.82 to 0.94) | 0.94 (0.88 to 0.97) | [moderate]{.certainty .moderate} both |
+| Vital staining | 0.86 (0.79 to 0.90) | 0.68 (0.58 to 0.77) | [low]{.certainty .low} / [very low]{.certainty .very-low} |
+| Light-based, spectroscopy | 0.87 (0.78 to 0.93) | 0.50 (0.32 to 0.68) | [low]{.certainty .low} / [very low]{.certainty .very-low} |
+| Combined tests | 0.78 (0.45 to 0.94) | 0.71 (0.53 to 0.84) | [very low]{.certainty .very-low} both |
+
+: Adjunctive tests for oral cancer, 2021 update [@walsh2021] {#tbl-oralcancer}
+
+Two things follow that the 2015-based version of this chapter got wrong.
+
+**The tests are not equivalent.** A specificity of 0.50 for light-based detection
+means half of the people without disease test positive; that is a coin toss, and
+the recommendation against it is easy. Oral cytology at 0.90 sensitivity and 0.94
+specificity, both at moderate certainty, is a different object. The reviewers'
+own conclusion is that cytology "would appear to offer the most potential" and
+that combined tests involving cytology "warrant further investigation."
+
+**The conclusion is about replacement, not adjunctive use.** What the review
+actually says is that "none of the adjunctive tests can be recommended as a
+**replacement** for the currently used standard of a surgical biopsy and
+histological assessment." DBOH's recommendation is broader than that, and
+defensibly so on cost and over-referral grounds, but the review does not on its
+own establish the broader claim, and I previously wrote as though it did.
 
 There is also a structural reason a negative recommendation is easier to get
 right. When you recommend *for* something, the harm side is often unmeasured
@@ -63,6 +100,15 @@ readers will not have considered.
 
 The instruction to **perform the examination** is not Strong. It is **Good
 practice**, with no evidence statement in chapter 13.
+
+That is a statement about chapter 13, not about the guideline. Chapter 6 does cite
+sources for the examination: it says most symptomless mouth cancers "can be
+detected by means of a visual examination by clinicians," with a citation, and
+places the practice in line with the regulator's recommendations. So there is
+supporting material; what there is not is a graded certainty statement in the
+place this book has been auditing. I have not appraised those chapter 6 sources,
+and say so rather than treating absence from one table as absence from the
+document.
 
 And the referral criteria, the specific list of signs that should trigger an
 urgent cancer-pathway referral, carry this:
@@ -92,10 +138,10 @@ recommendation against the gadgets.
 A distinction this chapter has to keep straight.
 
 **Does opportunistic examination reduce oral cancer deaths?** That is a
-population screening question, and it is genuinely hard. Screening programmes are
+population screening question, and it is genuinely hard. Screening programs are
 only justified when early detection changes outcomes enough to outweigh the harms
 of over-diagnosis, and for oral cancer in general populations the evidence has
-never been strong enough to support a national screening programme.
+never been strong enough to support a national screening program.
 
 **Should a clinician who is already looking in your mouth look properly?**
 Different question, obviously yes, no trial needed.
@@ -105,18 +151,24 @@ label for it. I flag the distinction because "there is no good evidence for oral
 cancer screening" is a true sentence about the first question that would be badly
 misleading if applied to the second.
 
-**One limitation of my own.** I have not obtained the diagnostic accuracy review
-DBOH cites for the negative recommendation; it was not among the documents
-supplied and I have relied on DBOH's characterisation of it, which is detailed and
-specific. Everything I say about that recommendation therefore rests on the
-guideline's own account rather than on my reading of the source, and this is the
-one chapter in the book where that is true of the central claim.
+**A correction of my own.** An earlier draft of this chapter said I had not
+obtained the review DBOH cites, relied on the guideline's characterization of it,
+and called this the one chapter where the central claim rested on someone else's
+account. That was true of the 2015 version, and it was also a failure of the
+search: the 2021 update is freely available, indexed, and a title search returns
+it at once. I have now read the update, and the table above is from it. The
+lesson is the one this book keeps arriving at: an update search by review ID is
+not a search.
 :::
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
 PubMed, 21 August 2026, for systematic reviews of adjunctive tests for oral
-cancer detection. I did not obtain the specific review DBOH cites. See the
-limitation above.
+cancer detection, in two passes. The first missed the Cochrane update and is
+recorded as a failure; the second retrieved Walsh and colleagues 2021
+([DOI 10.1002/14651858.CD010276.pub3](https://doi.org/10.1002/14651858.CD010276.pub3),
+PMID 34282854), whose own search ran to 20 October 2020. I have the abstract and
+summary estimates for the update, not its full text, so the QUADAS-2 judgments
+above are the reviewers' summary rather than my reading.
 
 Full record in `appraisals/searches/ch20-oral-cancer.md`.
 :::
@@ -125,46 +177,91 @@ Full record in `appraisals/searches/ch20-oral-cancer.md`.
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   [Moderate]{.certainty .moderate} that vital staining, oral cytology and
-    light-based detection do not perform well enough to be used for evaluating
-    lesions, per DBOH's account of a diagnostic accuracy review I have not read.
+:   **Test by test, on the 2021 update rather than the 2015 review DBOH cites.**
+    [Moderate]{.certainty .moderate} for oral cytology's accuracy, which is the
+    best-performing adjunct and the one the reviewers say has the most potential.
+    [Low]{.certainty .low} to [very low]{.certainty .very-low} for vital staining
+    and light-based detection, whose specificities are 0.68 and 0.50. DBOH's
+    single moderate rating covers all three as a block, which the update no longer
+    supports.
+
     **None stated** for the examination itself or for the referral criteria, and
     the guideline says so.
 
 Directness to the advice as worded
-:   **Excellent for the negative recommendation**, on the account available: right
-    test, right population, right outcome measure. Not assessed for the Good
-    practice points, which carry no evidence to be direct or indirect about.
+:   **Good on test and population, limited on outcome and setting.** Right tests,
+    right patients, and accuracy measured against biopsy. But diagnostic accuracy
+    is itself an intermediate outcome: no study here shows that using or not using
+    these devices changes referrals, stage at diagnosis, or survival. The review
+    also judges its applicability to be to patients attending **secondary** care,
+    while the recommendation is read in general dental practice.
+
+    Not separately assessed for the Good practice points. Chapter 13 gives them no
+    certainty statement; chapter 6 cites supporting sources I have not appraised.
 
 Is the strength label defensible?
-:   **Yes, and this is the guideline's best single row.** A Strong recommendation
-    against an intervention, grounded in a diagnostic accuracy review of the right
-    design, in the right population, where the harms of getting it wrong are
-    explicit. If every recommendation in *Delivering Better Oral Health* were
-    constructed like this one, this book would not exist.
+:   **Yes, and it is still among the guideline's best rows**, though not the
+    flawless one I first called it. A Strong recommendation against an
+    intervention, grounded in a diagnostic accuracy review of the right design, in
+    the right population, where the harms of getting it wrong are explicit, is a
+    good piece of guideline writing.
+
+    Two qualifications survive the update. The certainty is not uniform across the
+    three named tests, and cytology in particular is better supported than the
+    single rating implies. And the review's conclusion is that these tests cannot
+    **replace** biopsy, which is a narrower claim than not using them at all; the
+    broader recommendation needs the cost and over-referral arguments to carry it,
+    and those are evidence-to-decision judgments the guideline has not published.
 
     Good practice is also right for the examination and the referral list, with
     the gap disclosed.
 
 What would change my mind
-:   New-generation adjunctive tests with better accuracy data, which would make
-    the negative recommendation obsolete rather than wrong. And work on the
-    positive predictive values of oral cancer symptoms in primary care, which NICE
-    identified as missing and which would let the referral criteria be tuned
-    rather than asserted.
+:   A study of whether using an adjunct changes anything a patient experiences,
+    rather than how it performs against biopsy: referral rates, stage at diagnosis,
+    survival, or the anxiety cost of a false positive. On the current evidence
+    nobody knows. Further work on cytology specifically, which the reviewers
+    single out, could make the blanket recommendation obsolete rather than wrong.
+    And work on the positive predictive values of oral cancer symptoms in primary
+    care, which NICE identified as missing and which would let the referral
+    criteria be tuned rather than asserted.
 :::
 
 ## What this means for you
 
-If a dental practice offers you an extra oral cancer test, a dye rinse, a special
-light, a brush biopsy, often for a fee, the national guideline says do not
-bother. That is a Strong recommendation and it is well founded.
+If a dental practice offers you a dye rinse, a special light, or a brush sample,
+often for a fee, as a way of checking a lesion in your mouth, the national
+guideline advises clinicians against relying on those tests, and the evidence
+behind that advice is among the better-supported things in this book. What none
+of them can do is take the place of a biopsy, which is the thing that actually
+gives an answer. If you have a lesion someone is worried about, the question to
+ask is about referral and biopsy, not about which gadget to buy.
 
-What you should do instead is let a dentist look, properly, at every check-up, and
-take these seriously if they persist: an ulcer in your mouth lasting more than
-three weeks, an unexplained lump in your neck, a red or red-and-white patch, or
-persistent hoarseness or pain on swallowing for more than three weeks.
+What matters far more is that a dentist looks properly at every check-up, and that
+certain things get acted on rather than watched. Here is the guideline's own list
+of what should trigger an urgent referral, in full and in its own words, because
+this is not a place for me to summarize:
 
-Nobody has calculated how predictive each of those signs is. They are the list
-because clinicians agree they matter, which is the honest reason, and the
+> - an unexplained ulceration in the oral cavity lasting for more than 3 weeks
+> - a persistent and unexplained lump in the neck
+> - a lump on the lip (inner or outer) or in the oral cavity consistent with oral
+>   cancer
+> - a red patch in the oral cavity consistent with erythroplakia
+> - a red and white patch in the oral cavity consistent with erythroleukoplakia
+> - persistent unexplained hoarseness
+> - persistent pain in the throat or pain on swallowing lasting for more than
+>   3 weeks
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 3e [@dboh2025]
+
+That is a list for clinicians, not a self-examination checklist, and it is
+reproduced here so you can see what it says rather than so you can score yourself
+against it. An earlier draft of this chapter gave a shortened version, which
+dropped the lip and oral-cavity lump entirely and merged two of the patch
+criteria. Abbreviating a cancer referral list is not something this book should
+do.
+
+Nobody has calculated how predictive each of those signs is, at least not in the
+evidence NICE assembled for primary care, which is what DBOH reports. They are the
+list because clinicians agree they matter, which is the honest reason, and the
 guideline says so.

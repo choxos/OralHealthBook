@@ -11,7 +11,7 @@ That sentence contains a category error, and if you can see what it is, you can
 skip the rest of this chapter.
 
 *Very low* is not a strength. It is a **certainty**. Strength comes in exactly
-two flavours in the GRADE system, Strong and Conditional, and it describes a
+two flavors in the GRADE system, Strong and Conditional, and it describes a
 recommendation. Certainty comes in four, high through very low, and it describes
 a body of evidence about an outcome. I had mashed the two scales together, which
 is precisely the confusion this book exists to point out in other people. It
@@ -25,8 +25,8 @@ one that says *low certainty means it cannot be Strong*, is wrong.
 
 Certainty is how much we should trust an estimate of an effect.
 
-It starts from study design. A body of randomised trials starts at high, because
-randomisation is the one thing that reliably makes the two groups comparable in
+It starts from study design. A body of randomized trials starts at high, because
+randomization is the one thing that reliably makes the two groups comparable in
 respects nobody thought to measure. A body of observational studies starts at
 low, because it does not.
 
@@ -44,8 +44,9 @@ brushing twice daily I noted that the relevant review pools observational
 studies, therefore started at low certainty, therefore ended at low certainty,
 and I never asked whether anything in the data justified moving it back up. That
 was a genuine misapplication, not a stylistic quibble, and
-[Chapter -@sec-twice-daily] redoes the assessment properly, including the
-dose-response gradient that the review itself reports.
+[Chapter -@sec-twice-daily] redoes the assessment properly. Doing it properly
+turns out not to produce an upgrade, for reasons that chapter sets out; the error
+was failing to ask, not failing to find.
 
 ## What strength means
 
@@ -65,9 +66,9 @@ strength of a recommendation depend on four things [@andrews2013]:
 Certainty is in that list. It is not the list.
 
 This is not a loophole. It follows from what a Strong recommendation is *for*.
-Labelling something Strong means: most well-informed people would choose this,
+Labeling something Strong means: most well-informed people would choose this,
 so a clinician can simply advise it, and a health system can build policy on it.
-Labelling something Conditional means: reasonable well-informed people would
+Labeling something Conditional means: reasonable well-informed people would
 differ, so the clinician's job is to help this particular person decide.
 
 You can be confident about that balance while being unsure about the numbers.
@@ -76,17 +77,34 @@ weakly towards benefit, then even a low-certainty estimate leaves the balance
 lopsided. Nobody is harmed by the low certainty, because the downside of acting
 on a wrong estimate is approximately zero.
 
-Toothbrushing is exactly that shape. This is the strongest argument against the
+Toothbrushing is close to that shape. This is the strongest argument against the
 crude version of my own thesis, and any critic reading this book will reach for
 it, so I want to hand it over rather than have it thrown.
 
 ## GRADE says this is allowed, and rare
 
-GRADE recognises this. Its guidance names five specific situations in which a
-Strong recommendation can be justified despite low or very low certainty
-[@andrews2013]. It also says such recommendations should be uncommon, and it
-calls them *discordant*: the strength and the certainty point different ways, and
-the panel owes the reader an explanation.
+GRADE recognizes the general point. Its guidance names five specific situations in
+which a Strong recommendation can be justified despite low or very low certainty
+[@andrews2013]. It also says such recommendations should be uncommon, and it calls
+them *discordant*: the strength and the certainty point different ways, and the
+panel owes the reader an explanation.
+
+One caution, against myself. Those five named paradigms are narrower than the
+argument I just made for toothbrushing. They cover situations such as a
+potentially life-threatening benefit on low-certainty evidence, high-certainty
+harm or cost against uncertain benefit, and low-certainty equivalence where one
+option carries high-certainty lesser harm. "Cheap, safe, and the estimate points
+weakly towards benefit" is not on the list. So a critic who reaches for "GRADE
+allows this" on behalf of brushing frequency will find Andrews' table does not
+quite reach it either.
+
+That does not rescue my crude version, because the five paradigms are examples
+rather than an exhaustive gate, and the real route to a Strong recommendation on
+weak evidence is a full evidence-to-decision assessment weighing all four inputs.
+The honest position is the narrow one: this book cannot run that assessment
+([Chapter -@sec-method]), so it cannot say a Strong label is impossible. What it
+can say is whether the published reasoning gets there, and whether the guideline
+followed its own stated rule.
 
 So the honest question is never "is the certainty low?" It is: **is this one of
 the situations where discordance is justified, and did anyone say so?**
@@ -124,7 +142,7 @@ not. Twenty-five were legitimately discordant. A further 33 turned out not to be
 discordant at all, because the evidence had been under-rated; those
 recommendations remain correctly Strong. That leaves the bottom two rows, 102 of
 160, where the Strong label does not survive scrutiny, and the largest single
-category is simply that a Conditional recommendation was labelled Strong.
+category is simply that a Conditional recommendation was labeled Strong.
 
 The authors' own conclusion is that this pattern is "possibly threatening the
 integrity of the process."
@@ -136,11 +154,51 @@ it sets the standard I have to meet. It is not enough for me to find that a
 recommendation is Strong on low certainty. That finding is common, and sometimes
 fine. I have to say which of the four rows above I think it belongs in, and why.
 
+## What DBOH says its own labels mean
+
+Everything above is GRADE's framework. Before going further it is worth reading
+what *Delivering Better Oral Health* says its own labels mean, because it turns
+out to be stricter than GRADE, and because a great deal of this book can be
+argued on the guideline's own terms rather than on mine.
+
+Chapter 2 defines all three, in one passage:
+
+> **strong recommendations.** The GDG is highly confident that desirable
+> consequences outweigh undesirable or undesirable consequences outweigh
+> desirable, **typically based on high or moderate certainty evidence**
+>
+> **conditional recommendations.** The GDG is less confident of the effectiveness
+> of an intervention **(low or very low certainty evidence)** or the balance
+> between benefits and harms is unclear
+>
+> --- *Delivering Better Oral Health*, chapter 2 [@dboh2025]
+
+Read the parentheses.
+
+GRADE, as this chapter has just spent several pages establishing, permits a Strong
+recommendation on low-certainty evidence in defined circumstances, and treats it
+as discordant and uncommon. DBOH goes further than that. It writes the certainty
+into the definitions themselves: Strong is *typically* high or moderate, and low
+or very low certainty is what Conditional is **for**.
+
+That has a consequence I did not appreciate when I started, and it changes the
+shape of the argument in the rest of this book. When a later chapter finds a
+Strong label sitting over a component that chapter 13 itself rates low certainty,
+the question is no longer only "would GRADE allow this?" It is also "does this
+match what the guideline said it would do?" The second question is much harder to
+wave away, because the standard being applied is the guideline's own.
+
+I should be fair about the word *typically*. It is doing real work: it signals
+that the rule admits exceptions, and a panel is entitled to take one. But an
+exception is something you notice and explain. Where I find one in the chapters
+that follow, what I am looking for is not a rule violation. It is whether the
+exception was declared.
+
 ## The third category
 
 There is a category above that neither Strong nor Conditional covers, and
 *Delivering Better Oral Health* uses it heavily: **Good practice**. Its own
-definition is candid:
+definition, from the same passage, is candid:
 
 > Clinical opinion suggests this advice is well established or supported. No
 > robust underpinning research evidence exists. Good practice points are

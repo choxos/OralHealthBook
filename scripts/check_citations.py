@@ -41,6 +41,7 @@ CROSSREF_PREFIXES = (
 #   2. A disclosed, dated search, so the "is there better evidence?" step
 #      can be repeated by someone else.
 SEARCH_DISCLOSURE = "What I searched, and when"
+SEARCH_RECORD = re.compile(r"appraisals/searches/[A-Za-z0-9._-]+\.md")
 VERDICT_BLOCK = "{.verdict}"
 
 VERDICT_FIELDS = [
@@ -148,6 +149,23 @@ def main() -> int:
                 f"A reader must be able to go and look at it."
             )
 
+    # --- 2b. every @sec- crossref resolves --------------------------
+    # Quarto only warns about these, and only for the profile being built, so
+    # a dangling crossref in a print-only appendix can survive a clean web
+    # render. Collect definitions and uses across every file and compare.
+    defined: set[str] = set()
+    used_secs: dict[str, str] = {}
+    for f in files:
+        text = f.read_text(encoding="utf-8")
+        defined.update(re.findall(r"\{#(sec-[A-Za-z0-9-]+)\}", text))
+        for ref in re.findall(r"@(sec-[A-Za-z0-9-]+)", text):
+            used_secs.setdefault(ref, str(f.relative_to(ROOT)))
+    for ref in sorted(used_secs):
+        if ref not in defined:
+            errors.append(
+                f"{used_secs[ref]} references '@{ref}', which no chapter defines"
+            )
+
     # --- 3. no orphan entries --------------------------------------
     for key in sorted(bib):
         if key not in used:
@@ -162,6 +180,16 @@ def main() -> int:
         if "This chapter is not written yet" in text:
             warnings.append(f"{rel} is still a stub")
             continue
+
+        # A search disclosure that names a record file must name one that
+        # exists, in every chapter and not only the ones reaching a verdict.
+        # Pointing a reader at a file that is not there is the failure this
+        # book accuses guidelines of, and nothing else catches it.
+        for path in sorted(set(SEARCH_RECORD.findall(text))):
+            if not (ROOT / path).is_file():
+                (errors if args.strict else warnings).append(
+                    f"{rel} cites search record '{path}', which does not exist"
+                )
 
         # An audit chapter is one that reaches a verdict. Essay chapters
         # (Part I, the myths chapters) legitimately do not.

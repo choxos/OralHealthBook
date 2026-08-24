@@ -76,7 +76,7 @@ SIGN 138, is the ORCA abstract from [Chapter -@sec-why-audit].
 
 Which of the six is the "main component"? DBOH does not say, here or anywhere.
 My inference is that it is brushing with fluoride toothpaste: it is the only
-component with moderate certainty from a large body of randomised evidence, it is
+component with moderate certainty from a large body of randomized evidence, it is
 the one chapter 8 of the guideline describes as the key message, and a Strong
 label would be hard to justify on any of the others. [Chapter -@sec-ppm] sets out
 that evidence and concludes the label is thoroughly deserved.
@@ -158,7 +158,7 @@ downside of being wrong about the exact effect size is close to nothing. If DBOH
 had written "we are confident you should brush your child's teeth, and we are
 not certain about the details," nobody could object, least of all me.
 
-Bundling is a different failure, and it survives that defence.
+Bundling is a different failure, and it survives that defense.
 
 The problem is not that the panel was too confident. It is that the label
 **cannot be resolved to its parts**. A Strong label on a single recommendation

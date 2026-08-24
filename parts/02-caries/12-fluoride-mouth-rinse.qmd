@@ -38,33 +38,59 @@ else. Most of the statements in chapter 13 do not do this. This one does.
 
 ## The gap it discloses
 
-The evidence is from **supervised school programmes**: a teacher or dental worker
-handing out rinse to a class, watching them use it, on a schedule, every school
-day.
+First, what the evidence shows, since an earlier draft of this chapter argued
+about its applicability without ever telling you how big the effect was. Marinho
+and colleagues pooled 37 trials in 15,813 children and adolescents. For permanent
+tooth surfaces, from 35 trials in 15,305 participants, the prevented fraction was
+**27% (95% CI 23% to 30%)**, at moderate certainty. That is a substantial effect,
+and it is the number the recommendation rests on.
+
+Now the setting. The evidence is from **supervised school programs**: a teacher
+or dental worker handing out rinse to a class, watching them use it, on a
+schedule, every school day.
 
 The recommendation is for **daily unsupervised home use** by an individual.
 
 Those differ in almost every way that determines whether a preventive
 intervention works:
 
-**Adherence.** A supervised school programme has near-perfect adherence by
+**Adherence.** A supervised school program has near-perfect adherence by
 construction. Daily home use of a mouth rinse, by a teenager, indefinitely, does
 not. The effect estimate from the trials embeds a level of compliance that home
 use will not reach.
 
-**Population.** School programmes are typically population-wide. The
+**Population.** School programs are typically population-wide. The
 recommendation targets individuals already identified as at higher risk, who have
 more to gain in absolute terms but who may also be the group least likely to
 sustain a daily routine.
 
-**Timing.** The school programme is at school; the recommendation specifies "at a
+**Timing.** The school program is at school; the recommendation specifies "at a
 different time to brushing", which is a constraint the trials did not impose and
 which makes the home routine harder to fit in.
 
 None of this means rinses do not work. Fluoride delivered to teeth reduces decay;
 that is the most robust finding in this book. It means the *size* of the benefit
-observed under supervision is an upper bound on what unsupervised daily use will
-deliver, and the recommendation does not say so.
+observed under supervision is plausibly an upper bound on what unsupervised daily
+use will deliver.
+
+Here I have to give ground, because an earlier draft said the transfer problem
+went undisclosed and that is not true of either document. DBOH's evidence
+statement names the setting, which is why this chapter praises it. And Marinho and
+colleagues address the question directly in their own abstract:
+
+> All trials tested supervised use of fluoride mouthrinse in schools, **with two
+> studies also including home use**. ... Most of the evidence evaluated use of
+> fluoride mouthrinse supervised in a school setting, but the findings **may be
+> applicable to children in other settings with supervised or unsupervised
+> rinsing, although the size of the caries-preventive effect is less clear.**
+>
+> --- Marinho and colleagues, 2016 [@marinho2016rinse]
+
+So the reviewers considered the transfer, judged it plausible, and flagged that
+the effect size does not transfer with it. That is the responsible way to handle
+it, and my complaint has to narrow accordingly: not that nobody disclosed the
+gap, but that nobody has **quantified** it, and that a person handed a bottle of
+rinse has no way to know whether they should expect 27% or a third of that.
 
 ::: {.callout-note title="How I judged this: why Conditional is right anyway" collapse="true"}
 Under GRADE, this is textbook **indirectness**: a mismatch on the intervention as
@@ -76,10 +102,10 @@ published.
 But the recommendation is **Conditional**, and that changes what I can complain
 about. Conditional means the panel is not confident enough to tell everyone to do
 this, and expects the decision to depend on the person. That is precisely the
-right response to evidence that may not transfer. Had this been labelled Strong I
+right response to evidence that may not transfer. Had this been labeled Strong I
 would be objecting at length. It is not, so I am not.
 
-The cost side also matters and is favourable: a fluoride rinse is cheap, available
+The cost side also matters and is favorable: a fluoride rinse is cheap, available
 over the counter, and its harms are minor, with the practical caveat that it
 should not be given to children who cannot reliably avoid swallowing it, which is
 why the age threshold is 8.
@@ -87,7 +113,7 @@ why the age threshold is 8.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
 PubMed, 21 August 2026, for an update to CD002284. None found; the 2016 version
-(`.pub2`) remains current.
+(`.pub2`) remains current. Its own search ran to 22 April 2016.
 
 I have the abstract for this review, not the full text; it was not among the
 documents supplied. Statements about the supervised-school setting come from
@@ -102,13 +128,18 @@ Full record in `appraisals/searches/ch12-fluoride-rinse.md`.
 
 Certainty of evidence
 :   [Moderate]{.certainty .moderate} for supervised school-based use, as DBOH
-    states. **Lower for the advice as given**, which is unsupervised daily home
-    use, on account of indirectness that nobody has quantified.
+    states: a prevented fraction of 27% (95% CI 23% to 30%) for permanent tooth
+    surfaces, from 35 trials in 15,305 children and adolescents. **Lower for the
+    advice as given**, which is unsupervised daily home use. The review judges its
+    findings may still apply there while saying the effect size is "less clear";
+    nobody has put a number on how much less.
 
 Directness to the advice as worded
-:   **Poor on the setting, and the guideline says so.** This is the clearest
-    example in the book of a chapter 13 statement that discloses its own gap. The
-    disclosure is the good practice; the gap is still a gap.
+:   **Poor on the setting, and both the guideline and the review say so.** This is
+    the clearest example in the book of a chapter 13 statement that discloses its
+    own gap, and the review it rests on discloses the same gap in its own
+    abstract. The disclosure is the good practice; the unquantified effect size is
+    what remains.
 
 Is the strength label defensible?
 :   **Yes.** Conditional is the right call for evidence that may not transfer from
@@ -118,9 +149,10 @@ Is the strength label defensible?
 
 What would change my mind
 :   A trial of unsupervised daily home rinsing, with adherence measured rather
-    than assumed, in people at high caries risk. Also worth knowing: whether "at
-    a different time to brushing" matters, which is the same untested timing claim
-    as [Chapter -@sec-last-thing] wearing different clothes.
+    than assumed, in people at high caries risk, reporting a prevented fraction
+    that could be set beside the 27% from supervised use. Also worth knowing:
+    whether "at a different time to brushing" matters, which is the same untested
+    timing claim as [Chapter -@sec-last-thing] wearing different clothes.
 :::
 
 ## What this means for you
@@ -129,6 +161,9 @@ If a dentist has told you that you or your child are at high risk of decay and
 suggested a daily fluoride rinse, it is a reasonable thing to try. It is cheap
 and the fluoride will do something.
 
-Expect less than the trials found. Those were school programmes where an adult
-watched every child use it every day. The honest version of this advice is: this
-probably helps if you actually do it daily, and daily is harder than it sounds.
+Expect less than the trials found. Those were school programs where an adult
+watched every child use it every day, and where the reduction in decayed surfaces
+was about a quarter. The reviewers think the finding probably carries over to home
+use; they also say the size of the benefit is less clear there, and nobody has
+measured it. The honest version of this advice is: this probably helps if you
+actually do it daily, and daily is harder than it sounds.

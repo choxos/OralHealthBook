@@ -41,7 +41,7 @@ refine it than reverse it. It is the same rating DBOH gives fluoride toothpaste
 itself.
 
 The citation is SIGN 138, whose §5.7.1 grades this **A** and rests on two
-studies: a Swedish randomised trial [@sjogren1995] and a Scottish analysis
+studies: a Swedish randomized trial [@sjogren1995] and a Scottish analysis
 [@chestnutt1998].
 
 ## The Swedish trial, read properly
@@ -62,23 +62,25 @@ sub-studies together [@sjogren1995thesis]. The other is the peer-reviewed report
 of the trial itself, in *Caries Research* [@sjogren1995], and it is the one SIGN
 cites. In that trial:
 
-- **369** four-year-olds were randomised, to **four** groups;
+- **369** four-year-olds were randomized, to **four** groups;
 - **281 (76%)** completed at age seven;
 - of the completers, **131** were in the two test groups and **150** in the two
   control groups.
 
-So 369 is the randomised total and 131 is the number of *completers* in the test
+So 369 is the randomized total and 131 is the number of *completers* in the test
 arms. Neither figure is wrong; I had used each without the other.
 
 The 24% attrition is worth pausing on. Reporting group sizes as the number who
-finished, rather than the number randomised, means the published analysis is not
+finished, rather than the number randomized, means the published analysis is not
 by intention to treat, and 88 children left the study without our knowing which
 way they went.
 
 But the far more important thing is what the intervention actually was.
 
 ::: {.callout-important title="What the test group was told to do"}
-Verbatim from the trial report [@sjogren1995], the test groups were instructed:
+The trial report [@sjogren1995] gives the test groups four instructions. I have
+kept the wording close and expanded the abbreviated units, so read this as a
+close paraphrase rather than a verbatim quotation:
 
 1. to spread the paste evenly on the teeth prior to brushing;
 2. **not to expectorate more than necessary during brushing**;
@@ -102,7 +104,7 @@ to what a modern reader understands by "don't rinse."
 
 This is [Chapter -@sec-bundling]'s problem again, one level further down. The
 guideline bundles six instructions and lets the best-evidenced one carry the
-label. The trial underneath bundles four behaviours and reports one result. You
+label. The trial underneath bundles four behaviors and reports one result. You
 cannot get from that result to any single component.
 
 And the "no eating or drinking for two hours" instruction is not incidental. If
@@ -118,7 +120,7 @@ interval for it, which is of its time and is why I cannot give one here either.
 ::: {.callout-note title="How I judged this: risk of bias" collapse="true"}
 Assessed with RoB 2, for the effect of assignment to the intervention.
 
-*Randomisation process.* The report states children were randomly assigned to
+*Randomization process.* The report states children were randomly assigned to
 four groups but gives no detail of sequence generation or allocation concealment.
 Baseline balance is reported. **Some concerns**, not high: the absence of
 reported detail in a 1995 paper is weaker evidence of a problem than it would be
@@ -128,8 +130,8 @@ today.
 which refers to the two toothpastes; it cannot be blind for the technique
 instruction, since the instruction is the intervention. For the effect of
 *assignment*, though, lack of blinding is only a problem if it produced deviations
-beyond what would happen in usual practice, and if those were not analysed
-appropriately. Adherence to a four-part daily behaviour over three years in
+beyond what would happen in usual practice, and if those were not analyzed
+appropriately. Adherence to a four-part daily behavior over three years in
 four-year-olds was surely incomplete, but incomplete adherence is exactly what
 assignment to this advice means in the real world, and non-adherence is not itself
 a deviation that biases the assignment effect. What I cannot check is whether the
@@ -153,11 +155,13 @@ blinding to group is not reported. **Some concerns.**
 *Selection of the reported result.* No protocol available. **Some concerns.**
 
 **Overall: high risk of bias**, driven by the missing outcome data domain alone,
-with some concerns in three others. This is a weaker basis than the blog post
+with some concerns in the four others. This is a weaker basis than the blog post
 claimed, where I recorded High in two domains; applying the signalling questions
 rather than the general impression moved the deviations domain down. The overall
 judgment is unchanged, and it still sits awkwardly with DBOH's rating of moderate
-certainty. Full domain judgments in the appraisal data.
+certainty. The domain-by-domain reasoning is the five paragraphs above; I have not
+published a separate signalling-question table, and an earlier draft implied I
+had.
 :::
 
 ## The Scottish study
@@ -168,7 +172,7 @@ influence of toothbrushing frequency and post-brushing rinsing on caries
 experience **in a caries clinical trial**."
 
 The trial it sits inside was designed to compare toothpastes with and without
-zinc citrate. Rinsing behaviour was not randomised. It was self-reported at
+zinc citrate. Rinsing behavior was not randomized. It was self-reported at
 interview, with participants shown a board of sketches and asked which of four
 methods they used: transferring water with the toothbrush, putting the mouth
 under the tap, using cupped hands, or using a beaker.
@@ -179,7 +183,7 @@ missing or filled surface.
 
 Three problems, in increasing order of seriousness.
 
-**It is observational.** Whatever the trial's randomisation achieved, it did not
+**It is observational.** Whatever the trial's randomization achieved, it did not
 achieve balance on rinsing habit. Comparing beaker users with non-users is
 comparing groups that chose their own exposure, in a population where oral
 hygiene habits track socioeconomic position closely.
@@ -231,7 +235,7 @@ statement about what the study cannot tell us, not a re-analysis.
 
 This is the honest difficulty of the chapter.
 
-I can see how one gets to low certainty: one randomised trial at high risk of
+I can see how one gets to low certainty: one randomized trial at high risk of
 bias, testing a bundle, plus one observational analysis with post-hoc grouping.
 I cannot reconstruct a route to **moderate** from these two studies, and DBOH
 does not show its working beyond the one-line statement.
@@ -248,11 +252,11 @@ finding about the evidence, and I would withdraw it if the panel published its
 reasoning.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-PubMed, 15 August 2026, for randomised trials of post-brushing water rinsing.
+PubMed, 15 August 2026, for randomized trials of post-brushing water rinsing.
 Four records, all screened in full. Full strategy and screening decisions in
 `appraisals/searches/ch07-post-brushing-rinsing.md`.
 
-**No randomised trial isolating post-brushing rinsing with a caries outcome was
+**No randomized trial isolating post-brushing rinsing with a caries outcome was
 found.** Of the four records this search returned, three measure salivary
 fluoride retention, which is the same surrogate problem as
 [Chapter -@sec-last-thing]:
@@ -263,7 +267,7 @@ fluoride retention, which is the same surrogate problem as
   failure to detect a difference rather than a demonstration of equivalence, and
   the paper is a phase I study; I note it because it is the only safety data
   found, not because it settles anything.
-- A randomised trial in 120 adults across 12 arms found rinsing significantly
+- A randomized trial in 120 adults across 12 arms found rinsing significantly
   affected salivary fluoride retention to 90 minutes [@albahrani2022].
 - A crossover in 32 children found the same [@nazzal2016].
 
@@ -285,21 +289,27 @@ Swedish trial, repeated fifteen years later.
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   [Low]{.certainty .low}. One randomised trial at high risk of bias which
-    tested a four-part bundle rather than rinsing alone, plus one non-randomised
+:   [Low]{.certainty .low}. One randomized trial at high risk of bias which
+    tested a four-part bundle rather than rinsing alone, plus one non-randomized
     within-trial analysis with post-hoc regrouping. This is one rating below
     DBOH's stated moderate, and I cannot reconstruct how moderate was reached.
 
     In the blog version I said "very low." I have moved up, not down: there is a
-    randomised trial here with a caries outcome pointing in the right direction,
+    randomized trial here with a caries outcome pointing in the right direction,
     which is more than either of the two preceding chapters can say.
 
 Directness to the advice as worded
-:   **Poor on intervention, good on everything else.** The Swedish trial has the
-    right population, a patient-relevant outcome and a three-year follow-up. Its
+:   **Poor on intervention, and narrower on population than I first said.** The
+    Swedish trial has a patient-relevant outcome and a three-year follow-up. Its
     intervention is a four-part bundle of which not rinsing is one part, so the
     effect cannot be attributed to the advice as worded: that is indirectness on
-    the intervention, and it is the decisive one here. The Scottish analysis
+    the intervention, and it is the decisive one here.
+
+    On population, the trial enrolled **four-year-olds**. The recommendation
+    quoted at the top of this chapter comes from tables 1d and 1f, which cover
+    children aged 7 to 18 and adults. So the population matches DBOH's table 1b
+    and is extrapolated for the rest, which is the same child-to-adult step DBOH
+    itself flags for the other brushing components. The Scottish analysis
     matches the question reasonably well on population and outcome; its problem is
     uncontrolled confounding and a data-driven grouping, which are risk of bias,
     not indirectness. I had these filed under the wrong heading in an earlier
@@ -310,14 +320,14 @@ Is the strength label defensible?
     candidate in the brushing bundle for a legitimate discordant recommendation:
     the burden is close to zero, no harm has been identified, the mechanism is
     clear and consistent with the salivary fluoride studies, and the one
-    randomised trial points the right way. A Strong recommendation on
+    randomized trial points the right way. A Strong recommendation on
     low-certainty evidence is defensible here on those grounds, subject to the
     same caveat as everywhere in this book that I have not run a full
     evidence-to-decision assessment. What is not defensible is stating the
     certainty as moderate without showing how.
 
 What would change my mind
-:   A trial randomising people to rinse or not rinse after brushing, with
+:   A trial randomizing people to rinse or not rinse after brushing, with
     everything else identical, and caries measured at two years or more. That is
     a cheap, ethical, entirely feasible trial that these searches did not
     find in thirty years of literature. Alternatively, publication of the reasoning behind DBOH's moderate
@@ -330,14 +340,14 @@ Spit, don't rinse. Of the three pieces of brushing advice in this part of the
 book, this is the one I would defend most readily, and I follow it myself.
 
 But I have to state the finding precisely, because stating it loosely would
-commit the exact error this book is about. **A randomised trial found that a
+commit the exact error this book is about. **A randomized trial found that a
 four-part toothpaste technique reduced approximal decay by about 26% over three
 years. The effect of the one component that corresponds to "don't rinse" is not
 identifiable from it.** The trial also told children not to eat or drink for two
 hours afterwards, and to swill toothpaste foam around the mouth for a minute
 first. Any of those could be carrying the benefit.
 
-So: a sensible practice, a plausible mechanism, one supportive randomised trial
+So: a sensible practice, a plausible mechanism, one supportive randomized trial
 of a bundle that includes it, and no direct evidence for the component itself.
 That is a good enough reason to keep doing it. It is not the same as "this has
 been shown to work," and the distinction is the whole point of the book.

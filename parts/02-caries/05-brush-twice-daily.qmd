@@ -52,7 +52,7 @@ The citation is SIGN 138 [@sign138].
 SIGN 138 covers brushing frequency in §5.5.1. It cites two things.
 
 **First, a Cochrane review** of fluoride toothpaste [@marinho2003]. Its
-randomised finding, which is not in dispute and is not the point at issue, is a
+randomized finding, which is not in dispute and is not the point at issue, is a
 pooled prevented fraction of **24% (95% CI 21% to 28%)** for DMFS with fluoride
 toothpaste against none, from 70 studies and 42,300 children. What SIGN cites it
 for here is something else:
@@ -75,17 +75,17 @@ of bias."
 Here is the problem, and it is not a small one.
 
 That 14% figure does not come from a meta-analysis of brushing frequency. It
-comes from a **meta-regression** inside a review whose randomised question was
+comes from a **meta-regression** inside a review whose randomized question was
 something else entirely. Marinho and colleagues pooled trials comparing fluoride
 toothpaste against non-fluoride toothpaste or none. That comparison was
-randomised, and the answer, a 24% prevented fraction, is trustworthy. Then, as a
+randomized, and the answer, a 24% prevented fraction, is trustworthy. Then, as a
 secondary analysis, they asked whether the *size* of that fluoride effect varied
 across trials according to trial-level characteristics, one of which was how
 often participants were asked to brush.
 
 Three things follow, and none of them is a technicality.
 
-**Nobody was randomised to a brushing frequency.** Trials were randomised to
+**Nobody was randomized to a brushing frequency.** Trials were randomized to
 toothpaste. Frequency is a characteristic of the trial, so comparing high- and
 low-frequency trials is an observational comparison of studies, not an
 experiment. Trials that instructed twice-daily brushing may differ from trials
@@ -122,22 +122,41 @@ effect of toothbrushing frequency on the incidence and increment of carious
 lesions" [@kumar2016]. They screened 4,305 records and included 33 studies.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-PubMed, searched 15 August 2026, for systematic reviews of toothbrushing
-frequency and dental caries. Kumar 2016 was the only systematic review this
-search identified whose primary question is the effect of brushing frequency on
-caries, and nothing more recent came back. One database, one screener: read that
-as the limit of what I looked at, not as a claim that nothing else exists.
+PubMed, 15 August 2026, and then again after a reviewer looked at what I had
+actually typed.
 
-I also checked whether *Delivering Better Oral Health* cites it. Searching the
-full text of all thirteen chapters and the appendix for the author's name returns
-two hits, both in other chapters and neither this review. The only
-brushing-frequency systematic review DBOH cites is
-Zimmermann and colleagues, and that one is about **periodontitis**, not caries,
-and appears in the periodontal chapter. Chapter 8, on oral hygiene, asserts
-"Frequency of brushing is important. Brushing should occur twice daily as a
-minimum" without citing anything for the caries claim at all.
+My original queries were a **known-item** search naming the journal and year and
+capped at 2018, plus a search about brushing **timing**. Neither could have
+returned a systematic review of brushing frequency published after 2018, and I
+nonetheless wrote that "nothing more recent came back." A search that was not
+looking is not evidence of absence, and this is the third time in this book that
+an update search has failed because of how it was written rather than because of
+what exists.
 
-Full strategy in `appraisals/searches/`.
+Re-run properly, one thing comes back that I had missed. Al-Sharani and
+colleagues published a systematic review and meta-analysis of brushing initiation
+age and frequency in December 2025 [@alsharani2025]. It is narrower than Kumar,
+covering early childhood caries in children under six from 32 observational
+studies, and it points the same way: brushing fewer than twice a day was
+associated with **2.11 times** the odds of early childhood caries.
+
+That does not change this chapter's argument, because it is observational too and
+because it postdates the guideline. It does mean the sentence "Kumar 2016 is the
+only such review" was wrong, and it means a chapter complaining that DBOH failed
+to cite the relevant review had itself failed to cite a newer one, for exactly
+the reason it accuses the guideline of: nobody ran the search.
+
+I also checked whether *Delivering Better Oral Health* cites Kumar. Searching the
+full text of all thirteen chapters and the appendix for the name returns one
+hit, in **chapter 6, on oral cancer**: a different Kumar, on the oral management
+of oncology patients. The only brushing-frequency systematic review DBOH cites is
+Zimmermann and colleagues, which is about **periodontitis** rather than caries and
+appears in **chapter 8, on oral hygiene**. Chapter 8 asserts "Frequency of
+brushing is important. Brushing should occur twice daily as a minimum" without
+citing anything for the caries claim at all.
+
+Full strategy, including the failed queries, in
+`appraisals/searches/ch05-brushing-frequency.md`.
 :::
 
 The results:
@@ -182,9 +201,9 @@ differ, and equally have not been shown to be the same. Reading a marginal effec
 of the second daily brushing out of them is exactly the kind of over-reading this
 book objects to elsewhere.
 
-What can be said is narrower and still useful: **the review provides no evidence
-of an increasing gradient with frequency.** That absence matters for a specific
-technical reason.
+What can be said is narrower and still useful: **the review reports no analysis
+capable of showing a gradient across ordered frequency categories.** That absence
+matters for a specific technical reason.
 
 ::: {.callout-note title="How I judged this: the GRADE assessment" collapse="true"}
 Kumar 2016 pools observational studies, so under GRADE the body of evidence
@@ -204,10 +223,11 @@ ratio of 1.50 corresponds to a risk ratio nearer 1.3. **No upgrade.**
 *Dose-response gradient.* This is the one that could have applied, and the reason
 I flagged my earlier assessment as wrong. GRADE wants a gradient across ordered
 exposure categories. The review does not provide one: it provides two separate
-dichotomies, with no test for trend and no interaction test, from overlapping but
-non-identical sets of studies. **No upgrade** is available on this criterion, not
-because a gradient was looked for and refuted, but because the analysis that
-would show one has not been done.
+dichotomies, cut at different thresholds, with no test for trend and no
+interaction test, from overlapping but non-identical sets of studies, and its own
+summary of them is that the odds "differed little" between the two cuts. **No
+upgrade** is available on this criterion, because a dichotomy is not a gradient
+however many of them you report.
 
 *Plausible confounding would reduce the observed effect.* The opposite is true
 here. People who brush twice daily are, on average, wealthier, better educated,
@@ -267,10 +287,17 @@ Certainty of evidence
 Directness to the advice as worded
 :   **Poor for the cited evidence, better for the uncited evidence.** SIGN 138's
     meta-regression is indirect on comparison and on level of inference: it
-    compares trials, not people. Kumar 2016 asks the recommendation's question of
-    the right population with the right outcome, and remains observational, so it
-    speaks to association rather than to the effect of assigning a second daily
-    brushing. It is not cited by DBOH.
+    compares trials, not people. Kumar 2016 asks the recommendation's question
+    with the right outcome, and remains observational, so it speaks to association
+    rather than to the effect of assigning a second daily brushing. It is not
+    cited by DBOH.
+
+    One qualification on population, since the recommendation quoted at the top of
+    this chapter is the **adult** one. All but eight of Kumar's 33 included
+    studies are in infants or children. So the uncited evidence repairs the
+    directness problem on question and outcome while leaving the child-to-adult
+    mismatch that DBOH itself flags for frequency. Al-Sharani 2025, being confined
+    to children under six, does not help with that either.
 
 Is the strength label defensible?
 :   **Not on the published reasoning.** Using the categories from
@@ -288,7 +315,7 @@ Is the strength label defensible?
     guideline's statement.
 
 What would change my mind
-:   A trial randomising participants to brush once versus twice daily, holding
+:   A trial randomizing participants to brush once versus twice daily, holding
     toothpaste, technique and supervision constant, with caries increment or
     tooth pain at two years or more. Failing that, a cohort study with
     objectively measured brushing frequency rather than self-report, adjusted for
@@ -304,5 +331,5 @@ evidence points the right way, the burden is small, and no harm from it has been
 identified. What the evidence has not established is how much the second
 brushing adds over the first, and the claim that it has been established is what
 this chapter disputes. If you are ever in a position to do only one thing, the
-fluoride toothpaste is the part that has been tested in randomised trials against
+fluoride toothpaste is the part that has been tested in randomized trials against
 tooth decay. The frequency is what we have long assumed alongside it.

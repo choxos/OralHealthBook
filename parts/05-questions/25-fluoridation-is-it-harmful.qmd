@@ -63,38 +63,79 @@ areas of naturally high fluoride, and the monograph does not conclude that
 fluoridation at Western levels lowers IQ.
 
 The **JAMA Pediatrics meta-analysis** [@taylor2025fluorideiq] pooled 74
-cross-sectional and prospective cohort studies. It found significant inverse
-associations between fluoride exposure and children's IQ scores. And then it did
-the thing that matters, which is to restrict by exposure level:
+cross-sectional and prospective cohort studies. Fifty-two were rated at high risk
+of bias and 22 at low risk.
+
+First the size of the thing, because a chapter that discusses whether an
+association exists without ever saying how big it is has broken this book's own
+rule ([Chapter -@sec-method]). Across 59 studies with group-level exposure
+measures, the pooled effect was **SMD −0.45 (95% CI −0.57 to −0.33)**. In the 13
+studies with individual-level measures, IQ fell by **1.63 points (95% CI −2.33 to
+−0.93)** per 1 mg/L increase in urinary fluoride, and by **1.14 points (−1.68 to
+−0.61)** among the low risk-of-bias studies. Those are not trivial numbers at a
+population level, and they are drawn overwhelmingly from exposures well above
+anything a Western scheme delivers.
+
+Then the review did the thing that matters, which is to restrict by exposure
+level. Here is its Key Points summary, and I am quoting the whole sentence
+because in an earlier draft I stopped it one clause early, which changed its
+meaning in my favor:
 
 > For fluoride measured **in water**, associations remained inverse when exposed
 > groups were restricted to less than 4 mg/L or less than 2 mg/L **but not when
 > restricted to less than 1.5 mg/L**; for fluoride measured **in urine**,
 > associations remained inverse at less than 4 mg/L, less than 2 mg/L, and less
-> than 1.5 mg/L.
+> than 1.5 mg/L; **and among the subset of low risk-of-bias studies, there were
+> inverse associations when exposed groups were restricted to less than 4 mg/L,
+> less than 2 mg/L, and less than 1.5 mg/L for analyses of fluoride measured both
+> in water and in urine.**
 >
 > --- Taylor and colleagues, 2025 [@taylor2025fluorideiq]
 
-Read that carefully, because it is the single most important sentence in this
-chapter.
-
 UK water fluoridation schemes target **1 mg/L**. England's is 1 mg/L; the World
-Health Organization's guideline value is 1.5 mg/L.
+Health Organization's guideline value is 1.5 mg/L. So the rows below 1.5 mg/L are
+the ones that bear on British policy, and there are two of them that disagree.
 
-For fluoride measured **in water**, the association disappears below 1.5 mg/L.
-That is the measure most directly comparable to a fluoridation scheme, and at
-fluoridation concentrations the signal is not there.
+| Exposure, water fluoride | Studies | β (95% CI) | P |
+|:---------------------------------|--------:|:-------------------|-----:|
+| All studies, < 2 mg/L | 8 | −0.18 (−0.40 to 0.03) | .10 |
+| All studies, **< 1.5 mg/L** | 7 | **0.05 (−0.36 to 0.45)** | .82 |
+| Low risk-of-bias studies, < 2 mg/L | 4 | **−0.33 (−0.53 to −0.13)** | .001 |
+| Low risk-of-bias studies, **< 1.5 mg/L** | 3 | **−0.32 (−0.91 to 0.26)** | .28 |
 
-For fluoride measured **in urine**, the association persists below 1.5 mg/L. And
-urinary fluoride reflects total intake from all sources: water, tea, toothpaste
-swallowed, food, air. It is a better measure of what actually got into the
-child, and a worse measure of what the water supply contributed.
+: Fluoride measured in water, at and below fluoridation-relevant concentrations
+[@taylor2025fluorideiq] {#tbl-taylor-water}
 
-That discrepancy is the crux, and it is genuinely unresolved. It could mean water
-concentration is too crude a proxy and the urinary finding is the real one. It
-could mean the urinary studies are confounded by whatever else drives total
-fluoride intake. Nobody has settled it, and anyone telling you it is settled, in
-either direction, is not describing this literature.
+Read the bottom two rows against the two above them. In the full, mixed-quality
+set, the estimate at under 1.5 mg/L sits essentially on zero. Restricted to the
+studies at low risk of bias, the point estimate at the same threshold is
+**−0.32**, almost identical to the −0.33 at under 2 mg/L that *is* statistically
+significant; it fails to reach significance on three studies and 879 children,
+with an interval running from −0.91 to 0.26.
+
+That is not the same as the association disappearing, and I said it was. A null
+result on three studies is an absence of evidence, and telling you otherwise
+would be the exact error this book was written to object to, committed on the
+side I happen to find reassuring.
+
+The review's own conclusion is the careful version: there were "limited data and
+uncertainty in the dose-response association between fluoride exposure and
+children's IQ when fluoride exposure was estimated by drinking water alone at
+concentrations less than 1.5 mg/L."
+
+For fluoride measured **in urine**, the inverse association persists below
+1.5 mg/L and survives restriction to low risk-of-bias studies. Urinary fluoride
+reflects total intake from all sources: water, tea, toothpaste swallowed, food,
+air. It is a better measure of what actually got into the child, and a worse
+measure of what the water supply contributed.
+
+So the honest statement of the crux is this. At fluoridation-relevant
+concentrations the water-based analyses are **imprecise and inconsistent between
+the full and the low-bias subsets**, and the urine-based analyses are inverse. It
+could mean water concentration is too crude a proxy and the urinary finding is
+the real one. It could mean the urinary studies are confounded by whatever else
+drives total fluoride intake. Nobody has settled it, and anyone telling you it is
+settled, in either direction, is not describing this literature.
 
 ::: {.callout-note title="How I judged this: why I am not going further" collapse="true"}
 Three limits on what I can say, stated rather than concealed.
@@ -103,12 +144,12 @@ Three limits on what I can say, stated rather than concealed.
 same confounding problem that runs through [Chapter -@sec-twice-daily] applies
 here with more force: areas with naturally high fluoride differ from other areas
 in nutrition, iodine status, lead exposure, socioeconomic position and much else,
-all of which affect childhood IQ. The meta-analysis reports that inverse
-associations persisted among the subset of low risk-of-bias studies, which is a
-meaningful robustness check, and it is not the same as randomisation.
+all of which affect childhood IQ. That inverse associations persisted among the
+subset of low risk-of-bias studies is a meaningful robustness check, and it is
+not the same as randomization.
 
 **IQ is a difficult outcome.** Measured with different instruments across
-countries and cultures, pooled as standardised mean differences, in a literature
+countries and cultures, pooled as standardized mean differences, in a literature
 where publication of positive findings is more likely.
 
 **This is outside my competence.** I am a dentist and a methodologist, not a
@@ -118,12 +159,15 @@ biological plausibility at low doses, or the adequacy of the exposure
 assessment. Where this book's other chapters give you my judgment, this one gives
 you the literature's own stratification and stops.
 
-**What I will not do** is convert "the water-based association disappears below
-1.5 mg/L" into "fluoridation is proven safe". That is absence of evidence again,
+**What I will not do** is convert a non-significant water-based estimate below
+1.5 mg/L into "fluoridation is proven safe". That is absence of evidence again,
 and it would be the same error in the opposite direction from the one I usually
-catch. The honest statement is that at fluoridation concentrations, the
-water-based signal is not detectable, the urine-based signal is, and the reason
-for the discrepancy is unknown.
+catch. It would also require ignoring that the low risk-of-bias subset puts the
+point estimate at that threshold in the same place as the significant one just
+above it. The honest statement is that at fluoridation concentrations the
+water-based evidence is too thin and too inconsistent to support a conclusion
+either way, the urine-based evidence is inverse, and the reason for the
+discrepancy is unknown.
 :::
 
 ## What follows for policy, and what does not
@@ -136,10 +180,16 @@ concern. Reasonable people can weigh those differently. That is a values questio
 and I am not going to pretend the evidence resolves it.
 
 **The neurodevelopmental question does not currently justify stopping
-fluoridation, and does justify studying it properly.** The water-based analyses at
-fluoridation-relevant concentrations do not show the association. The urinary
-analyses do, and that finding deserves serious, well-funded, prospective work in
-fluoridated Western populations rather than dismissal.
+fluoridation, and does justify studying it properly.** At
+fluoridation-relevant concentrations the water-based analyses are imprecise and
+point different ways depending on which studies are included; the urinary
+analyses are consistently inverse. Neither supports a policy change on its own,
+and both deserve serious, well-funded, prospective work in fluoridated Western
+populations rather than dismissal. The National Toxicology Program was explicit
+that its monograph "does not address whether the sole exposure to fluoride added
+to drinking water in some countries (that is, fluoridation, at 0.7 mg/L in the
+United States and Canada) is associated with a measurable effect on IQ"
+[@ntp2024fluoride]. That question has not been answered by anyone.
 
 **Nothing here should change what you do at home.** Everything in this chapter is
 about fluoride in *water*, at a population level, swallowed. The recommendation
@@ -170,9 +220,12 @@ Certainty of evidence
     Approximately 12% of aesthetic concern at 0.7 ppm.
     **Neurodevelopment above fluoridation levels:** an association reported across
     74 observational studies, robust to restricting to low risk-of-bias studies.
-    **Neurodevelopment at fluoridation levels:** not detected for water-measured
-    fluoride below 1.5 mg/L; detected for urine-measured fluoride below 1.5 mg/L.
-    Unresolved.
+    **Neurodevelopment at fluoridation levels:** [very low]{.certainty .very-low}
+    and genuinely unresolved. Water-measured fluoride below 1.5 mg/L gives
+    β 0.05 (−0.36 to 0.45) across all studies but β −0.32 (−0.91 to 0.26) in the
+    low risk-of-bias subset, on three studies; urine-measured fluoride below
+    1.5 mg/L remains inverse. The NTP monograph declines to address 0.7 mg/L
+    fluoridation and IQ at all.
     **Skeletal harms:** [very low]{.certainty .very-low}, five studies, uncertain.
 
 Directness to the advice as worded
@@ -192,7 +245,7 @@ Is the strength label defensible?
 What would change my mind
 :   A prospective cohort in a fluoridated Western population, with individual
     urinary fluoride measured repeatedly through pregnancy and childhood,
-    adjusting for lead, iodine and socioeconomic position, with a standardised
+    adjusting for lead, iodine and socioeconomic position, with a standardized
     cognitive outcome. That study would resolve the water-versus-urine discrepancy,
     and it is the study this field needs. Conversely, an explanation of that
     discrepancy showing the urinary finding to be confounded would move me the
@@ -206,9 +259,18 @@ and nothing in this chapter touches it. Use it, spit it out, do not swallow it.
 
 Fluoride in your **water**, if you live somewhere fluoridated, is contributing a
 small and uncertain benefit and carries a real chance of mild cosmetic marking of
-the enamel. If you are pregnant or have small children and this worries you,
-using a filter that removes fluoride, or bottled water, is a reasonable personal
-choice with a small dental cost that fluoride toothpaste more than covers.
+the enamel.
+
+I am not going to tell you what to drink. An earlier draft of this chapter
+suggested that a worried parent might reasonably switch to filtered or bottled
+water, and I have removed it. Two reasons, and both are the chapter's own
+argument turned on its author. The evidence at fluoridation concentrations is
+unresolved, so a recommendation either way would be resting on something I have
+just spent nine pages saying nobody knows. And the suggestion was not even
+accurate on its own terms: bottled waters vary widely in fluoride and some carry
+more than a fluoridated supply, while most domestic filters do not remove
+fluoride at all. If this worries you, the person to ask is your dentist or GP,
+who knows your water supply and your children.
 
 What I would not do is stop using fluoride toothpaste, and what I would not tell
 you is that this question is settled. It is not. The people who tell you it is,

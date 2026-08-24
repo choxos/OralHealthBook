@@ -11,10 +11,10 @@ Here is what bothered me.
 Britain's national oral health guidance is a document called *Delivering Better
 Oral Health*, and it is a good document. It is careful, it is written by serious
 people, and unlike most dental advice you encounter it tells you how confident it
-is in each thing it says. Some advice is labelled **Strong**. Some is
-**Conditional**. Some is **Good practice**, which its own definition describes as
-advice for which "no robust underpinning research evidence exists," resting
-instead on extrapolation from related research and on clinical consensus. That
+is in each thing it says. Some advice is labeled **Strong**. Some is
+**Conditional**. Some is **Good practice**, of which its own definition says: "No robust
+underpinning research evidence exists." Such advice rests instead on
+extrapolation from related research and on clinical consensus. That
 transparency is rare and it deserves credit.
 
 So I took a bullet from one of the Strong recommendations, "last thing at night
@@ -29,9 +29,13 @@ earlier. Everyone in it brushed at bedtime. What it compared was two toothpastes
 
 The Scottish guideline that first cited it describes it, correctly, as an
 observational study, and marks the recommendation it supports with the symbol its
-own key defines as a **Good Practice Point**: "recommended best practice based on
-the clinical experience of the guideline development group" [@sign138]. Somewhere
-between that sentence and a summary table, clinical experience became **Strong**.
+own key defines as a **Good Practice Point**: "Recommended best practice based on
+the clinical experience of the guideline development group" [@sign138]. What happened next is not that
+somebody upgraded that judgment. DBOH embedded it as one bullet inside a
+multi-component recommendation labeled **Strong**, and its own methods say the
+strength of such a recommendation follows the main component. Its evidence table
+still rates timing as low certainty. The label a reader sees says Strong; the
+sentence explaining what that label was earned by is in another chapter.
 
 I checked another one. Then another.
 
@@ -90,10 +94,12 @@ dental student, or a methodologist, the boxes are the part you want; if you are 
 person who would just like to know whether to buy the expensive toothpaste, they
 are not.
 
-Two conventions run throughout. **Strength** (Strong, Conditional, Good practice)
-is a property of a *recommendation*: it is how firmly you are being told to do
-something. **Certainty** (high, moderate, low, very low) is a property of the
-*evidence*: it is how sure we are about the effect. These two are constantly
+Two conventions run throughout. **Strength** is a property of a *recommendation*:
+it is how firmly you are being told to do something. In GRADE it takes exactly two
+values, Strong and Conditional; DBOH adds a separate **Good practice** category
+for advice it says is not the kind of thing certainty can be rated on at all.
+**Certainty** (high, moderate, low, very low) is a property of the *evidence*: it
+is how sure we are about the effect. These two are constantly
 confused, including by me in the original blog posts, and
 [Chapter -@sec-certainty-strength] is entirely about keeping them apart.
 
@@ -104,27 +110,36 @@ received no funding for this book from any toothpaste manufacturer, professional
 body, or public health agency, and I have no financial interest in anything
 discussed in it.
 
-Every appraisal I made, including the ones where I later decided I had been
-wrong, is recorded in machine-readable form: one row per recommendation in
-`appraisals/dboh-2025.csv`, with my judgments in their own columns beside the
-guideline's, and one file per chapter in `appraisals/searches/` giving each
-search as it was run, with its date and what it returned.
+Two files carry the working. `appraisals/dboh-2025.csv` holds one row per
+recommendation, extracted from the guideline by script rather than typed by hand:
+its wording, its strength label, its chapter 13 evidence statement, its citations,
+and how confidently the two chapters could be joined. `appraisals/searches/` holds
+one file per chapter that reaches a verdict, giving each search as it was run,
+with its date and what it returned, including the searches that failed.
 
-::: {.callout-note title="A note on the state of this edition"}
-This book is being written in the open, and you are reading it before it is
-finished. Chapters marked as drafts are exactly that.
+What the CSV does **not** yet hold is my own adjudicated judgments. It reserves
+columns for them, and they are empty. My certainty ratings, directness judgments
+and verdicts live in the verdict box at the end of each chapter, which is where
+you can hold me to them; getting them into the same file as the guideline's own
+values, so the two can be compared row by row, is work I have not done. I would
+rather say that than let a reserved column stand in for a completed one.
 
-The appraisal data described above will be published in full, in the repository
-at `github.com/choxos/OralHealthBook`, when the manuscript is complete. Until
-then the files are named throughout the text so you can see what exists and hold
-me to producing it, but they are not yet public, and I would rather say so than
-leave you clicking a link that does not work.
+::: {.callout-note title="A note on the appraisal data"}
+Two of those files deserve a word, because this book asks a lot of other people's
+citations and should be clear about its own.
 
-The reason for the delay is ordinary rather than principled: the appraisals for
-unwritten chapters are unfinished, and publishing half of them invites people to
-cite judgments I have not yet made. If that trade seems wrong to you, you are
-holding me to the standard this book asks of everyone else, which is the right
-instinct.
+`appraisals/dboh-2025.csv` is generated by a script from the archived guideline,
+not typed by hand, so the counts quoted in these pages can be regenerated and
+checked. Its fuzzy matching is not perfect, and at least one chapter was written
+from a row the script had failed to match before that was caught; the correction
+is recorded in [Chapter -@sec-method] and in the relevant search file.
+
+`appraisals/searches/` holds one file per chapter that reaches a verdict. Three of
+them record a search that **failed** and had to be re-run, including two where an
+update search missed a newer Cochrane review that changed what a chapter could
+say. Those are kept rather than tidied away, because a book that treats an
+undocumented null as indistinguishable from not having looked cannot then hide its
+own.
 :::
 
 ::: {.callout-important title="This is not medical advice"}

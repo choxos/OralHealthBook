@@ -80,7 +80,8 @@ book:
     - part: "Part VI. What to do anyway"
       chapters:
         - parts/06-anyway/31-what-i-actually-do.qmd
-        - parts/06-anyway/32-how-research-should-change.qmd
+        - parts/06-anyway/32-the-half-life-of-a-recommendation.qmd
+        - parts/06-anyway/33-how-research-should-change.qmd
 
     - references.qmd
 

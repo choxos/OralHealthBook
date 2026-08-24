@@ -74,7 +74,7 @@ That observational study is reference 101, and it is:
 > toothpastes. *Caries Res* 2001;35(4):285.
 
 One page. Volume 35, issue 4, page 285, single page, which is the abstracts
-supplement of the 48th congress of the European Organisation for Caries Research
+supplement of the 48th congress of the European Organization for Caries Research
 [@duckworth2001]. There is no full paper. Both authors were at Unilever Dental
 Research in Bebington.
 
@@ -110,7 +110,7 @@ tooth loss.
 A surrogate outcome is one that stands in for the thing you actually care about.
 Salivary fluoride is several steps removed from a patient-important outcome: more
 fluoride in saliva is thought to mean more fluoride available at the enamel
-surface, which is thought to mean more remineralisation, which is thought to mean
+surface, which is thought to mean more remineralization, which is thought to mean
 fewer lesions, which is thought to mean less pain and fewer extractions.
 
 Each arrow in that chain is plausible. None was measured here.
@@ -119,7 +119,7 @@ In the original blog post I called this outcome "too abstract to form the basis
 for such a crucial recommendation." I would put it more precisely now: the
 outcome is entirely reasonable for the study Duckworth and Moore were doing,
 which was a pharmacokinetic comparison of two toothpaste bases. It is the *use*
-of that study, as evidence for a behavioural recommendation about timing, that
+of that study, as evidence for a behavioral recommendation about timing, that
 is indirect. Blaming the study for not answering a question it never asked is
 unfair to the authors. The mismatch was introduced by whoever cited it.
 :::
@@ -157,13 +157,13 @@ Both authors worked for Unilever, which sells toothpaste. This is worth noting
 and worth not overplaying.
 
 The empirical basis for caring is a Cochrane methodology review, which finds that
-industry-sponsored studies more often report results favourable to the sponsor
+industry-sponsored studies more often report results favorable to the sponsor
 than independently funded studies do, and that this is not explained by
 differences in risk of bias [@lundh2017]. That is a reason for extra care with
 the *body* of literature, not a reason to dismiss a particular paper.
 
 Here it barely signifies. The study is not being used to promote a product; it is
-being used, by third parties, to support a behavioural recommendation the authors
+being used, by third parties, to support a behavioral recommendation the authors
 did not make. The problem with this citation is not who paid for it.
 
 The problem is that it is a conference abstract. There is no methods section to
@@ -179,7 +179,7 @@ day with a caries or patient-important outcome. The query returned 249 records,
 of which the top 20 by relevance were screened on title and abstract. **Nothing
 directly relevant was found.** The top hit was the brushing-*frequency* review
 from [Chapter -@sec-twice-daily]; the rest concerned frequency, supervised
-brushing programmes, or fluoride kinetics.
+brushing programs, or fluoride kinetics.
 
 The limits matter and I would rather state them than imply a completeness the
 search does not have: one database, one screener, and 20 of 249 records read. A
@@ -193,14 +193,14 @@ to a database search, and had to be traced by hand through SIGN 138's printed
 reference list.
 :::
 
-In the blog post I discussed a cluster-randomised evaluation of an oral health
-education programme called "Brush Day & Night," and argued from one of its
-figures that the programme had not worked.
+In the blog post I discussed a cluster-randomized evaluation of an oral health
+education program called "Brush Day & Night," and argued from one of its
+figures that the program had not worked.
 
 I have removed that argument, and I have not replaced it with a corrected
 version. Two reasons. The claim I made came from reading a bar chart for a
 secondary outcome in one of the participating countries, which is the same
-reading-off-a-figure move I criticise elsewhere in this book, and a cluster trial
+reading-off-a-figure move I criticize elsewhere in this book, and a cluster trial
 needs an analysis that accounts for clustering before anything can be said about
 it. And the trial does not bear on this chapter's question in any case: everyone
 in both arms was encouraged to brush at night, so once again no comparison of
@@ -213,7 +213,7 @@ There is a mechanistic argument here and it deserves better than dismissal.
 
 Salivary flow falls substantially during sleep. Saliva clears fluoride from the
 mouth, and it also buffers acid and supplies calcium and phosphate for
-remineralisation. So the hours of sleep are both the period when the mouth is
+remineralization. So the hours of sleep are both the period when the mouth is
 least protected and the period when anything left on the teeth persists longest.
 Putting fluoride there immediately beforehand, and not eating afterwards, is a
 coherent piece of reasoning, and the Duckworth abstract is consistent with it:
@@ -258,7 +258,7 @@ Is the strength label defensible?
     justification, not a claim that no panel could reach Strong.
 
 What would change my mind
-:   A randomised trial allocating people to brush last thing at night versus
+:   A randomized trial allocating people to brush last thing at night versus
     ninety minutes to two hours earlier, everything else held constant, with
     caries increment or self-reported tooth pain at two years or more. A
     cross-over with an intermediate outcome would not do it; the point of this

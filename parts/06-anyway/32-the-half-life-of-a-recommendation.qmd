@@ -1,0 +1,234 @@
+# The half-life of a recommendation {#sec-half-life}
+
+Every recommendation in this book carries a date it does not print.
+
+A strength label looks like a permanent property of a piece of advice. **Strong**
+sits in a table next to *brush twice daily* and reads like a fact about brushing.
+It is not. It is a fact about what a panel knew on a particular afternoon, and it
+begins going out of date the moment it is set in type.
+
+Usually that decay is slow enough not to matter. This chapter is about the cases
+where it is not, and about the fact that one of them is sitting in the guideline
+right now, at the end of a citation that points to a review which searches for
+new evidence **every month**.
+
+## How old is a national guideline?
+
+The edition audited here was published on 10 September 2025. So a fair question,
+and one nobody seems to ask of guidelines, is: how old was its evidence base on
+the day it appeared?
+
+Of the {{< var dboh.total >}} recommendations, {{< var dboh.dated >}} cite at
+least one source carrying a publication year. For each of those I took the
+**newest** year cited, because a recommendation is only as current as its most
+recent support. The rest of the reference list can be as old as it likes.
+
+| Age of the newest citation, at publication | Recommendations |
+|:---|---:|
+| Same year (2025) | {{< var dboh.age_same_year >}} |
+| 5 years or older | {{< var dboh.age_5plus >}} of {{< var dboh.dated >}} |
+| 10 years or older | {{< var dboh.age_10plus >}} of {{< var dboh.dated >}} |
+| **Median** | **{{< var dboh.age_median >}} years** |
+| Oldest | {{< var dboh.age_max >}} years |
+
+: How current *Delivering Better Oral Health* was on the day it was published
+{#tbl-citation-age}
+
+The median recommendation in a guideline published in 2025 rested on evidence
+most recently published in **{{< var dboh.age_median_year >}}**.
+
+Two things make that number generous rather than harsh. A systematic review
+published in 2013 closed its own literature search *before* 2013, so the evidence
+underneath is older still than the citation year suggests; [Chapter
+-@sec-varnish] traces one where the newest included trial was from 2012. And the
+{{< var dboh.age_undated >}} recommendations citing nothing dated at all are
+simply excluded here rather than counted as infinitely stale.
+
+One detail is worth pulling out. The only recommendations whose newest citation
+postdates 2023 are eight **Good practice** rows, and every one of them points at
+another guidance document: the Scottish Dental Clinical Effectiveness Programme's
+2024 periodontal guidance, or NICE's referral guidance as updated in July 2025.
+The guideline's freshest citations are other guidelines. Its freshest research
+citation is older than that.
+
+## Old is not the same as decayed
+
+I want to be careful here, because "the citation is twelve years old" is exactly
+the kind of cheap point this book is supposed to be above. Age alone is not a
+fault. There are three different situations and only one of them is anybody's
+mistake.
+
+**Settled.** The evidence is old because the question is answered and nobody is
+still working on it. Running another trial would be waste. [Chapter -@sec-recall]
+is the clearest case: the Cochrane review of recall intervals states that
+"further studies comparing dental recall intervals for adults in primary care
+seem unnecessary." A 2020 citation there will still be the right citation in
+2035.
+
+**Dormant.** The evidence is old because the trials stopped, not because the
+question closed. [Chapter -@sec-varnish] is this: the varnish review's newest
+included trial is from 2012 and its search closed in May 2013, not because
+fluoride varnish is a solved problem but because nobody has funded the study.
+That is a finding about the research economy, and [Chapter -@sec-research] is
+about it. It is not a citation error. The guideline is citing the best thing
+there is.
+
+**Decayed.** The evidence moved, a newer version exists, and the guideline is
+quoting the old one. This is the only one of the three that is a mistake, and it
+is the only one a reader can neither detect nor forgive.
+
+Two of these turned up in this book.
+
+| Recommendation | Version cited | Newer version available | Available since |
+|:---|:---|:---|:---|
+| `DBOH-084`, oral cancer adjunctive tests ([Chapter -@sec-cancer-screening]) | `CD010276.pub2`, 2015 | `CD010276.pub3` [@walsh2021] | July 2021 |
+| `DBOH-074`, e-cigarettes ([Chapter -@sec-tobacco]) | `CD010216.pub3`, 2016 | `CD010216.pub9` [@lindson2025ec] | January 2025 |
+
+: Recommendations resting on a superseded version of their own cited review
+{#tbl-decayed}
+
+Both updates predate the September 2025 edition. The first by more than four
+years.
+
+## The one that is hard to explain
+
+[Chapter -@sec-tobacco] works through the e-cigarette row in detail, and I will
+not repeat the whole of it. The short version is the part that belongs here.
+
+DBOH tells its readers that its e-cigarette recommendation rests on "low
+certainty evidence from one systematic review." That was a true description of
+`CD010216.pub3` in 2016. By the time the guideline was published, the review had
+been through seven further revisions and had reached **high certainty** that
+nicotine e-cigarettes outperform nicotine replacement therapy
+[@hartmannboyce2016ec; @lindson2025ec].
+
+And the review had been announcing its own updates the entire time. Every version
+since January 2024 says this in its published abstract [@lindson2024ec]:
+
+> To ensure the review continues to provide up-to-date information to
+> decision-makers, this review is a living systematic review. We run searches
+> monthly, with the review updated when relevant new evidence becomes available.
+>
+> --- Lindson and colleagues, CD010216 [@lindson2024ec]
+
+A **living systematic review** is one kept continuously current rather than
+revised in occasional editions [@elliott2017living]. This one is maintained by
+Cochrane with funding from Cancer Research UK, searches monthly, and publishes
+under the same review identifier the guideline's own reference list prints. The
+current version reports high-certainty benefit from 104 studies in 30,366
+participants [@lindson2025eclive].
+
+So the mechanism failed at the last possible step. Somebody had already done the
+work of keeping this evidence current, had said so in the abstract, and had filed
+it under the number DBOH was citing.
+
+## I did the same thing, twice
+
+This would be an easier chapter to write if the book were not guilty of it.
+
+Three searches in this book failed, and they are recorded in
+`appraisals/searches/` rather than quietly re-run. Two of the three are the same
+failure as DBOH's:
+
+- **[Chapter -@sec-amount]** searched for a Cochrane review by its identifier,
+  got nothing useful back, concluded the 2010 version was current, and wrote in
+  the chapter that the evidence "has not been systematically updated in fifteen
+  years." A 2024 update existed [@wong2024].
+- **[Chapter -@sec-cancer-screening]** searched the same way and missed the same
+  review DBOH missed, `CD010276.pub3` [@walsh2021], published in 2021.
+
+That second one is the useful one. The guideline and its auditor, working
+independently and four years apart, failed to find the same update by the same
+method. That is not two instances of carelessness. That is one broken technique
+used twice, and the lesson is written at the bottom of the search index:
+**searching for a review by its identifier is not an update search.** An
+identifier query finds the version you already know about. It cannot tell you
+that a newer one exists, because you are asking it about the old one.
+
+## What I would actually ask for
+
+The temptation, having found this, is to propose running a living systematic
+review for every recommendation. I do not think that is right, and it is worth
+saying why, because it is the obvious conclusion and it is wrong.
+
+Living reviews are for a specific situation, and the methods paper that named
+them says which: they suit questions where "research evidence is emerging
+rapidly, current evidence is uncertain, and new research may change policy or
+practice decisions" [@elliott2017living]. All three, together. Most of this book
+fails the third test and many chapters fail the first. Nothing new is coming for
+tooth wear ([Chapter -@sec-wear]), and running a monthly search there would
+produce a decade of confirmations that the trials still do not exist. Low
+certainty is not a reason to search harder. It is usually a sign that nobody is
+running the study.
+
+Applied honestly to *Delivering Better Oral Health*, that rule admits very few
+rows. Tobacco and e-cigarettes, where the literature is genuinely moving.
+The oral cancer adjunctive tests, where the evidence has already separated in a
+way the single Strong label does not reflect. Beyond those, the questions that
+would repay continuous attention are mostly the ones outside the guideline
+altogether, in [Chapter -@sec-fluoridation-works] and [Chapter
+-@sec-fluoridation-harm].
+
+So the proposal is not more reviews. It is three much cheaper things.
+
+**Consume the living reviews that already exist.** DBOH did not need to build one
+for e-cigarettes. Cochrane maintains it, Cancer Research UK pays for it, and it
+searches monthly. What was missing was a subscription and somebody to read it.
+
+**Print the version, not just the certainty.** Chapter 13 currently says "low
+certainty evidence from one systematic review." Twelve extra characters would
+have made this chapter unnecessary:
+
+> Low certainty. `CD010216.pub3`, searched to January 2016.
+
+A reader who saw that could check it in about forty seconds. A reader who sees
+the sentence as written cannot check it at all, because the certainty is on one
+page and the version is on another, and neither page says when the search closed.
+
+**Say when the recommendation was last looked at.** Not when the guideline was
+published; when each row was last checked against its own literature. A guideline
+is not one document with one date. It is ninety-one claims with ninety-one dates,
+and printing a single date on the cover conceals a spread of thirteen years.
+
+::: {.callout-note title="What I searched, and when" collapse="true"}
+PubMed, 20 August 2026, for the full version history of `CD010216`. Nineteen
+records; I retrieved metadata for `.pub3` (2016), `.pub8` (2024), `.pub9`
+(January 2025) and `.pub10` (November 2025) and read their structured abstracts.
+Also PubMed for the living-systematic-review methods literature, from which
+[@elliott2017living] is the defining paper.
+
+The citation ages in @tbl-citation-age are computed, not counted by hand.
+`scripts/extract_dboh.py` takes the newest publication year appearing in each
+recommendation's reference list and subtracts it from 2025. The figures land in
+`_variables.yml` and the table above reads them from there, so if the guideline is
+reissued and the extractor re-run, this chapter's numbers move with it.
+
+Two limits on that method, both of which make the table conservative. It reads
+years off citation strings, so a review whose search closed years before it was
+published counts as younger than its evidence really is. And the
+{{< var dboh.age_undated >}} recommendations with no dated citation are excluded
+rather than treated as maximally stale.
+
+Full record in `appraisals/searches/ch32-half-life.md`.
+:::
+
+## What this means for you
+
+Nothing about your teeth. This one is about how to read the advice rather than
+what the advice is.
+
+If you are ever told that something is backed by strong evidence, the useful
+follow-up question is not "how strong?" It is **"as of when?"** The label does not
+carry a date, and the gap between the label and its evidence is invisible from the
+outside. In this guideline that gap runs to a median of seven years and a maximum
+of thirteen.
+
+And the same applies here. This book searched the literature in August 2026. On
+the arithmetic in @tbl-citation-age, it will be about as current as *Delivering
+Better Oral Health* was for roughly seven years, and then it will start being
+wrong in ways I cannot predict from where I am sitting. Two of its chapters were
+already wrong on this exact point before it was finished, and I only found out
+because I looked twice.
+
+The honest thing a book like this can offer is not permanence. It is a date, a
+method, and enough working shown that you can tell when it has gone stale.

@@ -23,7 +23,7 @@ What table 2a contains is this:
 > --- *Delivering Better Oral Health*, chapter 2, table 2a [@dboh2025]
 
 That is a recommendation to remove calculus **where it is impeding plaque
-control**, labelled honestly as clinical consensus rather than research. It is
+control**, labeled honestly as clinical consensus rather than research. It is
 not a recommendation that healthy adults should have their teeth scaled every six
 months.
 
@@ -44,7 +44,7 @@ against **no scheduled treatment**:
 
 | Outcome | Finding | Certainty |
 |:---------------------------------|:-----------------------------------|:-----------------|
-| Gingivitis | little or no difference; SMD −0.01 (95% CI −0.13 to 0.11) at six months, −0.04 (−0.16 to 0.08) at twelve | [high]{.certainty .high} |
+| Gingivitis | little or no difference; SMD −0.01 (95% CI −0.13 to 0.11) for six-monthly treatment, −0.04 (−0.16 to 0.08) for twelve-monthly | [high]{.certainty .high} |
 | Probing depths | little or no difference | [high]{.certainty .high} |
 | Oral health-related quality of life | little or no difference | [high]{.certainty .high} |
 | Plaque | little or no difference | [low]{.certainty .low} |
@@ -54,16 +54,29 @@ against **no scheduled treatment**:
 : Routine scale and polish against no scheduled treatment [@lamont2018]
 {#tbl-scale-polish}
 
+Those "six-monthly" and "twelve-monthly" labels are how often the **treatment**
+was given, not when the outcome was measured. Everything above was assessed at
+**24 to 36 months**. I had that wrong in an earlier draft and it made the
+follow-up sound a great deal shorter than it was.
+
 And comparing six-monthly against twelve-monthly: little or no difference in
 gingivitis (SMD 0.03, 95% CI −0.09 to 0.15, I²=0%), probing depths or quality of
 life, all at high certainty, with a small extra calculus reduction from the more
 frequent option.
 
 Read the certainty column, because it is doing something unusual for this book.
-**High certainty, from randomised trials, in the right population, in the right
-setting, measuring outcomes patients can feel.** These are not weak studies that
-failed to find an effect. This is a well-designed body of evidence that looked
-hard and found little or nothing.
+**High certainty, from randomized trials, in the right population, in the right
+setting, over two to three years.** These are not weak studies that failed to
+find an effect. This is a well-designed body of evidence that looked hard and
+found little or nothing.
+
+One qualification on the outcomes, since this book is severe about surrogates
+elsewhere. Gingivitis indices and probing depths are measured by a clinician, not
+felt by a patient, and they are intermediate outcomes for the thing that actually
+matters. What the trials did **not** measure is attachment loss, tooth loss, or
+progression to periodontitis. Oral health-related quality of life, which they did
+measure, is the one genuinely patient-reported outcome in the set, and it also
+showed little or no difference.
 
 The one thing routine scaling reliably does is remove calculus. Which is to say:
 it achieves its immediate technical objective, and that does not translate into
@@ -77,14 +90,19 @@ absence. This chapter is the case where the distinction runs the other way, and
 it is worth being precise.
 
 For gingivitis, the pooled estimate is SMD −0.01 with a confidence interval from
-−0.13 to 0.11. That interval is **narrow and centred on zero**. It excludes any
-effect a patient would notice. That is not "we looked and found nothing"; it is
-"we measured it precisely and it is very close to nothing." GRADE's high-certainty
-rating reflects exactly that: randomised evidence, consistent across the two
-trials, precise enough to rule out an important benefit.
+−0.13 to 0.11. That interval is **narrow and centered on zero**. It excludes
+effects of half a standard deviation or more, which is the threshold the review
+prespecified as an appreciable difference in the absence of an agreed minimally
+important difference for these indices. So the precise claim is not "it excludes
+any effect a patient would notice," which I wrote before and cannot support since
+no patient-noticeable threshold has been established for a gingival index. It is
+"we measured it precisely and it is very close to nothing, on the review's own
+yardstick." GRADE's high-certainty rating reflects exactly that: randomized
+evidence, consistent across the two trials, precise enough to rule out an
+appreciable benefit.
 
 Compare with [Chapter -@sec-last-thing], where no study of the question exists at
-all. Both chapters can be summarised as "no demonstrated benefit," and they mean
+all. Both chapters can be summarized as "no demonstrated benefit," and they mean
 completely different things. One is an empty literature. This one is a full
 answer.
 
@@ -101,21 +119,40 @@ Alongside the plaque-control row sits a set of recommendations about telling
 patients what to do, and these deserve their own look because they are graded
 **Conditional**:
 
-> Use behaviour change methods with oral hygiene instruction — **Conditional**
+> Use behaviour change methods with oral hygiene instruction
 >
 > Advise best methods of plaque removal to prevent gingivitis and achieve lowest
-> risk of periodontitis and tooth loss — **Conditional**
+> risk of periodontitis and tooth loss
+>
+> Strength of recommendation for both: **Conditional**
 >
 > --- *Delivering Better Oral Health*, chapter 2, table 2a [@dboh2025]
 
-The Cochrane review of one-to-one oral hygiene advice given in a dental setting
-[@soldani2018] is the relevant evidence, and the Conditional label is a fair
-reflection of it. This is the guideline doing precisely what
+These look like one thing and are two, resting on different evidence at different
+certainties. Chapter 13 keeps them apart even though the summary table does not:
+
+| Recommendation | Evidence, in chapter 13's words | Source |
+|:---|:---|:---|
+| Advise best methods of plaque removal | "very low certainty evidence for one-to-one oral hygiene advice reducing gingivitis and plaque" | Soldani and colleagues [@soldani2018] |
+| Use behavior change methods | "low certainty evidence that goal setting, self-monitoring and planning improve oral hygiene-related behaviour" | Newton and Asimakopoulou |
+
+: Two Conditional rows, two different evidence chains {#tbl-oha}
+
+An earlier draft of this chapter attributed both rows to the Cochrane review of
+one-to-one advice. Only the first is Soldani. The second rests on separate
+behavior-change work that I have not appraised, and I am not going to pronounce
+on a label whose evidence I have not read.
+
+On the first row, the Conditional label is a fair reflection of very low
+certainty evidence. This is the guideline doing precisely what
 [Chapter -@sec-certainty-strength] asks: where the evidence is uncertain and
 reasonable people might weigh it differently, it says Conditional rather than
 Strong.
 
 I note this without a complaint attached, which is the point of including it.
+Note also the outcome in the second row: "improve oral hygiene-related
+behaviour." That is a behavioral outcome, not a disease outcome, and it is
+honestly labeled as one.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
 PubMed, 21 August 2026. The Cochrane review's own search ran to **10 January
@@ -123,8 +160,14 @@ PubMed, 21 August 2026. The Cochrane review's own search ran to **10 January
 Embase Ovid, with two trial registries for ongoing studies. I checked for a
 `.pub6` update and found none; CD004625.pub5 remains current.
 
-As throughout, I have the structured abstract and not the full text, for the
-reasons set out in `appraisals/searches/ch21-tobacco.md`.
+I have the **full text** of this review, with its characteristics of included
+studies and risk-of-bias tables, supplied during writing. The statements above
+about follow-up at 24 to 36 months, the review's 0.5 SD threshold for an
+appreciable difference, the eligibility criteria of BPE 0 to 3, and the
+minimization on gingival bleeding are from the review body and its study
+characteristics, not from the abstract. An earlier draft carried a blanket
+"abstract only" disclosure inherited from another chapter, which was not true
+here.
 
 **The age gap matters here.** Only two trials have ever addressed this question,
 both in the UK, and the evidence has not moved since 2018. High certainty from
@@ -179,15 +222,24 @@ mouth feels. It will remove calculus, and your teeth will feel cleaner
 afterwards, which the trials did measure and which is a real thing to value if
 you value it.
 
-What you should not believe is that it is preventing gum disease. Two randomised
-trials in exactly your situation looked for that and found little or nothing, and
-the certainty of that finding is as high as anything in this book.
+What you should not believe is that it is reliably reducing gum inflammation or
+pocket depths. Two randomized trials in exactly your situation looked for that
+over two to three years and found little or nothing, at high certainty. They did
+not measure whether it prevents teeth being lost decades later, and nobody has.
 
 This is different advice from most of the chapters here, and worth being clear
 about. Elsewhere I say: keep doing it, the evidence is just weaker than the label
 suggests. Here I say: this is a treatment you may reasonably decline, and the
 national guideline does not ask you to have it.
 
-If your gums bleed, if you have been told you have periodontitis, or if you do
-not attend regularly, none of the above applies to you. The trials were not in
-people like you, and [Chapter -@sec-method] explains why that matters.
+One boundary, and it is narrower than I first drew it. An earlier draft said that
+none of this applied if your gums bleed. That was wrong: the larger trial enrolled
+adults with BPE scores 0 to 3, two thirds of whom had visible gingival
+inflammation, and it explicitly balanced the arms on whether or not gums bled on
+probing. Bleeding gums were not an exclusion; they were most of the sample.
+
+What **was** excluded is severe periodontal disease, BPE 4. So if you have been
+diagnosed with periodontitis, or you do not attend regularly, this evidence is not
+about you, and [Chapter -@sec-method] explains why that matters. If your gums
+simply bleed when you brush, it is about you, and that is the more useful and
+more uncomfortable finding.

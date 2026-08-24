@@ -28,15 +28,16 @@ recommended. Cosmetic mouthwashes mask smell without addressing its cause; see
 
 ## Does oil pulling work?
 
-No good evidence, and a plausible harm.
+Not something I would trade brushing time for, and I have not searched the
+literature.
 
 Oil pulling means swishing coconut or sesame oil around the mouth for ten to
-twenty minutes. The trials that exist are small, short, mostly from a single
-research tradition, and typically compare oil pulling against nothing rather than
-against brushing.
+twenty minutes. I ran no search for this chapter, so I am not going to
+characterize the size, length or comparators of the trials that exist, which an
+earlier draft did without having read them.
 
-The harm is opportunity cost. Twenty minutes of oil swishing is twenty minutes not
-spent doing the thing with 55 randomised trials behind it. There are also case
+What I can say is about opportunity cost. Twenty minutes of oil swishing is twenty minutes not
+spent doing the thing with 55 randomized trials behind it. There are also case
 reports of lipoid pneumonia from aspiration, which is rare but real.
 
 ## Should I scrape my tongue?
@@ -52,7 +53,7 @@ mostly on volatile sulphur compounds rather than on whether anyone noticed.
 A little, and the mechanism is well understood.
 
 Sugar-free gum stimulates salivary flow, and saliva buffers acid, clears debris
-and carries calcium and phosphate for remineralisation. Chewing after a meal is a
+and carries calcium and phosphate for remineralization. Chewing after a meal is a
 reasonable thing to do when you cannot brush.
 
 Xylitol gum is often claimed to do more, on the basis that *Streptococcus mutans*
@@ -64,10 +65,13 @@ marketing implies. Chew it if you like it; the saliva is doing most of the work.
 
 Not unless there is a reason.
 
-Prophylactic removal of asymptomatic, disease-free wisdom teeth was routine for
-decades and is no longer recommended in the UK. NICE guidance restricts extraction
-to teeth with actual pathology: recurrent infection, decay that cannot be
-restored, cysts, damage to the neighbouring tooth.
+Prophylactic removal of **pathology-free impacted** wisdom teeth was routine for
+decades and is no longer recommended in the UK: NICE TA1 says the practice "should
+be discontinued in the NHS." Extraction is for teeth with actual pathology,
+such as unrestorable decay, abscess, cysts or damage to the neighboring tooth.
+Note one detail people get wrong in both directions: NICE treats a **first**
+episode of pericoronitis, unless particularly severe, as **not** an indication for
+surgery, while second or subsequent episodes are.
 
 This is another case, like [Chapter -@sec-scale-polish] and
 [Chapter -@sec-recall], where guidance moved away from a routine intervention and
@@ -76,16 +80,24 @@ the benefits of removing a tooth that is not causing trouble are speculative.
 
 ## Are water flossers as good as floss?
 
-On the current evidence, worse for gingivitis than either floss or interdental
-brushes, though the studies are small.
+Genuinely unclear, and I overstated this in an earlier draft by saying they were
+worse than floss.
 
-[Chapter -@sec-flossing] has the numbers: oral irrigators reduced gingivitis at
-one month (SMD −0.48, 95% CI −0.89 to −0.06) but not at three or six months, and
-showed no reduction in bleeding sites or plaque. Interdental brushes performed
-better [@worthington2019].
+[Chapter -@sec-flossing] has the numbers. Added to toothbrushing, oral irrigators
+may reduce the gingival index at one month (SMD −0.48, 95% CI −0.89 to −0.06, 4
+trials, 380 participants, very low certainty) but not at three or six months, and
+did not reduce bleeding sites or plaque. Head to head **against floss**, the same
+review found some evidence that irrigation may be **better** for gingivitis, not
+worse, at very low certainty. There is no comparison of irrigators against
+interdental brushes at all [@worthington2019].
 
-If you cannot manage floss or brushes because of dexterity, arthritis, or
-orthodontic appliances, a water flosser is much better than doing nothing.
+I had also set the irrigator SMD beside an interdental-brush mean difference on a
+0-to-3 index and called the second better. Those are different scales and the
+comparison was meaningless.
+
+If you cannot manage floss or interdental brushes because of dexterity, arthritis
+or orthodontic appliances, an irrigator is a reasonable option. What the evidence
+does not support is a claim that it adds much to brushing beyond one month.
 
 ## Do I need to replace my toothbrush every three months?
 
@@ -121,8 +133,9 @@ No, on current evidence, and the question is becoming moot.
 Amalgam has been studied extensively for mercury release and no convincing
 evidence of harm from ordinary fillings has emerged. Its use is being phased down
 internationally for **environmental** reasons rather than patient-safety ones,
-under the Minamata Convention, and it is already restricted in the UK for children
-and for pregnant and breastfeeding women.
+under the Minamata Convention. The UK restriction is narrower than "children": it
+covers deciduous teeth, patients under 15, and pregnant or breastfeeding women,
+except where the dentist judges it strictly necessary for that patient.
 
 Removing sound amalgam fillings to eliminate mercury exposure exposes you to more
 mercury during the removal than leaving them alone, and destroys tooth structure.

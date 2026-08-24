@@ -53,7 +53,7 @@ Here is what I wrote in 2023:
 
 That is factually wrong, and reading the review properly is what corrected it.
 
-Worthington and colleagues included **35 randomised trials in 3,929 adults**
+Worthington and colleagues included **35 randomized trials in 3,929 adults**
 [@worthington2019]. Of those, **fifteen** compared flossing plus toothbrushing
 against toothbrushing alone. That is precisely the comparison I said did not
 exist.
@@ -65,9 +65,13 @@ sentence:
 >
 > --- Worthington and colleagues, 2019 [@worthington2019]
 
-So the accurate claim is not "nobody has tested flossing." It is: **thirty-five
-trials have tested flossing, and not one of them measured tooth decay between the
-teeth.** They measured gingivitis and plaque, over one to six months.
+So the accurate claim is not "nobody has tested flossing." It is: **the review
+found thirty-five trials of interdental cleaning, fifteen of them testing floss
+added to brushing, and not one of the thirty-five measured tooth decay between
+the teeth.** They measured gingivitis and plaque, over one to six months. I wrote
+"thirty-five trials have tested flossing" in an earlier draft, which quietly
+inflates the floss literature by counting trials of interdental brushes, sticks
+and irrigators.
 
 The difference matters. My version implied an empty literature, which invites the
 conclusion that the recommendation is baseless. The true version says the
@@ -88,7 +92,7 @@ abstract and on my memory of it.
 | Oral irrigators | SMD −0.48 (−0.89 to −0.06) at 1 month, 4 trials, 380 participants; **not** at 3 or 6 months | [very low]{.certainty .very-low} |
 
 : Interdental cleaning added to toothbrushing [@worthington2019]. Negative values
-favour the device {#tbl-interdental}
+favor the device {#tbl-interdental}
 
 And head to head, at low certainty, **interdental brushes may reduce gingivitis
 more than floss** at one and three months. That is where DBOH's ordering comes
@@ -106,7 +110,7 @@ two of 35 were otherwise at low risk of bias.
 inflammation." If your gums are already close to healthy, there is very little
 room for an intervention to improve them, and the average effect across such a
 population understates what might happen in people with inflamed gums. This cuts
-in the intervention's favour, and it is the strongest single argument that these
+in the intervention's favor, and it is the strongest single argument that these
 trials underestimate the benefit.
 
 **Short follow-up.** One to six months. Periodontitis develops over years and
@@ -114,15 +118,19 @@ interproximal caries over years. A six-month trial cannot see either, which is
 the mechanical reason the caries outcome is missing rather than an oversight by
 trialists.
 
-**Tiny trials.** Look at the participant counts in the table: 62, 24, 12, 31.
+**Tiny trials.** Look at the participant counts in the table: 62, 24, 12, 380.
 Several of the device comparisons rest on a single small trial. The flossing
 estimate, at 8 trials and 585 participants, is by some way the best-supported
 line in the table, which is ironic given the public story.
 
 The review's own summing up is the sentence to keep: "the effect sizes observed
-may not be clinically important." A gingival index is a 0 to 3 scale scored by an
-examiner. An SMD of −0.58 on it is a real statistical signal. Whether it
-corresponds to anything you would notice in your mouth is genuinely unknown.
+may not be clinically important." Gingivitis was measured with several different
+indices, most commonly Löe-Silness on a 0 to 3 scale scored by an examiner, which
+is why the pooled figure is a standardized mean difference rather than a number of
+points. So −0.58 means roughly half a standard deviation across mixed scales, not
+0.58 points on a 0-to-3 index, and Cochrane did not back-translate it to a common
+index. It is a real statistical signal. Whether it corresponds to anything you
+would notice in your mouth is genuinely unknown.
 :::
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
@@ -150,14 +158,14 @@ readers infer that flossing had been shown not to work.
 "flossing does not prevent cavities between your teeth" are different sentences.
 The first is true. The second has never been tested. This is the same distinction
 [Chapter -@sec-scale-polish] turns the other way: there, a precise estimate
-centred on zero really does mean the intervention does not work. Here there is no
+centered on zero really does mean the intervention does not work. Here there is no
 estimate at all.
 
 It is worth noticing what happened next. A recommendation was withdrawn because
 journalists asked for its evidence and found the answer thin. Whatever you think
 of the outcome, that is the process this book is doing, at scale and in public.
 The lesson I take is not that the journalists were wrong to ask. It is that a
-guideline which had labelled the recommendation honestly in the first place would
+guideline which had labeled the recommendation honestly in the first place would
 have had a much better answer ready.
 
 ::: {.verdict}
@@ -165,9 +173,13 @@ have had a much better answer ready.
 
 Certainty of evidence
 :   [Low]{.certainty .low} that flossing added to toothbrushing reduces gingivitis
-    in the short term. [Low]{.certainty .low} that interdental brushes do so, and
-    may do so more than floss. **No evidence at all** on interproximal caries: 35
-    trials, none measuring it.
+    in the short term. [Very low]{.certainty .very-low} that interdental brushes
+    added to toothbrushing do so, from a single 62-person trial, and separately
+    [low]{.certainty .low} that interdental brushes may reduce gingivitis **more
+    than floss** at one and three months. Those are two different comparisons at
+    two different certainties, and an earlier draft ran them together at low.
+    **No estimate at all** on interproximal caries: of the 35 trials in this
+    review, none measured it.
 
 Directness to the advice as worded
 :   **Good on population and intervention, poor on outcome and duration.** The
@@ -188,9 +200,10 @@ Is the strength label defensible?
 
 What would change my mind
 :   A trial long enough to measure interproximal caries, which means two years
-    minimum and realistically longer, with radiographic scoring. That trial is
-    expensive and nobody has commercial reason to fund it, which is why it does
-    not exist. Also useful: a trial recruiting people **with** gingival
+    minimum and realistically longer, with radiographic scoring. No such trial was
+    among the 35 the review found to January 2019, and I have not searched the
+    primary literature published since, so read that as the review's absence
+    rather than a current one. Also useful: a trial recruiting people **with** gingival
     inflammation rather than the near-healthy participants who dominate the
     current literature, since the floor effect plausibly hides a real benefit.
 :::
@@ -198,15 +211,15 @@ What would change my mind
 ## What this means for you
 
 Clean between your teeth. A toothbrush does not reach roughly a third of each
-tooth's surface, and 35 trials agree that cleaning those surfaces reduces gum
-inflammation, even if they disagree about how much.
+tooth's surface, and the trials of these devices point towards less gum
+inflammation, even if they disagree about how much and the certainty is low.
 
 Use an **interdental brush** if one fits. That is what the head-to-head evidence
 supports and what the guideline now recommends first. Floss where the gaps are
 too tight for a brush.
 
 What nobody can tell you is whether any of this prevents cavities between your
-teeth, because in 35 trials nobody has looked. If a dentist tells you flossing
-prevents interproximal decay, they are stating something plausible that has never
-been measured. And if someone tells you flossing was debunked, they have
+teeth, because in the 35 trials Cochrane assembled, nobody measured it. If a
+dentist tells you flossing prevents interproximal decay, they are stating
+something plausible that this body of evidence has not measured. And if someone tells you flossing was debunked, they have
 confused an unasked question with an answered one.

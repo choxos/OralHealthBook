@@ -17,13 +17,13 @@ other people's work.
 
 You establish that a recommendation rests on weaker evidence than its label
 claims. A reader concludes the recommendation is worthless. They stop doing it.
-Their teeth are worse. Nothing about the evidence changed; only their behaviour
+Their teeth are worse. Nothing about the evidence changed; only their behavior
 did, and it changed in the wrong direction.
 
 That inference is invalid, and the invalidity has a name. **Evidence about the
 strength of a claim is not evidence about the truth of the claim.** Finding that
-nobody has tested whether brushing at bedtime beats brushing at nine o'clock tells
-you nothing about whether it does. It tells you that we do not know.
+no search has turned up a test of whether brushing at bedtime beats brushing at
+nine o'clock tells you nothing about whether it does. It tells you that we do not know.
 
 Under genuine uncertainty, you still have to do something this evening. The
 question is not "what has been proven" but "what should I do given what we know
@@ -55,36 +55,47 @@ evidence alone.
 would not regret two minutes a night. I would regret a mouthful of restorations.
 
 Run those four over the book's contents and the answers come out cleanly. Fluoride
-toothpaste: strong evidence, zero cost, obvious. Brushing at bedtime: no evidence,
-zero cost, coherent mechanism, asymmetric downside. Do it. Charcoal toothpaste:
-no evidence, real cost, plausible harm, no fluoride. Do not.
+toothpaste: strong evidence, zero cost, obvious. Brushing at bedtime: no direct
+comparison found, zero cost, coherent mechanism, asymmetric downside. Do it.
+Charcoal toothpaste: no appraisal run here, real cost, abrasivity a concern, and
+many formulations carry no fluoride. Do not.
 
-## Where I changed my behaviour
+## Where I changed my behavior
 
 Writing this book did change some things, which is worth reporting because it
 would be suspicious if it had changed none.
 
 **I stopped having routine six-monthly check-ups.** [Chapter -@sec-recall] found
-high-certainty evidence that for a regularly attending adult with a healthy mouth,
-risk-based intervals produce no measurable difference over four years. That is one
-of only two high-certainty findings in the whole book. I go when my dentist thinks
-I should, which is less often.
+high-certainty evidence that for adults who attend regularly, risk-based intervals
+produce no measurable difference over four years in decay, gum bleeding or
+oral-health-related quality of life. The trial's population was regular attenders,
+not a healthy-mouth subgroup, and its moderate-to-extensive caries outcome is
+rated moderate rather than high. I go when my dentist thinks I should, which is
+less often.
 
 **I stopped assuming a scale and polish was doing anything.**
-[Chapter -@sec-scale-polish] is the other high-certainty finding, and it is a
-finding of no benefit for gingivitis, probing depths or quality of life. My teeth
-feel cleaner afterwards, which the trials also measured, and I now understand that
-as the thing I am paying for.
+[Chapter -@sec-scale-polish] is the other high-certainty finding of *little or no
+difference*, for gingivitis, probing depths and quality of life over two to three
+years. My teeth feel cleaner afterwards, which the trials also measured, and I now
+understand that as the thing I am paying for.
+
+Those two are the book's high-certainty findings **of no important difference**.
+They are not the only high-certainty evidence in it: [Chapter -@sec-ppm] reports
+high certainty that fluoride toothpaste at 1,000 to 1,250ppm reduces caries
+against no fluoride, from 55 trials. That one did not change my behavior because I
+was already doing it.
 
 **I switched from floss to interdental brushes.** [Chapter -@sec-flossing] found
-low-certainty evidence that they work better, which is what DBOH now recommends,
-and I had been doing the traditional thing out of habit.
+low-certainty evidence of a gingivitis advantage whose clinical importance is
+uncertain, which is why DBOH puts interdental brushes first and keeps the
+recommendation Conditional. I had been doing the traditional thing out of habit.
 
 **I stopped telling patients the two-minute rule was evidence-based.**
-[Chapter -@sec-brush-design] found no studies at all relating brushing duration to
-caries, and found that DBOH does not recommend a duration for exactly that reason.
-I still think two minutes is useful advice; I describe it as a rule of thumb for
-covering every surface, which is what it is.
+[Chapter -@sec-brush-design] found no studies relating brushing duration to
+caries, and found that DBOH's graded summary tables do not carry a duration
+recommendation, while its chapter 8 advises at least two minutes as a way of
+making sure every surface is covered. That is also how I now describe it: a rule
+of thumb for coverage, which is what the guideline says it is.
 
 Four changes, and every one of them was in the direction of doing **less**, not
 of abandoning prevention. That pattern is not accidental. Weak evidence for a free
@@ -96,15 +107,19 @@ procedure someone charges you for is a different matter entirely.
 If everything in this book fell out of your head except one sentence, make it
 this: **use fluoride toothpaste, twice a day, and spit rather than rinse.**
 
-The fluoride is the part with 55 randomised trials behind it
+The fluoride is the part with 55 randomized trials behind it
 ([Chapter -@sec-ppm]). The frequency is convention with observational support
-([Chapter -@sec-twice-daily]). The spitting has one randomised trial of a bundle
+([Chapter -@sec-twice-daily]). The spitting has one randomized trial of a bundle
 ([Chapter -@sec-spit]). They are not equally well supported and I have spent the
-book saying so. But they cost nothing, they combine into a thirty-second habit,
-and the first of the three is as close to established fact as dentistry gets.
+book saying so. But they cost nothing, they combine into a single routine of about
+two minutes, and the first of the three is as close to established fact as
+dentistry gets.
 
-Everything else on the shelf, in the guideline, and in this book is refinement
-around that.
+For **caries** specifically, much of the rest of the shelf is refinement around
+that. It is worth saying that caries is only one of the four disease domains the
+guideline covers: periodontal disease, oral cancer and tooth wear each have their
+own recommendations and their own evidence, and nothing in that sentence is a
+summary of them.
 
 ## What I am not doing
 

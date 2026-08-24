@@ -1,6 +1,6 @@
 # How dental research should change {#sec-research}
 
-Thirty-one chapters of complaint earn one chapter of proposal.
+Thirty-two chapters of complaint earn one chapter of proposal.
 
 The pattern this book found is not that dental researchers are careless. It is
 that the field has, over decades, optimised for a kind of study that is cheap,
@@ -26,14 +26,14 @@ The counter-example is instructive. FiCTION ([Chapter -@sec-fiction]) used
 **episodes of dental pain and infection** as its co-primary outcomes, and the
 result is the most directly useful trial in this book. The INTERVAL trial
 ([Chapter -@sec-recall]) used oral-health-related quality of life alongside
-caries, and produced the only high-certainty answer to a question the public
-actually asks.
+caries, and produced one of the two high-certainty answers in this book to a
+question the public actually asks. The other is scale and polish.
 
 It can be done. It is done, occasionally, usually when a funder insists.
 
 ## 2. Adopt and enforce a core outcome set
 
-The reason [Chapter -@sec-twice-daily] reports a standardised mean difference,
+The reason [Chapter -@sec-twice-daily] reports a standardized mean difference,
 which nobody can interpret, is that the included studies measured caries on
 different indices at different thresholds. Pooling required abstracting away the
 units.
@@ -54,7 +54,7 @@ Journals and funders could require it tomorrow.
 Caries and periodontitis develop over years. A large part of the dental literature
 runs for weeks.
 
-[Chapter -@sec-flossing] is the clearest case: 35 randomised trials of interdental
+[Chapter -@sec-flossing] is the clearest case: 35 randomized trials of interdental
 cleaning, and **not one** measured interproximal caries, because a one-to-six
 month trial cannot. The evidence gap is a direct consequence of the trial
 duration, and the trial duration is a consequence of what is affordable and
@@ -117,16 +117,17 @@ remove the need for a reader to guess, and would have removed most of
 **Show the evidence-to-decision reasoning where a recommendation is discordant.**
 [Chapter -@sec-tobacco] argued that a Strong recommendation with no direct
 evidence can be entirely legitimate. What is missing is one sentence explaining
-why. "No specific evidence, but integral to the pathway" is half an argument; the
+why. "No specific evidence regarding asking about smoking; however, it is an
+integral part of the Ask, Advise, Act pathway" is half an argument; the
 half that would let a reader check it is the half omitted.
 
 ## The trial I want to run
 
 I should declare an interest, since [Chapter -@sec-method] says to.
 
-When I took a course in the design of randomised controlled trials, I chose as my
+When I took a course in the design of randomized controlled trials, I chose as my
 project the trial that [Chapter -@sec-flossing] shows still does not exist: a
-randomised comparison of interdental cleaning plus toothbrushing against
+randomized comparison of interdental cleaning plus toothbrushing against
 toothbrushing alone, long enough and powered to measure **interproximal caries**
 rather than a gingival index at one month.
 
@@ -146,20 +147,28 @@ that the omission is visible rather than quietly absent.
 
 ## The shape of the problem
 
-Step back and the pattern across all thirty-one chapters is consistent.
+Step back and the pattern across all thirty-two chapters is consistent.
 
 We have excellent evidence about **substances**: fluoride toothpaste, fluoride
 varnish, sealants. Three of the strongest recommendations in the book, all things
 that can be manufactured and sold.
 
-We have weak evidence about **behaviours**: when to brush, how long, how often,
-whether to rinse, whether to floss. All free, all unsellable, all universally
-recommended.
+We have weak evidence about **behaviors**: when to brush, how long, how often,
+whether to rinse. All free, all unsellable, all universally recommended.
 
-And we have essentially no evidence about **the things clinicians do routinely**:
-recall intervals, scale and polish, supervised brushing, restoring baby teeth,
-until somebody publicly funded a trial, at which point three out of four turned
-out not to work as assumed.
+Interdental cleaning sits awkwardly across that line and I should not pretend
+otherwise, since floss and interdental brushes are manufactured products with a
+commercial literature behind them. What that literature measures, though, is
+gingivitis over weeks rather than caries over years, which is the same pattern in
+a different form.
+
+And **the things clinicians do routinely** went untested until somebody publicly
+funded a trial. When that happened the answers were not uniform, and it is worth
+being exact rather than tidy. Recall intervals and scale and polish produced
+high-certainty findings of little or no difference. Restoring baby teeth produced
+a trial that failed to show one approach superior to another, which is not the
+same as showing that filling does not work. Supervised brushing has no
+conclusive independent effect established, which is not the same as either.
 
 That distribution is not what you would design if you were allocating research
 effort to what patients need to know. It is what you get when the market pays for

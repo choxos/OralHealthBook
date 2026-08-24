@@ -39,12 +39,18 @@ Thirty-eight trials, 7,924 children aged 5 to 16. Fifteen compared resin-based
 sealant against no sealant; three compared glass ionomer against no sealant;
 twenty-four compared one sealant against another.
 
+The headline estimate below is narrower than that whole set: it is the seven
+trials in children **aged 5 to 10** at 24 months. The review says the effect was
+maintained at longer follow-up, but that "evidence quality and quantity was
+reduced," so the 48-to-54-month figure should be read as supporting rather than
+as separately certified.
+
 The headline result is one of the largest in this book:
 
 | Comparison | Effect | 95% CI | Trials | Certainty |
 |:-----------------------------|:-----------|:--------------|-------:|:-------------|
-| Resin sealant vs none, 24 months | OR **0.12** | 0.08 to 0.19 | 7 | [moderate]{.certainty .moderate} |
-| Resin sealant vs none, 48 to 54 months | OR 0.21 | 0.16 to 0.28 | 4 | [moderate]{.certainty .moderate} |
+| Resin sealant vs none, 24 months, children aged 5 to 10 | OR **0.12** | 0.08 to 0.19 | 7 | [moderate]{.certainty .moderate} |
+| Resin sealant vs none, 48 to 54 months | OR 0.21 | 0.16 to 0.28 | 4 | not separately rated |
 | Glass ionomer vs none, 24 months | inconclusive | — | 3 | [very low]{.certainty .very-low} |
 | One sealant type vs another | unknown | — | 24 | [very low]{.certainty .very-low} |
 
@@ -70,10 +76,9 @@ The 24-month estimate, the moderate-certainty headline, comes from seven trials.
 **Five of them were published in the 1970s.** Two are from the 2010s.
 
 That matters for the same reason it matters in
-[Chapter -@sec-fluoridation-works]. In the 1970s, fluoride toothpaste was not yet
-universal, caries rates were far higher, and the amount of decay a sealant could
-prevent was correspondingly greater. A child in 1975 with unsealed molars was at
-much higher risk than a child today.
+[Chapter -@sec-fluoridation-works]: caries rates were far higher then, so the
+amount of decay a sealant could prevent was correspondingly greater. A child in
+1976 with unsealed molars was at much higher risk than a child today.
 
 The review adds a detail that makes this harder to resolve:
 
@@ -83,9 +88,16 @@ The review adds a detail that makes this harder to resolve:
 > --- Ahovuo-Saloranta and colleagues, 2017 [@ahovuo2017]
 
 So the one variable that would let you adjust for the era mostly was not
-recorded.
+recorded. I should be precise about what that does and does not license me to
+say. An earlier draft called these a "pre-fluoride-toothpaste population," which
+the review does not support: of the seven trials, **three were conducted in
+fluoridated-water areas, two stated the water was not fluoridated, and two did
+not report it**. The trials date from 1976 to 1979, by which point fluoride
+toothpaste was already widely used in several of the countries involved. The
+honest version is that background fluoride exposure was mostly unrecorded, not
+that it was absent.
 
-::: {.callout-note title="How I judged this: a bias that cannot be removed" collapse="true"}
+::: {.callout-note title="How I judged this: a bias that cannot be removed, and what the review did with it" collapse="true"}
 There is one risk-of-bias problem in this literature that no amount of care can
 fix, and the review is admirably direct about it:
 
@@ -96,8 +108,31 @@ fix, and the review is admirably direct about it:
 
 An examiner scoring a tooth can see whether it has been sealed. There is no way
 to hide it. So every trial in this literature is at high risk of detection bias,
-permanently, and the moderate certainty rating already reflects a downgrade for
-it.
+permanently.
+
+Now the part I got wrong in an earlier draft, and it matters because this book
+spends a lot of its time complaining about GRADE domains being assigned to the
+wrong thing. I wrote that the moderate rating "already reflects a downgrade for"
+that detection bias. It does not. The review's own summary-of-findings footnote
+says the opposite, twice over:
+
+> Downgraded by one level due to **indirectness** of evidence (5 trials were
+> published between 1976 and 1979; it is not unreasonable to anticipate that a
+> new study could change this estimate, even if it found sealants to be
+> effective). ... **Nor did we downgrade** evidence on the basis of overall risk
+> of bias classification of the studies (all studies were assessed at high risk
+> of bias because blinding of outcome assessment is not possible in sealant
+> studies).
+>
+> --- Ahovuo-Saloranta and colleagues, 2017 [@ahovuo2017]
+
+So the single downgrade from high to moderate is for the **age** of the evidence,
+which is the caveat this chapter is about, and the unblindable detection bias was
+noted and deliberately not penalised. That is a defensible call, since a bias
+every trial shares equally cannot explain a difference between arms in the way an
+imbalance would, but it means the moderate badge is not doing the work I said it
+was doing. A reader who wants to discount for detection bias has to do it on top
+of moderate, not inside it.
 
 This is worth contrasting with [Chapter -@sec-flossing], where blinding is also
 impossible but the effect is small and the certainty low. Here the effect is so
@@ -138,9 +173,15 @@ Directness to the advice as worded
     population, and background fluoride exposure was rarely recorded.
 
     DBOH's claim that the benefit holds "in both low risk and high risk
-    populations" is supported by the review's absolute-risk translation, but that
-    translation is an arithmetic projection from the pooled odds ratio, not a
-    finding from modern low-risk populations.
+    populations" turns out to be better supported than I first credited, and not
+    only by the arithmetic projection from the pooled odds ratio. The review
+    reports the two modern trials directly: in Liu 2012, carious first molars
+    were found in 7.4% of the sealant group against 17% of the placebo group; in
+    Liu 2014b, 3% against 15%. Both are Chinese cohorts in a country the review
+    classifies as very low caries (DMFT under 1.2 at age 12), against control
+    incidences of 37% to 69% in the five 1976 to 1979 split-mouth trials. The
+    effect survives into a modern low-caries setting; the absolute benefit is
+    much smaller, exactly as you would expect.
 
 Is the strength label defensible?
 :   **Yes.** The effect is large enough to survive its caveats, and the
@@ -152,11 +193,13 @@ Is the strength label defensible?
     which affects how much benefit a child today should expect.
 
 What would change my mind
-:   Trials in contemporary populations with recorded fluoride exposure. If the
-    two trials from the 2010s show a materially smaller effect than the five from
-    the 1970s, that is the finding, and the review does not report the comparison.
-    I would also want the harm side filled in: sealants can fail, and a partially
-    lost sealant over a carious lesion is a scenario the trials do not describe.
+:   More trials in contemporary populations with recorded fluoride exposure. The
+    two modern trials the review does report point the same way as the old ones on
+    relative effect while showing far lower absolute risk, which is the pattern I
+    would predict and not one that unsettles the recommendation. What would
+    unsettle it is a modern trial finding no benefit. I would also want the harm
+    side filled in: sealants can fail, and a partially lost sealant over a carious
+    lesion is a scenario the trials do not describe.
 :::
 
 ## What this means for you
@@ -170,5 +213,7 @@ inconclusive and no one knows which brand of resin is best.
 
 The one thing to hold lightly is the size of the benefit. The figures come mostly
 from children in the 1970s who had far more decay than children do now. Sealants
-almost certainly still work. They may not work quite as spectacularly as an odds
-ratio of 0.12 suggests.
+do still work in modern populations; the review's two recent trials show that.
+But where those 1970s trials had 37% to 69% of control teeth decaying, the modern
+ones had 15% to 17%, so the number of children who need sealing for one to
+benefit is much higher today than an odds ratio of 0.12 makes it sound.

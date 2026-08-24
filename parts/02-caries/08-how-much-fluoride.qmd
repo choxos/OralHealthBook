@@ -51,8 +51,8 @@ point: the review's question is the recommendation's question.
 
 ## Following the citation
 
-Walsh and colleagues updated their 2010 review in 2019, including **96 randomised
-trials published between 1955 and 2014**, and analysed the permanent dentition
+Walsh and colleagues updated their 2010 review in 2019, including **96 randomized
+trials published between 1955 and 2014**, and analyzed the permanent dentition
 of children and adolescents in a network meta-analysis of 81 studies covering 21
 comparisons across seven concentration bands.
 
@@ -65,20 +65,23 @@ is the kind of review the previous chapters wished they had.
 
 | Comparison | Population | Effect | 95% CI | Studies | Certainty |
 |:---|:---|:---|:---|---:|:---|
-| 1,000 to 1,250ppm vs no fluoride | children, permanent teeth | SMD −0.28 | −0.32 to −0.25 | 55 | [high to moderate]{.certainty .high} |
-| 1,450 to 1,500ppm vs no fluoride | children, permanent teeth | SMD −0.36 | −0.43 to −0.29 | 4 | [high to moderate]{.certainty .high} |
+| 1,000 to 1,250ppm vs no fluoride | children, permanent teeth | SMD −0.28 | −0.32 to −0.25 | 55 | [high]{.certainty .high} |
+| 1,450 to 1,500ppm vs no fluoride | children, permanent teeth | SMD −0.36 | −0.43 to −0.29 | 4 | [moderate]{.certainty .moderate} |
 | 1,500ppm vs no fluoride | young children, primary teeth | MD −1.86 dfs | −2.51 to −1.21 | 1 | [moderate]{.certainty .moderate} |
 | 1,000 or 1,100ppm vs no fluoride | adults | MD −0.53 DMFS | −1.02 to −0.04 | 3 | [moderate]{.certainty .moderate} |
 
 : Fluoride toothpaste against no fluoride [@walsh2019] {#tbl-fluoride-vs-none}
 
-Fifty-five randomised trials. High to moderate certainty. Consistent direction,
-tight confidence intervals nowhere near zero, and replicated in primary teeth
-and in adults.
+Fifty-five randomized trials, at **high** certainty for the 1,000 to 1,250ppm
+comparison and **moderate** for the 1,450 to 1,500ppm one. An earlier draft
+printed both as "high to moderate," which is not something GRADE does: a certainty
+rating attaches to one estimate and takes one of four values, not a range.
+Consistent direction, tight confidence intervals nowhere near zero, and replicated
+in primary teeth and in adults.
 
 This is what a Strong recommendation is supposed to look like. Note in
 particular what the previous chapters were missing and this one has: the studies
-are randomised, they measure tooth decay rather than a chemical proxy, and they
+are randomized, they measure tooth decay rather than a chemical proxy, and they
 compare the thing the advice tells you to do against the thing it tells you not
 to do.
 
@@ -113,12 +116,14 @@ notably more cautious than the recommendation it supports:
 
 And note the review's own statement about the network: "The certainty of the
 evidence was judged to be **low**" apart from the handful of comparisons listed
-above. Most of the 21 comparisons in that network are low certainty. The four
-that are not are the ones the guideline uses, which is the correct way round, and
-worth crediting.
+above. Most of the 21 comparisons in that network are low certainty. **Five** are
+not, and the guideline uses three of them, which is the correct way round and
+worth crediting. The other two are the higher-concentration comparisons in the
+second table, both moderate, and both showing no added benefit. I said four in an
+earlier draft.
 
 ::: {.callout-note title="How I judged this: what an SMD of 0.28 actually means" collapse="true"}
-A standardised mean difference of 0.28 means the groups differ by 0.28 of a
+A standardized mean difference of 0.28 means the groups differ by 0.28 of a
 standard deviation of the caries increment. That is not a quantity anyone has
 intuitions about, so the honest thing is to translate it.
 
@@ -188,7 +193,7 @@ estimates "could be challenged by further research."
 So the single bullet "with toothpaste containing 1,350 to 1,500ppm fluoride"
 contains a very strong claim and a weak one, welded together.
 
-*Use fluoride toothpaste* is supported by 55 randomised trials at high to
+*Use fluoride toothpaste* is supported by 55 randomized trials at high to
 moderate certainty with an effect four times larger. *Use this particular band
 rather than an ordinary 1,000ppm one* is supported by ten studies at moderate
 certainty with an effect whose confidence interval nearly touches zero.
@@ -205,16 +210,27 @@ that cannot transmit the distinction.
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   **For "use fluoride toothpaste":** [high to moderate]{.certainty .high}. 55
-    randomised trials, consistent, precise, direct.
+:   **For "use fluoride toothpaste":** [high]{.certainty .high} against no
+    fluoride at 1,000 to 1,250ppm, from 55 randomized trials, consistent, precise
+    and direct; [moderate]{.certainty .moderate} for the same comparison at 1,450
+    to 1,500ppm, from four.
     **For "use 1,350 to 1,500ppm rather than 1,000ppm":**
     [moderate]{.certainty .moderate}, for a small effect (SMD −0.08, 95% CI
-    −0.14 to −0.01).
+    −0.14 to −0.01), and from children and adolescents rather than adults.
 
 Directness to the advice as worded
-:   **Excellent.** The review's question is the recommendation's question:
-    right population, right comparison, right outcome, randomised, followed for
-    at least a year. The only indirectness worth noting is age: the newest
+:   **Excellent for children and adolescents, indirect for adults.** The review's
+    question is the recommendation's question: right comparison, right outcome,
+    randomized, followed for at least a year.
+
+    But the adult recommendation names the 1,350 to 1,500ppm band, and the only
+    adult evidence in this review is 1,000 or 1,100ppm against no fluoride
+    (MD −0.53 DMFS, 95% CI −1.02 to −0.04, 3 studies). The band itself is
+    evidenced in immature permanent dentition in children and adolescents, and
+    DBOH says so: "Evidence for the concentration is based on studies on immature
+    permanent dentition in children and adolescents."
+
+    The other indirectness worth noting is the age of the evidence: the newest
     included trial is from 2014, and background fluoride exposure has changed.
 
 Is the strength label defensible?
@@ -238,7 +254,7 @@ What would change my mind
 ## What this means for you
 
 Use fluoride toothpaste. This is the single best-supported thing in this book and
-it is not close: dozens of randomised trials, measuring actual tooth decay,
+it is not close: dozens of randomized trials, measuring actual tooth decay,
 consistently finding less of it. If you take one instruction away from these
 pages, take this one.
 

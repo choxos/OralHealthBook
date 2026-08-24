@@ -14,22 +14,47 @@ actually makes, rests on much less than people assume.
 >
 > Strength of recommendation: **Strong**
 >
-> --- *Delivering Better Oral Health*, chapter 2, tables 1a, 1b, 1d and 1f
-> [@dboh2025]
+> --- *Delivering Better Oral Health*, chapter 2, table 1f [@dboh2025]
 
-Note that this single line contains two instructions, **amount** and
-**frequency**, with no bullets to separate them. It is a bundle that
-[Chapter -@sec-bundling]'s counting method scores as one, which is why that
-chapter calls its own figures a floor.
+That is the adult wording. The advice is not phrased identically across the age
+tables, and the difference matters for the point I am about to make:
+
+| Table | Population | Wording |
+|:---|:---|:---|
+| 1a | children up to 3 | "Minimise consumption of sugar-containing foods and drinks" |
+| 1b, 1d | children 3 to 6, 7 to 18 | "Minimise amount and frequency of consumption of sugar-containing food and drinks" |
+| 1f | adults | "Minimise the amount and frequency of consumption of sugar-containing food and drinks" |
+
+: The same recommendation across four tables {#tbl-sugar-wording}
+
+Note that the adult and older-child lines each contain two instructions,
+**amount** and **frequency**, with no bullets to separate them. It is a bundle
+that [Chapter -@sec-bundling]'s counting method scores as one, which is why that
+chapter calls its own figures a floor. The under-threes line does **not** contain
+that bundle; it says only "minimise consumption," and an earlier draft of this
+chapter attributed the two-instruction wording to all four tables, which was
+wrong.
 
 ## What the guideline says its evidence is
 
 > Recommendation based on **moderate-certainty evidence** that dental caries is
 > lower when free-sugars intake is <10% and on **very low certainty evidence**
 > that dental caries is lower when free-sugars intake is <5% energy, and in line
-> with WHO and SACN guidelines.
+> with WHO and SCAN [sic] guidelines.
 >
-> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+> --- *Delivering Better Oral Health*, chapter 13, table 6 [@dboh2025]
+
+The "[sic]" is mine and it is not a cheap shot. DBOH prints **SCAN** in all eight
+places this sentence appears, and the GOV.UK markup expands the abbreviation as
+"South Central Antimicrobial Network," which is a real body and has nothing to do
+with sugar. The footnote the sentence hangs on is the *Scientific Advisory
+Committee on Nutrition*, **SACN**, and its 2015 report *Carbohydrates and health*.
+
+So it is a typo, and everyone can see it is a typo. I flag it for one reason: an
+earlier draft of this chapter silently printed "SACN" inside the quotation marks.
+A book whose method is verbatim quotation does not get to tidy up its source, even
+helpfully, even when the correction is obvious. If I can quietly improve a
+guideline's wording when it suits me, nothing else I quote is trustworthy.
 
 Two thresholds, two very different certainties, in one sentence. The citation is
 Moynihan and Kelly's review, written to inform the WHO guideline
@@ -40,7 +65,7 @@ Moynihan and Kelly's review, written to inform the WHO guideline
 Before the modern evidence, a word about the study everybody reaches for.
 
 The Vipeholm study ran in Sweden from 1945 to 1955. Its participants were 436
-adults institutionalised at Vipeholm Hospital with intellectual disabilities, and
+adults institutionalized at Vipeholm Hospital with intellectual disabilities, and
 they were fed large quantities of sweets, in various patterns, to see what
 happened to their teeth. What happened was a great deal of tooth decay,
 particularly in the groups given sticky sweets between meals.
@@ -48,7 +73,7 @@ particularly in the groups given sticky sweets between meals.
 In my original blog post I wrote that this "showed a causal relationship between
 sugar and tooth decay." I have changed that, for two reasons.
 
-The first is scientific. Vipeholm was not randomised in any modern sense, the
+The first is scientific. Vipeholm was not randomized in any modern sense, the
 groups were not comparable, and the exposure was extreme. It is cited so often
 because its finding is memorable and its direction is right, not because its
 design would support a causal claim today.
@@ -74,29 +99,61 @@ GRADE. Their conclusions:
 > --- Moynihan and Kelly, 2014 [@moynihan2014]
 
 So: moderate certainty that less sugar means less decay, and moderate certainty
-for the 10%-of-energy threshold specifically. For most adults, 10% of energy is
-roughly 55 g of free sugars a day; for a 4- to 6-year-old, about 44 g; for a 1-
-to 3-year-old, about 32 g.
+for the 10%-of-energy threshold specifically.
+
+In grams, the figures most people will have met are the **5%** ones, because
+those are what UK guidance publishes: DBOH's own chapter 10 gives no more than
+19 g of free sugars a day for a 4- to 6-year-old and no more than 30 g from age
+11 upwards. WHO illustrates its 10% level as roughly 50 g on a 2,000 kcal diet.
+An earlier draft of this chapter gave a set of gram figures for the 10% level
+that I could not source back to either document, and I have replaced them with
+the published ones rather than leave arithmetic of my own standing in for a
+citation.
 
 The 5% threshold is different, and DBOH says so: **very low certainty**. The
-review is candid about why. The evidence for going below 5% rests substantially
-on older population-level data using standards the authors themselves describe as
-not "low" by modern reckoning, with caries diagnosed at thresholds that would not
-be used today.
+review is candid about why. The evidence for going below 5% rests on a handful of
+Japanese ecological studies from 1959 and 1960, using per-capita sugar
+availability rather than measured intake, which is why the profile downgrades for
+risk of bias.
+
+Two related cautions in the review are worth separating from that, because I ran
+them together in an earlier draft. Moynihan and Kelly note that at intakes under
+about 10% of energy the average DMFT of 12-year-olds was under 3, the WHO's oral
+health goal for the year 2000, and add that "by modern-day standards, this is not
+considered to be 'low'." They also note that in most studies caries was diagnosed
+at the cavitation level, a late stage. Both remarks are about the **10%**
+evidence and the literature at large; neither is the reason the 5% evidence is
+rated very low.
 
 ::: {.callout-note title="How I judged this: what kind of evidence this is" collapse="true"}
-Almost none of this is randomised, and it could not be. You cannot allocate
+Almost none of this is randomized, and it could not be. You cannot allocate
 children to a decade of high sugar intake. The review therefore pools
 intervention, cohort, population and cross-sectional studies, and grades the body
 accordingly.
 
 That is the correct approach, and moderate certainty from observational evidence
-is a **higher** rating than the default, which means the GRADE upgrade criteria
-from [Chapter -@sec-certainty-strength] were engaged: consistency across study
-types and populations, a dose-response relationship, and a large, biologically
-coherent effect. This is what upgrading observational evidence properly looks
-like, and it is the contrast case for [Chapter -@sec-twice-daily], where I
-looked for the same thing and could not find it.
+is a **higher** rating than the default, which means a GRADE upgrade criterion
+from [Chapter -@sec-certainty-strength] was engaged. The supplementary GRADE
+profiles say which one, and it is worth being exact because I was not in an
+earlier draft.
+
+The upgrade is for **large effect size**, and for that alone: an SMD for DMFT of
+0.82 (95% CI 0.67 to 0.97) comparing higher with lower sugars intake, and a risk
+ratio for caries prevalence of 7.15 (95% CI 2.82 to 8.14). The profile then adds:
+"Additionally, dose-response effect noted from Rugg-Gunn cohort study also
+supported by population studies **but not further upgraded**." So the
+dose-response was considered and deliberately not used for a second step up.
+
+I had also listed *consistency* among the upgrade criteria. It is not one.
+Consistency across studies is a reason **not to rate down**; the three upgrade
+criteria are large effect, dose-response gradient, and confounding that would work
+against the observed effect. Getting that wrong in a chapter praising someone
+else's GRADE application is not a good look, so it is corrected here and recorded
+in [Chapter -@sec-method].
+
+This remains what upgrading observational evidence properly looks like, and it is
+the contrast case for [Chapter -@sec-twice-daily], where I looked for the same
+thing and could not find it.
 
 Two limits worth naming. Measuring what people eat is notoriously unreliable, and
 misreporting of sugar in particular is systematic rather than random. And sugar
@@ -108,22 +165,24 @@ is defensible.
 **The frequency half.** The recommendation says "amount **and** frequency". The
 review's graded conclusion is about amount. Frequency has a long-standing
 mechanistic rationale, each sugar exposure dropping the pH for a period, so more
-exposures mean more time demineralised, and it is the part of the Vipeholm
+exposures mean more time demineralized, and it is the part of the Vipeholm
 finding that has best survived. But the moderate-certainty statement DBOH cites
 is about quantity, and the two are being carried by one label.
 :::
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
 PubMed, 21 August 2026. Moynihan and Kelly's own search covered multiple
-databases to 2013 for the WHO guideline process. I checked for a more recent
-systematic review of sugars and caries intended to inform guidelines and found
-none superseding it.
+databases from 1950 through **November 2011**; the paper was published in 2014,
+and I had previously given the search end-date as 2013. I checked for a more
+recent systematic review of sugars and caries intended to inform guidelines and
+found none superseding it.
 
 I have the full text and all six supplementary files, supplied during writing,
 including the GRADE profile tables.
 
-**Age of the evidence**: this review is now twelve years old and is the basis of
-the WHO's current sugars guidance.
+**Age of the evidence**: this review is now twelve years old, its literature
+search closed fifteen years ago, and it remains the basis of the WHO's current
+sugars guidance.
 
 Full record in `appraisals/searches/ch13-sugar.md`.
 :::

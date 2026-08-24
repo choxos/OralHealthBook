@@ -27,11 +27,11 @@ toothbrushing [@dossantos2018]. Its conclusion, in the authors' words:
 The review searched 2,046 records and found four controlled trials. It could not
 perform a meta-analysis, because of clinical heterogeneity among the studies and
 differences in how caries incidence was reported. Of the four trials, two found
-statistically significant differences favouring supervised brushing, but
+statistically significant differences favoring supervised brushing, but
 "information about the magnitude and/or the precision of the effect estimate was
 lacking", and in one trial the clustering effect was not taken into account.
 
-That last detail is worth dwelling on. A trial that randomises schools but
+That last detail is worth dwelling on. A trial that randomizes schools but
 analyses children as though they were independent will produce confidence
 intervals that are too narrow and a p-value that is too small. It is one of the
 most common statistical errors in this literature, and the review caught it.
@@ -106,12 +106,12 @@ evidence statement names no certainty level.
 
 And that is fine. This is what the Good practice category is *for*: advice that
 is obviously sensible, costs nothing, harms nobody, and that no one is ever going
-to randomise. A child on long-term liquid medication is bathing their teeth in
+to randomize. A child on long-term liquid medication is bathing their teeth in
 sugar several times a day. You do not need a trial.
 
 I include it to make a point about proportion. This book has spent a lot of pages
 on recommendations whose labels outrun their evidence. Here is one with no
-evidence at all, correctly labelled, and I have nothing to say against it. The
+evidence at all, correctly labeled, and I have nothing to say against it. The
 category works when it is used.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
@@ -153,7 +153,7 @@ Is the strength label defensible?
     salivary flow, and read as three independent supports when they are one.
 
 What would change my mind
-:   For supervised brushing: a cluster trial, correctly analysed, isolating
+:   For supervised brushing: a cluster trial, correctly analyzed, isolating
     supervision from toothpaste supply. Given how much public money rests on this
     intervention, its absence is remarkable. For bedtime sugar: any prospective
     study measuring timing of intake rather than reconstructing it from a

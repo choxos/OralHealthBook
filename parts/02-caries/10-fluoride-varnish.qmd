@@ -1,9 +1,9 @@
 # Fluoride varnish twice a year {#sec-varnish}
 
-This is the one thing on the list that somebody else does to you. Everything else
-in Part II is something you do at home; fluoride varnish is a professional
-intervention, delivered in a chair, and it is the reason a great many children
-are booked in twice a year.
+This is the first professional intervention Part II audits. Everything before it
+is something you do at home; fluoride varnish is applied in a chair, by somebody
+else, and it is the reason a great many children are booked in twice a year.
+[Chapter -@sec-sealants] covers the other one.
 
 It is also, on the evidence, one of the better-supported things in the guideline,
 with one caveat that has grown more serious every year since 2013.
@@ -14,18 +14,32 @@ with one caveat that has grown more serious every year since 2013.
 >
 > Strength of recommendation: **Strong**
 >
-> --- *Delivering Better Oral Health*, chapter 2, tables 1b, 1d and 1f
-> [@dboh2025]
+> --- *Delivering Better Oral Health*, chapter 2, table 1b [@dboh2025]
 
-For children at higher risk, "2 or more times a year."
+That is table 1b's word order. Table 1d, for children aged 7 to 18, moves the
+concentration to the end: "Apply fluoride varnish to teeth 2 times a year (2.26%
+NaF)". The adult row is **table 1g**, not 1f, and is worded as 1d is. For children
+at higher risk, table 1e says "2 or more times a year." An earlier draft of this
+chapter attributed the 1b wording to tables 1b, 1d and 1f; table 1f carries no
+varnish recommendation at all.
 
 ## What the guideline says its evidence is
+
+> Recommendation based on moderate certainty evidence.
+>
+> --- *Delivering Better Oral Health*, chapter 13, tables 2, 4 and 7 [@dboh2025]
+
+That is the whole of it for the twice-yearly rows. A longer statement exists, but
+it belongs to the **higher-risk** "2 or more times a year" row:
 
 > Recommendation based on moderate certainty evidence. Most studies used 2
 > applications per year. For guidance: manufacturers recommend application every
 > 6 months, or a maximum of every 3 months.
 >
-> --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
+> --- *Delivering Better Oral Health*, chapter 13, table 5 [@dboh2025]
+
+An earlier draft of this chapter glued the two together and presented the longer
+one as the evidence for the twice-yearly recommendation.
 
 The citation is the Cochrane review of fluoride varnishes [@marinho2013].
 
@@ -35,8 +49,16 @@ The citation is on point, which after Part II's earlier chapters is worth saying
 plainly. Marinho and colleagues asked exactly the question the recommendation
 makes, in the right population, with caries as the outcome.
 
-Twenty-two trials, published between 1975 and 2012, randomising 12,455
-participants, of whom 9,595 contributed to the analyses. The primary measure is
+Twenty-two trials, published between 1975 and 2012, allocating 12,455
+participants, of whom 9,595 contributed to the analyses. Not all were randomized:
+the review's eligibility criteria are "randomised **or quasi-randomised**
+controlled trials," and several included studies used quasi-random allocation. I
+called them twenty-two randomized trials in an earlier draft.
+
+One population note that matters later: the review includes children and
+adolescents **aged 16 or under**. The adult recommendation in table 1g is
+therefore an extrapolation, and the guideline says so, rating it "moderate
+certainty evidence from children and adolescents." The primary measure is
 the prevented fraction: the difference in caries increment between varnish and
 control, as a percentage of the control increment.
 
@@ -47,10 +69,12 @@ control, as a percentage of the control increment.
 
 : Fluoride varnish against placebo or no treatment [@marinho2013] {#tbl-varnish}
 
-A 43% reduction is a large effect by the standards of anything else in this book.
-For comparison, [Chapter -@sec-ppm] found fluoride toothpaste at an SMD of −0.28,
-and [Chapter -@sec-twice-daily] found brushing frequency at an odds ratio of 1.50
-from observational data. This is a different order of finding.
+A 43% reduction is a large effect. I am not going to rank it against the SMD in
+[Chapter -@sec-ppm] or the odds ratio in [Chapter -@sec-twice-daily], as an
+earlier draft did: a prevented fraction, a standardized mean difference and an
+odds ratio sit on three different scales, from three different populations and
+comparisons, and lining their numbers up produces something that looks
+quantitative and is not.
 
 ::: {.callout-note title="How I judged this: three things the review says about itself" collapse="true"}
 The review's own conclusion contains the caveats, and they matter.
@@ -61,7 +85,16 @@ The review's own conclusion contains the caveats, and they matter.
 > **considerable heterogeneity**.
 
 **Risk of bias.** The review states its included trials are mainly at high risk of
-bias. Moderate certainty already reflects a downgrade for this.
+bias.
+
+**And an upgrade, which I had left out.** The route to moderate is not simply
+"randomized evidence, downgraded once." The summary-of-findings footnotes record
+that the reviewers downgraded for heterogeneity and study limitations and then
+**upgraded** on the basis of "a consistent, large clinically important effect,"
+landing at moderate. That is worth flagging twice over: it is a fuller account
+than the one I gave, and upgrading is a move GRADE ordinarily reserves for
+observational evidence, so applying it to a randomized body is a judgment a reader
+should be able to see rather than one buried in a footnote.
 
 **Heterogeneity.** Substantial and statistically confirmed (I² = 75%,
 P < 0.0001) for the permanent-teeth analysis. A pooled estimate of 43% across
@@ -74,15 +107,34 @@ effect, and found **no significant association** with baseline caries severity,
 background fluoride exposure, whether a prophylaxis was done first, the
 concentration of fluoride, or the frequency of application. Nor with length of
 follow-up, use of a placebo versus no treatment, or individual versus cluster
-randomisation.
+randomization.
 
-That last one deserves attention: **frequency of application did not predict the
-size of the effect.** The recommendation says twice a year. The review found no
-evidence that twice beats less often, or that more beats twice. DBOH's own
-evidence statement half-concedes this by saying only that "most studies used 2
-applications per year", which is a statement about what was done, not about what
-works. The number in the recommendation comes from convention, not from a
-comparison.
+That last one looks like the chapter's punchline, and in an earlier draft I made
+it one: I wrote that no comparison of application frequencies supports the
+twice-yearly schedule, and that such a trial "has never been done."
+
+**That is wrong, and the trials are inside this very review.**
+
+Weintraub and colleagues randomized 376 young children to no varnish, varnish
+**once a year**, or varnish **twice a year**, and reported a dose-response effect
+on the number of applications actually received (p < 0.01). Against counseling
+alone, caries incidence was higher at OR 2.20 (95% CI 1.19 to 4.08) for the
+once-yearly arm and OR 3.77 (1.88 to 7.58) for the twice-yearly arm
+[@weintraub2006]. Sköld and colleagues ran a four-arm trial comparing twice,
+three times and eight times a year against no treatment.
+
+So frequency has been randomized. What has not been done is a pooled direct
+estimate of once against twice: the review combined active arms for its main
+analysis, and its frequency meta-regression is a **trial-level** comparison of
+whole studies, underpowered by the review's own warning that "all the
+meta-regressions have low power and the findings should not be interpreted as no
+effect."
+
+The honest version is therefore narrower than the one I wanted, and more useful.
+Twice a year is the schedule most of the evidence was generated under, 17 of the
+22 trials used it, and at least one randomized trial points to twice being better
+than once. What nobody has produced is a precise estimate of how much better, or
+of whether three or four times would be better still.
 
 **Adverse effects.** "There was little information concerning possible adverse
 effects or acceptability of treatment." Twenty-two trials, and the harm side is
@@ -99,8 +151,11 @@ depends on how much fluoride the population is already getting. When most of
 these trials ran, fluoride toothpaste was less universal than it is now. The
 review looked for exactly this effect, and did not find background fluoride
 exposure to be a significant modifier, which is reassuring. But that null result
-comes from the same heterogeneous body of evidence, and absence of a detected
-modifier in twenty-two trials with I² of 75% is not strong reassurance.
+comes from the same heterogeneous body of evidence, and the modifier analyses
+rest on subsets of seven to twelve trials rather than all twenty-two, with the I²
+of 75% belonging to the thirteen-trial permanent-surface meta-analysis.
+Underpowered trial-level regressions cannot confidently exclude effect
+modification by background fluoride exposure.
 
 This is the same structural problem that turns up much more dramatically in
 [Chapter -@sec-fluoridation-works], where splitting the water fluoridation
@@ -128,11 +183,15 @@ Certainty of evidence
     effect is large and consistent in direction across 22 trials, and downgraded
     for risk of bias and heterogeneity rather than for anything about relevance.
 
-    **Separately: very low for the "twice a year" part.** No comparison of
-    application frequencies supports it.
+    **Separately, for the "2 times a year" schedule:** [low]{.certainty .low}.
+    Frequency **has** been randomized, in at least two included trials, and one of
+    them found a dose-response on applications actually received. What the review
+    does not provide is a pooled direct estimate of once against twice, because it
+    combined active arms. So the schedule is not unevidenced, as I first wrote; it
+    is imprecisely evidenced.
 
 Directness to the advice as worded
-:   **Good on the intervention, poor on the schedule, and ageing.** Right
+:   **Good on the intervention, poor on the schedule, and aging.** Right
     population, right comparator, caries measured directly over years. But the
     newest trial is from 2012, in a population with different background fluoride
     exposure from today's, and nothing in the review tests the recommended
@@ -142,26 +201,38 @@ Is the strength label defensible?
 :   **Yes for applying varnish.** This is the second-best-supported recommendation
     in the book after fluoride toothpaste, and a Strong label is right.
 
-    **No for "2 times a year" as a specific claim.** That number is convention
-    dressed as evidence, and it is the sort of specificity that makes advice look
-    more precisely calibrated than it is. It should read as Strong for varnish,
-    with the interval flagged as consensus.
+    **Arguable for "2 times a year" as a specific number.** DBOH reports openly
+    that most included studies used two applications a year, and separately cites
+    manufacturer guidance; it does not claim the number came from a head-to-head
+    comparison. Twice a year is the schedule the evidence was generated under and
+    the one a randomized trial found better than once. What has not been shown is
+    that it is **optimal**, and a reader would be better served if the
+    recommendation said which of those two things it meant.
 
 What would change my mind
 :   An updated review including post-2012 trials, which would either confirm the
     effect in a modern fluoride-exposed population or show it shrinking, as
-    happened with water fluoridation. And a trial comparing application
-    frequencies directly, which is cheap and has never been done.
+    happened with water fluoridation. And an analysis extracting the arm-level
+    frequency contrasts that already sit inside Sköld and Weintraub, which would
+    turn "twice is what was studied" into an estimate of how much twice beats
+    once.
 :::
 
 ## What this means for you
 
-If a dentist offers fluoride varnish for your child, take it. It is among the
+If a dentist offers fluoride varnish for your child, it is among the
 best-evidenced things in this book: a large effect, measured on actual tooth
-decay, in twenty-two randomised trials.
+decay, across twenty-two randomized or quasi-randomized trials.
 
-Two honest qualifications. Nobody has shown that twice a year is the right
-number, as opposed to once or three times; that figure is what the trials
-happened to do. And the evidence is now over a decade old and was gathered in
-populations with less fluoride in their daily lives than yours. Neither is a
-reason to decline. Both are reasons someone should be redoing this work.
+Two honest qualifications. Nobody has produced a precise estimate of how much
+better twice a year is than once, although the trials that randomized it point
+that way; and the evidence is now over a decade old, gathered in populations whose
+background fluoride exposure was probably lower than today's. Neither is a reason
+to decline an application a clinician has judged appropriate. Both are reasons
+someone should be redoing this work.
+
+One practical note this chapter owes you, since it is recommending a treatment.
+Varnish is not for everyone: the guideline lists contraindications including
+ulcerative gingivitis and stomatitis, and cautions around colophony allergy and
+severe asthma. That is a conversation with the person applying it, not something
+a book can settle.

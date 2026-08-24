@@ -58,7 +58,7 @@ included 63 papers [@tham2015].
 | Breastfed **>12 months** vs <12 months | 1.99 | 1.35 to 2.95 | 69.3% |
 | Among those breastfed >12 months: nocturnal or more frequent feeding | **7.14** | 3.14 to 16.23 | 77.1% |
 
-: Breastfeeding and dental caries [@tham2015]. Below 1 favours breastfeeding
+: Breastfeeding and dental caries [@tham2015]. Below 1 favors breastfeeding
 {#tbl-tham}
 
 Three things jump out.

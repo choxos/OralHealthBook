@@ -16,10 +16,22 @@ dboh:
   # Recommendations whose evidence statement names no certainty at all
   no_certainty_stated: 39
   # Good practice points, which by definition have no research behind them
-  goodpractice_with_evidence: 14
+  goodpractice_with_evidence: 15
   # Strong recommendations conceding low or very low certainty
   # for at least one of their components
   strong_conceding_low: 9
   # Join quality between chapter 2 and chapter 13
-  joined: 89
-  unjoined: 2
+  joined: 90
+  unjoined: 1
+  # Age of the newest citation supporting each recommendation, in
+  # years at the edition's own publication date. See _citation_ages.
+  dated: 74
+  age_median: 7
+  age_max: 13
+  age_5plus: 64
+  age_10plus: 16
+  age_same_year: 1
+  age_undated: 17
+  # The publication year a median-aged recommendation rests on, so the
+  # prose never hard-codes an arithmetic result of the two above.
+  age_median_year: 2018

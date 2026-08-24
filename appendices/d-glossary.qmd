@@ -25,8 +25,8 @@ is where most of the confusion in this subject lives.
     paper and not of a recommendation. Compare **strength of recommendation**,
     with which it is constantly confused.
 
-**Cluster-randomised trial**
-:   A trial that randomises groups, such as schools or clinics, rather than
+**Cluster-randomized trial**
+:   A trial that randomizes groups, such as schools or clinics, rather than
     individuals. Its analysis must account for the fact that people within a
     group resemble each other, or its confidence intervals come out too narrow.
 
@@ -90,14 +90,14 @@ is where most of the confusion in this subject lives.
 
 **Indirectness**
 :   The GRADE domain covering a mismatch between the evidence and the question,
-    in population, intervention, comparator or outcome. The only domain that a
-    perfectly conducted study can still trigger, and the one this book leans on
-    most.
+    in population, intervention, comparator or outcome. It can be triggered by a
+    perfectly conducted study, as can imprecision, and it is the domain this book
+    leans on most.
 
 **Intention to treat**
-:   Analysing participants in the group they were randomised to, whatever they
-    subsequently did. Analysing only those who completed the study instead
-    discards the protection randomisation bought.
+:   Analyzing participants in the group they were randomized to, whatever they
+    subsequently did. Analyzing only those who completed the study instead
+    discards the protection randomization bought.
 
 **Meta-analysis**
 :   Statistically combining results across studies to estimate an effect.
@@ -106,7 +106,7 @@ is where most of the confusion in this subject lives.
 :   Asking whether the size of an effect varies across studies according to some
     characteristic of those studies. The comparison is between studies, not
     within them, so it is observational even when every included study was
-    randomised.
+    randomized.
 
 **Odds ratio**
 :   The odds of an outcome in one group divided by the odds in another. For rare
@@ -128,18 +128,20 @@ is where most of the confusion in this subject lives.
     effects.
 
 **RoB 2**
-:   The Cochrane risk-of-bias tool for randomised trials, in five domains, with
+:   The Cochrane risk-of-bias tool for randomized trials, in five domains, with
     the overall judgment set by the worst domain.
 
 **ROBINS-I**
-:   The equivalent for non-randomised studies of interventions, with confounding
+:   The equivalent for non-randomized studies of interventions, with confounding
     as its first and heaviest domain.
 
 **ROBIS**
-:   A four-phase tool for judging whether a systematic review's conclusions are
-    at risk of bias.
+:   A three-phase tool for judging whether a systematic review's conclusions are
+    at risk of bias. The second phase carries four domains: eligibility criteria,
+    identification and selection of studies, data collection and study appraisal,
+    and synthesis and findings.
 
-**Standardised mean difference (SMD)**
+**Standardized mean difference (SMD)**
 :   A difference between groups expressed in standard deviations, used when
     studies measured the same thing on different scales. Not a quantity anyone
     has intuitions about; wherever possible this book converts it back into

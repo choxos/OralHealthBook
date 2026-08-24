@@ -12,16 +12,39 @@ established twice, and because I have less to add than in Part II.
 Three Strong recommendations, structured like the tobacco pathway:
 
 > **Ask.** Use the AUDIT-C tool (or similar) to assess a patient's level of risk of
-> alcohol harm by completing 3 consumption questions. — **Strong**
+> alcohol harm by completing 3 consumption questions.
 >
-> **Advise.** If AUDIT-C score is 4 or below, give positive feedback... If score is
-> 5 to 10, give brief advice to encourage a reduction. — **Strong**
+> Strength of recommendation: **Strong**
 >
-> **Act.** Feed back that their level of drinking is putting them at risk...
-> Highlight 'low risk' guidelines from UK Chief Medical Officers: not more than 14
-> units a week on a regular basis... — **Strong**
+> **Advise.** If AUDIT C score is 4 or below, give positive feedback and encourage
+> your patient to keep their drinking at lower risk levels. If score is 5 to 10,
+> give brief advice to encourage a reduction in alcohol consumption and reduce the
+> risk of alcohol harm.
+>
+> Strength of recommendation: **Strong**
+>
+> **Act.** Feed back to the patient that their level of drinking is putting them
+> at risk of developing a range of health problems (including cancers of the
+> mouth, throat and breast) and this increases the more you drink and the more
+> frequently you drink. Highlight 'low risk' guidelines for alcohol consumption
+> from UK Chief Medical Officers: • to keep health risks from alcohol to a low
+> level, it is safest not to drink more than 14 units a week on a regular basis
+> [...] Give a leaflet
+>
+> Strength of recommendation: **Strong**
 >
 > --- *Delivering Better Oral Health*, chapter 2, table 3c [@dboh2025]
+
+The Act row runs to three bulleted sub-points; I have kept the first, which is
+the one everybody quotes, and marked the cut. The two I left out are about
+spreading drinking over three or more days and having drink-free days.
+
+Notice the wording of that first bullet, because it is not the wording the
+fourteen-unit rule is usually given in. It is not "the limit is 14 units." It is
+that **to keep health risks to a low level**, it is **safest** not to exceed it.
+That is a statement about a risk gradient with no threshold in it, and an earlier
+draft of this chapter quoted it as though it were a limit, which is precisely the
+transformation this chapter goes on to complain about.
 
 ## What the guideline says its evidence is
 
@@ -53,9 +76,9 @@ is for brief alcohol interventions as a class, largely from primary care. Whethe
 a conversation about drinking works the same way when it happens with a dental
 nurse holding a suction tube is an open question, and it is precisely the kind of
 setting mismatch that [Chapter -@sec-rinse] flagged for supervised school
-programmes.
+programs.
 
-DBOH does not disclose this one the way it disclosed the school-programme gap.
+DBOH does not disclose this one the way it disclosed the school-program gap.
 Chapter 13 says "a systematic review showed that brief interventions can reduce
 alcohol consumption" without noting where those interventions were delivered.
 Given how well the same chapter handles the equivalent gap for mouth rinses, this
@@ -75,12 +98,20 @@ reasonable thing for a dental guideline to do, and it is the same legitimate
 borrowing as [Chapter -@sec-breastfeeding].
 
 What I will note is that the oral cancer risk is the part relevant to a dental
-setting, and the 14-unit threshold was not derived from it specifically.
+setting, and the 14-unit figure was not derived from it specifically. Nor is it a
+threshold, whatever the phrase "the fourteen-unit line" in this chapter's title
+suggests. The CMO wording is a statement about keeping risk low, not about a
+point at which risk begins, and the difference is the same one this book keeps
+finding: a graded, hedged statement in the source becomes a bright line by the
+time it reaches the person it is aimed at.
 
 ## The pregnancy row
 
 > For those who are pregnant or think they could become pregnant, the safest
-> approach is not to drink alcohol at all. — **Good practice**
+> approach is not to drink alcohol at all, to remove the risk of alcohol-related
+> harm to the baby.
+>
+> Strength of recommendation: **Good practice**
 >
 > A well conducted systematic review highlights **the paucity of evidence
 > evaluating light drinking in pregnancy compared with abstinence**. Based on this
@@ -98,7 +129,7 @@ one.
 ::: {.callout-note title="What I searched, and when" collapse="true"}
 PubMed, 21 August 2026. I did not obtain the systematic review of brief alcohol
 interventions that DBOH cites; it was not among the supplied documents, and this
-chapter relies on DBOH's characterisation of it.
+chapter relies on DBOH's characterization of it.
 
 I have not audited the UK CMO alcohol guidelines, which are the source of the
 14-unit figure. That is outside this book's scope and I say so rather than
@@ -129,7 +160,7 @@ Is the strength label defensible?
     justifies the label even where individual steps lack their own evidence.
 
     The improvement wanted is one clause: name the setting the evidence came from,
-    as the same chapter does for supervised school mouth rinse programmes.
+    as the same chapter does for supervised school mouth rinse programs.
 
 What would change my mind
 :   A trial of alcohol brief intervention delivered in dental practice, which

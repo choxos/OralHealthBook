@@ -28,7 +28,7 @@ DBOH cites two reviews here [@wang2020; @elkerbout2020], and notably **not** the
 Cochrane review of powered versus manual toothbrushing, which is the largest
 piece of work on the question. I will come back to that.
 
-**Wang and colleagues, 2020** pooled 21 randomised studies. According to the
+**Wang and colleagues, 2020** pooled 21 randomized studies. According to the
 paper, powered brushes outperformed manual on every index:
 
 | Outcome | SMD | 95% CI | I² |
@@ -42,8 +42,15 @@ paper, powered brushes outperformed manual on every index:
 
 Look at that last row, because it is the one nobody quotes. When the analysis is
 restricted to **oscillating-rotating** brushes, the design most commonly sold and
-most commonly recommended, the gingivitis difference disappears: SMD 0.07 with a
-confidence interval straddling zero.
+most commonly recommended, the gingivitis difference is no longer statistically
+significant: SMD 0.07, 95% CI −0.20 to 0.33.
+
+I wrote "the difference disappears" in an earlier draft and have changed it,
+because that interval does nothing of the sort. It runs from a small advantage
+for manual brushing to a moderate advantage for powered, and it is compatible
+with both. What has disappeared is the *evidence of a difference*, not the
+difference, and keeping those two apart is the whole subject of
+[Chapter -@sec-flossing].
 
 And look at the I² column. Ninety-one per cent. Heterogeneity that high means the
 included trials are not estimating the same thing, and the paper says as much,
@@ -52,9 +59,19 @@ SMD of 0.86 across trials that disagree that violently is a number I would not
 put much weight on.
 
 **Elkerbout and colleagues, 2020** is narrower and cleaner. It examined plaque
-removal after a **single brushing exercise**, and concluded at moderate certainty
-that powered brushes removed more plaque, with a difference in means of −0.15
-(95% CI −0.22 to −0.08) on one index and −0.15 (−0.18 to −0.12) on another.
+removal after a **single brushing exercise** and found more plaque removed by
+powered brushes on both of the indices it pooled: a difference of means of
+**−0.14 (95% CI −0.19 to −0.09)** on the Quigley and Hein index, from 15
+comparisons, and **−0.10 (−0.14 to −0.06)** on the Rustogi modified Navy index,
+from 8.
+
+Those are the overall figures. An earlier draft of this chapter gave two
+different numbers, both −0.15, which are in the paper but are the **brand
+subanalyses**: −0.15 (−0.22 to −0.08) is Procter and Gamble oscillating-rotating
+brushes on the first index, and −0.15 (−0.18 to −0.12) is Colgate side-to-side
+brushes on the second. Reporting a manufacturer's own subgroup as the review's
+headline result, in a chapter whose main complaint is industry funding, was an
+error worth recording rather than quietly fixing.
 
 The authors are unusually candid about what that does and does not show:
 
@@ -65,9 +82,12 @@ The authors are unusually candid about what that does and does not show:
 >
 > --- Elkerbout and colleagues, 2020 [@elkerbout2020]
 
-A single brushing exercise, in a laboratory-like setting, is about as far from
-"does this keep your gums healthy over decades" as a study can get while still
-being about toothbrushes.
+A single brushing exercise, with plaque allowed to accumulate for somewhere
+between 12 hours and 4 days beforehand, is about as far from "does this keep your
+gums healthy over decades" as a study can get while still being about
+toothbrushes. These were people brushing their own teeth, not a laboratory model,
+which I called it in an earlier draft; the distance from the question is about
+**duration**, not artificiality.
 
 ::: {.callout-note title="How I judged this: three problems that run through both" collapse="true"}
 **The outcome is plaque, not disease.** Every estimate above is a plaque or
@@ -80,17 +100,21 @@ and [Chapter -@sec-sealants].
 
 **Industry funding is pervasive.** Elkerbout says so directly. Toothbrush trials
 are largely funded by the companies that sell toothbrushes, and the empirical
-finding that industry-sponsored research more often favours the sponsor
+finding that industry-sponsored research more often favors the sponsor
 [@lundh2017] applies with unusual force to a market this size. This does not make
 the results wrong. It is a reason for the certainty rating to be lower than the
 confidence intervals alone suggest.
 
-**On the missing Cochrane review.** DBOH cites two 2020 reviews rather than the
-Cochrane review of powered versus manual brushing. I do not know why, and I will
-not speculate about motive; there are innocent explanations, including currency
-at the time of drafting. But the pattern in this book is that the most directly
-relevant systematic review sometimes goes uncited, as in
-[Chapter -@sec-twice-daily], and it is worth flagging when it recurs.
+**On the Cochrane review.** The chapter 13 row for this recommendation cites Wang
+2020 and Elkerbout 2020 rather than the Cochrane review of powered versus manual
+brushing, and an earlier draft of this chapter said the guideline had left
+Cochrane out. That overstated it. Chapter 8 of the same guideline does use it:
+"There is moderate-certainty evidence to suggest that powered toothbrushes reduce
+plaque and gingivitis more than manual toothbrushing in the short and long term,
+and supporting their safety," footnoted to Yaacob and colleagues, 2014. So the
+guideline as a whole cites the Cochrane review; the evidence table for this
+particular row does not. That is a smaller point than I first made, and the
+smaller point is the true one.
 :::
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
@@ -101,7 +125,10 @@ industry-dominated, and I would not trust a single-screener search of it.
 
 SIGN 138 records the relevant null for caries specifically: "No evidence was
 identified to show that powered toothbrushes are more effective than manual
-toothbrushes in preventing dental caries in children" [@sign138].
+toothbrushes in preventing dental caries in children" [@sign138]. Note the
+population in that sentence. It is children, and it is SIGN's search rather than
+mine; I did not search the adult primary literature for a caries outcome, so
+nothing in this chapter should be read as a claim about adults.
 
 Full record in `appraisals/searches/ch16-powered.md`.
 :::
@@ -116,7 +143,9 @@ Certainty of evidence
     surrogate outcomes, impossible blinding and pervasive industry funding.
     [Moderate]{.certainty .moderate} that powered brushes remove more plaque in a
     single supervised brushing, which is a much smaller claim.
-    **No evidence** that either type prevents caries better.
+    **No caries evidence either way.** SIGN 138 identified no trials showing
+    powered brushes better than manual for preventing caries in children, and
+    I did not search the adult literature for that outcome.
 
 Directness to the advice as worded
 :   **Adequate.** The trials compare the two things the advice offers, in the

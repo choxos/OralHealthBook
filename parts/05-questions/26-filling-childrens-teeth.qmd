@@ -8,9 +8,9 @@ put in a filling, as you would in an adult. Then somebody ran the trial.
 
 ## The trial
 
-FiCTION was a multicentre, three-arm, patient-randomised controlled trial in UK
+FiCTION was a multicentre, three-arm, patient-randomized controlled trial in UK
 primary dental care [@innes2020fiction]. Children aged 3 to 7 with at least one
-primary molar with a dentinal carious lesion were randomised 1:1:1 to:
+primary molar with a dentinal carious lesion were randomized 1:1:1 to:
 
 - **C+P**, conventional management: complete removal of carious tissue and a
   filling, plus prevention;
@@ -19,7 +19,7 @@ primary molar with a dentinal carious lesion were randomised 1:1:1 to:
 - **PA**, prevention alone: diet advice, plaque removal, fluorides and fissure
   sealants, with no restorative treatment at all.
 
-1,144 children were randomised, by 72 general dental practitioners, with a median
+1,144 children were randomized, by 72 general dental practitioners, with a median
 follow-up of 33.8 months. The co-primary outcomes were the right ones: **the
 proportion of children with at least one episode of dental pain or infection**,
 and **the number of such episodes**. Not surface counts. Not radiographic scores.
@@ -40,9 +40,11 @@ Against conventional treatment, the adjusted risk difference was **−2%
 prevention alone. For the number of episodes, adjusted incident rate ratios were
 0.95 (0.75 to 1.21) and 1.18 (0.94 to 1.48).
 
-The trial's conclusion: "there was no evidence of a difference among the 3
-treatment approaches for incidence or number of episodes of dental pain and
-infection."
+The trial's conclusion, quoted in full because the two clauses I trimmed in an
+earlier draft both matter: "there was no evidence of a difference among the 3
+treatment approaches for incidence or number of episodes of dental pain **and/or**
+infection experienced by these participants **with high caries risk and
+established disease**."
 
 Two things about that result deserve emphasis.
 
@@ -53,29 +55,31 @@ least attention.
 
 **Prevention alone was not clearly worse.** The confidence interval for prevention
 alone against filling runs from 4% better to 12% worse. That does not establish
-equivalence, and the point estimate does favour treating. But it is a long way
+equivalence, and the point estimate does favor treating. But it is a long way
 from the confident assumption that filling baby teeth prevents suffering.
 
 ::: {.callout-note title="How I judged this: what 'no evidence of a difference' means here" collapse="true"}
 [Chapter -@sec-scale-polish] drew a distinction that matters again here. A
-precise estimate centred on zero is a finding. A wide interval containing zero is
+precise estimate centered on zero is a finding. A wide interval containing zero is
 an absence of a finding.
 
 FiCTION is closer to the second. The risk difference interval for prevention alone
 spans −4% to +12%, which is compatible with prevention alone being slightly better
-and with it being meaningfully worse. The trial was powered for its co-primary
-outcomes and did not detect a difference; it did not demonstrate equivalence, and
-the authors do not claim it did. They say superiority "could not be concluded",
+and with it being meaningfully worse. The **incidence** comparison was the trial's
+powered analysis; episode count was added as a co-primary outcome in 2017, near
+the end of follow-up, and its comparison is explicitly exploratory and unpowered.
+Either way the trial did not detect a difference, and did not demonstrate
+equivalence; the authors do not claim it did. They say superiority "could not be concluded",
 which is careful and correct.
 
-**Risk of bias.** The trial states plainly that "parents, children, and dentists
-were not blind to allocated arm". Blinding is impossible when one arm involves
+**Risk of bias.** The trial states plainly: "Parents, children, and dentists were
+not blind to allocated arm." Blinding is impossible when one arm involves
 drilling. For a subjective outcome like reported pain, that matters. Against it:
 this was a large, registered, multicentre trial in real general practice with a
 patient-important primary outcome, which puts it among the best-designed studies
 anywhere in this book.
 
-**Attrition**: 1,144 randomised, 1,058 attended at least one study visit and were
+**Attrition**: 1,144 randomized, 1,058 attended at least one study visit and were
 included in the primary analysis. That is 92.5% retention over nearly three
 years, which is good.
 :::
@@ -93,10 +97,10 @@ recommendation.
 
 But the absence is worth noticing for a different reason. Every chapter of this
 book has been about prevention advice whose evidence is thinner than its label
-suggests. FiCTION is the reverse case: a large, well-conducted, patient-randomised
+suggests. FiCTION is the reverse case: a large, well-conducted, patient-randomized
 trial of a **treatment**, with a patient-important outcome, that found the
-long-standing default was not clearly better than the alternatives, including
-doing no restorative treatment at all.
+long-standing default was not clearly better than the alternatives, including a
+prevention-first strategy with no planned restoration of the eligible lesions.
 
 The dental profession has been considerably slower to change practice in response
 to that than it has been to repeat prevention advice with much weaker support.
@@ -117,11 +121,20 @@ Full record in `appraisals/searches/ch26-fiction.md`.
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   [Moderate]{.certainty .moderate} that conventional filling, biological
-    sealing-in, and prevention alone produce similar rates of dental pain and
-    infection in primary teeth over about three years. One large well-conducted
-    randomised trial, downgraded for the unavoidable lack of blinding with a
+:   [Moderate]{.certainty .moderate} that **no difference was detected** between
+    conventional filling, biological sealing-in and a prevention-first strategy
+    for dental pain and/or infection, in children at high caries risk with
+    established disease, over a median 33.8 months. One large well-conducted
+    randomized trial, downgraded for the unavoidable lack of blinding with a
     subjective primary outcome.
+
+    Stated that way on purpose. An earlier draft said the three approaches
+    "produce similar rates," which converts a failure to show superiority into a
+    demonstration of equivalence. No equivalence margin was set, and the interval
+    for prevention alone against filling still admits a 12 percentage point
+    excess. The trial's own report says it plainly: "'no evidence of a difference'
+    does not mean that there was no difference, or that the three treatment
+    approaches were equivalent."
 
 Directness to the advice as worded
 :   **Excellent.** Right children, right teeth, delivered in ordinary general
@@ -131,7 +144,7 @@ Directness to the advice as worded
 
 Is the strength label defensible?
 :   Not applicable; DBOH makes no recommendation here. My conclusion is that the
-    evidence does not support a confident default in favour of conventional
+    evidence does not support a confident default in favor of conventional
     filling, and does support a genuine discussion with parents about the options.
 
 What would change my mind
@@ -145,18 +158,23 @@ What would change my mind
 
 ## What this means for you
 
-If your child has decay in a baby tooth, there is no single right answer, and a
-dentist who tells you there obviously is has not read the trial.
+If your child has decay in a baby tooth, there is more than one defensible
+answer. If a dentist presents filling as the only option, it is reasonable to ask
+about sealing the decay in and about a prevention-first approach, and what
+FiCTION found about pain and infection under each.
 
-The largest study ever done on this found roughly the same rate of pain and
-infection whether the tooth was drilled and filled, sealed over, or left alone
-with intensive prevention. About 40% of children had pain or infection in every
-group.
+That trial found no evidence of a difference in the rate of pain and/or infection
+between drilling and filling, sealing over, and a prevention-first strategy, in
+children aged 3 to 7 at high caries risk whose lesions were not yet causing
+symptoms. Around 40% of children had pain or infection in every group. What it did
+**not** establish is that the three are equivalent: the interval for prevention
+alone against filling still runs from 4 percentage points better to 12 points
+worse, and 12 points would matter.
 
-That last figure is the one to take seriously. It means that once decay has
-reached the dentine in a baby tooth, no approach reliably prevents trouble, which
-is an argument for everything in Part II of this book rather than an argument
-about fillings.
+That 40% is the figure to take seriously. Once decay has reached the dentin in a
+baby tooth, none of the approaches tested reliably prevented trouble, which is an
+argument for everything in Part II of this book rather than an argument about
+fillings.
 
 Ask what the options are, ask what happens if you wait, and expect a real
 conversation rather than an automatic appointment for a filling.

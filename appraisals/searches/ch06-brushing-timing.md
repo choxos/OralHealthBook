@@ -23,14 +23,18 @@ with a caries or patient-important outcome.
 
 The top hit was 27334438 (Kumar 2016), which is about **frequency**, not timing,
 and is handled in chapter 5. The remainder were about brushing frequency,
-supervised brushing programmes, or fluoride kinetics.
+supervised brushing programs, or fluoride kinetics.
 
 ## What the recommendation actually rests on
 
 Traced by hand rather than by search, through the citation chain:
 
 1. *Delivering Better Oral Health* 2025, chapter 13, tables 1 and 6 → cites SIGN 138.
-2. SIGN 138 §5.7.2 → cites its reference 101, and attaches **no evidence grade**.
+2. SIGN 138 §5.7.2 → cites its references 95 and 101, and marks the
+   recommendation with the tick symbol its own key on page ii defines as a
+   **Good Practice Point**: "recommended best practice based on the clinical
+   experience of the guideline development group." An earlier version of this
+   record said SIGN attached no grade; it attaches that one, deliberately.
 3. SIGN 138 reference 101 = Duckworth RM, Moore MS. Salivary fluoride
    concentrations after overnight use of toothpastes. *Caries Res*
    2001;35(4):285.

@@ -18,7 +18,7 @@ review [@iheozor2024], and it is the reason this chapter exists.
 
 ## What the review found
 
-157 studies, all non-randomised, because you cannot randomise a water supply. The
+157 studies, all non-randomized, because you cannot randomize a water supply. The
 review's key methodological decision, and the one that changed the picture, was
 to **stratify the results by whether data were collected before or after 1975**,
 the point at which fluoride toothpaste became widespread.
@@ -56,7 +56,7 @@ This is the chapter where selective quotation does the most damage, so let me se
 out what each side gets right and wrong.
 
 **What the critics get right.** The modern effect is small, the confidence
-interval includes zero, the evidence is low certainty and non-randomised, and
+interval includes zero, the evidence is low certainty and non-randomized, and
 there are only two contemporary studies for the primary outcome. Anyone who tells
 you contemporary evidence shows a large benefit is not describing this review.
 And there are **no eligible studies reporting caries outcomes in adults at all**,
@@ -76,14 +76,14 @@ review underpins [Chapter -@sec-ppm], and its finding is that the benefit has
 shrunk.
 
 ::: {.callout-note title="How I judged this: why the design cannot be fixed" collapse="true"}
-Every study here is non-randomised, so under GRADE the body starts at low
+Every study here is non-randomized, so under GRADE the body starts at low
 certainty, and the review downgraded further for confounding and lack of blinded
 outcome assessment. It also downgraded older evidence for **indirectness**, on the
 grounds that pre-1975 societies are not applicable to contemporary ones. That is
 exactly the reasoning [Chapter -@sec-sealants] applies to sealant trials from the
 1970s, and it is the right move.
 
-Could randomisation ever happen? Not realistically. You would need to allocate
+Could randomization ever happen? Not realistically. You would need to allocate
 water supplies to communities and follow them for years, with people moving in
 and out. The review notes migration as a specific complication.
 

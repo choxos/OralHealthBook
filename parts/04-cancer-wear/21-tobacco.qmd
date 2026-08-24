@@ -9,25 +9,37 @@ Nobody serious disputes either claim, and the guideline is right to push it as
 hard as it does. I have no interest in manufacturing a complaint here.
 
 What I want to do instead is apply the same method to a case where the answer
-comes out largely favourable, because a method that only ever finds fault is not
+comes out largely favorable, because a method that only ever finds fault is not
 a method. And then look at one row, because even here the guideline does the
 thing this book is about, and here it may be entitled to.
 
 ## The advice
 
-Tobacco gets five Strong recommendations across two tables, organised around a
-structure called Very Brief Advice: **ask, advise, act.**
+Tobacco gets seven recommendations across two tables, organized around a
+structure called Very Brief Advice: **ask, advise, act.** Six of the seven are
+Strong. Table 3a covers smoking and table 3b repeats the same three steps for
+smokeless tobacco.
+
+The seventh is Conditional, it is about e-cigarettes, and an earlier draft of
+this chapter did not audit it at all. It turns out to be the most interesting row
+in the guideline, so it gets its own section below.
 
 > **Ask.** At every opportunity, ask patients if they smoke and record smoking
-> status (smoker, ex-smoker, never smoker). — **Strong**
+> status (smoker, ex-smoker, never smoker).
+>
+> Strength of recommendation: **Strong**
 >
 > **Advise.** Explain that a combination of behavioural support and the
 > medication varenicline, or short-acting with long-acting Nicotine Replacement
-> Therapy, are likely to be most effective. — **Strong**
+> Therapy, are likely to be most effective.
+>
+> Strength of recommendation: **Strong**
 >
 > **Act.** Refer people who want to stop smoking to local stop smoking support,
 > preferably where behavioural support and prescribed stop smoking medicines are
-> available. — **Strong**
+> available.
+>
+> Strength of recommendation: **Strong**
 >
 > --- *Delivering Better Oral Health*, chapter 2, table 3a [@dboh2025]
 
@@ -42,7 +54,7 @@ For the **Act** step:
 >
 > --- *Delivering Better Oral Health*, chapter 13 [@dboh2025]
 
-That is a straightforward, well-supported, correctly labelled recommendation.
+That is a straightforward, well-supported, correctly labeled recommendation.
 Referral to stop smoking services works, it is cost-effective, and moderate
 certainty comfortably supports a Strong recommendation. There is nothing here
 for me to say except that it is right.
@@ -72,7 +84,7 @@ on no direct evidence has to demonstrate.
 smoker to quit, or refer them, without first establishing that they smoke. Asking
 is not a separate intervention competing for the patient's attention; it is the
 entry condition for the interventions that do have evidence. Demanding a
-randomised trial of *asking*, against a comparator of not asking but somehow
+randomized trial of *asking*, against a comparator of not asking but somehow
 still advising, is demanding a trial of something incoherent.
 
 **The burden is trivial and the harm is close to nil.** One question in a medical
@@ -89,7 +101,7 @@ Those three conditions together are close to what GRADE has in mind when it
 allows a Strong recommendation despite low or absent certainty
 [@andrews2013]. Recall from [Chapter -@sec-certainty-strength] that Alexander
 and colleagues found only 15.6% of discordant WHO recommendations met that bar
-[@alexander2015]. This one does. I have criticised bundling repeatedly in this
+[@alexander2015]. This one does. I have criticized bundling repeatedly in this
 book; intellectual honesty requires saying clearly when the same move is
 justified.
 
@@ -97,6 +109,119 @@ What the guideline could still do, and does not, is say **which** of those three
 reasons it relied on. "No specific evidence, but it is integral to the pathway"
 is half of the argument. The half that is missing is the half that would let a
 reader check it.
+
+## The row I left out
+
+Here is the row, in full.
+
+> Acknowledge that e-cigarettes may be helpful for some smokers for quitting or
+> reducing smoking.
+>
+> Strength of recommendation: **Conditional**
+>
+> --- *Delivering Better Oral Health*, chapter 2, table 3a [@dboh2025]
+
+And its evidence statement:
+
+> Recommendation based on **low certainty evidence from one systematic review**;
+> insufficient evidence to demonstrate the long-term effects.
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 15 [@dboh2025]
+
+That is an accurate summary of the review the guideline cites. The problem is
+which version of it.
+
+The reference given is Hartmann-Boyce and colleagues, *Electronic cigarettes for
+smoking cessation*, Cochrane Database of Systematic Reviews 2016, article
+`CD010216.pub3` [@hartmannboyce2016ec]. According to PubMed, that version
+searched to **January 2016**. It found 24 completed studies, of which three were
+randomized and only two contributed to the cessation meta-analysis, together
+enrolling 662 participants. It rated the evidence **low** for e-cigarettes
+against placebo e-cigarettes, **very low** against a nicotine patch, and
+concluded that "the long-term safety of ECs is unknown."
+
+So the guideline read its source correctly. It read a source that had by then
+been superseded seven times.
+
+| Version | Published | Search closed | Studies | Participants | Nicotine EC vs NRT |
+|:---|:---|:---|---:|---:|:---|
+| `.pub3` | Sept 2016 | Jan 2016 | 24 | 662 in the meta-analysis | not assessed; [low]{.certainty .low} vs placebo EC |
+| `.pub8` | Jan 2024 | Jul 2023 | 88 | 27,235 | [high]{.certainty .high} |
+| `.pub9` | Jan 2025 | Feb 2024 | 90 | 29,044 | [high]{.certainty .high} |
+| `.pub10` | Nov 2025 | Mar 2025 | 104 | 30,366 | [high]{.certainty .high} |
+
+: Versions of Cochrane CD010216 that I checked directly. DBOH cites the first row
+{#tbl-cd010216}
+
+The edition of *Delivering Better Oral Health* audited in this book was published
+on **10 September 2025**. On that date the current version of its own cited review
+was `.pub9`, which had appeared on 29 January 2025, more than seven months
+earlier [@lindson2025ec]. That version included 90 studies in 29,044
+participants and reported **high-certainty** evidence that nicotine e-cigarettes
+increase quit rates compared with nicotine replacement therapy: RR 1.59 (95% CI
+1.30 to 1.93), I² = 0%, from 7 studies in 2,544 participants.
+
+Low and high are not neighbors. They are the two ends of the GRADE scale, and the
+distance between them is the difference between "further research is very likely
+to change this estimate" and "further research is very unlikely to change this
+estimate."
+
+## The part that is hard to explain
+
+The review was not obscure, and it was not quietly revised. Every version since
+at least January 2024 has carried this sentence in its own published abstract
+[@lindson2024ec]:
+
+> To ensure the review continues to provide up-to-date information to
+> decision-makers, this review is a living systematic review. We run searches
+> monthly, with the review updated when relevant new evidence becomes available.
+>
+> --- Lindson and colleagues, CD010216 [@lindson2024ec]
+
+A **living systematic review** is one that is continuously updated as evidence
+appears, rather than revised every few years or not at all. The term has a
+methods literature behind it, and its motivating observation is precisely the one
+this section is making: reviews are hard to keep current, and "failure to do so
+leads to a decay in review currency, accuracy, and utility" [@elliott2017living].
+
+So the situation is this. A UK national guideline, published in September 2025,
+supported a recommendation with a 2016 snapshot of a Cochrane review that
+searches for new evidence **every month**, that announces it does so in its own
+abstract, and that had by then reached the opposite end of the certainty scale.
+The current version, `.pub10`, appeared two months after DBOH and reports
+high-certainty evidence with 104 studies in 30,366 participants: RR 1.55 (95% CI
+1.28 to 1.88), an additional three quitters per 100 (95% CI 2 to 5 more)
+[@lindson2025eclive].
+
+## Why this one cuts the other way
+
+Every other complaint in this book has the same direction: the label claims more
+than the evidence supports. This one runs backwards, and I want to be exact about
+it rather than fold it into the general grievance.
+
+Here the guideline claims **less**. "May be helpful for some smokers" is the
+language of real uncertainty, and it was the right language for `CD010216.pub3`.
+Against the review as it stood when DBOH went to press, it understates what is
+known. A dental team reading table 3a would take away that e-cigarettes are a
+marginal option of unclear benefit. The review they were pointed at says, at high
+certainty, that nicotine e-cigarettes outperform the nicotine replacement therapy
+the guideline recommends two rows above.
+
+I am not saying the label should have been Strong. Strength is an
+evidence-to-decision judgment, and the panel is entitled to weigh long-term
+safety, youth uptake, and the acceptability of recommending a nicotine product in
+a dental setting. The review itself is still cautious about serious adverse
+events, where the confidence intervals remain wide. Those are legitimate reasons
+to stay Conditional on high-certainty benefit, and GRADE has a name for that
+situation.
+
+The criticism is narrower and it is not about the strength label at all. It is
+that the **certainty** statement is wrong on the guideline's own terms. Chapter 13
+tells the reader "low certainty evidence from one systematic review." The
+systematic review it means said "high certainty" eight months before publication.
+A reader has no way to detect this, because chapter 13 gives the certainty but
+not the version, and the reference list gives the version but not the certainty.
+You have to hold both pages open at once, which is what this book is for.
 
 ## What the dental evidence actually shows
 
@@ -109,31 +234,31 @@ its findings are:
 
 | Intervention | Effect on abstinence at ≥6 months | Certainty |
 |:-----------------------------------------|:------------------------|:-------------|
-| Behavioural support, one session | RR 1.86 (95% CI 1.01 to 3.41), I²=66%, 4 studies | [very low]{.certainty .very-low} |
-| Behavioural support, more than one session | RR 1.90 (95% CI 1.17 to 3.11), I²=61%, 7 studies | [very low]{.certainty .very-low} |
-| **Behavioural support plus NRT or e-cigarettes** | **RR 2.76 (95% CI 1.58 to 4.82), I²=0%, 4 studies** | [moderate]{.certainty .moderate} |
-| Behavioural support in schools or colleges | RR 1.51 (95% CI 0.86 to 2.65), I²=83%, 3 studies | [very low]{.certainty .very-low} |
+| Behavioral support, one session | RR 1.86 (95% CI 1.01 to 3.41), I²=66%, 4 studies | [very low]{.certainty .very-low} |
+| Behavioral support, more than one session | RR 1.90 (95% CI 1.17 to 3.11), I²=61%, 7 studies | [very low]{.certainty .very-low} |
+| **Behavioral support plus NRT or e-cigarettes** | **RR 2.76 (95% CI 1.58 to 4.82), I²=0%, 4 studies** | [moderate]{.certainty .moderate} |
+| Behavioral support in schools or colleges | RR 1.51 (95% CI 0.86 to 2.65), I²=83%, 3 studies | [very low]{.certainty .very-low} |
 
 : Tobacco cessation delivered by dental professionals [@holliday2021]. Risk
-ratios above 1 favour the intervention {#tbl-holliday}
+ratios above 1 favor the intervention {#tbl-holliday}
 
 Sixteen of the twenty trials were judged at **high** risk of bias, three at low,
 one unclear. The review's own conclusion is that quit rates increase with
-behavioural support at very low certainty, and that abstinence increases at
+behavioral support at very low certainty, and that abstinence increases at
 moderate certainty when pharmacotherapy is added.
 
 Two things follow.
 
 **The strongest result in the table is the one that involves medication.** The
 only moderate-certainty finding, and by some distance the largest effect, is
-behavioural support *combined with* NRT or e-cigarettes, with no heterogeneity at
+behavioral support *combined with* NRT or e-cigarettes, with no heterogeneity at
 all (I²=0%). That is a striking result and it maps exactly onto what the
 guideline tells dental teams to do: refer to services "preferably where
 behavioural support and prescribed stop smoking medicines are available." The
 recommendation and its best evidence line up. This is what the previous chapters
 kept failing to find.
 
-**Behavioural support delivered by dental teams alone is very low certainty.**
+**Behavioral support delivered by dental teams alone is very low certainty.**
 This matters for how the profession talks about itself. The claim "dentists can
 help patients quit smoking" is supported; the claim "this has been robustly
 demonstrated for dental settings specifically" is not, and the review says so.
@@ -146,12 +271,24 @@ across the Cochrane Tobacco Addiction Group's Specialised Register; I have not
 attempted to reproduce it. I checked for a `.pub5` update and found none, so
 CD005084.pub4 remains current.
 
-**Limitation.** As with every Cochrane review in this book, I have the structured
-abstract but not the full text: Cochrane deposits into PubMed Central sit outside
-its Open Access subset, so the risk-of-bias table and the characteristics of the
-twenty included studies are not available to me. Where I report that sixteen
-studies were at high risk of bias, that is the review's own summary statement,
-not my reading of its domain judgments.
+**Provenance.** My first attempt to obtain this review failed: Cochrane deposits
+into PubMed Central sit outside its Open Access subset, so the automated route
+returned nothing, and an earlier draft of this chapter said the full text was
+unavailable to me. It was later supplied, and both the review and its
+characteristics-of-studies tables are now in `documentation/refs/`. The numbers
+reported above match the full text. Where I report that sixteen studies were at
+high risk of bias, that is still the review's own summary statement rather than my
+independent re-rating of its domain judgments, and I flag the difference because
+the two are not the same thing.
+
+**Second search, on the e-cigarette row.** Added later, after this chapter was
+found to have skipped DBOH-074 entirely. PubMed, for all versions of CD010216.
+Nineteen records; I retrieved metadata for `.pub3` (2016), `.pub8` (2024), `.pub9`
+(January 2025) and `.pub10` (November 2025) and read their structured abstracts.
+Version numbers, search closing dates, study counts, effect estimates and
+certainty ratings in @tbl-cd010216 are taken from those abstracts. I did not
+retrieve `.pub4` through `.pub7`, so "superseded seven times" is arithmetic on the
+version numbers rather than four more abstracts I have read.
 
 Full record in `appraisals/searches/ch21-tobacco.md`.
 :::
@@ -162,10 +299,16 @@ Full record in `appraisals/searches/ch21-tobacco.md`.
 Certainty of evidence
 :   **Mixed, and correctly described by the guideline.**
     [Moderate]{.certainty .moderate} for referral to stop smoking services and
-    for behavioural support combined with pharmacotherapy.
-    [Very low]{.certainty .very-low} for behavioural support delivered by dental
+    for behavioral support combined with pharmacotherapy.
+    [Very low]{.certainty .very-low} for behavioral support delivered by dental
     professionals on its own. **None at all** for the asking step, as chapter 13
     states in terms.
+
+    **Except for e-cigarettes, where the guideline is out of date rather than
+    wrong.** Chapter 13 reports [low]{.certainty .low} certainty, quoting a 2016
+    version of a review that had reached [high]{.certainty .high} certainty for
+    nicotine e-cigarettes against nicotine replacement therapy eight months before
+    DBOH published.
 
 Directness to the advice as worded
 :   **Good.** The cited evidence is about smoking cessation, in the settings and
@@ -186,13 +329,21 @@ Is the strength label defensible?
     integral to the pathway, but does not set out why that combination justifies
     Strong. A reader is asked to accept the conclusion without the reasoning.
 
+    **Conditional for e-cigarettes is also defensible**, on residual uncertainty
+    about serious adverse events and long-term use, which is a values judgment the
+    panel is entitled to make. What is not defensible is the certainty statement
+    attached to it, which describes an evidence base that had already been
+    replaced. See [Chapter -@sec-half-life].
+
 What would change my mind
 :   For the Ask step, evidence that recording smoking status displaces something
     more valuable in a short appointment, or that it deters attendance among
-    people who smoke. For the dental-delivered behavioural support, better trials:
+    people who smoke. For the dental-delivered behavioral support, better trials:
     the review asks specifically for biochemical validation of abstinence rather
     than self-report, and sixteen of twenty trials at high risk of bias is a
-    literature with a great deal of room to improve.
+    literature with a great deal of room to improve. For the e-cigarette row,
+    nothing about the evidence: it is the guideline's description of the evidence
+    that needs changing, not the evidence.
 :::
 
 ## What this means for you
@@ -204,5 +355,14 @@ than every other recommendation in *Delivering Better Oral Health* put together.
 If your dentist asks whether you smoke and it feels intrusive or repetitive, it
 is the entry point to the one intervention here with a large effect on
 mortality. And if you want to stop, the evidence points clearly at one thing:
-behavioural support **combined with** medication, through a stop smoking service,
+behavioral support **combined with** medication, through a stop smoking service,
 rather than willpower alone or advice alone.
+
+On vaping, the guideline is more lukewarm than the evidence it points to. Its own
+cited review, in the version current when it was published, found at high
+certainty that nicotine e-cigarettes help more people stop smoking than nicotine
+patches or gum do. If you are choosing between them, that is worth knowing. The
+open question is long-term safety, where the trials are still too small and too
+short to settle anything, so the honest summary is that switching completely from
+smoking to vaping is well supported as a way to stop smoking and is not the same
+as being proven harmless.
