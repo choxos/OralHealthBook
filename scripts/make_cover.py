@@ -262,7 +262,7 @@ def main() -> int:
     make_front(1000, 1600, FIGS / "cover-web.png")
     make_favicon(FIGS / "favicon.png")
 
-    pdf = ROOT / "dist" / "The-Evidence-Behind.pdf"
+    pdf = ROOT / "dist" / "The-Evidence-Behind-KDP-6x9.pdf"
     pages = pdf_page_count(pdf)
     if pages:
         make_paperback_wrap(pages, FIGS / "cover-paperback.png")
