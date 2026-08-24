@@ -13,6 +13,7 @@ project:
   output-dir: dist
 
 book:
+  output-file: "The-Evidence-Behind-KDP-6x9"
   appendices:
     - appendices/a-evidence-tables.qmd
     - appendices/b-search-strategies.qmd
@@ -90,6 +91,8 @@ format:
     fig-pos: "htbp"
     fig-format: png
     keep-tex: false
+    filters:
+      - _extensions/kdp/boxes.lua
     include-in-header:
       - _extensions/kdp/preamble.tex
     include-before-body:

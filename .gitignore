@@ -65,3 +65,4 @@ sources/BlogPosts/**/*_files/
 # the audits. Third-party copyrighted material: read locally, never published.
 # Every claim drawn from it is quoted with its source in the text.
 documentation/
+/dist-reading/

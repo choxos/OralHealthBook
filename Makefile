@@ -1,10 +1,10 @@
 .DEFAULT_GOAL := help
 SHELL := /bin/bash
 
-PDF  := dist/The-Evidence-Behind.pdf
-EPUB := dist/The-Evidence-Behind.epub
+PDF  := dist/The-Evidence-Behind-KDP-6x9.pdf
+EPUB := dist/The-Evidence-Behind-KDP-6x9.epub
 
-.PHONY: help web print pdf epub covers check preview clean deep-clean kdp all extract
+.PHONY: help web print read pdf epub covers check preview clean deep-clean kdp all extract
 
 help:  ## Show this help
 	@grep -hE '^[a-z-]+:.*?##' $(MAKEFILE_LIST) \
@@ -17,6 +17,9 @@ web:  ## Build the free website into _book/
 # `make pdf && make epub` leaves only the epub.
 print:  ## Build both paid-edition formats into dist/
 	quarto render --profile print
+
+read:  ## Build the A4 single-sided reading copy into dist-reading/
+	quarto render --profile read --to pdf
 
 pdf: print  ## Build the KDP paperback PDF (builds the epub too)
 
@@ -52,7 +55,7 @@ kdp: check pdf epub covers validate  ## Full pre-upload build for Amazon
 all: check web print covers  ## Everything
 
 clean:  ## Remove build output, keep the freeze cache
-	rm -rf _book dist
+	rm -rf _book dist dist-reading
 
 deep-clean: clean  ## Also drop the Quarto freeze cache
 	rm -rf .quarto _freeze

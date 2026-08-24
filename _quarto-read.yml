@@ -1,0 +1,98 @@
+# Profile: read
+#
+# A reading copy of the complete book: A4, single-sided, generous margins,
+# live coloured links, full table of contents, appendices included.
+#
+# This is NOT the Amazon artifact. The KDP paperback is built by
+# --profile print, which uses 6x9in with a mirrored gutter that reads
+# oddly on screen because the margin swaps side on every page.
+
+project:
+  output-dir: dist-reading
+
+book:
+  # Distinct filename: both profiles write into dist/, and sharing a name
+  # means whichever built last silently replaces the other.
+  output-file: "The-Evidence-Behind-reading-copy"
+  appendices:
+    - appendices/a-evidence-tables.qmd
+    - appendices/b-search-strategies.qmd
+    - appendices/c-appraisal-tools.qmd
+    - appendices/d-glossary.qmd
+
+format:
+  pdf:
+    documentclass: scrreprt
+    classoption:
+      - oneside
+      - numbers=noenddot
+    geometry:
+      - a4paper
+      - top=2.4cm
+      - bottom=2.4cm
+      - left=3.1cm
+      - right=3.1cm      # ~68 characters per line, comfortable for reading
+      - includehead
+      - includefoot
+      - headsep=16pt
+    fontsize: 11pt
+    linestretch: 1.25
+
+    # Same faces as the print edition, addressed by file name so no font
+    # installation or fontconfig lookup is needed.
+    mainfont: "texgyrepagella"
+    mainfontoptions:
+      - Extension=.otf
+      - UprightFont=*-regular
+      - ItalicFont=*-italic
+      - BoldFont=*-bold
+      - BoldItalicFont=*-bolditalic
+    sansfont: "texgyreheros"
+    sansfontoptions:
+      - Extension=.otf
+      - UprightFont=*-regular
+      - ItalicFont=*-italic
+      - BoldFont=*-bold
+      - BoldItalicFont=*-bolditalic
+      - Scale=0.92
+    monofont: "texgyrecursor"
+    monofontoptions:
+      - Extension=.otf
+      - UprightFont=*-regular
+      - ItalicFont=*-italic
+      - BoldFont=*-bold
+      - BoldItalicFont=*-bolditalic
+      - Scale=0.88
+    mathfont: "latinmodern-math"
+    mathfontoptions:
+      - Extension=.otf
+
+    pdf-engine: lualatex
+    toc: true
+    toc-depth: 2          # chapters and their sections, for navigation
+    number-sections: true
+    number-depth: 1
+    lof: false
+    lot: false
+    top-level-division: chapter
+    fig-pos: "htbp"
+    fig-format: png
+
+    # Live, visible links: this copy is for reading on a screen.
+    colorlinks: true
+    linkcolor: "RoyalBlue"
+    citecolor: "RoyalBlue"
+    urlcolor: "RoyalBlue"
+    hyperrefoptions:
+      - bookmarksnumbered=true
+      - pdfdisplaydoctitle=true
+
+    filters:
+      - _extensions/kdp/boxes.lua
+    include-in-header:
+      - _extensions/kdp/preamble.tex
+
+    # No KDP front matter here: the copyright page with its 6x9 typesetting
+    # belongs to the paid artifact, not to a review copy.
+
+appraisal-style: boxed
