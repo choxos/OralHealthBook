@@ -53,7 +53,7 @@ lean on its search rather than pretending mine substitutes for it.
 | 29. The toothpaste aisle | `ch29-toothpaste-aisle.md` |
 | 30. Short answers | `ch30-short-answers.md` (no search run) |
 
-| 32. The half-life of a recommendation | `ch32-half-life.md` |
+| 32. When was this last checked? | `ch32-currency.md` |
 
 Chapters 1 to 4, 31 and 33 reach no verdict and have no search record.
 

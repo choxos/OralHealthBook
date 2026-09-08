@@ -140,43 +140,55 @@ enrolling 662 participants. It rated the evidence **low** for e-cigarettes
 against placebo e-cigarettes, **very low** against a nicotine patch, and
 concluded that "the long-term safety of ECs is unknown."
 
-So the guideline read its source correctly. It read a source that had by then
-been superseded seven times.
+So the guideline read its source correctly. It read a source that had already
+been revised several times.
 
-| Version | Published | Search closed | Studies | Participants | Nicotine EC vs NRT |
-|:---|:---|:---|---:|---:|:---|
-| `.pub3` | Sept 2016 | Jan 2016 | 24 | 662 in the meta-analysis | not assessed; [low]{.certainty .low} vs placebo EC |
-| `.pub8` | Jan 2024 | Jul 2023 | 88 | 27,235 | [high]{.certainty .high} |
-| `.pub9` | Jan 2025 | Feb 2024 | 90 | 29,044 | [high]{.certainty .high} |
-| `.pub10` | Nov 2025 | Mar 2025 | 104 | 30,366 | [high]{.certainty .high} |
+The dates matter here and I got them wrong in an earlier draft, so
+[Chapter -@sec-currency] sets them out in full. The short version: the line
+"Updated 10 September 2025" at the top of every DBOH chapter records a formatting
+change. The last time the evidence was reviewed in full was **21 September 2021**,
+published as the fourth edition. That is the date against which the panel should
+be judged.
 
-: Versions of Cochrane CD010216 that I checked directly. DBOH cites the first row
-{#tbl-cd010216}
+| Version | Published | Search closed | Studies | Nicotine EC vs NRT |
+|:---|:---|:---|---:|:---|
+| `.pub3` | Sept 2016 | Jan 2016 | 24 | not assessed; [low]{.certainty .low} vs placebo EC |
+| `.pub6` | 14 Sept 2021 | May 2021 | 61 | [moderate]{.certainty .moderate}, RR 1.53 (1.21 to 1.93), 4 studies, 1,924 |
+| `.pub8` | Jan 2024 | Jul 2023 | 88 | [high]{.certainty .high} |
+| `.pub11` | Aug 2026 | Jan 2026 | 80 RCTs | [high]{.certainty .high}, RR 1.61 (1.23 to 2.12), 11 studies, 4,114 |
 
-The edition of *Delivering Better Oral Health* audited in this book was published
-on **10 September 2025**. On that date the current version of its own cited review
-was `.pub9`, which had appeared on 29 January 2025, more than seven months
-earlier [@lindson2025ec]. That version included 90 studies in 29,044
-participants and reported **high-certainty** evidence that nicotine e-cigarettes
-increase quit rates compared with nicotine replacement therapy: RR 1.59 (95% CI
-1.30 to 1.93), I² = 0%, from 7 studies in 2,544 participants.
+: Versions of Cochrane CD010216 that I read directly. DBOH cites the first row.
+Study counts are the whole review; the counts beside each estimate are the trials
+contributing to that specific comparison {#tbl-cd010216}
 
-Low and high are not neighbors. They are the two ends of the GRADE scale, and the
-distance between them is the difference between "further research is very likely
-to change this estimate" and "further research is very unlikely to change this
-estimate."
+At the fourth-edition review, the current version was `.pub6`, published on 14
+September 2021, one week earlier [@hartmannboyce2021]. It reported **moderate**
+certainty that nicotine e-cigarettes increase quit rates compared with nicotine
+replacement therapy, from 61 studies overall and 4 trials in 1,924 participants
+for that comparison.
+
+One week is not a fair deadline. But `.pub4` appeared in October 2020 and `.pub5`
+in April 2021, so a version more current than 2016 had been available for most of
+a year, and the gap being closed is five years wide.
+
+Low and moderate are one step apart on GRADE's four-level scale, which runs high,
+moderate, low, very low. The step still matters: it is the difference between
+"further research is very likely to change this estimate" and "further research is
+likely to have an important impact." An earlier draft called low and high "the two
+ends of the GRADE scale", which is wrong twice over, since very low sits below
+low and the version available in 2021 said moderate rather than high.
 
 ## The part that is hard to explain
 
-The review was not obscure, and it was not quietly revised. Every version since
-at least January 2024 has carried this sentence in its own published abstract
-[@lindson2024ec]:
+The review was not obscure, and it was not quietly revised. `.pub6`, the version
+sitting on the shelf the week the fourth edition appeared, already carried this
+sentence in its published abstract [@hartmannboyce2021]:
 
 > To ensure the review continues to provide up-to-date information to
-> decision-makers, this review is a living systematic review. We run searches
+> decision-makers, this review is now a living systematic review. We run searches
 > monthly, with the review updated when relevant new evidence becomes available.
 >
-> --- Lindson and colleagues, CD010216 [@lindson2024ec]
+> --- Hartmann-Boyce and colleagues, CD010216 [@hartmannboyce2021]
 
 A **living systematic review** is one that is continuously updated as evidence
 appears, rather than revised every few years or not at all. The term has a
@@ -184,14 +196,18 @@ methods literature behind it, and its motivating observation is precisely the on
 this section is making: reviews are hard to keep current, and "failure to do so
 leads to a decay in review currency, accuracy, and utility" [@elliott2017living].
 
-So the situation is this. A UK national guideline, published in September 2025,
-supported a recommendation with a 2016 snapshot of a Cochrane review that
-searches for new evidence **every month**, that announces it does so in its own
-abstract, and that had by then reached the opposite end of the certainty scale.
-The current version, `.pub10`, appeared two months after DBOH and reports
-high-certainty evidence with 104 studies in 30,366 participants: RR 1.55 (95% CI
-1.28 to 1.88), an additional three quitters per 100 (95% CI 2 to 5 more)
-[@lindson2025eclive].
+So the situation is this. A UK national guideline supported a recommendation with
+a 2016 snapshot of a Cochrane review that searches for new evidence **every
+month**, that announces it does so in its own abstract, and that had moved a
+certainty level by the week the guideline was signed off.
+
+It has kept moving since. The current version, `.pub11`, searched to January 2026
+and reports high-certainty evidence that nicotine e-cigarettes beat nicotine
+replacement therapy: RR 1.61 (95% CI 1.23 to 2.12), from 11 trials in 4,114
+participants, an additional four quitters per 100 (95% CI 1 to 7 more)
+[@lindson2026ec]. That version appeared while this chapter was being revised, and
+replaced the one an earlier draft called current. A chapter about evidence going
+out of date should probably expect that.
 
 ## Why this one cuts the other way
 
@@ -282,13 +298,19 @@ independent re-rating of its domain judgments, and I flag the difference because
 the two are not the same thing.
 
 **Second search, on the e-cigarette row.** Added later, after this chapter was
-found to have skipped DBOH-074 entirely. PubMed, for all versions of CD010216.
-Nineteen records; I retrieved metadata for `.pub3` (2016), `.pub8` (2024), `.pub9`
-(January 2025) and `.pub10` (November 2025) and read their structured abstracts.
-Version numbers, search closing dates, study counts, effect estimates and
-certainty ratings in @tbl-cd010216 are taken from those abstracts. I did not
-retrieve `.pub4` through `.pub7`, so "superseded seven times" is arithmetic on the
-version numbers rather than four more abstracts I have read.
+found to have skipped DBOH-074 entirely. PubMed, for all versions of CD010216. I
+retrieved metadata for `.pub3` (2016), `.pub6` (September 2021), `.pub8` (2024),
+`.pub9` (January 2025), `.pub10` (November 2025) and `.pub11` (August 2026) and
+read their structured abstracts. Version numbers, search closing dates, study
+counts, effect estimates and certainty ratings in @tbl-cd010216 are taken from
+those abstracts. I did not retrieve `.pub4`, `.pub5` or `.pub7`; their dates come
+from the PubMed record rather than from reading them.
+
+**Dates corrected.** An earlier version of this section judged the panel against
+10 September 2025, which is the date DBOH's pages were last reformatted rather
+than reviewed. The comparison is now against the fourth-edition evidence review of
+21 September 2021, and the claim is correspondingly narrower: the version
+available then reported moderate certainty, not high.
 
 Full record in `appraisals/searches/ch21-tobacco.md`.
 :::
@@ -306,9 +328,10 @@ Certainty of evidence
 
     **Except for e-cigarettes, where the guideline is out of date rather than
     wrong.** Chapter 13 reports [low]{.certainty .low} certainty, quoting a 2016
-    version of a review that had reached [high]{.certainty .high} certainty for
-    nicotine e-cigarettes against nicotine replacement therapy eight months before
-    DBOH published.
+    version of a review that had reached [moderate]{.certainty .moderate}
+    certainty for nicotine e-cigarettes against nicotine replacement therapy by
+    the week the fourth edition was published, and [high]{.certainty .high}
+    certainty since.
 
 Directness to the advice as worded
 :   **Good.** The cited evidence is about smoking cessation, in the settings and
@@ -333,7 +356,7 @@ Is the strength label defensible?
     about serious adverse events and long-term use, which is a values judgment the
     panel is entitled to make. What is not defensible is the certainty statement
     attached to it, which describes an evidence base that had already been
-    replaced. See [Chapter -@sec-half-life].
+    replaced. See [Chapter -@sec-currency].
 
 What would change my mind
 :   For the Ask step, evidence that recording smoking status displaces something

@@ -96,22 +96,27 @@ check_one <- function(r) {
   })
   if (!nrow(versions)) return(blank_result(r, "lookup-failed"))
 
-  at_edition <- filter(versions, !is.na(date), date <= EDITION_DATE)
-  current <- if (nrow(at_edition)) slice_max(at_edition, version, n = 1, with_ties = FALSE)
+  # Latest version that existed when the evidence was last reviewed. This is
+  # the only version the panel could have cited.
+  at_review <- filter(versions, !is.na(date), date <= REVIEW_DATE)
+  current <- if (nrow(at_review)) slice_max(at_review, version, n = 1, with_ties = FALSE)
              else slice_min(versions, version, n = 1, with_ties = FALSE)
   newest  <- slice_max(versions, version, n = 1, with_ties = FALSE)
 
   status <- if (is.na(r$cited_version)) "version-unknown"
-            else if (current$version > r$cited_version) "SUPERSEDED"
+            else if (current$version > r$cited_version) "SUPERSEDED-AT-REVIEW"
+            else if (newest$version > r$cited_version) "stale-since-review"
             else "current"
-  behind <- if (status == "SUPERSEDED") current$version - r$cited_version else 0L
-  yrs <- if (status == "SUPERSEDED" && !is.na(r$cited_year))
+  behind <- if (status == "SUPERSEDED-AT-REVIEW") current$version - r$cited_version else 0L
+  yrs <- if (status == "SUPERSEDED-AT-REVIEW" && !is.na(r$cited_year))
            as.integer(format(current$date, "%Y")) - r$cited_year else 0L
 
-  cli_alert(sprintf("%-9s cited pub%-3s current at edition pub%-3s (%s)%s",
+  cli_alert(sprintf("%-9s cited pub%-3s at 2021 review pub%-3s (%s)  newest pub%-3s%s",
     r$review_id, ifelse(is.na(r$cited_version), "?", r$cited_version),
-    current$version, format(current$date, "%Y"),
-    if (status == "SUPERSEDED") "  <-- SUPERSEDED" else ""))
+    current$version, format(current$date, "%Y"), newest$version,
+    switch(status,
+      "SUPERSEDED-AT-REVIEW" = "  <-- SUPERSEDED AT REVIEW",
+      "stale-since-review"   = "  (stale since)", "")))
 
   mutate(r, status = status,
          latest_version = current$version, latest_date = current$date,
@@ -121,21 +126,28 @@ check_one <- function(r) {
 }
 
 report <- function(res) {
-  bad <- filter(res, status == "SUPERSEDED") |> arrange(desc(versions_behind))
-  cli_h2("Superseded at the edition's own publication date: {nrow(bad)} of {nrow(res)}")
+  bad   <- filter(res, status == "SUPERSEDED-AT-REVIEW") |> arrange(desc(versions_behind))
+  stale <- filter(res, status == "stale-since-review")
+  cli_h2("Superseded when the evidence was last reviewed (21 Sep 2021): {nrow(bad)} of {nrow(res)}")
+  if (nrow(stale)) {
+    cli_alert_info(
+      paste("{nrow(stale)} further review{?s} updated AFTER the 2021 review:",
+            "{stale$review_id}. Those are not a panel failure; they are a",
+            "consequence of the guidance being displayed unchanged since."))
+  }
   if (!nrow(bad)) {
-    cli_alert_success("Every cited Cochrane review was current on 10 September 2025.")
+    cli_alert_success("Every cited Cochrane review was current at the 2021 review.")
     return(invisible(res))
   }
   for (i in seq_len(nrow(bad))) {
     b <- bad[i, ]
     cli_par()
     cli_text("{.strong {b$review_id}} cited pub{b$cited_version} ({b$cited_year}); ",
-             "current was pub{b$latest_version} ({format(b$latest_date, '%Y')})")
+             "available at the review was pub{b$latest_version} ({format(b$latest_date, '%Y')})")
     cli_bullets(c(
       "*" = "{b$versions_behind} version{?s} and {b$years_behind} year{?s} behind",
       "*" = "affects {b$n_rows} row{?s}: {b$dboh_ids} [{b$strengths}]",
-      "*" = "latest at edition: https://doi.org/{b$latest_doi}",
+      "*" = "available at the review: https://doi.org/{b$latest_doi}",
       "*" = "newest today: pub{b$newest_ever} ({format(b$newest_ever_date, '%Y-%m-%d')})"
     ))
     cli_end()
@@ -154,7 +166,8 @@ main <- function(offline = FALSE) {
   reviews <- cited_reviews()
   cli_h1("Version currency of the Cochrane reviews DBOH cites")
   cli_alert_info("{nrow(reviews)} review{?s} across {sum(reviews$n_rows)} recommendation row{?s}.")
-  cli_alert_info("Currency judged as at {format(EDITION_DATE, '%d %B %Y')}.")
+  cli_alert_info("Currency judged as at the last full evidence review, {format(REVIEW_DATE, '%d %B %Y')}.")
+  cli_alert_info("The page's displayed date, {format(DISPLAY_DATE, '%d %B %Y')}, is a formatting update, not a review.")
 
   res <- map_dfr(seq_len(nrow(reviews)), ~ check_one(reviews[.x, ]))
   write_registry(res, OUT)

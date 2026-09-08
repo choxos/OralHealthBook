@@ -1,7 +1,7 @@
-# Chapter 32: the half-life of a recommendation
+# Chapter 32: when was this last checked?
 
 **Database:** PubMed
-**Date run:** 20 August 2026
+**Date run:** 20 August 2026; corrected and extended 8 September 2026
 
 ## Provenance
 
@@ -142,3 +142,84 @@ Recorded here because the chapter argues from them:
 
 Common lesson, already recorded in `README.md`: searching for a review by its
 identifier is not an update search.
+
+
+---
+
+## Correction: the anchor date was wrong
+
+**Added:** 8 September 2026.
+
+The original analysis treated **10 September 2025**, the date displayed at the
+top of every DBOH chapter, as the date of the evidence review. It is not.
+
+GOV.UK publication history for *Delivering Better Oral Health*, read 8 September
+2026 at the publication's own page:
+
+| Date | Change log entry, verbatim |
+|---|---|
+| 10 September 2025 | Updated to add 'Appendix: clinical case studies' and to make improvements to the layout and formatting. |
+| 9 November 2021 | Two additional organisations listed in the "Endorsements" section. |
+| 21 September 2021 | Reviewed and updated guidance in full. Update published as 4th edition. |
+| 22 March 2017 | Uploaded latest version of documents and added quick guides. |
+| 3 November 2014 | Update to main guidance document: third edition (October 2014). |
+| 24 September 2014 | Update to guidance documents: third edition, September 2014. |
+| 12 June 2014 | First published. |
+
+The last full evidence review was **21 September 2021**. The 2025 change was
+case studies and formatting.
+
+### What this changes
+
+`scripts/extract_dboh.py` now measures citation age against 2021, not 2025.
+
+| Statistic | Anchored to 2025 (wrong) | Anchored to 2021 (correct) |
+|---|---:|---:|
+| Median age of newest citation | 7 years | **3 years** |
+| Oldest | 13 years | **9 years** |
+| Newest citation 5 years or older | 64 of 74 | **23 of 74** |
+| Newest citation 10 years or older | 16 of 74 | **0 of 74** |
+
+The chapter's original headline finding does not survive. It was an artifact of
+the anchor.
+
+### Superseded reviews, re-dated
+
+`scripts/living/currency.R` compared cited Cochrane versions against the wrong
+date too. Re-anchored to the 2021 review:
+
+| Review | Cited | Latest at 21 Sep 2021 | Verdict |
+|---|---|---|---|
+| CD010216 | pub3 (2016) | **pub6** (14 Sep 2021) | superseded at the review |
+| CD010276 | pub2 (2015) | **pub3** (20 Jul 2021) | superseded at the review |
+| CD006103 | pub7 (2016) | pub7 | current at the review; pub8 is 2023 |
+| CD013308 | pub1 (2019) | pub1 | current at the review; pub2 is 2023 |
+
+So **2 of 12** were superseded when the evidence was reviewed, not 4. The other
+two decayed afterwards, which is a fact about how long the guidance has been
+displayed rather than a failure by the panel.
+
+### CD010216.pub6, the version available at the review
+
+PMID 34519354, doi:10.1002/14651858.CD010216.pub6, published 14 September 2021.
+Searched to 1 May 2021. 61 studies, 16,759 participants, 34 RCTs.
+
+Nicotine EC versus NRT: RR 1.53 (95% CI 1.21 to 1.93), I2 0%, 4 studies, 1,924
+participants, **moderate** certainty, limited by imprecision.
+
+It already declares itself a living systematic review searched monthly. So the
+chapter's claim is that a moderate-certainty finding was available, not a
+high-certainty one; high certainty first appears in `.pub8` (2024).
+
+### Claims removed as unsupported
+
+- That varnish trials stopped because nobody funded them. Not investigated.
+  Protecting Teeth @3, a randomized nursery-school varnish study, was published
+  in 2020, and this book's own varnish record says post-2013 primary trials were
+  not searched.
+- That ten years of monthly tooth-wear searching would return nothing.
+- That the guideline and this book "failed by the same method". DBOH's per-row
+  search procedures are not published and were not inspected.
+- That citation age predicts how long the book will remain current. A snapshot
+  of publication years contains no observation of a recommendation becoming
+  obsolete.

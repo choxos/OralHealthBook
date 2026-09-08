@@ -95,10 +95,20 @@ entry criterion for the analysis rather than a measure of follow-up.
 
 The retention figure is in the NIHR report and is much lower: "There was no
 evidence of differential attrition, **with 67% attending a final trial visit**"
-[@innes2020fiction]. A third of the analysed children did not reach the end. The
-authors' point is that the loss was even across arms, which protects the
-comparison between arms; it does not make the follow-up complete, and it widens
-the uncertainty around every estimate in @tbl-fiction.
+[@innes2020fiction]. A third of the analysed children did not reach the end.
+
+I first wrote that the loss being even across arms "protects the comparison",
+which is more reassurance than equal percentages can buy. Equal attrition rates
+are not equal missing information. Two arms can lose the same number of children
+while losing very different children: if one arm happens to lose those who went on
+to have pain and the other loses those who did not, the observed difference moves
+even though the true risks are identical and the percentages match.
+
+What the authors actually report is no evidence of **differential** attrition,
+which is worth having and is not the same as no missing-data bias. Whether the
+missingness matters depends on why those children left, and that is not something
+the report can fully establish. It widens the uncertainty around every estimate in
+@tbl-fiction rather than leaving it undisturbed.
 :::
 
 ## What the guideline does with this
@@ -138,13 +148,23 @@ Full record in `appraisals/searches/ch26-fiction.md`.
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   [Moderate]{.certainty .moderate} that **no difference was detected** between
-    conventional filling, biological sealing-in and a prevention-first strategy
-    for dental pain and/or infection, in children at high caries risk with
-    established disease, over a median 33.8 months. One large well-conducted
-    randomized trial, downgraded for the unavoidable lack of blinding with a
-    subjective primary outcome. A third of the analysed children did not attend a
-    final trial visit, which the authors report was even across arms.
+:   An earlier draft of this verdict graded "no difference was detected", which
+    is a fact about whether an analysis crossed a threshold rather than a
+    statement about an effect. GRADE rates certainty in an estimate, so the
+    estimate has to come first.
+
+    For prevention alone against conventional management, the adjusted risk
+    difference for at least one episode of pain or infection is **4 percentage
+    points worse, 97.5% CI 4 points better to 12 points worse**. Certainty in
+    that estimate is [low]{.certainty .low}: one large, well-conducted, pragmatic
+    randomized trial, downgraded once for the unavoidable lack of blinding with a
+    subjective primary outcome and once for imprecision, because the interval
+    spans differences that would change what a reasonable parent chose. A 12
+    percentage point disadvantage would matter; so would 4 points of benefit.
+
+    The trial did not establish superiority of conventional management, and it did
+    not establish that the strategies are interchangeable. Those are different
+    findings and only the first was tested.
 
     Stated that way on purpose. An earlier draft said the three approaches
     "produce similar rates," which converts a failure to show superiority into a

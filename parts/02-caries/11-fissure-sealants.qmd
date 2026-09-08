@@ -168,11 +168,25 @@ says the opposite, twice over:
 
 So the single downgrade from high to moderate is for the **age** of the evidence,
 which is the caveat this chapter is about, and the unblindable detection bias was
-noted and deliberately not penalised. That is a defensible call, since a bias
-every trial shares equally cannot explain a difference between arms in the way an
-imbalance would, but it means the moderate badge is not doing the work I said it
-was doing. A reader who wants to discount for detection bias has to do it on top
-of moderate, not inside it.
+noted and deliberately not penalised.
+
+An earlier draft of mine went on to defend that as harmless, on the grounds that a
+bias every trial shares equally cannot explain a difference between arms. That
+argument is wrong and I want to retract it explicitly, because it is the kind of
+error this book exists to catch.
+
+Sharing a bias **across studies** is not the same as a bias that cancels **within**
+each study. If an examiner who can see a sealant classifies borderline surfaces
+differently because of it, the misclassification runs in the same direction in
+every trial, and pooling twenty trials averages away random error while leaving
+that direction untouched. Whether such an effect is large enough to matter here is
+a separate question, and the review's judgment not to downgrade is defensible on
+its own terms. What is not defensible is my claim that shared bias is
+automatically safe.
+
+The practical consequence is unchanged: the moderate badge is not doing the work I
+first said it was, and a reader who wants to discount for detection bias has to do
+it on top of moderate rather than assume it is already inside.
 
 This is worth contrasting with [Chapter -@sec-flossing], where blinding is also
 impossible but the effect is small and the certainty low. Here the effect is so

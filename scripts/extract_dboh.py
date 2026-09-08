@@ -36,6 +36,7 @@ Crown copyright, reproduced under the Open Government Licence v3.0.
 from __future__ import annotations
 
 import csv
+import hashlib
 import re
 import statistics
 import sys
@@ -285,13 +286,28 @@ JUDGMENT_FIELDS = (
 )
 
 
+def judgment_key(ch2_table: str, recommendation: str) -> str:
+    """Identity of a recommendation, independent of its position.
+
+    DBOH-NNN is assigned from reading order, so inserting or reordering a row
+    in the guideline shifts every id after it. Carrying judgments forward on
+    that id would silently move an adjudication onto a different
+    recommendation, which is the same class of error as joining an adult row
+    to a children's evidence table. Identity is therefore the table the row
+    sits in plus a hash of its normalised text: if either changes, the row is
+    a different row and its judgment does not travel.
+    """
+    digest = hashlib.sha256(normalise(recommendation).encode("utf-8")).hexdigest()
+    return f"{ch2_table}:{digest[:16]}"
+
+
 def load_judgments(path: Path) -> dict[str, dict[str, str]]:
     """Read hand-entered judgments out of a previous run's CSV.
 
-    Keyed by recommendation id. An id that no longer exists in the guideline
-    is reported by the caller rather than dropped, because a judgment with no
-    home usually means a row was renumbered and the judgment now belongs to a
-    different recommendation.
+    Keyed by content identity, not by DBOH-NNN. A judgment whose key no
+    longer matches any recommendation is reported by the caller and dropped,
+    because the safe failure is losing an adjudication loudly rather than
+    attaching it to the wrong advice quietly.
     """
     if not path.exists():
         return {}
@@ -299,8 +315,10 @@ def load_judgments(path: Path) -> dict[str, dict[str, str]]:
     with path.open(encoding="utf-8", newline="") as fh:
         for row in csv.DictReader(fh):
             vals = {f: (row.get(f) or "").strip() for f in JUDGMENT_FIELDS}
-            if any(vals.values()):
-                kept[row["id"]] = vals
+            if not any(vals.values()):
+                continue
+            key = judgment_key(row.get("ch2_table", ""), row.get("recommendation", ""))
+            kept[key] = {**vals, "_was": row.get("id", "")}
     return kept
 
 
@@ -495,6 +513,7 @@ def main() -> int:
     for i, rec in enumerate(ch2_rows, start=1):
         rid = f"DBOH-{i:03d}"
         key = normalise(rec["recommendation"])
+        jkey = judgment_key(rec["ch2_table"], rec["recommendation"])
         want = CH2_TO_CH13.get(rec["ch2_table"])
         ev, score, ambiguous = best_match(key, index, want)
 
@@ -560,7 +579,7 @@ def main() -> int:
             ),
             # Filled in by hand as each chapter is appraised, and carried
             # across regenerations by load_judgments().
-            **{f: prior.get(rid, {}).get(f, "") for f in JUDGMENT_FIELDS},
+            **{f: prior.get(jkey, {}).get(f, "") for f in JUDGMENT_FIELDS},
         }
         merged.append(row)
         if not ev:
@@ -574,10 +593,19 @@ def main() -> int:
         [refs[k] for k in sorted(refs, key=int)],
     )
     _write_csv(OUT / "dboh-2025-unmatched.csv", unmatched)
-    orphans = sorted(set(prior) - {r["id"] for r in merged})
-    if orphans:
+    # Distinct failure, distinct name. This used to reuse `orphans`, which
+    # already held unused chapter 13 rows, so the summary line below reported
+    # orphaned judgments under the label "ch13 orphans".
+    live_keys = {
+        judgment_key(r["ch2_table"], r["recommendation"]) for r in merged
+    }
+    orphan_judgments = sorted(
+        f"{v.get('_was', '?')} ({k[:8]}...)" for k, v in prior.items()
+        if k not in live_keys
+    )
+    if orphan_judgments:
         print("  ! judgments with no matching recommendation, NOT carried:")
-        for o in orphans:
+        for o in orphan_judgments:
             print(f"      {o}")
 
     _write_variables(merged, refs)
@@ -620,32 +648,52 @@ def main() -> int:
     return 0
 
 
-# The year DBOH's audited edition was published. Citation ages are measured
-# against this, not against today, so the figures describe how current the
-# guideline was at the moment it was published rather than how current it is now.
-EDITION_YEAR = 2025
+# The date of the last full evidence review, NOT the page's last-updated
+# stamp. GOV.UK's change log for this publication records:
+#
+#   10 September 2025  Updated to add "Appendix: clinical case studies" and
+#                      to make improvements to the layout and formatting.
+#   21 September 2021  Reviewed and updated guidance in full. Update
+#                      published as 4th edition.
+#   12 June 2014       First published.
+#
+# Citation ages are therefore measured against 2021. An earlier version of
+# this script used 2025 and so asked what a panel should have cited at a date
+# when no panel was sitting. A web page's last-updated date does not tell you
+# when a recommendation's evidence was last reassessed.
+REVIEW_YEAR = 2021
+REVIEW_DATE = "2021-09-21"
+DISPLAY_DATE = "2025-09-10"     # what the reader currently sees
 
-# Publication years only: 1950 to 2029. Narrow enough that DOI fragments
-# ("10.1002/14651858.CD008286.pub3") and volume/page numbers cannot match.
-_YEAR = re.compile(r"\b(19[5-9]\d|20[0-2]\d)\b")
+# Publication years only: 1950 to 2029, and only where the number is not part
+# of a page range or a longer digit run. The previous pattern claimed page and
+# DOI fragments could not match it, which was wrong: in
+# "Journal 1999;10:2001-2008." it returned 1999, 2001 AND 2008, and the
+# max-year rule then treated a page number as the newest citation year.
+_YEAR = re.compile(r"(?<![-\u2013:\d])(19[5-9]\d|20[0-2]\d)(?![-\u2013\d])")
 
 
 def _citation_ages(rows: list[dict]) -> list[int]:
-    """Age, in years at EDITION_YEAR, of the newest citation on each row.
+    """Age, in years at REVIEW_YEAR, of the newest citation on each row.
 
     A recommendation is only as current as its most recent support, so this
     takes the maximum year per row and ignores the older references beneath
     it. "2008 [updated 2018]" resolves to 2018 for the same reason.
 
-    This is a lower bound on staleness twice over: a review published in
-    2013 closed its own search before 2013, and rows citing no dated source
-    at all are excluded rather than counted as infinitely old.
+    This is a descriptive statistic about the age of cited publications. It
+    is NOT a measure of certainty, of clinical validity, of when the row was
+    last searched, or of how long the recommendation will remain correct.
+
+    It is a lower bound on staleness twice over: a review published in 2013
+    closed its own search before 2013, and rows citing no dated source at all
+    are excluded rather than counted as infinitely old. Repeated
+    population-specific rows also give repeated weight to the same source.
     """
     ages = []
     for r in rows:
         years = [int(y) for y in _YEAR.findall(r.get("references") or "")]
         if years:
-            ages.append(EDITION_YEAR - max(years))
+            ages.append(REVIEW_YEAR - max(years))
     return ages
 
 
@@ -696,7 +744,8 @@ def _write_variables(rows: list[dict], refs: dict[str, dict]) -> None:
         f"  joined: {n(lambda r: r['matched'] == 'yes')}",
         f"  unjoined: {n(lambda r: r['matched'] == 'NO')}",
         "  # Age of the newest citation supporting each recommendation, in",
-        "  # years at the edition's own publication date. See _citation_ages.",
+        "  # years at the last full evidence review (21 September 2021), not",
+        "  # at the page's last-updated stamp. See _citation_ages.",
         f"  dated: {len(ages)}",
         f"  age_median: {int(statistics.median(ages))}",
         f"  age_max: {max(ages)}",
@@ -706,7 +755,7 @@ def _write_variables(rows: list[dict], refs: dict[str, dict]) -> None:
         f"  age_undated: {len(rows) - len(ages)}",
         "  # The publication year a median-aged recommendation rests on, so the",
         "  # prose never hard-codes an arithmetic result of the two above.",
-        f"  age_median_year: {EDITION_YEAR - int(statistics.median(ages))}",
+        f"  age_median_year: {REVIEW_YEAR - int(statistics.median(ages))}",
     ]
     (ROOT / "_variables.yml").write_text("\n".join(lines) + "\n")
 

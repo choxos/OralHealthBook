@@ -302,6 +302,45 @@ been written. That is the failure this book exists to object to, committed by th
 book, and `scripts/check_citations.py` now fails the build if a chapter names a
 record that is not there.
 
+**A fourth pass, and the chapter it demolished.** A further independent review
+read the corrected manuscript and went after the corrections themselves. Its most
+important finding was that [Chapter -@sec-currency], which I had added in the
+third pass, rested on a misread date. Every DBOH page displays "Updated 10
+September 2025"; I treated that as the date the evidence was reviewed. The
+publication's change log says the 2025 change added case studies and improved the
+formatting, and that the last full evidence review was **21 September 2021**.
+
+Measured against the right date, the chapter's headline statistic reversed. I had
+said the median recommendation rested on seven-year-old evidence with sixteen rows
+over a decade old. Against the 2021 review it is three years, and **no** row
+exceeds ten. The chapter now reports that reversal rather than the original claim,
+and the extraction script measures against 2021.
+
+Three further claims in that chapter went out with it: that varnish trials had
+stopped for want of funding, which I never investigated and which a 2020
+randomized trial contradicts; that the guideline and I had failed "by the same
+method", when DBOH's per-row search procedures are not published; and a prediction
+that this book would stay current for about seven years, which was a guess formatted
+to look like a calculation.
+
+**Fourth pass: an odds ratio reported backwards.** [Chapter -@sec-varnish] gave
+Weintraub's comparisons as though varnish arms had more decay. The published
+comparisons take counseling alone as the exposure. The direction is now stated
+explicitly and the reciprocals are shown.
+
+**Fourth pass: an argument that shared bias is harmless.** I wrote in
+[Chapter -@sec-sealants] that a bias every trial shares cannot explain a
+difference between arms. That confuses a bias shared across studies with one that
+cancels within them, and pooling does not remove a common direction of error.
+Retracted in place.
+
+**Fourth pass: grading a test result rather than an effect.**
+[Chapter -@sec-fiction]'s verdict rated certainty in "no difference was detected",
+which describes an analysis rather than an estimate. It now states the risk
+difference and interval and rates certainty in that. The claim that equal
+attrition protects a comparison is also gone: equal rates are not equal missing
+information.
+
 **A third pass, by a fourth reader.** After the second pass the manuscript was
 read again, in full, by an independent model working from a prepublication-audit
 brief rather than the fact-checking brief given to the first two. It found things
@@ -345,7 +384,7 @@ The Conditional row, DBOH-074 on e-cigarettes, was neither quoted nor searched. 
 turned out to be the most consequential row in the guideline for this book's
 argument, because its cited review had been superseded seven times and had moved
 from low to high certainty before DBOH went to press. That finding is now
-[Chapter -@sec-half-life], which is new in this pass.
+[Chapter -@sec-currency], which is new in this pass.
 
 **A quotation cut before the clause that complicated it.**
 [Chapter -@sec-fluoridation-harm] quoted the Key Points of the fluoride and IQ

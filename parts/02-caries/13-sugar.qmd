@@ -142,7 +142,7 @@ edition by more than three years.
 
 This is the fourth time in this book that an update search by known author and
 title has failed to find an update that existed, and it is the same failure
-[Chapter -@sec-half-life] is about. It is also a case my own tooling would not
+[Chapter -@sec-currency] is about. It is also a case my own tooling would not
 catch, because that tool reads version numbers out of Cochrane DOIs and this is a
 journal review with no version number to read.
 
@@ -212,7 +212,7 @@ published in the *Journal of Dental Research* in 2022 [@moores2022] and I did no
 retrieve it. The query was built around the 2014 review's authors and title, which
 is a known-item search: it finds the paper you already know about and is
 structurally incapable of telling you a successor exists. The same mistake appears
-in three other chapters and is the subject of [Chapter -@sec-half-life]. The
+in three other chapters and is the subject of [Chapter -@sec-currency]. The
 chapter above has been rewritten around the update.
 
 I have the full text and all six supplementary files, supplied during writing,

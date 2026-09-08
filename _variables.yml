@@ -24,13 +24,14 @@ dboh:
   joined: 90
   unjoined: 1
   # Age of the newest citation supporting each recommendation, in
-  # years at the edition's own publication date. See _citation_ages.
+  # years at the last full evidence review (21 September 2021), not
+  # at the page's last-updated stamp. See _citation_ages.
   dated: 74
-  age_median: 7
-  age_max: 13
-  age_5plus: 64
-  age_10plus: 16
-  age_same_year: 1
+  age_median: 3
+  age_max: 9
+  age_5plus: 23
+  age_10plus: 0
+  age_same_year: 2
   age_undated: 17
   # The publication year a median-aged recommendation rests on, so the
   # prose never hard-codes an arithmetic result of the two above.

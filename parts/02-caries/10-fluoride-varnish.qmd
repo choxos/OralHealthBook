@@ -115,13 +115,27 @@ twice-yearly schedule, and that such a trial "has never been done."
 
 **That is wrong, and the trials are inside this very review.**
 
-Weintraub and colleagues randomized 376 young children to no varnish, varnish
-**once a year**, or varnish **twice a year**, and reported a dose-response effect
-on the number of applications actually received (p < 0.01). Against counseling
-alone, caries incidence was higher at OR 2.20 (95% CI 1.19 to 4.08) for the
-once-yearly arm and OR 3.77 (1.88 to 7.58) for the twice-yearly arm
-[@weintraub2006]. Sköld and colleagues ran a four-arm trial comparing twice,
-three times and eight times a year against no treatment.
+Weintraub and colleagues randomized 376 young children to counseling alone,
+counseling plus varnish **once a year**, or counseling plus varnish **twice a
+year**, and reported a dose-response effect on the number of applications
+actually received (p < 0.01) [@weintraub2006].
+
+I then reported their odds ratios backwards, which is worth correcting carefully
+because the direction is the entire content of the result. The published
+comparisons take **counseling alone as the exposure**: children receiving
+counseling only had higher caries odds than those assigned annual varnish, OR
+2.20 (95% CI 1.19 to 4.08), and than those assigned twice-yearly varnish, OR 3.77
+(1.88 to 7.58). My earlier draft attached those numbers to the varnish arms,
+which reads as varnish causing more decay.
+
+Turned round so that varnish is the exposure, by taking the reciprocal of the
+estimate and of each interval bound, the same results are approximately **0.45
+(0.24 to 0.84)** for annual varnish and **0.27 (0.13 to 0.53)** for twice-yearly.
+Those are re-expressions of the published comparisons, not new estimates, and the
+reciprocal of an interval reverses which bound is which.
+
+Sköld and colleagues ran a four-arm trial comparing twice, three times and eight
+times a year against no treatment.
 
 So frequency has been randomized. What has not been done is a pooled direct
 estimate of once against twice: the review combined active arms for its main

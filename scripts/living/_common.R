@@ -25,12 +25,22 @@ LIVING   <- file.path(ROOT, "living")
 REGISTRY <- file.path(LIVING, "registry")
 DBOH_CSV <- file.path(ROOT, "appraisals", "dboh-2025.csv")
 
-## The edition under surveillance. Currency is judged as at this date: a
-## guideline can only be faulted for updates that already existed when it
-## was published. Updates that appeared later are tracked separately, since
-## they are what a living process would be catching now.
-EDITION_DATE <- as.Date("2025-09-10")
-EDITION_YEAR <- 2025
+## Two dates, and they are not the same date.
+##
+## GOV.UK's change log for this publication records "21 September 2021:
+## Reviewed and updated guidance in full. Update published as 4th edition",
+## and "10 September 2025: Updated to add 'Appendix: clinical case studies'
+## and to make improvements to the layout and formatting."
+##
+## REVIEW_DATE is when the evidence was last reviewed, so it is the only fair
+## date against which to ask what a panel could have cited. DISPLAY_DATE is
+## what a reader currently sees at the top of the page. An earlier version of
+## this tool used the display date for both jobs and so reported four reviews
+## as superseded "at publication" when two of them were updated two years
+## after the panel reported.
+REVIEW_DATE  <- as.Date("2021-09-21")
+DISPLAY_DATE <- as.Date("2025-09-10")
+REVIEW_YEAR  <- 2021
 
 `%||%` <- function(x, y) if (is.null(x)) y else x
 

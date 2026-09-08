@@ -1,0 +1,252 @@
+# When was this last checked? {#sec-currency}
+
+Every recommendation in this book carries two dates, and the guidance prints
+neither of them clearly: the date its evidence was last reviewed, and the date
+the page you are reading was last touched. They are not the same date, and an
+earlier draft of this chapter confused them badly enough to invent a finding.
+
+That correction is the chapter. It is worth watching it happen, because this
+mistake is easy to make and it flatters whoever makes it.
+
+## The mistake I made
+
+Every chapter of *Delivering Better Oral Health* displays a line at the top:
+**"Updated 10 September 2025."** I treated that as the date a panel finished
+reviewing the evidence, and then asked what that panel should have known. On
+that basis I calculated that the median recommendation rested on evidence
+published seven years earlier, and that sixteen rows rested on citations a
+decade old or more.
+
+The publication's own change log says otherwise:
+
+> **10 September 2025.** Updated to add 'Appendix: clinical case studies' and to
+> make improvements to the layout and formatting.
+>
+> **21 September 2021.** Reviewed and updated guidance in full. Update published
+> as 4th edition.
+>
+> **12 June 2014.** First published.
+>
+> --- GOV.UK, publication history for *Delivering Better Oral Health*
+
+The 2025 change added case studies and improved the formatting. The last time
+the evidence was reviewed in full was **September 2021**. There was no 2025
+panel to have missed anything.
+
+Measured against the date the evidence was actually reviewed, the picture
+reverses:
+
+| Age of the newest citation, at the 2021 evidence review | Recommendations |
+|:---|---:|
+| Same year | {{< var dboh.age_same_year >}} |
+| 5 years or older | {{< var dboh.age_5plus >}} of {{< var dboh.dated >}} |
+| 10 years or older | **{{< var dboh.age_10plus >}}** of {{< var dboh.dated >}} |
+| **Median** | **{{< var dboh.age_median >}} years** |
+| Oldest | {{< var dboh.age_max >}} years |
+
+: Age of cited publications at the last full evidence review
+{#tbl-citation-age}
+
+Not one recommendation rested on a citation ten years old or more. The median
+was {{< var dboh.age_median >}} years, which for a guideline assembled by
+volunteer panels over a multi-year process is unremarkable and arguably good.
+
+My seven-year figure was not a finding about the guideline. It was an artifact
+of subtracting publication years from the wrong date, and it happened to make
+the guideline look worse, which is the direction a person writing a book of
+criticism should be most suspicious of.
+
+::: {.callout-note title="How I judged this: what this table can and cannot say" collapse="true"}
+Even corrected, this is a descriptive statistic about the age of cited
+publications. It is not a measure of certainty, of clinical validity, of when
+each row was searched, or of how long a recommendation will stay right.
+
+Three specific limits. A review published in 2013 closed its own search before
+2013, so the evidence underneath is older than its citation year. The
+{{< var dboh.age_undated >}} recommendations citing nothing dated are excluded
+rather than counted as infinitely stale. And because DBOH repeats advice across
+age groups, the same source can be counted several times.
+
+An earlier draft went further and predicted that this book would stay current
+for about seven years and then start being wrong. That was not a calculation, it
+was a guess wearing a calculation's clothes. Nothing in a snapshot of citation
+ages observes a recommendation becoming obsolete, and two fields with identical
+citation ages can change at completely different rates.
+:::
+
+## Old is not the same as decayed
+
+Age alone is not a fault. There are three situations here and only one is
+anybody's mistake.
+
+**Settled.** The evidence is old because the question is answered. [Chapter
+-@sec-recall] is the clearest case: the Cochrane review of recall intervals
+states that "further studies comparing dental recall intervals for adults in
+primary care seem unnecessary."
+
+**Quiet.** The evidence is old and no update to the cited review has appeared.
+[Chapter -@sec-varnish] is this: the varnish review's newest included trial is
+from 2012 and its search closed in May 2013.
+
+An earlier draft called this category "dormant" and explained it as trials
+having stopped because nobody funded them. I have removed that, because I did
+not investigate it and it is not true as stated. The absence of a new *version
+of one review* is not the absence of new *trials*: Protecting Teeth \@3, a
+randomized nursery-school varnish study, was published in 2020. My own search
+record for that chapter says in terms that post-2013 primary trials were not
+searched. Turning an acknowledged gap in my own retrieval into a claim about the
+research economy was not evidence. It was a story I preferred.
+
+**Decayed.** A newer version of the cited review existed, and the guidance
+quotes the old one. This is the only one of the three that is a mistake.
+
+## What actually decayed, and when
+
+Two of the twelve Cochrane reviews DBOH cites had been superseded **by the time
+of the 2021 evidence review**:
+
+| Recommendation | Version cited | Available at the 2021 review | Published |
+|:---|:---|:---|:---|
+| `DBOH-084`, oral cancer adjuncts ([Chapter -@sec-cancer-screening]) | `CD010276.pub2`, 2015 | `CD010276.pub3` [@walsh2021] | July 2021 |
+| `DBOH-074`, e-cigarettes ([Chapter -@sec-tobacco]) | `CD010216.pub3`, 2016 | `CD010216.pub6` [@hartmannboyce2021] | 14 September 2021 |
+
+: Reviews already superseded when the evidence was last reviewed
+{#tbl-decayed}
+
+Two more have been superseded **since**, and that is a different and much lesser
+charge. `CD006103` and `CD013308`, both supporting `DBOH-072`, were updated in
+2023, two years after the panel reported. No panel failed there. What happened is
+that the guidance has been displayed, unchanged in substance, for long enough
+that its evidence base moved underneath it.
+
+That distinction matters, and I did not draw it in the previous draft, where all
+four appeared as a single indictment.
+
+## The e-cigarette row, correctly dated
+
+[Chapter -@sec-tobacco] works through this row in detail. The short version
+belongs here because the dates are the whole point.
+
+DBOH reports that its e-cigarette recommendation rests on "low certainty evidence
+from one systematic review," citing `CD010216.pub3` from 2016, whose search
+closed in January 2016. One week before the fourth edition was published, `.pub6`
+reported **moderate** certainty that nicotine e-cigarettes increase quit rates
+compared with nicotine replacement therapy, RR 1.53 (95% CI 1.21 to 1.93), from
+61 studies in 16,759 participants [@hartmannboyce2021].
+
+A week is not a fair deadline and I am not going to pretend it is. But `.pub4`
+appeared in October 2020 and `.pub5` in April 2021, so a more current version had
+been available for most of a year. And `.pub6` already carried this sentence in
+its abstract:
+
+> To ensure the review continues to provide up-to-date information to
+> decision-makers, this review is now a living systematic review. We run searches
+> monthly, with the review updated when relevant new evidence becomes available.
+>
+> --- Hartmann-Boyce and colleagues, CD010216 [@hartmannboyce2021]
+
+A **living systematic review** is one kept continuously current rather than
+revised in occasional editions [@elliott2017living]. This one is maintained by
+Cochrane, searches monthly, and publishes under the same review identifier the
+guideline's reference list already prints. Its current version, `.pub11`,
+searched to January 2026 and reports high certainty that nicotine e-cigarettes
+beat nicotine replacement therapy, RR 1.61 (95% CI 1.23 to 2.12) from 11 trials
+in 4,114 participants [@lindson2026ec]. That version appeared while this chapter
+was being revised, and replaced the one an earlier draft called current.
+
+So the criticism is narrower than the one I first made, and it survives: the
+certainty statement a reader sees today describes a 2016 evidence base, and the
+mechanism for keeping it current was not merely available but advertised in the
+abstract of the review being cited.
+
+## I did the same thing, three times
+
+This would be an easier chapter to write if the book were not guilty of it.
+
+Four of my searches failed, and they are recorded in `appraisals/searches/`
+rather than quietly re-run. Three are the same failure:
+
+- **[Chapter -@sec-amount]** searched for a Cochrane review by its identifier,
+  got nothing useful back, and concluded the 2010 version was current. A 2024
+  update existed [@wong2024].
+- **[Chapter -@sec-cancer-screening]** searched the same way and missed
+  `CD010276.pub3` [@walsh2021].
+- **[Chapter -@sec-sugar]** searched on the 2014 review's authors and title and
+  missed its own ten-year update [@moores2022], published in the same journal,
+  which had raised the evidence for the 5% threshold a full level.
+
+The common fault is a **known-item query**: a search built out of the terms that
+describe the paper you already have. It finds that paper. It is structurally
+incapable of telling you a successor exists, because every word in it points
+backwards.
+
+I can say that the guidance's displayed citations and my searches missed some of
+the same updates. I cannot say that we failed by the same method, because DBOH's
+search procedures for individual rows are not published and I have not seen them.
+An earlier draft claimed otherwise on no evidence.
+
+## What I would actually ask for
+
+The obvious conclusion is to run a continuously updated review for every
+recommendation. That is the wrong conclusion, and it is worth saying why.
+
+Living reviews suit a specific situation, and the methods paper that named them
+says which: questions where "research evidence is emerging rapidly, current
+evidence is uncertain, and new research may change policy or practice decisions"
+[@elliott2017living]. All three, together. Most questions in this book fail at
+least one of the three.
+
+Three cheaper things would do more.
+
+**Consume the living reviews that already exist.** Nobody needed to build one for
+e-cigarettes. Cochrane maintains it and searches it monthly.
+
+**Print the version and the search date, not just the certainty.** Chapter 13
+says "low certainty evidence from one systematic review." A dozen more characters
+would let a reader check it in under a minute:
+
+> Low certainty. `CD010216.pub3`, searched to January 2016.
+
+**Separate the review date from the page date.** A reader currently sees "Updated
+10 September 2025" on a page whose evidence was reviewed in 2021, with no way to
+tell the difference. That single line is what misled me, and the change log was
+one click away.
+
+::: {.callout-note title="What I searched, and when" collapse="true"}
+GOV.UK publication history for *Delivering Better Oral Health*, read 8 September
+2026, for the change log quoted above.
+
+PubMed, 20 August and 8 September 2026, for the version history of `CD010216`.
+Metadata retrieved and structured abstracts read for `.pub3` (2016), `.pub6`
+(September 2021), `.pub8` (2024), `.pub9` (January 2025), `.pub10` (November
+2025) and `.pub11` (August 2026). Version numbers, search closing dates, study
+counts and certainty ratings above are from those abstracts. I did not retrieve
+`.pub4`, `.pub5` or `.pub7`; their publication dates come from the PubMed record
+rather than from reading them.
+
+The citation ages in @tbl-citation-age are computed by
+`scripts/extract_dboh.py`, which takes the newest publication year in each
+recommendation's reference list and subtracts it from 2021. Two limits of that
+method are in the box above. A third: the extractor reads years out of citation
+strings, and an earlier version also matched page numbers, so that
+`Journal 1999;10:2001-2008` yielded 2008 as the newest year. That is fixed and
+tested, but a year read out of a string is still not a verified publication date.
+
+Full record in `appraisals/searches/ch32-currency.md`.
+:::
+
+## What this means for you
+
+Nothing about your teeth. This one is about how to read the advice.
+
+If you are told something is backed by strong evidence, the useful follow-up is
+**"as of when?"**, and the answer has two parts: when the evidence was last
+reviewed, and when the page was last touched. Those can be four years apart, and
+only one of them is usually printed.
+
+The same applies here. This book searched the literature in August and September
+2026. I am not going to tell you how long that will hold, because I tried that in
+an earlier draft and the number was invented. New evidence can overturn an answer
+within a year of publication, or leave it standing for twenty. What a book like
+this can honestly offer is not a shelf life. It is a date, a method, and enough
+working shown that you can tell when it has gone stale.
