@@ -83,12 +83,19 @@ Two of these turned up in this book.
 |:---|:---|:---|:---|
 | `DBOH-084`, oral cancer adjunctive tests ([Chapter -@sec-cancer-screening]) | `CD010276.pub2`, 2015 | `CD010276.pub3` [@walsh2021] | July 2021 |
 | `DBOH-074`, e-cigarettes ([Chapter -@sec-tobacco]) | `CD010216.pub3`, 2016 | `CD010216.pub9` [@lindson2025ec] | January 2025 |
+| `DBOH-003` and three sibling rows, sugar ([Chapter -@sec-sugar]) | Moynihan and Kelly, 2014 | ten-year update [@moores2022] | March 2022 |
 
 : Recommendations resting on a superseded version of their own cited review
 {#tbl-decayed}
 
-Both updates predate the September 2025 edition. The first by more than four
-years.
+All three updates predate the September 2025 edition, the oral cancer one by more
+than four years.
+
+The sugar row is the one that shows the limits of automating this. The first two
+are Cochrane reviews, which carry their version in the DOI, so a machine can spot
+a superseded citation without reading a word. The sugar update is a separate paper
+in a different journal with no version number attached to the thing it updates.
+Nothing short of a real search finds it.
 
 ## The one that is hard to explain
 
@@ -122,12 +129,12 @@ So the mechanism failed at the last possible step. Somebody had already done the
 work of keeping this evidence current, had said so in the abstract, and had filed
 it under the number DBOH was citing.
 
-## I did the same thing, twice
+## I did the same thing, three times
 
 This would be an easier chapter to write if the book were not guilty of it.
 
-Three searches in this book failed, and they are recorded in
-`appraisals/searches/` rather than quietly re-run. Two of the three are the same
+Four searches in this book failed, and they are recorded in
+`appraisals/searches/` rather than quietly re-run. Three of the four are the same
 failure as DBOH's:
 
 - **[Chapter -@sec-amount]** searched for a Cochrane review by its identifier,
@@ -136,9 +143,12 @@ failure as DBOH's:
   years." A 2024 update existed [@wong2024].
 - **[Chapter -@sec-cancer-screening]** searched the same way and missed the same
   review DBOH missed, `CD010276.pub3` [@walsh2021], published in 2021.
+- **[Chapter -@sec-sugar]** searched on the 2014 review's authors and title, and
+  missed its own ten-year update [@moores2022], which had upgraded the evidence
+  for the 5% threshold a full level. DBOH missed it too.
 
-That second one is the useful one. The guideline and its auditor, working
-independently and four years apart, failed to find the same update by the same
+The second and third are the useful ones. On both, the guideline and its auditor,
+working independently and years apart, failed to find the same update by the same
 method. That is not two instances of carelessness. That is one broken technique
 used twice, and the lesson is written at the bottom of the search index:
 **searching for a review by its identifier is not an update search.** An

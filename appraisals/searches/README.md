@@ -67,6 +67,9 @@ found, and each is recorded in its own file rather than quietly re-run:
 - `ch20-oral-cancer.md`: the same failure mode missed CD010276.pub3 (2021).
 - `ch05-brushing-frequency.md`: a date-limited known-item query could not have
   retrieved a frequency review published after 2018, and did not.
+- `ch13-sugar.md`: a known-item query on the 2014 review's authors and title
+  missed its own ten-year update (Moores 2022), which upgraded the evidence for
+  the 5% threshold from very low to low.
 
 The common lesson is that searching for a review by its identifier is not an
 update search.

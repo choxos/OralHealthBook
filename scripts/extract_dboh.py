@@ -12,12 +12,17 @@ parses both, joins them on the recommendation text, and writes:
 
 Two derived columns do real work.
 
-`n_components` counts the separable instructions inside a single
-recommendation, by counting its bullets. This measures the book's central
-argument directly: DBOH states that when a recommendation covers multiple
-components it takes its strength "on the main component", so a Strong
-label on a five-bullet recommendation tells the reader nothing about which
-bullet earned it.
+`n_bullets` counts the bullet markers inside a single recommendation.
+It is a FORMATTING measure, not a validated count of independent causal
+claims, and it is named for what it counts. It is a useful proxy for the
+book's central argument, because DBOH states that when a recommendation
+covers multiple components it takes its strength "on the main component",
+so a Strong label on a five-bullet recommendation does not say which
+bullet earned it. But a bullet can continue a sentence rather than add an
+instruction, and a single unbulleted sentence can carry several distinct
+claims: DBOH-084 names four different index tests in one line and counts
+as one. A semantic component count needs a coding rule and adjudication,
+which is what `living/registry/components.csv` is for.
 
 `certainty_terms` pulls every certainty phrase out of the evidence
 statement. Where a Strong recommendation's own evidence statement contains
@@ -88,7 +93,7 @@ def cell_text(cell: Tag) -> str:
     """Readable text from a table cell.
 
     GOV.UK marks list items with a literal bullet and wraps abbreviations
-    in <abbr>. Keep the bullets (n_components counts them) and unwrap the
+    in <abbr>. Keep the bullets (n_bullets counts them) and unwrap the
     abbreviations to their short form, which is how the guideline reads
     on the page.
     """
@@ -137,8 +142,12 @@ def normalise(text: str) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
-def count_components(rec: str) -> int:
-    """How many separable instructions this recommendation contains."""
+def count_bullets(rec: str) -> int:
+    """How many bullet markers this recommendation contains.
+
+    A formatting count. See the module docstring: it is a proxy for how many
+    instructions are bundled, not a measure of independent causal claims.
+    """
     bullets = len(re.findall(r"^\s*[•\-•]", rec, re.M))
     return max(bullets, 1)
 
@@ -210,31 +219,143 @@ MANUAL_JOINS = {
     "DBOH-087": 21,
 }
 
+# Chapter 2's caries summary tables and chapter 13's evidence tables describe
+# the same seven populations in the same order, and chapter 13's table titles
+# say so verbatim ("all adults", "adults giving concern because of dental
+# caries risk").
+#
+# This mapping exists because recommendation wording is REUSED ACROSS AGE
+# GROUPS, so text alone cannot identify the right evidence row. "Assign a
+# shortened recall interval based on dental caries risk" appears three times in
+# chapter 13: twice at very low certainty for children, once at moderate
+# certainty for adults. An exact-text lookup returned whichever came first and
+# scored it 1.00, so 13 of the 91 rows carried another population's certainty
+# rating at full confidence. Identical text is not the same recommendation.
+# Values are the chapter 13 tables a chapter 2 row may draw evidence from, in
+# preference order. The "giving concern" tables are titled "All the above,
+# plus:", so a higher-risk population inherits the base population's rows and
+# adds to them: an at-risk adult row may legitimately sit in table 7 or, where
+# it repeats advice given to all adults, in table 6. Order matters, because the
+# row's own table is preferred over an inherited one.
+CH2_TO_CH13 = {
+    "1a": ("1",),            # all children up to 3
+    "1b": ("2",),            # all children 3 to 6
+    "1c": ("3", "2", "1"),   # children 0 to 6 giving concern
+    "1d": ("4",),            # all children 7 to 18
+    "1e": ("5", "4"),        # children 7 to 18 giving concern
+    "1f": ("6",),            # all adults
+    "1g": ("7", "6"),        # adults giving concern
+}
 
-def best_match(key: str, index: dict[str, list[dict]]) -> tuple[dict | None, float]:
-    """Join chapter 2 to chapter 13 on recommendation text.
+
+def _pick(
+    cands: list[dict], want_tables: tuple[str, ...] | None
+) -> tuple[dict | None, bool]:
+    """Choose among candidates sharing the same recommendation text.
+
+    Returns (chosen, ambiguous). A single candidate is unambiguous. Several
+    are resolved by preference order: the population's own chapter 13 table
+    wins over a table it merely inherits from.
+    """
+    if not cands:
+        return None, False
+    if len(cands) == 1:
+        return cands[0], False
+    for table in want_tables or ():
+        hits = [c for c in cands if str(c["ch13_table"]) == table]
+        if len(hits) == 1:
+            return hits[0], False
+        if len(hits) > 1:
+            return hits[0], True     # same table, same words, still ambiguous
+    # Same words, several populations, and nothing to tell them apart.
+    return cands[0], True
+
+
+# Columns holding the author's judgment rather than extracted text. They are
+# entered by hand and MUST survive regeneration: the extractor rebuilds the
+# CSV from the guideline every time it runs, and writing these as empty
+# strings silently discarded any adjudication already recorded there. Nothing
+# warned, because an empty column looks exactly like a column not yet filled.
+JUDGMENT_FIELDS = (
+    "audited_in_chapter",
+    "directness",
+    "our_certainty",
+    "verdict",
+    "search_date",
+)
+
+
+def load_judgments(path: Path) -> dict[str, dict[str, str]]:
+    """Read hand-entered judgments out of a previous run's CSV.
+
+    Keyed by recommendation id. An id that no longer exists in the guideline
+    is reported by the caller rather than dropped, because a judgment with no
+    home usually means a row was renumbered and the judgment now belongs to a
+    different recommendation.
+    """
+    if not path.exists():
+        return {}
+    kept: dict[str, dict[str, str]] = {}
+    with path.open(encoding="utf-8", newline="") as fh:
+        for row in csv.DictReader(fh):
+            vals = {f: (row.get(f) or "").strip() for f in JUDGMENT_FIELDS}
+            if any(vals.values()):
+                kept[row["id"]] = vals
+    return kept
+
+
+def best_match(
+    key: str,
+    index: dict[str, list[dict]],
+    want_tables: tuple[str, ...] | None = None,
+) -> tuple[dict | None, float, bool]:
+    """Join chapter 2 to chapter 13 on recommendation text and population.
 
     The two chapters do not word every recommendation identically ("Minimise
     the amount and frequency..." against "Minimise amount and frequency..."),
     so an exact key lookup loses real matches. Score every candidate and keep
     the best, recording the score so a weak join is visible rather than
     silently trusted.
-    """
-    if key in index:
-        return index[key][0], 1.0
 
-    best: dict | None = None
+    Text alone is not enough to identify a recommendation, because chapter 2
+    repeats the same sentence for different age groups while chapter 13 gives
+    each age group its own certainty rating. Where the population is known,
+    candidates are restricted to that population's table; where several
+    candidates remain, the join is returned flagged as ambiguous rather than
+    resolved by document order.
+    """
+    def allowed(c: dict) -> bool:
+        return want_tables is None or str(c["ch13_table"]) in want_tables
+
+    # Candidates are filtered to the right population BEFORE scoring, not
+    # after. Chapter 2 repeats a sentence almost verbatim across age groups, so
+    # the globally best text match is often another population's row; filtering
+    # afterwards would reject the join instead of finding the right one. The
+    # adult sugar row is the worked example: chapter 2 says "sugar-containing
+    # food and drinks", the adult table says "sugary food and drinks", and a
+    # children's table matches the chapter 2 wording more closely than the
+    # correct adult row does.
+    if key in index:
+        chosen, ambiguous = _pick([c for c in index[key] if allowed(c)], want_tables)
+        if chosen is not None:
+            return chosen, 1.0, ambiguous
+
+    best: list[dict] | None = None
     best_score = 0.0
     for k, rows in index.items():
         if not k:
             continue
+        rows = [c for c in rows if allowed(c)]
+        if not rows:
+            continue
         score = SequenceMatcher(None, key, k).ratio()
         if score > best_score:
-            best, best_score = rows[0], score
+            best, best_score = rows, score
 
-    if best_score >= MATCH_FUZZY:
-        return best, best_score
-    return None, best_score
+    if best_score >= MATCH_FUZZY and best:
+        chosen, ambiguous = _pick(best, want_tables)
+        return chosen, best_score, ambiguous
+    return None, best_score, False
 
 
 # ---------------------------------------------------------------------
@@ -282,7 +403,7 @@ def parse_ch2(main: Tag) -> list[dict]:
                 "rec_type": rec_type,
                 "recommendation": rec,
                 "strength": strength.strip(),
-                "n_components": count_components(rec),
+                "n_bullets": count_bullets(rec),
             })
     return rows
 
@@ -367,10 +488,15 @@ def main() -> int:
             # str() so MANUAL_JOINS can be written with plain integers.
             ch13_by_table.setdefault(str(c["ch13_table"]), []).append(c)
 
+    prior = load_judgments(OUT / "dboh-2025.csv")
+    if prior:
+        print(f"carrying {len(prior)} hand-entered judgment row(s) forward")
+
     for i, rec in enumerate(ch2_rows, start=1):
         rid = f"DBOH-{i:03d}"
         key = normalise(rec["recommendation"])
-        ev, score = best_match(key, index)
+        want = CH2_TO_CH13.get(rec["ch2_table"])
+        ev, score, ambiguous = best_match(key, index, want)
 
         # A row the matcher cannot reach, joined by hand to a named chapter 13
         # table. Only ever used for ids listed in MANUAL_JOINS, and only when
@@ -393,7 +519,7 @@ def main() -> int:
             "rec_type": rec["rec_type"],
             "recommendation": rec["recommendation"].replace("\n", " | "),
             "strength": rec["strength"],
-            "n_components": rec["n_components"],
+            "n_bullets": rec["n_bullets"],
             "ch13_table": ev["ch13_table"] if ev else "",
             "strength_ch13": ev["strength_ch13"] if ev else "",
             "evidence_base": (ev["evidence_base"].replace("\n", " ") if ev else ""),
@@ -420,6 +546,7 @@ def main() -> int:
             ),
             "matched": "yes" if ev else "NO",
             "match_score": f"{score:.2f}",
+            "ambiguous_text_match": "yes" if ambiguous else "",
             "match_needs_review": (
                 "yes"
                 if ev and score < MATCH_STRONG and f"DBOH-{i:03d}" not in REVIEWED_JOINS
@@ -431,12 +558,9 @@ def main() -> int:
                 else "no chapter 13 counterpart"
                 if f"DBOH-{i:03d}" in KNOWN_UNMATCHED else ""
             ),
-            # Filled in by hand as each chapter is audited.
-            "audited_in_chapter": "",
-            "directness": "",
-            "our_certainty": "",
-            "verdict": "",
-            "search_date": "",
+            # Filled in by hand as each chapter is appraised, and carried
+            # across regenerations by load_judgments().
+            **{f: prior.get(rid, {}).get(f, "") for f in JUDGMENT_FIELDS},
         }
         merged.append(row)
         if not ev:
@@ -450,11 +574,17 @@ def main() -> int:
         [refs[k] for k in sorted(refs, key=int)],
     )
     _write_csv(OUT / "dboh-2025-unmatched.csv", unmatched)
+    orphans = sorted(set(prior) - {r["id"] for r in merged})
+    if orphans:
+        print("  ! judgments with no matching recommendation, NOT carried:")
+        for o in orphans:
+            print(f"      {o}")
+
     _write_variables(merged, refs)
 
     # --- report ------------------------------------------------------
     strong = [r for r in merged if r["strength"].lower().startswith("strong")]
-    bundled_strong = [r for r in strong if r["n_components"] > 1]
+    bundled_strong = [r for r in strong if r["n_bullets"] > 1]
     strong_with_low = [
         r for r in strong
         if r["weakest_certainty_mentioned"] in ("low", "very low")
@@ -484,7 +614,7 @@ def main() -> int:
     for r in strong_with_low:
         head = r["recommendation"].split(" | ")[0][:60]
         print(f"  [{r['id']}] {r['weakest_certainty_mentioned']:8} "
-              f"{r['n_components']}c  {head}")
+              f"{r['n_bullets']}c  {head}")
 
     print(f"\nwrote {OUT.relative_to(ROOT)}/dboh-2025.csv and 2 companions")
     return 0
@@ -534,8 +664,8 @@ def _write_variables(rows: list[dict], refs: dict[str, dict]) -> None:
     strong = [r for r in rows if r["strength"] == "Strong"]
     good = [r for r in rows if r["strength"].startswith("Good practice")]
 
-    biggest = max(rows, key=lambda r: int(r["n_components"]))
-    biggest_strong = max(strong, key=lambda r: int(r["n_components"]))
+    biggest = max(rows, key=lambda r: int(r["n_bullets"]))
+    biggest_strong = max(strong, key=lambda r: int(r["n_bullets"]))
 
     lines = [
         "# GENERATED by scripts/extract_dboh.py. Do not edit by hand.",
@@ -548,10 +678,10 @@ def _write_variables(rows: list[dict], refs: dict[str, dict]) -> None:
         f"  goodpractice: {len(good)}",
         f"  references: {len(refs)}",
         "  # Recommendations bundling two or more separable instructions",
-        f"  bundled: {n(lambda r: int(r['n_components']) > 1)}",
-        f"  bundled_strong: {sum(1 for r in strong if int(r['n_components']) > 1)}",
-        f"  largest_bundle: {biggest['n_components']}",
-        f"  largest_strong_bundle: {biggest_strong['n_components']}",
+        f"  bundled: {n(lambda r: int(r['n_bullets']) > 1)}",
+        f"  bundled_strong: {sum(1 for r in strong if int(r['n_bullets']) > 1)}",
+        f"  largest_bundle: {biggest['n_bullets']}",
+        f"  largest_strong_bundle: {biggest_strong['n_bullets']}",
         f"  largest_strong_bundle_id: {biggest_strong['id']}",
         "  # Recommendations whose evidence statement names no certainty at all",
         f"  no_certainty_stated: {n(lambda r: not r['certainty_terms'])}",

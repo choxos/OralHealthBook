@@ -137,14 +137,14 @@ def build_evidence_appendix(rows: list[dict]) -> str:
                     f"| {r['id'].replace('DBOH-', '')} "
                     f"| {short(r['recommendation'], 150)} "
                     f"| {esc(r['strength'])} "
-                    f"| {r['n_components']} "
+                    f"| {r['n_bullets']} "
                     f"| {certainty_cell(r)} |"
                 )
             out.append("")
 
     # --- the summary that carries the argument ------------------------
     strong = [r for r in rows if r["strength"] == "Strong"]
-    bundled_strong = [r for r in strong if int(r["n_components"]) > 1]
+    bundled_strong = [r for r in strong if int(r["n_bullets"]) > 1]
 
     out.append("\n## Strong recommendations that bundle two or more instructions\n")
     out.append(
@@ -153,10 +153,10 @@ def build_evidence_appendix(rows: list[dict]) -> str:
     )
     out.append("| ID | Parts | Certainty stated | Recommendation |")
     out.append(W_BUNDLED)
-    for r in sorted(bundled_strong, key=lambda r: -int(r["n_components"])):
+    for r in sorted(bundled_strong, key=lambda r: -int(r["n_bullets"])):
         out.append(
             f"| {r['id'].replace('DBOH-', '')} "
-            f"| {r['n_components']} "
+            f"| {r['n_bullets']} "
             f"| {certainty_cell(r)} "
             f"| {short(r['recommendation'], 180)} |"
         )

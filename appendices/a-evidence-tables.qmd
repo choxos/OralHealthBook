@@ -119,7 +119,7 @@ reproduced under the Open Government Licence v3.0.
 | 045 | Assign a recall interval ranging from 3 to 24 months, based on oral health needs and disease risk | Conditional | 1 | moderate |
 | 046 | For those with active coronal or root caries, consider recommending or prescribing daily fluoride rinse (0.05% NaF; 230ppm fluoride, to be used at a… | Conditional | 1 | low |
 | 047 | For those with obvious active coronal or root caries, consider prescribing 2,800 or 5,000ppm fluoride toothpaste until dental caries is stabilised an… | Conditional | 1 | moderate |
-| 048 | Assign a shortened recall interval based on dental caries risk | Conditional | 1 | very low |
+| 048 | Assign a shortened recall interval based on dental caries risk | Conditional | 1 | moderate |
 
 
 ## Periodontal Diseases

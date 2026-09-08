@@ -46,6 +46,14 @@ treatment approaches for incidence or number of episodes of dental pain **and/or
 infection experienced by these participants **with high caries risk and
 established disease**."
 
+**Who was eligible matters more than any of this.** The trial excluded children
+who "presented with dental pain and/or sepsis" at recruitment, along with
+children under 3 or over 7 and those whose dental management needed special
+consideration. So FiCTION is a trial of what to do about decay that has reached
+the dentin and is **not yet hurting**. It says nothing about a child who is
+already in pain or has an infection, and nothing about a tooth that has been left
+until it is. Read the next section with that boundary in mind.
+
 Two things about that result deserve emphasis.
 
 **Roughly 40% of children in every arm had pain or infection.** Whatever you do,
@@ -79,9 +87,18 @@ this was a large, registered, multicentre trial in real general practice with a
 patient-important primary outcome, which puts it among the best-designed studies
 anywhere in this book.
 
-**Attrition**: 1,144 randomized, 1,058 attended at least one study visit and were
-included in the primary analysis. That is 92.5% retention over nearly three
-years, which is good.
+**Attrition**, and a figure I got wrong. 1,144 were randomized and 1,058 attended
+at least one trial visit and formed the intention-to-treat set. An earlier draft
+called that ratio "92.5% retention over nearly three years, which is good." It is
+not retention. It is the proportion who turned up at least once, which is an
+entry criterion for the analysis rather than a measure of follow-up.
+
+The retention figure is in the NIHR report and is much lower: "There was no
+evidence of differential attrition, **with 67% attending a final trial visit**"
+[@innes2020fiction]. A third of the analysed children did not reach the end. The
+authors' point is that the loss was even across arms, which protects the
+comparison between arms; it does not make the follow-up complete, and it widens
+the uncertainty around every estimate in @tbl-fiction.
 :::
 
 ## What the guideline does with this
@@ -126,7 +143,8 @@ Certainty of evidence
     for dental pain and/or infection, in children at high caries risk with
     established disease, over a median 33.8 months. One large well-conducted
     randomized trial, downgraded for the unavoidable lack of blinding with a
-    subjective primary outcome.
+    subjective primary outcome. A third of the analysed children did not attend a
+    final trial visit, which the authors report was even across arms.
 
     Stated that way on purpose. An earlier draft said the three approaches
     "produce similar rates," which converts a failure to show superiority into a
@@ -163,10 +181,15 @@ answer. If a dentist presents filling as the only option, it is reasonable to as
 about sealing the decay in and about a prevention-first approach, and what
 FiCTION found about pain and infection under each.
 
-That trial found no evidence of a difference in the rate of pain and/or infection
-between drilling and filling, sealing over, and a prevention-first strategy, in
-children aged 3 to 7 at high caries risk whose lesions were not yet causing
-symptoms. Around 40% of children had pain or infection in every group. What it did
+**First, the boundary.** If your child's tooth already hurts, or the gum around
+it is swollen, none of what follows applies. Children who arrived in pain or with
+an infection were excluded from this trial, so it has nothing to say about them.
+That is a case for being seen, not for waiting.
+
+Within that boundary, the trial found no evidence of a difference in the rate of
+pain and/or infection between drilling and filling, sealing over, and a
+prevention-first strategy, in children aged 3 to 7 at high caries risk whose
+lesions were not yet causing symptoms. Around 40% of children had pain or infection in every group. What it did
 **not** establish is that the three are equivalent: the interval for prevention
 alone against filling still runs from 4 percentage points better to 12 points
 worse, and 12 points would matter.

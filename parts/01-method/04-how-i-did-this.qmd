@@ -302,6 +302,42 @@ been written. That is the failure this book exists to object to, committed by th
 book, and `scripts/check_citations.py` now fails the build if a chapter names a
 record that is not there.
 
+**A third pass, by a fourth reader.** After the second pass the manuscript was
+read again, in full, by an independent model working from a prepublication-audit
+brief rather than the fact-checking brief given to the first two. It found things
+both earlier passes had missed, and the corrections below marked as third-pass are
+its.
+
+**Third pass: an evidence table joined to the wrong age group, thirteen times.**
+My extraction script matched chapter 2 to chapter 13 on recommendation text alone.
+DBOH reuses the same sentence across age groups while giving each age group its
+own certainty rating, so an exact text match returned whichever population came
+first in the document and scored it 1.00. Thirteen of the ninety-one rows carried
+another population's evidence statement at full confidence. The worst case gave an
+adult recommendation a child's very low certainty rating where the guideline says
+moderate. The matcher now maps chapter 2's tables to chapter 13's by population,
+allows the higher-risk tables to inherit from the base tables as the guideline
+does, and flags rather than guesses when text alone cannot decide.
+
+**Third pass: an absolute risk that was not a transformation of its own odds
+ratio.** [Chapter -@sec-sealants] reproduced three absolute-risk illustrations
+from a Cochrane abstract without checking them against the odds ratio printed in
+the same sentence. They do not follow from it, and the discrepancy is in the
+source. The chapter now quotes the review, shows the conversion, and labels the
+recalculated figures as mine.
+
+**Third pass: a retention figure that was not retention.**
+[Chapter -@sec-fiction] called the ratio of the analysis set to the randomized
+total "92.5% retention." It is the proportion who attended at least one visit. The
+trial reports 67% attending a final visit. The chapter also failed to say that
+children presenting with pain or sepsis were excluded from the trial, which is the
+single most important thing a parent needs to know before reading it.
+
+**Third pass: a sugar review update, missed the same way as the others.**
+[Chapter -@sec-sugar] recorded that no review superseded Moynihan and Kelly 2014.
+A ten-year update was published in 2022 and had raised the evidence for the 5%
+threshold from very low to low.
+
 **A recommendation left unaudited.** [Chapter -@sec-tobacco] stated that tobacco
 carries five Strong recommendations across two tables and then audited three rows
 from one of them. The true count is seven rows: six Strong and one Conditional.

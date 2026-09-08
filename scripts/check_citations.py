@@ -68,11 +68,22 @@ def strip_code(text: str) -> str:
     return text
 
 
-def parse_bib(path: Path) -> dict[str, str]:
-    """Return {key: entry-body}. Good enough for a hand-maintained file."""
+def parse_bib(path: Path) -> tuple[dict[str, str], list[str]]:
+    """Return ({key: entry-body}, duplicate keys).
+
+    Duplicates are returned rather than silently resolved. Storing entries in
+    a dict keyed by citation key hides a repeated key behind whichever copy is
+    parsed last, and the two copies need not agree: this file carried two
+    `tham2015` entries with different author lists and different issue
+    numbers, and two `dossantos2018` entries, for exactly that reason. BibTeX
+    itself takes the first definition, so the rendered reference list and this
+    checker could disagree about what was cited.
+    """
     raw = path.read_text(encoding="utf-8")
     raw = re.sub(r"^%.*$", "", raw, flags=re.M)
     entries: dict[str, str] = {}
+    seen: list[str] = []
+    duplicates: list[str] = []
     for m in re.finditer(r"@(\w+)\s*\{\s*([^,\s]+)\s*,", raw):
         start = m.end()
         depth = 1
@@ -85,8 +96,12 @@ def parse_bib(path: Path) -> dict[str, str]:
             i += 1
         # Keep the entry type on the front so the identifier rule can
         # distinguish a journal article from a government guideline.
-        entries[m.group(2)] = f"@{m.group(1).lower()}\n" + raw[start:i]
-    return entries
+        key = m.group(2)
+        if key in entries:
+            duplicates.append(key)
+        seen.append(key)
+        entries[key] = f"@{m.group(1).lower()}\n" + raw[start:i]
+    return entries, duplicates
 
 
 def used_keys(files: list[Path]) -> dict[str, set[str]]:
@@ -116,9 +131,19 @@ def main() -> int:
         print(f"FATAL: {BIB} not found", file=sys.stderr)
         return 2
 
-    bib = parse_bib(BIB)
+    bib, duplicate_keys = parse_bib(BIB)
     files = qmd_files()
     used = used_keys(files)
+
+    # --- 0. no key is defined twice --------------------------------
+    # BibTeX takes the first definition and a dict-based parser takes the
+    # last, so a duplicated key means the rendered bibliography and this
+    # checker can disagree about what was actually cited.
+    for key in sorted(set(duplicate_keys)):
+        errors.append(
+            f"refs.bib defines @{key} more than once; "
+            f"keep one verified entry per key"
+        )
 
     # --- 1. every cited key exists ---------------------------------
     for key, where in sorted(used.items()):

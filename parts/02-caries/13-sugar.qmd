@@ -110,11 +110,41 @@ that I could not source back to either document, and I have replaced them with
 the published ones rather than leave arithmetic of my own standing in for a
 citation.
 
-The 5% threshold is different, and DBOH says so: **very low certainty**. The
-review is candid about why. The evidence for going below 5% rests on a handful of
+The 5% threshold is different, and DBOH says so: **very low certainty**. The 2014
+review is candid about why. The evidence for going below 5% rested on a handful of
 Japanese ecological studies from 1959 and 1960, using per-capita sugar
 availability rather than measured intake, which is why the profile downgrades for
 risk of bias.
+
+### The update I missed
+
+That was true of the evidence as it stood in 2014. It is not true now, and my
+search should have found out.
+
+Moores, Kelly and Moynihan published a ten-year update in 2022, covering the
+literature from 2011 to 2020 [@moores2022]. From 488 new papers they found 23
+eligible studies. According to PubMed, its GRADE conclusions are:
+
+- the evidence that caries is lower when free sugars are below **10%** of energy
+  remains **moderate** quality, now confirmed by new cohort data;
+- the evidence for below **5%** of energy is **upgraded from very low to low**,
+  on the strength of new cohort studies.
+
+Their summary sentence is that the findings "support and strengthen original
+evidence underpinning the WHO recommendations for sugars."
+
+So the 5% figure is better supported than DBOH's evidence statement says, and
+better supported than an earlier draft of this chapter said. It is still the
+weaker of the two thresholds, and low certainty is still low. But "a stretch goal
+resting on very low certainty evidence," which is how I put it, has been overtaken
+by evidence that DBOH could have cited: the update predates the September 2025
+edition by more than three years.
+
+This is the fourth time in this book that an update search by known author and
+title has failed to find an update that existed, and it is the same failure
+[Chapter -@sec-half-life] is about. It is also a case my own tooling would not
+catch, because that tool reads version numbers out of Cochrane DOIs and this is a
+journal review with no version number to read.
 
 Two related cautions in the review are worth separating from that, because I ran
 them together in an earlier draft. Moynihan and Kelly note that at intakes under
@@ -175,7 +205,15 @@ PubMed, 21 August 2026. Moynihan and Kelly's own search covered multiple
 databases from 1950 through **November 2011**; the paper was published in 2014,
 and I had previously given the search end-date as 2013. I checked for a more
 recent systematic review of sugars and caries intended to inform guidelines and
-found none superseding it.
+recorded that I found none superseding it.
+
+**That search failed.** Moores, Kelly and Moynihan's ten-year update was
+published in the *Journal of Dental Research* in 2022 [@moores2022] and I did not
+retrieve it. The query was built around the 2014 review's authors and title, which
+is a known-item search: it finds the paper you already know about and is
+structurally incapable of telling you a successor exists. The same mistake appears
+in three other chapters and is the subject of [Chapter -@sec-half-life]. The
+chapter above has been rewritten around the update.
 
 I have the full text and all six supplementary files, supplied during writing,
 including the GRADE profile tables.
@@ -192,10 +230,14 @@ Full record in `appraisals/searches/ch13-sugar.md`.
 
 Certainty of evidence
 :   [Moderate]{.certainty .moderate} that lower free-sugars intake means less
-    dental caries, and for the <10% of energy threshold. [Very low]{.certainty .very-low}
-    for the <5% threshold, as DBOH states. I agree with both ratings, and note that
-    the moderate rating represents a legitimate upgrade of observational evidence
-    rather than a downgrade of trials.
+    dental caries, and for the <10% of energy threshold. The moderate rating
+    represents a legitimate upgrade of observational evidence rather than a
+    downgrade of trials.
+
+    For the <5% threshold, [low]{.certainty .low}, **not** the very low that DBOH
+    states. The 2022 update upgraded it a level on new cohort evidence
+    [@moores2022], three years before the edition audited here. DBOH's rating was
+    right for the review it cites and is now a level too pessimistic.
 
 Directness to the advice as worded
 :   **Good on amount, weaker on frequency.** The graded evidence concerns how
@@ -212,10 +254,11 @@ Is the strength label defensible?
     respectively while appearing in the same guidance.
 
 What would change my mind
-:   On the direction, essentially nothing. On the thresholds, an updated review
-    using modern caries diagnostic criteria and better dietary measurement, which
-    would either firm up the 5% figure or retire it. On frequency, a study that
-    separates the number of sugar exposures from the total quantity, which is
+:   On the direction, essentially nothing. On the 5% threshold, this has already
+    partly happened: the 2022 update moved it from very low to low, and a further
+    review using modern caries diagnostic criteria and measured rather than
+    per-capita intake would settle whether it deserves more. On frequency, a study
+    that separates the number of sugar exposures from the total quantity, which is
     hard but not impossible with modern dietary monitoring.
 :::
 
@@ -224,10 +267,11 @@ What would change my mind
 Eat less sugar, and eat it less often. Of everything in this book, this is the
 advice with the least argument against it and the fewest caveats attached.
 
-If you want a number, 10% of your energy intake is the one with real evidence
-behind it, roughly 55 g of free sugars a day for an adult. The 5% figure that
-appears in some guidance is a stretch goal resting on very low certainty
-evidence, and the guideline says so.
+If you want a number, 10% of your energy intake is the one with the strongest
+evidence behind it, roughly 55 g of free sugars a day for an adult. The 5% figure
+in UK guidance is the more demanding target and the evidence for it is weaker, but
+it is no longer as weak as the guideline says: a 2022 update moved it up a level.
+Treat it as a good aim rather than a threshold anyone has pinned down precisely.
 
 And the frequency really does matter, or at least the mechanism says it should: a
 single sweet dessert is easier on your teeth than the same amount of sugar spread

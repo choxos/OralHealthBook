@@ -56,17 +56,57 @@ The headline result is one of the largest in this book:
 
 : Pit and fissure sealants [@ahovuo2017] {#tbl-sealants}
 
-An odds ratio of 0.12 is an enormous effect. The review helpfully translates it
-into absolute terms, which more reviews should do:
+An odds ratio of 0.12 is an enormous effect. The review translates it into
+absolute terms, which more reviews should do. Quoting it exactly:
 
-- if 16% of unsealed surfaces decay over 24 months, sealing reduces that to
-  **5.2%** (95% CI 3.1% to 7.4%);
-- if 40% decay, sealing reduces it to **6.3%** (3.8% to 9.6%);
-- if 70% decay, sealing reduces it to **19%** (12.3% to 27.2%).
+> If we were to assume that 16% of the control tooth surfaces were decayed during
+> 24 months of follow-up (160 carious teeth per 1000), then applying a resin-based
+> sealant would reduce the proportion of carious surfaces to **5.2%** (95% CI
+> 3.13% to 7.37%). Similarly, assuming that 40% of control tooth surfaces were
+> decayed (400 carious teeth per 1000), then applying a resin-based sealant would
+> reduce the proportion of carious surfaces to **6.25%** (95% CI 3.84% to 9.63%).
+> If 70% of control tooth surfaces were decayed, there would be **19%** decayed
+> surfaces in the sealant group (95% CI 12.3% to 27.2%).
+>
+> --- Ahovuo-Saloranta and colleagues, 2017 [@ahovuo2017]
 
-Note what those three lines show: the higher the baseline risk, the more decay
-sealing prevents in absolute terms. This is why the recommendation targets
-children at higher risk, and it is the guideline reading its evidence correctly.
+An earlier draft reproduced those three lines as the chapter's own illustration.
+Read them again: a baseline of 16% and a baseline of 40% give almost the same
+sealed risk, 5.2% against 6.25%. One odds ratio cannot do that. Two and a half
+times the baseline risk cannot leave the treated risk essentially unchanged.
+
+The standard conversion from an odds ratio to an absolute risk, given a control
+risk $p_0$, is
+
+$$p_1 = \frac{\text{OR} \times p_0}{1 - p_0 + \text{OR} \times p_0}$$
+
+Applying it to the odds ratio the review prints in the same sentence:
+
+| Assumed control risk | The review says | The odds ratio gives | Absolute reduction |
+|:---|---:|---:|---:|
+| 16% | 5.2% (3.13 to 7.37) | **2.2%** (1.5 to 3.5) | 13.8 points |
+| 40% | 6.25% (3.84 to 9.63) | **7.4%** (5.1 to 11.2) | 32.6 points |
+| 70% | 19% (12.3 to 27.2) | **21.9%** (15.7 to 30.7) | 48.1 points |
+
+: The review's absolute figures against the transformation of its own odds ratio.
+The right-hand columns are my calculation, not the review's {#tbl-sealant-abs}
+
+I am not accusing the review of inventing numbers, and I do not know how the
+published figures were derived; the second column is what its abstract says. What
+I can say is that the three printed values are not transformations of the odds
+ratio printed beside them, and that the middle row is the one that gives it away.
+
+The lesson is the book's own, turned on the book. I copied an absolute-risk
+translation out of a Cochrane abstract because it was helpfully provided, and did
+not spend the two minutes needed to check it against the relative effect in the
+same paragraph. A book about following citations to their source has no business
+reproducing arithmetic it has not done.
+
+The qualitative point survives either way, and is in fact stronger under the
+correct transformation: the higher the baseline risk, the more decay sealing
+prevents in absolute terms, rising from about 14 percentage points to about 48.
+This is why the recommendation targets children at higher risk, and it is the
+guideline reading its evidence correctly.
 
 ## The problem with the seven trials
 
