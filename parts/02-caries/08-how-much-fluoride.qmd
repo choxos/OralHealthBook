@@ -119,8 +119,14 @@ evidence was judged to be **low**" apart from the handful of comparisons listed
 above. Most of the 21 comparisons in that network are low certainty. **Five** are
 not, and the guideline uses three of them, which is the correct way round and
 worth crediting. The other two are the higher-concentration comparisons in the
-second table, both moderate, and both showing no added benefit. I said four in an
-earlier draft.
+second table, both moderate. I said four in an earlier draft.
+
+What those two comparisons show needs stating carefully, because I first wrote
+that they show "no added benefit" and that is not what a confidence interval
+spanning zero says. SMD −0.05 (95% CI −0.14 to 0.05) is compatible with a small
+benefit, with nothing, and with a small harm. The honest reading is that a benefit
+of the size these trials could have detected was not found, not that the benefit
+is absent.
 
 ::: {.callout-note title="How I judged this: what an SMD of 0.28 actually means" collapse="true"}
 A standardized mean difference of 0.28 means the groups differ by 0.28 of a
@@ -263,5 +269,15 @@ the UK is already 1,350 to 1,500ppm, so for most people this is a decision they
 never have to make. If you find yourself choosing between a 1,000ppm paste and a
 1,450ppm one, the higher one is probably very slightly better, and "very
 slightly" is doing real work in that sentence. What is not worth doing is paying
-a premium for anything above 1,500ppm without a dentist telling you to: nobody
-has shown a benefit there, though nobody has shown its absence either.
+a premium for anything above 1,500ppm on your own initiative. For preventing
+decay on the crowns of teeth, the higher concentrations have not been shown to add
+anything, and have not been shown not to.
+
+**Root caries is the exception, and I left it out of an earlier draft.** DBOH's
+evidence statement for the 2,800 and 5,000ppm row does not stop at the sentence I
+quoted. It ends: "Moderate-certainty evidence for effectiveness of 5,000ppm
+fluoride for root caries." Root caries is decay on the exposed root surface, which
+is largely an older-adult problem and a different disease process from decay on
+the crown. Trimming the statement before that clause made the guideline look as
+though it were prescribing on no evidence when it had named the one indication
+where the evidence is strongest.

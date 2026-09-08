@@ -58,8 +58,18 @@ copyright, reproduced under the [Open Government Licence v3.0][ogl].
 
 `audited_in_chapter`, `directness`, `our_certainty`, `verdict`, `search_date`.
 
-These start empty. `our_certainty` is the adjudicated judgment and is the one
-the book quotes; `weakest_certainty_mentioned` is only a flag for where to look.
+**These are empty, in every row, as the manuscript stands.** They were designed
+as a machine-readable ledger of the book's own adjudications and that ledger has
+not been built. The judgments themselves exist, in the Verdict box of each audit
+chapter, in prose. What does not exist is a keyed table linking each one to its
+recommendation, so nothing here should be described as a completed appraisal
+archive, and the preface says so too.
+
+`our_certainty` is intended to hold the adjudicated judgment;
+`weakest_certainty_mentioned` is only a flag for where to look. Until the former
+is populated, the book's certainty judgments are the ones written in the chapters,
+and this file is an extraction of the guideline rather than a record of the
+audit.
 
 ## Two caveats that matter
 

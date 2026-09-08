@@ -36,18 +36,26 @@ Two consequences follow immediately.
 third, has a large surface area with papillae that hold bacteria and debris. This
 is why a person with excellent teeth and healthy gums can still have bad breath.
 
-**Anything that only perfumes is useless.** A mint or a mouthwash that masks the
-smell for twenty minutes has not touched the bacteria producing it. This is a
-large market selling a temporary cover for an ongoing process.
+**Masking is not treating, which is not the same as useless.** A mint or a
+mouthwash that covers the smell for twenty minutes has not touched the bacteria
+producing it, and will not stop it coming back. An earlier draft called such
+products useless, which overstates it: temporary relief before a meeting or a
+conversation is a real thing to want, and a product can deliver it honestly. What
+it cannot do is address the cause, and the distinction to hold on to is between a
+product that helps you get through the afternoon and one that changes why your
+breath smells.
 
 ## Morning breath is not halitosis
 
-Everyone has bad breath on waking, and it is not a condition.
+Morning breath is close to universal, and it is not a condition.
 
 Salivary flow falls during sleep. Saliva clears bacteria, buffers acid and
 carries oxygen; anaerobic bacteria flourish without it. Overnight you get a
 predictable accumulation of exactly the compounds described above, which is why
-your mouth tastes as it does at 7am and why brushing fixes it in two minutes.
+your mouth tastes as it does at 7am. For most people brushing and eating deal
+with it; breath that persists through the morning after cleaning is the kind
+worth raising with a dentist, because that is the pattern that suggests a cause
+rather than a night's accumulation.
 
 This is the same physiological fact that [Chapter -@sec-last-thing],
 [Chapter -@sec-quieter-tier] and [Chapter -@sec-breastfeeding] all lean on, which

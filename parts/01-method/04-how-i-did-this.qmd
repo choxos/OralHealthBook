@@ -33,12 +33,28 @@ has.
 
 The unit is the **component**, not the recommendation.
 
-[Chapter -@sec-bundling] explains why: a recommendation that bundles six
-instructions under one strength label cannot be assessed as a single object,
-because its label refers to only one of the six. So each recommendation is first
-split into its separable instructions, following the guideline's own bullets
-where it has them and its own sentence structure where it does not, and each
-component is then carried through the steps below on its own.
+[Chapter -@sec-bundling] explains why, and the claim needs stating precisely
+because a looser version of it appears in earlier drafts of several chapters.
+
+DBOH says the strength was **set on** the main component. It does not say the
+label **applies only to** that component, and I am not entitled to say so either.
+A recommendation can perfectly well be a package: "brush twice daily with fluoride
+toothpaste and spit rather than rinse" is a routine, the trials mostly tested
+routines, and recommending the package is a legitimate decision even where the
+marginal contribution of each part is unknown.
+
+The narrower claim, which is the one this book can defend, is about
+**recoverability**: when six instructions sit under one label, a reader cannot
+tell from the published summary which of them the evidence supports, how strongly,
+or what reasoning produced the label. That is a criticism of what the guidance
+makes visible, not a proof that the recommendation is wrong.
+
+So each recommendation is first split into its separable instructions, following
+the guideline's own bullets where it has them and its own sentence structure where
+it does not, and each component is carried through the steps below on its own.
+Where a chapter concludes that a component would merit a different label, that is
+my reading of the evidence for that component, not a completed
+evidence-to-decision assessment of the package.
 
 ## The seven steps
 
@@ -323,6 +339,42 @@ method", when DBOH's per-row search procedures are not published; and a predicti
 that this book would stay current for about seven years, which was a guess formatted
 to look like a calculation.
 
+**Fourth pass: absence claims that were about a review's scope, not the
+literature.** [Chapter -@sec-fluoridation-works] said there is no adult
+fluoridation evidence. The Cochrane review asks what happens when fluoridation
+starts or stops, so a study of continuous exposure cannot qualify; LOTUS matched
+6.4 million NHS dental patients and found a very small effect its own authors
+report as smaller than most of their stakeholders considered meaningful.
+[Chapter -@sec-flossing] said the decay outcome had never been measured. Hujoel
+and colleagues pooled six trials in 808 children in 2006; professionally
+delivered flossing cut interproximal caries by about 40%, self-performed flossing
+in adolescents did nothing, and the review states that no adult or unsupervised
+trials exist. Both chapters now describe the actual gap.
+
+**Fourth pass: a guideline statement cut before its exception.** DBOH's evidence
+for prescription-strength toothpaste ends "Moderate-certainty evidence for
+effectiveness of 5,000ppm fluoride for root caries." Chapters 8 and 29 quoted the
+first half and concluded the trials were not there. The root-caries exception is
+restored in both.
+
+**Fourth pass: a prevalence presented as an attributable harm.**
+[Chapter -@sec-fluoridation-harm] set roughly 12% fluorosis of aesthetic concern
+beside 0.24 of a baby tooth as though the pair were a balance sheet. A prevalence
+under an exposure is not the excess caused by that exposure, and a proportion of
+people and a count of teeth are not commensurable anyway.
+
+**Fourth pass: non-significance still reported as absence.** Several chapters
+explained the distinction and then went on making the old claim in a verdict or a
+closing paragraph. [Chapter -@sec-powered]'s oscillating-rotating subgroup is the
+clearest: SMD 0.07 (95% CI −0.20 to 0.33) is imprecision, not proof of no effect.
+
+**Fourth pass: my own GRADE reasoning, in the chapter that complains about
+GRADE.** [Chapter -@sec-twice-daily] declined to downgrade for risk of bias on
+the grounds that doing so would double-count the confounding already considered
+under the upgrade criteria. Declining an upgrade is not a downgrade already
+taken, and confounding and exposure misclassification are separate domains. The
+rating moves to very low.
+
 **Fourth pass: an odds ratio reported backwards.** [Chapter -@sec-varnish] gave
 Weintraub's comparisons as though varnish arms had more decay. The published
 comparisons take counseling alone as the exposure. The direction is now stated
@@ -483,10 +535,21 @@ is published in a file you can open.
 git clone https://github.com/choxos/OralHealthBook
 cd OralHealthBook
 make extract   # rebuild appraisals/ from the archived guideline
-make check     # verify every citation resolves and no verdict is blank
+make check     # syntax checks: citations resolve, no verdict is blank
 make web       # build the book
 ```
 
 The archived copies of *Delivering Better Oral Health* and SIGN 138 used
 throughout are in `sources/`, so the extraction can be re-run against exactly
 the text I read, even after the guideline is next updated.
+
+**What `make check` does and does not do.** It is a syntax check. It confirms
+that every `@key` in the text resolves to an entry in the bibliography, that no
+key is defined twice, that every named search record exists, that every
+cross-reference points at a section that exists, and that no Verdict box has an
+empty field. It does **not** confirm that a citation supports the sentence
+attached to it, that a search was adequate, that a quotation is accurate, or that
+a number was transcribed correctly. Those failed repeatedly in drafts that passed
+this check, and every one of them was caught by a person reading the source. A
+passing build is evidence that the scaffolding is intact, not that the science is
+right.

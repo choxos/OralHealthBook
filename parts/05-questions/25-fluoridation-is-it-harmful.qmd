@@ -33,22 +33,38 @@ The Cochrane review reports, carrying figures forward from its 2015 version
 : Dental fluorosis and water fluoridation [@iheozor2024], low certainty
 {#tbl-fluorosis}
 
-Roughly one in eight people in a fluoridated population at 0.7 ppm has fluorosis
-that someone judged to be of aesthetic concern. That is not a trivial number, and
-it is the harm side of the ledger whose benefit side is
-[Chapter -@sec-fluoridation-works]'s 0.24 of a baby tooth.
+Roughly one in eight people examined in a population at 0.7 ppm has fluorosis that
+someone judged to be of aesthetic concern.
 
-Two honest qualifications, in both directions. "Of aesthetic concern" is a
+**That is a prevalence, not an attributable harm, and an earlier draft of this
+chapter set it against the caries benefit as though the two were a balance
+sheet.** They are not commensurable, for four separate reasons, and the error is
+worth spelling out because the comparison is made constantly in public argument.
+
+A prevalence *at* an exposure is not the *difference in* prevalence between two
+policies. Some fluorosis occurs without fluoridated water, from toothpaste and
+other sources, so the excess caused by fluoridation is smaller than 12% by an
+amount this table does not report. The two numbers also describe different teeth
+in different people at different times: fluorosis is a permanent-dentition
+outcome recorded once enamel has formed, while the 0.24 figure in
+[Chapter -@sec-fluoridation-works] is a baby-tooth caries increment. And they are
+different kinds of quantity, a proportion of people against a count of teeth, so
+placing them side by side and calling one bigger is arithmetic without meaning.
+
+Two further qualifications, in both directions. "Of aesthetic concern" is a
 judgment made by examiners, not by the people whose teeth they are, and mild
-fluorosis is frequently invisible to its owner. But these figures are low
+fluorosis is frequently invisible to its owner; nobody has asked the population
+how it weighs a faint white fleck against a filling. These figures are also low
 certainty, they were **not updated** in the 2024 review, which did not search for
 new fluorosis evidence, and the same review was "unsure" about skeletal fluorosis,
 bone fractures and skeletal maturity, at very low certainty from five studies.
 
-So: a common, mostly cosmetic, mostly mild harm, reasonably well established, sat
-next to a small, uncertain benefit. Whatever you conclude about neurodevelopment,
-that trade-off is the one actually on the table, and it is closer than
-fluoridation's defenders usually admit.
+So what can be said is this: a common, mostly cosmetic, mostly mild finding is
+more prevalent where water is fluoridated, and the caries benefit in contemporary
+populations is small and uncertain. Setting those two beside each other is a
+prompt for a decision analysis nobody has published, not a conclusion. I do not
+have the numbers to say which way it comes out, and neither does anyone who
+quotes 12% against 0.24.
 
 ## Neurodevelopment: what the evidence says
 
@@ -174,8 +190,9 @@ discrepancy is unknown.
 
 Here is where I think the reasoning has to land.
 
-**The benefit is small and the harm is real but mostly cosmetic.** Post-1975, 0.24
-dmft with an interval crossing zero, against roughly 12% fluorosis of aesthetic
+**The benefit is small and the fluorosis finding is real but mostly cosmetic, and
+the two are not directly comparable quantities.** Post-1975, 0.24
+dmft with an interval crossing zero, alongside roughly 12% fluorosis of aesthetic
 concern. Reasonable people can weigh those differently. That is a values question
 and I am not going to pretend the evidence resolves it.
 
@@ -217,14 +234,19 @@ Full record in `appraisals/searches/ch25-fluoridation-harm.md`.
 
 Certainty of evidence
 :   **Fluorosis:** [low]{.certainty .low}, and not updated since 2015.
-    Approximately 12% of aesthetic concern at 0.7 ppm.
+    Approximately 12% of aesthetic concern **at** 0.7 ppm, which is a prevalence
+    under an exposure and not the excess caused by adding fluoride to water.
     **Neurodevelopment above fluoridation levels:** an association reported across
     74 observational studies, robust to restricting to low risk-of-bias studies.
     **Neurodevelopment at fluoridation levels:** [very low]{.certainty .very-low}
     and genuinely unresolved. Water-measured fluoride below 1.5 mg/L gives
     β 0.05 (−0.36 to 0.45) across all studies but β −0.32 (−0.91 to 0.26) in the
-    low risk-of-bias subset, on three studies; urine-measured fluoride below
-    1.5 mg/L remains inverse. The NTP monograph declines to address 0.7 mg/L
+    low risk-of-bias subset, on three studies. Those coefficients are on the
+    review's standardized scale, **not IQ points**, and both intervals include
+    zero, so neither subset establishes an effect in either direction.
+    Urine-measured fluoride below 1.5 mg/L remains inverse, and a urinary
+    concentration is a measure of total intake from all sources rather than a
+    restatement of the concentration in the water. The NTP monograph declines to address 0.7 mg/L
     fluoridation and IQ at all.
     **Skeletal harms:** [very low]{.certainty .very-low}, five studies, uncertain.
 

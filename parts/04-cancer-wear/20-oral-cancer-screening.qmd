@@ -68,8 +68,14 @@ grading the adjunctive tests as a block:
 Two things follow that the 2015-based version of this chapter got wrong.
 
 **The tests are not equivalent.** A specificity of 0.50 for light-based detection
-means half of the people without disease test positive; that is a coin toss, and
-the recommendation against it is easy. Oral cytology at 0.90 sensitivity and 0.94
+means that among people without disease, about half still test positive. In a
+clinic where most suspicious-looking patches turn out to be harmless, that
+generates a great many false alarms, each one leading to a referral, a wait and
+possibly a biopsy that was never needed. I called that "a coin toss" in an earlier
+draft, which is wrong: a test is not defined by one of its two error rates, and a
+test can have poor specificity while still catching most of the disease that is
+there. The case against this one is the false-positive burden in the pathway it
+would actually be used in, not a slogan about chance. Oral cytology at 0.90 sensitivity and 0.94
 specificity, both at moderate certainty, is a different object. The reviewers'
 own conclusion is that cytology "would appear to offer the most potential" and
 that combined tests involving cytology "warrant further investigation."

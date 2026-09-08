@@ -216,8 +216,13 @@ KNOWN_UNMATCHED = {"DBOH-069"}
 # Joins recovered by hand after the automatic matcher missed them. Keyed to the
 # chapter 13 table they belong to, so the CSV can carry the evidence text even
 # where the fuzzy score was too low to trust on its own.
+# Hand-made joins the matcher cannot reach. Each names the chapter 13 table
+# AND a phrase that must appear in the chosen row's evidence text, so the join
+# is pinned to a verified statement rather than to whichever candidate happens
+# to have the longest evidence column. If the guideline is reissued and the
+# phrase moves, the run fails instead of silently selecting a different row.
 MANUAL_JOINS = {
-    "DBOH-087": 21,
+    "DBOH-087": (21, "Strong recommendation for preventing dental caries"),
 }
 
 # Chapter 2's caries summary tables and chapter 13's evidence tables describe
@@ -485,7 +490,7 @@ def parse_ch13(main: Tag) -> tuple[list[dict], dict[str, dict]]:
 # join and write
 # ---------------------------------------------------------------------
 
-def main() -> int:
+def main(strict: bool = False) -> int:
     ch2_rows = parse_ch2(load(CH2))
     ch13_rows, refs = parse_ch13(load(CH13))
 
@@ -521,10 +526,17 @@ def main() -> int:
         # table. Only ever used for ids listed in MANUAL_JOINS, and only when
         # the automatic match failed, so it cannot silently override a real one.
         if ev is None and rid in MANUAL_JOINS:
-            cands = ch13_by_table.get(str(MANUAL_JOINS[rid]), [])
-            if cands:
-                ev = max(cands, key=lambda c: len(c["evidence_base"] or ""))
+            table, must_contain = MANUAL_JOINS[rid]
+            cands = [
+                c for c in ch13_by_table.get(str(table), [])
+                if must_contain.lower() in (c["evidence_base"] or "").lower()
+            ]
+            if len(cands) == 1:
+                ev = cands[0]
                 score = -1.0        # marks a hand join in the audit column
+            else:
+                print(f"  ! MANUAL_JOINS[{rid}] matched {len(cands)} rows in "
+                      f"table {table}; expected exactly 1. Join refused.")
 
         if ev is not None:
             used.add(id(ev))
@@ -568,7 +580,8 @@ def main() -> int:
             "ambiguous_text_match": "yes" if ambiguous else "",
             "match_needs_review": (
                 "yes"
-                if ev and score < MATCH_STRONG and f"DBOH-{i:03d}" not in REVIEWED_JOINS
+                if ev and 0 <= score < MATCH_STRONG
+                and f"DBOH-{i:03d}" not in REVIEWED_JOINS
                 else ""
             ),
             "join_note": (
@@ -645,6 +658,38 @@ def main() -> int:
               f"{r['n_bullets']}c  {head}")
 
     print(f"\nwrote {OUT.relative_to(ROOT)}/dboh-2025.csv and 2 companions")
+
+    # A join nobody has signed off is not a warning, it is an unresolved
+    # adjudication, and the release check has to fail on it. Reporting it and
+    # exiting 0 is how the wrong-population joins survived: the run said
+    # "1 fuzzy joins to review" every time and nothing ever blocked on it.
+    blocking = []
+    if surprises:
+        blocking.append(
+            f"{len(surprises)} unmatched row(s) not signed off in KNOWN_UNMATCHED")
+    unreviewed = [r for r in merged if r["match_needs_review"]]
+    if unreviewed:
+        blocking.append(
+            f"{len(unreviewed)} join(s) needing review and not listed in "
+            f"REVIEWED_JOINS: {', '.join(r['id'] for r in unreviewed)}")
+    ambiguous = [r for r in merged if r.get("ambiguous_text_match")]
+    if ambiguous:
+        blocking.append(
+            f"{len(ambiguous)} ambiguous text match(es): "
+            f"{', '.join(r['id'] for r in ambiguous)}")
+    if orphan_judgments:
+        blocking.append(
+            f"{len(orphan_judgments)} hand-entered judgment(s) dropped")
+
+    if blocking and strict:
+        print("\nFAIL: unresolved adjudications", file=sys.stderr)
+        for b in blocking:
+            print(f"  - {b}", file=sys.stderr)
+        return 1
+    if blocking:
+        print("\nunresolved adjudications (pass --strict to fail on these):")
+        for b in blocking:
+            print(f"  - {b}")
     return 0
 
 
@@ -777,4 +822,4 @@ def _write_csv(path: Path, rows: list[dict]) -> None:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(strict="--strict" in sys.argv[1:]))

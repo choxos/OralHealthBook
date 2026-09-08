@@ -159,9 +159,12 @@ Is the strength label defensible?
     "use a manual or powered toothbrush" would be the wrong recommendation. Because
     it is weak, it is the right one.
 
-    I would go further than the guideline in one respect: it is worth saying
-    out loud that the oscillating-rotating subgroup showed no gingivitis benefit at
-    all, since those are the brushes most people buy.
+    I would go further than the guideline in one respect: it is worth saying out
+    loud that for the oscillating-rotating subgroup, the brushes most people
+    actually buy, the gingivitis estimate is SMD 0.07 (95% CI −0.20 to 0.33). That
+    is compatible with a small benefit, with nothing, and with a small harm. It
+    does not show the brushes fail; it shows this evidence cannot tell you either
+    way.
 
 What would change my mind
 :   A trial measuring periodontitis progression or tooth loss over five years or
@@ -179,8 +182,8 @@ If you already own an electric toothbrush, keep using it: it probably removes
 slightly more plaque, and nothing suggests it does harm. If you do not, the
 evidence does not justify the purchase on health grounds alone. The pooled
 differences come from trials that disagree with each other enormously, measured
-on plaque scores rather than disease, mostly funded by manufacturers, and the
-subgroup covering the commonest type of powered brush found no gingivitis benefit
-at all.
+on plaque scores rather than disease, and mostly funded by manufacturers. For the
+commonest type of powered brush the gingivitis estimate is too imprecise to
+separate a small benefit from a small harm.
 
 The honest summary is the guideline's own: **either is fine.**

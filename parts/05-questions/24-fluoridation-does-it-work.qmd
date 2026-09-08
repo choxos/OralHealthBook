@@ -59,8 +59,44 @@ out what each side gets right and wrong.
 interval includes zero, the evidence is low certainty and non-randomized, and
 there are only two contemporary studies for the primary outcome. Anyone who tells
 you contemporary evidence shows a large benefit is not describing this review.
-And there are **no eligible studies reporting caries outcomes in adults at all**,
-which is remarkable for an intervention delivered to entire adult populations.
+And the review includes **no eligible studies reporting caries outcomes in
+adults**, which is remarkable for an intervention delivered to entire adult
+populations.
+
+That is a statement about the review's eligibility criteria, not about the
+literature, and an earlier draft of this chapter let it slide into the second. The
+review asks what happens when fluoridation is **started or stopped**, so a study
+of people living under continuous exposure cannot qualify however large it is.
+
+One such study exists and it is very large. LOTUS matched 6,370,280 NHS dental
+patients aged 12 and over in England on propensity scores and compared those
+living with water at 0.7 mg F/l or above against those without, over 2010 to 2020
+[@moore2024lotus]. It found a real but very small difference: 3% fewer invasive
+treatments per person, incidence rate ratio 0.969 (95% CI 0.967 to 0.971), which
+is **0.173 fewer fillings and extractions per person across ten years**. Decayed,
+missing and filled teeth were 2% lower, a difference of 0.212 teeth (95% CI 0.229
+to 0.194 lower). The number of missing teeth per person did not differ (0.006,
+95% CI −0.008 to 0.021).
+
+The authors are unusually direct about what that means, and the sentence deserves
+quoting because it is the kind of thing effect estimates rarely get:
+
+> This magnitude of effect is smaller than what most stakeholders we engaged with
+> (50/54) considered meaningful.
+>
+> --- Moore and colleagues, LOTUS, 2024 [@moore2024lotus]
+
+They also found "no compelling evidence that water fluoridation reduced social
+inequalities" in treatments or missing teeth.
+
+This is observational and the authors say so: fluoridation status and outcomes can
+both be misclassified, and residual confounding cannot be excluded from a natural
+experiment on routine claims data. A sample of six million does nothing to fix
+confounding; it only makes the confidence interval narrow, which is why the
+interval here is absurdly tight around a number nobody thinks matters. But it
+answers a question the Cochrane review was not asking, in adults, in England, in
+the era of fluoride toothpaste, and the book has no business pretending it does
+not exist.
 
 **What the critics get wrong.** Every estimate points the same direction, toward
 benefit. "The confidence interval includes zero" is not "the effect is zero"; it
@@ -124,7 +160,12 @@ Certainty of evidence
     reduces caries in children's baby teeth in contemporary populations.
     [Very low]{.certainty .very-low} for permanent teeth in contemporary
     populations, for the effect of cessation, and for all pre-1975 estimates.
-    **No evidence** in adults.
+    **No evidence** in adults *for starting or stopping fluoridation*, which is
+    the question the review asks. For continuous exposure in adults there is
+    LOTUS, a very large matched observational study whose central estimate is
+    0.173 fewer invasive treatments per person over a decade, an effect its own
+    authors report as smaller than most of their stakeholders considered
+    meaningful [@moore2024lotus].
 
 Directness to the advice as worded
 :   **Good on the intervention, poor on population coverage.** These are studies

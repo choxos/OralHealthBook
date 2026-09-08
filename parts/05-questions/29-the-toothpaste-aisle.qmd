@@ -111,22 +111,45 @@ than most people assume: SMD 0.04 (95% CI −0.07 to 0.15) for 1,700 to 2,200ppm
 against 1,450 to 1,500ppm, from indirect evidence only, and −0.05 (−0.14 to
 0.05) for 2,400 to 2,800ppm.
 
-DBOH recommends them **Conditionally**, for people with active decay, and its own
-evidence statement concedes there is "no reliable evidence of superior
-effectiveness but some suggestion of a dose-response relationship (though it may
-not extend to concentrations this high)".
+DBOH recommends them **Conditionally**, for people with active decay. Its evidence
+statement is worth quoting in full, because an earlier draft of this chapter cut
+it in the middle and the missing half is the important one:
 
-That is an honest statement and Conditional is the right label. If a dentist has
-prescribed one because you have active decay, use it; the reasoning is sound even
-though the trials are not there.
+> Recommendation based on there being no reliable evidence of superior
+> effectiveness but some evidence of dose-response relationship, although it may
+> not extend to concentrations this high. **Moderate-certainty evidence for
+> effectiveness of 5,000ppm fluoride for root caries.**
+>
+> --- *Delivering Better Oral Health*, chapter 13, table 7 [@dboh2025]
+
+So the picture is not "the trials are not there". It is two different indications
+with two different evidence bases. For preventing decay on the **crowns** of teeth,
+the network comparisons above 1,500ppm are imprecise and do not establish an added
+benefit. For **root caries**, decay on the exposed root surface and largely a
+problem of older adults, the guideline names moderate-certainty evidence for
+5,000ppm specifically.
+
+Conditional is the right label across both, and my complaint here is only against
+my own earlier summary. If a dentist has prescribed one because you have active
+decay, use it, and if the decay is on the root surface the evidence behind that
+prescription is better than anything else in this chapter.
 
 ::: {.callout-note title="What I searched, and when" collapse="true"}
-**This chapter is less rigorous than the audit chapters and is marked as such.**
+**This chapter searched less than the audit chapters, and that limits what it can
+conclude rather than lowering the standard its conclusions have to meet.**
 
 Almost nothing in the toothpaste aisle corresponds to a DBOH recommendation, so
 there is nothing to trace and no strength label to check. I have not systematically
 reviewed the literature on charcoal, hydroxyapatite, whitening, SLS or sensitivity
 agents.
+
+That has a consequence I did not draw in an earlier draft. Announcing a thinner
+search does not license a firmer answer than the search supports. Where this
+chapter says a product category has not been shown to do something, read it as
+"the sources consulted here do not establish it", not as "it has been tested and
+failed". The two claims are different and only the first is mine to make. Anywhere
+this chapter states a categorical verdict on a product class, that verdict is
+provisional in a way the Part II verdicts are not.
 
 What I have done is apply the mechanisms established in earlier chapters, which
 are well grounded, and flag where a claim depends on evidence I have not

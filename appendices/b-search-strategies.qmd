@@ -956,6 +956,33 @@ subset, so the structured abstract is available and the risk-of-bias table and
 characteristics of included studies are not.
 
 
+---
+
+### Correction: source access, and a retracted interpretation
+
+**Added:** 8 September 2026.
+
+**Access.** The section above says the full text was unavailable and that the
+figures come from the structured abstract. That was true when the record was
+written and is no longer true: the full review was supplied during writing, and
+the chapter now quotes statements checked in its body. The correct access status
+for this source is **full report read**, and the abstract-only statement above
+applies to the first pass only.
+
+**A judgment this record still carries and the chapter has dropped.** The record
+reads the small standardized mean differences as effects a patient would not
+notice. The chapter no longer says that, and neither should this file. A small SMD
+is not automatically below a threshold of clinical importance, because no such
+threshold was defined for these outcomes; what the trial supports is that the
+differences were small and imprecisely estimated, not that they are imperceptible.
+
+**Access status for every source in this book** is now recorded per source rather
+than as a blanket statement: full report read, abstract only, quoted through
+another document, or not obtained. Appendix B's general note about Cochrane
+abstracts describes the common case, not every case, and the exceptions are named
+in the chapters that hold them.
+
+
 ## Chapter 20: oral cancer examination and adjunctive tests
 
 ::: provenance

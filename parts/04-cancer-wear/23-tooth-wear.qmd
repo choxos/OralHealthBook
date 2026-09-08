@@ -245,11 +245,30 @@ What would change my mind
 If your teeth are getting thinner, shorter, more sensitive or more yellow as the
 enamel thins, that is tooth wear, and it is not the same problem as decay.
 
-The advice is sensible and none of it has been tested: cut down on acidic drinks,
-especially fizzy ones, keep fruit juice to about a glass a day, and mention reflux
-or grinding to your dentist because both are treatable causes.
+Those changes can have other causes, so this is a reason to have someone look
+rather than a diagnosis you can make from a list.
 
-On not brushing for half an hour after something acidic: it is a laboratory
-finding that may or may not matter in a real mouth, and the national guideline
-does not recommend it. If it makes you brush less often overall, it is doing more
-harm than good.
+The advice is sensible, and what the searches here found is guidance and clinical
+reasoning rather than trials measuring wear: cut down on acidic drinks, especially
+fizzy ones, keep fruit juice within the 150 ml a day the Eatwell Guide allows, and
+mention reflux or grinding to your dentist because both are treatable causes. The
+150 ml is an upper limit, not a daily target.
+
+On brushing after something acidic, the guideline draws a line that is worth
+keeping:
+
+- **After acidic food and drink**, DBOH does not advise everyone to wait. Its
+  chapter 8 says there is "no strong evidence" that brushing timing matters much
+  for tooth wear or that all patients should delay. The half-hour rule is a
+  laboratory and in-situ finding that may or may not matter in a real mouth.
+- **After vomiting**, it does advise waiting, and that advice is separate. For
+  repeated vomiting, in pregnancy or with an eating disorder, chapter 7 says
+  "avoid brushing after vomiting and rinse mouth with water", and suggests
+  applying fluoride toothpaste with a finger instead. It does not attach a
+  thirty-minute number to that; the instruction is to avoid brushing straight
+  afterwards.
+
+If the half-hour rule makes you brush less often overall, it is doing more harm
+than good. If you are being sick regularly, the advice genuinely is not to brush
+immediately, and that is worth a conversation with your dentist or doctor about
+why it is happening.

@@ -23,6 +23,14 @@ at higher risk, table 1e says "2 or more times a year." An earlier draft of this
 chapter attributed the 1b wording to tables 1b, 1d and 1f; table 1f carries no
 varnish recommendation at all.
 
+One note on the chemistry, since this book quotes the guideline verbatim and the
+guideline's notation here is loose. The product used across these trials is a
+**5% sodium fluoride** varnish, which delivers approximately **2.26% fluoride
+ion** (22,600 ppm). DBOH writes "2.26% NaF", which reads as 2.26% sodium fluoride
+and is not the same statement. I have kept the quotation as printed, because
+changing words inside quotation marks is the thing this book most often complains
+about, but the figure to carry away is 5% NaF, 2.26% F.
+
 ## What the guideline says its evidence is
 
 > Recommendation based on moderate certainty evidence.

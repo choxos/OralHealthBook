@@ -76,10 +76,43 @@ and irrigators.
 The difference matters. My version implied an empty literature, which invites the
 conclusion that the recommendation is baseless. The true version says the
 literature is reasonably large and points the right way for gum inflammation,
-while the specific outcome most people think flossing prevents has never been
-measured. That is a more interesting finding and a more defensible one, and I
-should not have needed a full text to get it right. I had been relying on the
-abstract and on my memory of it.
+while this review measured nothing about tooth decay. That is a more interesting
+finding and a more defensible one, and I should not have needed a full text to get
+it right. I had been relying on the abstract and on my memory of it.
+
+### Caries and floss: what was measured, and in whom
+
+I then made the second half of the same mistake, and said the decay outcome "has
+never been measured". It has, outside this review and long before it.
+
+Hujoel and colleagues pooled six trials in 808 children aged 4 to 13
+[@hujoel2006]. What they found depends entirely on who was holding the floss:
+
+| Comparison | Risk ratio | 95% CI |
+|:---|:---|:---|
+| Professional flossing on school days, 1.7 years, mostly primary teeth | **0.60** | 0.48 to 0.76 |
+| Professional flossing every three months, 3 years | 0.93 | 0.73 to 1.19 |
+| **Self-performed** flossing, young adolescents, 2 years | **1.01** | 0.85 to 1.20 |
+
+: Flossing and interproximal caries [@hujoel2006]. Ratios below 1 favor flossing
+{#tbl-hujoel}
+
+A hygienist flossing a child's teeth on every school day for nearly two years cut
+interproximal caries by about 40%. Children flossing their own teeth showed
+nothing at all: 1.01 is as close to no effect as a number gets.
+
+The review's own scope sentence is the one that matters for the recommendation
+DBOH actually makes: "No flossing trials in adults or under unsupervised
+conditions could be identified." The authors add that the professional-flossing
+finding "should be extrapolated to more typical floss-users with care, since
+self-flossing has failed to show an effect."
+
+So the honest position is narrower than either of my drafts. The decay question
+has been studied, in children, mostly on baby teeth, under low fluoride exposure,
+and the answer depends on whether a professional does it. For an adult flossing
+their own teeth at home, which is what the guideline recommends and what you are
+being told to do, there is still no trial with a decay outcome. The gap is real.
+It is just a different and much more specific gap than "nobody has tested it".
 
 ## What 35 trials found
 

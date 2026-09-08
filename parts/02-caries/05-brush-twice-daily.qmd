@@ -250,14 +250,34 @@ share.
 across 33 studies, the pooled intervals are tight, and I found no strong signal
 of publication bias in a literature where the finding is the expected one.
 
-So there is a case for going to very low on risk of bias alone. I have not taken
-it, for one reason: the effect is in the direction that residual confounding
-would predict, and rating down twice for what is essentially the same problem
-(unmeasured determinants of both brushing and caries) would double-count it. I
-record that this is a judgment call, and a reader who rated it very low would not
-be wrong.
+An earlier draft stopped at low, on the grounds that rating down for risk of bias
+after already declining to upgrade for confounding direction would double-count
+the same problem. That reasoning is wrong and I am replacing it rather than
+softening it.
 
-**Certainty: low.** Same answer as before, arrived at properly this time.
+**Declining an upgrade is not a downgrade already taken.** The three upgrade
+criteria are a route by which observational evidence can rise above its starting
+level. Not qualifying for that route leaves the body where it started; it spends
+nothing. There is no penalty banked against which a later downgrade can be
+double-charged.
+
+The two concerns are also not the same problem. **Confounding** is that brushing
+frequency travels with income, education, diet and dental attendance.
+**Measurement error** is that the exposure is self-reported, and over-reported in
+a way likely correlated with those same characteristics. They can each bias the
+estimate on their own, in the same direction, and a body of evidence can suffer
+both. Naming confounding under the upgrade question does not immunise the
+measurement problem from the downgrade question.
+
+Taken properly, exposure misclassification across every included study is a
+serious limitation beyond what "observational" already assumes, and the honest
+rating is **very low**.
+
+**Certainty: very low**, one level below both my earlier assessment and DBOH's.
+That does not change what this chapter concludes about the recommendation, which
+turns on bundling rather than on the frequency evidence being weak, and it does
+not change the practical advice. It is recorded here because a book that spends
+its time on other people's GRADE domains has to accept a correction to its own.
 :::
 
 ## The verdict
@@ -279,10 +299,15 @@ in its own abstract that the evidence base for twice-daily brushing is weak.
 [Verdict]{.verdict-title}
 
 Certainty of evidence
-:   [Low]{.certainty .low}, for the frequency component specifically. Pooled
-    observational data with self-reported exposure; no grounds to upgrade on
-    magnitude, dose-response or confounding direction, and a defensible case for
-    very low that I have not taken. This agrees with DBOH's own rating.
+:   [Very low]{.certainty .very-low}, for the frequency component specifically.
+    Pooled observational data starting at low, with no grounds to upgrade on
+    magnitude, dose-response or confounding direction, then downgraded once for
+    self-reported exposure misclassified across every included study.
+
+    This is one level below DBOH's own rating of low, and one level below the
+    rating an earlier draft of this chapter gave. The reason for the change is set
+    out in the GRADE box above: declining an upgrade is not a downgrade already
+    taken, and confounding and measurement error are separate domains.
 
 Directness to the advice as worded
 :   **Poor for the cited evidence, better for the uncited evidence.** SIGN 138's
